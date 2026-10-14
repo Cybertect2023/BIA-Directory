@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "directory": "Stirling-Rawdon BIA",
-  "sourceNote": "Starter records transcribed from a directory labelled June 2022; verify before publishing.",
+  "sourceNote": "Current listings transcribed from the official Visit Stirling-Rawdon business directory (October 2025). Earlier 2022 starter records not present in that directory are retained and remain marked needs-review. Confirm details with businesses before public launch.",
   "businesses": [
     {
       "id": "caf-23",
@@ -31,29 +31,36 @@
     },
     {
       "id": "jim-s-pizza-restaurant",
-      "name": "Jim's Pizza & Restaurant",
-      "category": "Restaurants & Bakeries",
-      "description": "",
+      "name": "Jimmy's Special Pizza & Fish & Chips",
+      "category": "Food & Dining",
+      "description": "Pizza, burgers, subs, steaks and hot sandwiches in Stirling. Fully licensed.",
       "address": "2 West Front Street, Stirling, ON",
       "phone": "613-395-5111",
       "email": "",
-      "website": "",
+      "website": "https://www.tripadvisor.ca/Restaurant_Review-g1568673-d4871383-Reviews-Jimmy_s_Special_Pizza_Fish_Chips-Stirling_Ontario.html",
       "facebook": "",
       "instagram": "",
       "image": "",
       "featured": false,
       "hours": {
-        "monday": "",
-        "tuesday": "",
-        "wednesday": "",
-        "thursday": "",
-        "friday": "",
-        "saturday": "",
-        "sunday": ""
+        "monday": "11am - 9:30pm",
+        "tuesday": "11am - 10pm",
+        "wednesday": "11am - 10pm",
+        "thursday": "11am - 10pm",
+        "friday": "11am - 11:30pm",
+        "saturday": "11am - 11:30pm",
+        "sunday": "12pm - 9:30pm"
       },
-      "services": [],
+      "services": [
+        "Italian Specialties",
+        "Pizza, Wings, Fish & Chips, Burgers",
+        "Dine In",
+        "Take Out & Delivery"
+      ],
       "profileUrl": "",
-      "verificationStatus": "needs-review"
+      "verificationStatus": "needs-review",
+      "sourceUrl": "https://www.visitstirlingrawdon.ca/business-directory/blog-post-title-one-sxcf9-VE82Y-ay7d9-nbxe5-2arwl",
+      "about": "Whether you're traveling through the area and are looking for a quick bite or live in the area and have yet to experience the delights from Jimmy's Special Pizza & Fish & Chips, you have got to eat here. We're serving up delicious pizza, burgers, subs, steaks and hot sandwiches in Stirling. We're also fully licensed to serve your favourite beverages. Stop by and see us today!"
     },
     {
       "id": "savoury-house-chinese-cuisine",
@@ -137,7 +144,7 @@
       "id": "brad-comeau-law-office",
       "name": "Brad Comeau Law Office",
       "category": "Professional Services",
-      "description": "Real estate law, wills, powers of attorney and estate administration in Stirling.",
+      "description": "Real estate law, wills and powers of attorney, and estate administration.",
       "address": "33 Mill Street, Stirling, ON",
       "phone": "613-395-3397",
       "email": "",
@@ -147,22 +154,23 @@
       "image": "",
       "featured": false,
       "hours": {
-        "monday": "8:30 AM – 4:30 PM",
-        "tuesday": "8:30 AM – 4:30 PM",
-        "wednesday": "8:30 AM – 4:30 PM",
-        "thursday": "8:30 AM – 4:30 PM",
-        "friday": "8:30 AM – 4:30 PM",
+        "monday": "8:30am - 4:30pm",
+        "tuesday": "8:30am - 4:30pm",
+        "wednesday": "8:30am - 4:30pm",
+        "thursday": "8:30am - 4:30pm",
+        "friday": "8:30am - 4:30pm",
         "saturday": "Closed",
         "sunday": "Closed"
       },
       "services": [
-        "Real estate: purchases, sales, mortgages and refinancing",
-        "Wills and powers of attorney",
-        "Estate administration"
+        "Real Estate - Purchase, Sale, Mortgage, Refinancing",
+        "Wills & Power of Attorney",
+        "Estate Administration"
       ],
       "profileUrl": "",
       "verificationStatus": "needs-review",
-      "about": "Country Lawyer – Brad Comeau is a qualified real estate lawyer who has practised in Ontario for more than 30 years, including over 20 years in Stirling."
+      "about": "Country Lawyer - Brad Comeau is a qualified Real Estate Lawyer who has practiced in Ontario for more than 30 years, with the last 20+ years in Stirling.",
+      "sourceUrl": "https://www.visitstirlingrawdon.ca/business-directory/blog-post-title-one-sxcf9-VE82Y-ay7d9-nbxe5"
     },
     {
       "id": "mcdougall-insurance",
@@ -213,6 +221,417 @@
         "sunday": ""
       },
       "services": [],
+      "profileUrl": "",
+      "verificationStatus": "needs-review"
+    },
+    {
+      "id": "creekside-yoga",
+      "name": "Creekside Yoga",
+      "category": "Health, Wellness & Beauty",
+      "description": "Yoga classes, private sessions, specialty classes and workshops, and yoga retreats.",
+      "address": "43 Mill Street, Stirling, ON",
+      "phone": "613-395-4343",
+      "website": "https://creeksideyoga.ca",
+      "sourceUrl": "https://www.visitstirlingrawdon.ca/business-directory/blog-post-title-one-sxcf9-VE82Y-as578-5gzrn-sbpww-fncf2",
+      "about": "Retreat to our sun drenched Yoga Shala to move your body and still your mind. Various styles of drop in class (Yin/Restorative, Slow Flow, Vinyasa Flow, Power Flow, Broga-Yoga for Men), Private sessions (one-on-one, small group, bachelorette, etc), speciality classes/workshops (Prenatal Yoga, Mom and Baby, AcroYoga). We have all the props available to support your practice. Contact us or visit our website for more details!",
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Yoga (Various Styles)",
+        "Specialty Classes",
+        "Yoga Retreats"
+      ],
+      "email": "",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "profileUrl": "",
+      "verificationStatus": "needs-review"
+    },
+    {
+      "id": "mccurdy-collision-centre",
+      "name": "McCurdy Collision Centre",
+      "category": "Automotive",
+      "description": "Local collision centre serving the community since 1977.",
+      "address": "89 Belleville Road, Stirling, ON",
+      "phone": "613-395-3352",
+      "website": "https://mccurdygm.com",
+      "sourceUrl": "https://www.visitstirlingrawdon.ca/business-directory/blog-post-title-one-sxcf9-VE82Y-as578-5gzrn-sbpww",
+      "about": "Your small town bodyshop with big time service. Local collision centre servicing the community since 1977, with the same level of extraordinary service. Our passion for creating relationships with our guests that last a lifetime is demonstrated by repairs completed to the highest of standards but not losing the home town feel.",
+      "hours": {
+        "monday": "8am - 5pm",
+        "tuesday": "8am - 5pm",
+        "wednesday": "8am - 5pm",
+        "thursday": "8am - 5pm",
+        "friday": "8am - 4pm",
+        "saturday": "Closed",
+        "sunday": "Closed"
+      },
+      "services": [
+        "Autobody Repairs",
+        "Rust Protection",
+        "Parts"
+      ],
+      "email": "",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "profileUrl": "",
+      "verificationStatus": "needs-review"
+    },
+    {
+      "id": "food-boutique-stirling",
+      "name": "Food Boutique Stirling",
+      "category": "Food & Dining",
+      "description": "Specialty food and gift store with fresh grab-and-go food, espresso drinks, and fresh and frozen meals.",
+      "address": "27 West Front Street, Stirling, ON",
+      "phone": "",
+      "website": "",
+      "sourceUrl": "https://www.visitstirlingrawdon.ca/business-directory/blog-post-title-one-sxcf9-VE82Y-as578-5gzrn",
+      "hours": {
+        "monday": "Closed",
+        "tuesday": "Closed",
+        "wednesday": "10am - 4pm",
+        "thursday": "10am - 4pm",
+        "friday": "10am - 6pm",
+        "saturday": "10am - 6pm",
+        "sunday": ""
+      },
+      "services": [
+        "Specialty Food",
+        "Take Out",
+        "Cafe"
+      ],
+      "email": "",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "profileUrl": "",
+      "verificationStatus": "needs-review"
+    },
+    {
+      "id": "smokin-barrel-bar-grill",
+      "name": "The Smokin' Barrel Bar & Grill",
+      "category": "Food & Dining",
+      "description": "Small town hospitality with hand-crafted meals, cocktails, slow-roasted meats, burgers, wings, and fish and chips.",
+      "address": "23 West Front Street, Stirling, ON",
+      "phone": "613-395-4466",
+      "website": "https://smokinbarrel.ca",
+      "sourceUrl": "https://www.visitstirlingrawdon.ca/business-directory/blog-post-title-one-sxcf9-VE82Y-as578",
+      "hours": {
+        "monday": "6pm - 12am",
+        "tuesday": "6pm - 12am",
+        "wednesday": "6pm - 12am",
+        "thursday": "6pm - 12am",
+        "friday": "6pm - 12am",
+        "saturday": "8pm - 3am",
+        "sunday": "8pm - 3am"
+      },
+      "about": "Small town hospitality with Big City eats. We offer hand crafted meals and cocktails, in a friendly and cozy environment, that you would normally have to travel to the city for. Our delicious slow-roasted meats, & handmade burgers, are complimented perfectly by our amazing wings. Fish n Chips more your style? We offer a 1pc or 2pc in our homemade beer batter. Top it off with an ice cold beer, or tasty Caesar, or one of our hand crafted seasonal cocktails! Let us become your new favourite place!",
+      "services": [
+        "Pub Fare",
+        "Take Out"
+      ],
+      "email": "",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "profileUrl": "",
+      "verificationStatus": "needs-review"
+    },
+    {
+      "id": "blooms-flowers",
+      "name": "Blooms Flowers",
+      "category": "Shops & Retail",
+      "description": "Florist offering fresh and silk flowers, house plants, gifts, and arrangements for special occasions.",
+      "address": "17 West Front Street, Stirling, ON",
+      "phone": "613-395-1353",
+      "website": "",
+      "sourceUrl": "https://www.visitstirlingrawdon.ca/business-directory/blog-post-title-one-sxcf9-VE82Y-ay7d9",
+      "about": "Blooms Flowers for all occasions opened November 2008. My business carries fresh flowers, house plants, silk flowers, containers and other gift ware. All arrangements and dish gardens have a Hands On approach which reflects the personal reflection of my business. I create traditional arrangement’s, wedding bouquets, boutonnière, corsages, stone saddles, sympathy arrangements and other special requests.\n\nI can be known to be the florist to put that extra special touch on your sympathy arrangement that is a remembrance of your loved one.",
+      "hours": {
+        "monday": "9am - 5pm",
+        "tuesday": "9am - 5pm",
+        "wednesday": "9am - 5pm",
+        "thursday": "9am - 5pm",
+        "friday": "9am - 5pm",
+        "saturday": "9am - 3pm",
+        "sunday": "Closed"
+      },
+      "services": [
+        "Florist",
+        "Special Occasions"
+      ],
+      "email": "",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "profileUrl": "",
+      "verificationStatus": "needs-review"
+    },
+    {
+      "id": "rawdon-creek-soap-co",
+      "name": "Rawdon Creek Soap Co.",
+      "category": "Shops & Retail",
+      "description": "Family-owned, mother-daughter business creating handcrafted soaps, candles, whipped tallow balms, and more.",
+      "address": "26 Mill Street, Stirling, ON",
+      "phone": "613-395-2620",
+      "website": "https://www.rawdoncreeksoap.com",
+      "sourceUrl": "https://www.visitstirlingrawdon.ca/business-directory/blog-post-title-one-sxcf9-VE82Y-maj5p",
+      "about": "Located in the heart of Stirling, Ontario, Rawdon Creek Soap Co. is a family-owned business. What began in 2017 has continued to grow since we proudly took ownership in 2023. Today, our mother-daughter team carries on the tradition of creating high-quality, handcrafted products including soaps, candles, whipped tallow balms, and more.",
+      "hours": {
+        "monday": "",
+        "tuesday": "Closed",
+        "wednesday": "10am - 3pm",
+        "thursday": "10am - 3pm",
+        "friday": "10am - 5pm",
+        "saturday": "",
+        "sunday": "Closed"
+      },
+      "services": [
+        "Shopping Experience",
+        "Gift Cards",
+        "Online Shopping"
+      ],
+      "email": "",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "profileUrl": "",
+      "verificationStatus": "needs-review"
+    },
+    {
+      "id": "firehall-cafe",
+      "name": "The Firehall Cafe",
+      "category": "Food & Dining",
+      "description": "Breakfast, lunch, and special event dinners.",
+      "address": "39 Mill Street, Stirling, ON",
+      "phone": "613-395-2855",
+      "website": "",
+      "sourceUrl": "https://www.visitstirlingrawdon.ca/business-directory/blog-post-title-one-sxcf9-VE82Y-j8byz",
+      "hours": {
+        "monday": "7:30am - 3:30pm",
+        "tuesday": "7:30am - 3:30pm",
+        "wednesday": "7:30am - 3:30pm",
+        "thursday": "7:30am - 3:30pm",
+        "friday": "7:30am - 3:30pm",
+        "saturday": "9am - 2pm",
+        "sunday": "9am - 2pm"
+      },
+      "services": [
+        "Dine-in",
+        "Takeout",
+        "Outdoor Seating"
+      ],
+      "email": "",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "profileUrl": "",
+      "verificationStatus": "needs-review"
+    },
+    {
+      "id": "stirling-festival-theatre",
+      "name": "Stirling Festival Theatre",
+      "category": "Community, Arts & Organizations",
+      "description": "Professional year-round theatre providing arts and entertainment for Hastings County.",
+      "address": "41 West Front Street, Stirling, ON",
+      "phone": "613-395-2100",
+      "website": "https://www.stirlingfestivaltheatre.com",
+      "sourceUrl": "https://www.visitstirlingrawdon.ca/business-directory/blog-post-title-one-sxcf9-VE82Y-zjn8m",
+      "about": "The Stirling Festival Theatre provides arts and entertainment for Hastings County for more than 27 years. A cultural and economic driver in the area, the Stirling Festival Theatre is a professional theatre that operates year-round and attracts audiences from as far away as Peterborough, Kingston, Ottawa and the eastern GTA.",
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Theatre Productions",
+        "Concerts",
+        "Theatre Camp"
+      ],
+      "email": "",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "profileUrl": "",
+      "verificationStatus": "needs-review"
+    },
+    {
+      "id": "farm-girl-cafe",
+      "name": "Farm Girl Cafe",
+      "category": "Food & Dining",
+      "description": "Cafe serving quality coffee and locally sourced, sustainable food.",
+      "address": "18 Mill Street, Stirling, ON",
+      "phone": "",
+      "website": "https://farmgirlcafe.ca",
+      "sourceUrl": "https://www.visitstirlingrawdon.ca/business-directory/blog-post-title-one-sxcf9-VE82Y-hxxyr",
+      "about": "We believe in creating an opportunity for our customers to experience quality coffee and food that is locally sourced, sustainable and supports the local community. Our mission is to provide a unique solution– a cafe filled with exceptional coffee and delicious food that is produced in an environmentally responsible manner. We strive to create a welcoming space where people can come together and share their stories over a cup of coffee or savor some delectably delicious treats.",
+      "hours": {
+        "monday": "Closed",
+        "tuesday": "Closed",
+        "wednesday": "9am - 3pm",
+        "thursday": "9am - 3pm",
+        "friday": "9am - 3pm",
+        "saturday": "9am - 3pm",
+        "sunday": "Closed"
+      },
+      "services": [
+        "Cafe",
+        "Baked goods",
+        "Artisan Drinks"
+      ],
+      "email": "",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "profileUrl": "",
+      "verificationStatus": "needs-review"
+    },
+    {
+      "id": "rustic-routes",
+      "name": "Rustic Routes",
+      "category": "Shops & Retail",
+      "description": "Interior design and furniture store offering custom furniture, drapery, blinds, clothing, and cappuccino.",
+      "address": "20 Mill Street, Stirling, ON",
+      "phone": "613-395-2929",
+      "website": "https://www.rusticroutes.ca",
+      "sourceUrl": "https://www.visitstirlingrawdon.ca/business-directory/blog-post-title-one-sxcf9-VE82Y-hc3gf-terp6",
+      "about": "Rustic Routes is a unique interior design and furniture store helping urban explorers bring personality and charm to their homes! With custom furniture, drapery, blinds, clothing for women in classic and contemporary styles - plus delicious cappuccino from Farmgirl Cafe - we've got everything you need to add flair to your life. Founded 16 years ago by Mary Louise and Michael, our mission is to provide creative solutions that inspire living spaces with genuine character while pushing boundaries.\n\nWe believe everyone deserves a home they love - so let's make it happen together!",
+      "hours": {
+        "monday": "Closed",
+        "tuesday": "11am - 3pm",
+        "wednesday": "11am - 3pm",
+        "thursday": "11am - 3pm",
+        "friday": "11am - 3pm",
+        "saturday": "11am - 3pm",
+        "sunday": "Closed"
+      },
+      "services": [
+        "Shopping Experience",
+        "Custom Upholstery"
+      ],
+      "email": "",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "profileUrl": "",
+      "verificationStatus": "needs-review"
+    },
+    {
+      "id": "stirling-book-company",
+      "name": "Stirling Book Company",
+      "category": "Shops & Retail",
+      "description": "Independent bookstore with new books, games, puzzles, greeting cards, stationery, journals, and pens.",
+      "address": "36 Mill Street, Stirling, ON",
+      "phone": "613-395-3030",
+      "website": "https://stirlingbookco.ca",
+      "sourceUrl": "https://www.visitstirlingrawdon.ca/business-directory/blog-post-title-one-sxcf9-VE82Y-hc3gf-terp6-ekydd",
+      "about": "Stirling Book Company is your local independent book store. We offer a highly curated wide variety of new books across all genres. Our shelves are filled with the latest releases and beloved classics. We also carry a selection of games, puzzles, greetings cards, stationery, journals, and pens.",
+      "hours": {
+        "monday": "Closed",
+        "tuesday": "Closed",
+        "wednesday": "10am - 5pm",
+        "thursday": "10am - 5pm",
+        "friday": "10am - 5pm",
+        "saturday": "9am - 3pm",
+        "sunday": "Closed"
+      },
+      "services": [
+        "Retail",
+        "Custom Orders",
+        "Book Launches"
+      ],
+      "email": "",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "profileUrl": "",
+      "verificationStatus": "needs-review"
+    },
+    {
+      "id": "vintage-junction",
+      "name": "The Vintage Junction",
+      "category": "Shops & Retail",
+      "description": "A mix of vintage items and home decor.",
+      "address": "25 Mill Street, Stirling, ON",
+      "phone": "613-395-4555",
+      "website": "",
+      "sourceUrl": "https://www.visitstirlingrawdon.ca/business-directory/blog-post-title-one-sxcf9-VE82Y-hc3gf",
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Shopping Experience",
+        "Vintage",
+        "Seasonal Decor"
+      ],
+      "verificationStatus": "needs-review",
+      "email": "",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "profileUrl": ""
+    },
+    {
+      "id": "parsons-therapy",
+      "name": "Parsons Therapy",
+      "category": "Health, Wellness & Beauty",
+      "description": "Down-to-earth therapy support for stress, burnout, relationship strain, or feeling stuck.",
+      "address": "8 Mill Street, Stirling, ON",
+      "phone": "613-329-8594",
+      "website": "https://parsonstherapy.ca",
+      "sourceUrl": "https://www.visitstirlingrawdon.ca/business-directory/blog-post-title-one-sxcf9-VE82Y",
+      "about": "At Parsons Therapy, we believe therapy should feel like a real conversation, not a clinical checklist. We offer straightforward, down-to-earth support for people who may not usually picture themselves in a therapist’s office. Whether you’re dealing with stress, burnout, relationship strain, or just feeling stuck, our approach is honest, clear, and focused on what works.",
+      "hours": {
+        "monday": "9am - 5pm",
+        "tuesday": "9am - 5pm",
+        "wednesday": "9am - 5pm",
+        "thursday": "9am - 5pm",
+        "friday": "9am - 5pm",
+        "saturday": "10am - 4pm",
+        "sunday": "Closed"
+      },
+      "services": [
+        "Men’s Therapy",
+        "Rural Community Therapy",
+        "Couple’s Therapy",
+        "Grief & Loss Counselling"
+      ],
+      "email": "",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
       "profileUrl": "",
       "verificationStatus": "needs-review"
     }
