@@ -1,34 +1,8 @@
 {
   "schemaVersion": 1,
   "directory": "Stirling-Rawdon BIA",
-  "sourceNote": "Current listings transcribed from the official Visit Stirling-Rawdon business directory (October 2025). Earlier 2022 starter records not present in that directory are retained and remain marked needs-review. Confirm details with businesses before public launch.",
+  "sourceNote": "Directory contains only the 15 business listings currently shown on the official Visit Stirling-Rawdon business directory. No 2022 legacy records are included.",
   "businesses": [
-    {
-      "id": "caf-23",
-      "name": "Café 23",
-      "category": "Restaurants & Bakeries",
-      "description": "",
-      "address": "23 West Front Street, Stirling, ON",
-      "phone": "613-282-4025",
-      "email": "",
-      "website": "",
-      "facebook": "",
-      "instagram": "",
-      "image": "",
-      "featured": false,
-      "hours": {
-        "monday": "",
-        "tuesday": "",
-        "wednesday": "",
-        "thursday": "",
-        "friday": "",
-        "saturday": "",
-        "sunday": ""
-      },
-      "services": [],
-      "profileUrl": "",
-      "verificationStatus": "needs-review"
-    },
     {
       "id": "jim-s-pizza-restaurant",
       "name": "Jimmy's Special Pizza & Fish & Chips",
@@ -58,87 +32,9 @@
         "Take Out & Delivery"
       ],
       "profileUrl": "",
-      "verificationStatus": "needs-review",
+      "verificationStatus": "verified",
       "sourceUrl": "https://www.visitstirlingrawdon.ca/business-directory/blog-post-title-one-sxcf9-VE82Y-ay7d9-nbxe5-2arwl",
       "about": "Whether you're traveling through the area and are looking for a quick bite or live in the area and have yet to experience the delights from Jimmy's Special Pizza & Fish & Chips, you have got to eat here. We're serving up delicious pizza, burgers, subs, steaks and hot sandwiches in Stirling. We're also fully licensed to serve your favourite beverages. Stop by and see us today!"
-    },
-    {
-      "id": "savoury-house-chinese-cuisine",
-      "name": "Savoury House Chinese Cuisine",
-      "category": "Restaurants & Bakeries",
-      "description": "",
-      "address": "24 West Front Street, Stirling, ON",
-      "phone": "613-395-1288",
-      "email": "",
-      "website": "",
-      "facebook": "",
-      "instagram": "",
-      "image": "",
-      "featured": false,
-      "hours": {
-        "monday": "",
-        "tuesday": "",
-        "wednesday": "",
-        "thursday": "",
-        "friday": "",
-        "saturday": "",
-        "sunday": ""
-      },
-      "services": [],
-      "profileUrl": "",
-      "verificationStatus": "needs-review"
-    },
-    {
-      "id": "springbrook-diner",
-      "name": "Springbrook Diner",
-      "category": "Restaurants & Bakeries",
-      "description": "",
-      "address": "4876 Stirling-Marmora Road, Stirling, ON",
-      "phone": "613-395-3535",
-      "email": "",
-      "website": "",
-      "facebook": "",
-      "instagram": "",
-      "image": "",
-      "featured": false,
-      "hours": {
-        "monday": "",
-        "tuesday": "",
-        "wednesday": "",
-        "thursday": "",
-        "friday": "",
-        "saturday": "",
-        "sunday": ""
-      },
-      "services": [],
-      "profileUrl": "",
-      "verificationStatus": "needs-review"
-    },
-    {
-      "id": "vito-s-pizza",
-      "name": "Vito's Pizza",
-      "category": "Restaurants & Bakeries",
-      "description": "",
-      "address": "160 North Street, Unit 3, Stirling, ON",
-      "phone": "613-395-1313",
-      "email": "",
-      "website": "",
-      "facebook": "",
-      "instagram": "",
-      "image": "",
-      "featured": false,
-      "hours": {
-        "monday": "",
-        "tuesday": "",
-        "wednesday": "",
-        "thursday": "",
-        "friday": "",
-        "saturday": "",
-        "sunday": ""
-      },
-      "services": [],
-      "profileUrl": "",
-      "verificationStatus": "needs-review"
     },
     {
       "id": "brad-comeau-law-office",
@@ -168,61 +64,9 @@
         "Estate Administration"
       ],
       "profileUrl": "",
-      "verificationStatus": "needs-review",
+      "verificationStatus": "verified",
       "about": "Country Lawyer - Brad Comeau is a qualified Real Estate Lawyer who has practiced in Ontario for more than 30 years, with the last 20+ years in Stirling.",
       "sourceUrl": "https://www.visitstirlingrawdon.ca/business-directory/blog-post-title-one-sxcf9-VE82Y-ay7d9-nbxe5"
-    },
-    {
-      "id": "mcdougall-insurance",
-      "name": "McDougall Insurance",
-      "category": "Professional Services",
-      "description": "",
-      "address": "26 Mill Street, Stirling, ON",
-      "phone": "613-395-1977",
-      "email": "",
-      "website": "",
-      "facebook": "",
-      "instagram": "",
-      "image": "",
-      "featured": false,
-      "hours": {
-        "monday": "",
-        "tuesday": "",
-        "wednesday": "",
-        "thursday": "",
-        "friday": "",
-        "saturday": "",
-        "sunday": ""
-      },
-      "services": [],
-      "profileUrl": "",
-      "verificationStatus": "needs-review"
-    },
-    {
-      "id": "stirling-curling-club",
-      "name": "Stirling Curling Club",
-      "category": "Recreation & Sports",
-      "description": "",
-      "address": "433 West Front Street, Stirling, ON",
-      "phone": "613-395-5476",
-      "email": "",
-      "website": "",
-      "facebook": "",
-      "instagram": "",
-      "image": "",
-      "featured": false,
-      "hours": {
-        "monday": "",
-        "tuesday": "",
-        "wednesday": "",
-        "thursday": "",
-        "friday": "",
-        "saturday": "",
-        "sunday": ""
-      },
-      "services": [],
-      "profileUrl": "",
-      "verificationStatus": "needs-review"
     },
     {
       "id": "creekside-yoga",
@@ -254,7 +98,7 @@
       "image": "",
       "featured": false,
       "profileUrl": "",
-      "verificationStatus": "needs-review"
+      "verificationStatus": "verified"
     },
     {
       "id": "mccurdy-collision-centre",
@@ -286,7 +130,7 @@
       "image": "",
       "featured": false,
       "profileUrl": "",
-      "verificationStatus": "needs-review"
+      "verificationStatus": "verified"
     },
     {
       "id": "food-boutique-stirling",
@@ -317,7 +161,7 @@
       "image": "",
       "featured": false,
       "profileUrl": "",
-      "verificationStatus": "needs-review"
+      "verificationStatus": "verified"
     },
     {
       "id": "smokin-barrel-bar-grill",
@@ -348,7 +192,7 @@
       "image": "",
       "featured": false,
       "profileUrl": "",
-      "verificationStatus": "needs-review"
+      "verificationStatus": "verified"
     },
     {
       "id": "blooms-flowers",
@@ -379,7 +223,7 @@
       "image": "",
       "featured": false,
       "profileUrl": "",
-      "verificationStatus": "needs-review"
+      "verificationStatus": "verified"
     },
     {
       "id": "rawdon-creek-soap-co",
@@ -411,7 +255,7 @@
       "image": "",
       "featured": false,
       "profileUrl": "",
-      "verificationStatus": "needs-review"
+      "verificationStatus": "verified"
     },
     {
       "id": "firehall-cafe",
@@ -442,7 +286,7 @@
       "image": "",
       "featured": false,
       "profileUrl": "",
-      "verificationStatus": "needs-review"
+      "verificationStatus": "verified"
     },
     {
       "id": "stirling-festival-theatre",
@@ -474,7 +318,7 @@
       "image": "",
       "featured": false,
       "profileUrl": "",
-      "verificationStatus": "needs-review"
+      "verificationStatus": "verified"
     },
     {
       "id": "farm-girl-cafe",
@@ -506,7 +350,7 @@
       "image": "",
       "featured": false,
       "profileUrl": "",
-      "verificationStatus": "needs-review"
+      "verificationStatus": "verified"
     },
     {
       "id": "rustic-routes",
@@ -537,7 +381,7 @@
       "image": "",
       "featured": false,
       "profileUrl": "",
-      "verificationStatus": "needs-review"
+      "verificationStatus": "verified"
     },
     {
       "id": "stirling-book-company",
@@ -569,7 +413,7 @@
       "image": "",
       "featured": false,
       "profileUrl": "",
-      "verificationStatus": "needs-review"
+      "verificationStatus": "verified"
     },
     {
       "id": "vintage-junction",
@@ -594,7 +438,7 @@
         "Vintage",
         "Seasonal Decor"
       ],
-      "verificationStatus": "needs-review",
+      "verificationStatus": "verified",
       "email": "",
       "facebook": "",
       "instagram": "",
@@ -633,7 +477,7 @@
       "image": "",
       "featured": false,
       "profileUrl": "",
-      "verificationStatus": "needs-review"
+      "verificationStatus": "verified"
     }
   ]
 }
