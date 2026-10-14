@@ -42,15 +42,15 @@ The `home-explore-section.html` snippet is one page section to insert on the hom
 
 ## Page setup and SEO
 
-All new pages should be created as regular pages. Keep them out of the primary navigation until the BIA selects its final menu placement. Use the exact page URLs shown here if Squarespace accepts the custom slug; if it requires nesting, place category pages under a folder named **Explore & Enjoy** and keep the same child slugs.
+All new pages should be created as regular pages. Keep them out of the primary navigation until the BIA selects its final menu placement. The four visitor guide pages use flat Squarespace layout-page slugs (`/farms-local-food`, `/things-to-do`, `/community-events`, `/local-stories`). Keep the hub at `/explore-and-enjoy`. Ordinary Squarespace pages should not be assumed to support nested URLs.
 
 | Page | URL | SEO title | SEO description |
 | --- | --- | --- | --- |
 | Explore & Enjoy | `/explore-and-enjoy` | Explore & Enjoy Stirling-Rawdon | Visit Stirling-Rawdon | Plan a visit to Stirling-Rawdon, Ontario. Find local farms and food, things to do, community events, and stories from the village and countryside. |
-| Farms & Local Food | `/explore-and-enjoy/farms-local-food` | Farms & Local Food in Stirling-Rawdon | Visit Stirling-Rawdon | Discover Stirling-Rawdon farms, seasonal produce, the village farmers’ market, farm shops, and agricultural experiences in Hastings County. |
-| Things to Do | `/explore-and-enjoy/things-to-do` | Things to Do in Stirling-Rawdon, Ontario | Visit Stirling-Rawdon | Plan a day in Stirling-Rawdon with live theatre, Farmtown Park, local shops and dining, parks, trails, and community heritage. |
-| Community Events | `/explore-and-enjoy/community-events` | Stirling-Rawdon Community Events | Visit Stirling-Rawdon | Explore Stirling-Rawdon’s seasonal markets, annual fair, theatre and music traditions, and community celebrations. Check the BIA calendar for current dates. |
-| Local Stories | `/explore-and-enjoy/local-stories` | Local Stories from Stirling-Rawdon | Visit Stirling-Rawdon | Read about Stirling-Rawdon’s local businesses, agricultural heritage, community traditions, and historic village places. |
+| Farms & Local Food | `/farms-local-food` | Farms & Local Food in Stirling-Rawdon | Visit Stirling-Rawdon | Discover Stirling-Rawdon farms, seasonal produce, the village farmers’ market, farm shops, and agricultural experiences in Hastings County. |
+| Things to Do | `/things-to-do` | Things to Do in Stirling-Rawdon, Ontario | Visit Stirling-Rawdon | Plan a day in Stirling-Rawdon with live theatre, Farmtown Park, local shops and dining, parks, trails, and community heritage. |
+| Community Events | `/community-events` | Stirling-Rawdon Community Events | Visit Stirling-Rawdon | Explore Stirling-Rawdon’s seasonal markets, annual fair, theatre and music traditions, and community celebrations. Check the BIA calendar for current dates. |
+| Local Stories | `/local-stories` | Local Stories from Stirling-Rawdon | Visit Stirling-Rawdon | Read about Stirling-Rawdon’s local businesses, agricultural heritage, community traditions, and historic village places. |
 
 Set each Squarespace page's URL slug and SEO title/description in **Page Settings → General / SEO**. Assign the hub H1 as the page heading and preserve the heading hierarchy in the Code Block. Do not create a second H1 outside the supplied content.
 
