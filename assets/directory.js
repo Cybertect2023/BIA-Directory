@@ -69,6 +69,31 @@
         "M7.5 12a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z",
         "M10 12V9h7a4 4 0 0 1 4 4"
       ],
+      home: [
+        "M3 11.5 12 4l9 7.5",
+        "M5.5 10.5V21h13V10.5",
+        "M10 21v-7h4v7",
+        "M18 6c-2.5.3-3.8 1.9-3.6 4.1 2.1.2 3.8-1.1 3.6-4.1Z"
+      ],
+      auto: [
+        "M5.5 11 7.3 6.7A2.5 2.5 0 0 1 9.6 5h4.8a2.5 2.5 0 0 1 2.3 1.7l1.8 4.3",
+        "M4 11h16a2 2 0 0 1 2 2v5H2v-5a2 2 0 0 1 2-2Z",
+        "M5 18v2",
+        "M19 18v2",
+        "M6.5 15.1h2",
+        "M15.5 15.1h2"
+      ],
+      education: [
+        "M12 6c-2.5-1.6-5.5-1.9-9-1.2V19c3.5-.7 6.5-.4 9 1.2",
+        "M12 6c2.5-1.6 5.5-1.9 9-1.2V19c-3.5-.7-6.5-.4-9 1.2",
+        "M12 6v14.2"
+      ],
+      community: [
+        "M9 7a3 3 0 1 0 6 0 3 3 0 0 0-6 0Z",
+        "M4 20v-2a5 5 0 0 1 5-5h6a5 5 0 0 1 5 5v2",
+        "M3 8a2 2 0 0 0 0 4",
+        "M21 8a2 2 0 0 1 0 4"
+      ],
       general: [
         "M4 21h16",
         "M6 21V8l6-4 6 4v13",
@@ -98,13 +123,17 @@
   const categoryStyle = value => {
     const c = text(value).toLowerCase();
     if (/restaurant|bakery|food|dining|caf[eé]|coffee/.test(c)) return ["dining","EAT & DRINK","#f3ebe0","#865e42"];
-    if (/health|medical|wellness|therapy|dental/.test(c)) return ["wellness","WELLNESS","#eee7eb","#865b6b"];
-    if (/professional|financial|legal|insurance|service/.test(c)) return ["services","SERVICES","#e8edf4","#485e78"];
+    if (/health|medical|wellness|therapy|beauty|dental/.test(c)) return ["wellness","WELLNESS","#eee7eb","#865b6b"];
+    if (/professional|financial|legal|insurance|service/.test(c)) return ["services","PROFESSIONAL SERVICES","#e8edf4","#485e78"];
+    if (/home|garden|hardware|construction|building suppl/.test(c)) return ["home","HOME & GARDEN","#e5ede4","#486853"];
+    if (/automotive|auto repair|vehicle|powersport|collision/.test(c)) return ["auto","AUTOMOTIVE","#e5ebf2","#4c637b"];
+    if (/education|learning|tutor|school/.test(c)) return ["education","EDUCATION & LEARNING","#f3ecdf","#856946"];
+    if (/community|arts|organization|theatre|nonprofit/.test(c)) return ["community","COMMUNITY & ARTS","#ede9f2","#695b7f"];
     if (/recreation|sport|fitness/.test(c)) return ["active","ACTIVE LIVING","#e6ede5","#416c5e"];
     if (/farm|agricultur/.test(c)) return ["farm","LOCAL GROWN","#eeedde","#6f7042"];
     if (/shop|retail/.test(c)) return ["retail","SHOP LOCAL","#f0e7ee","#825a78"];
     if (/accommod|lodg|stay/.test(c)) return ["stay","STAY & EXPLORE","#e7eef0","#4d7280"];
-    return ["general","STIRLING-RAWDON","#e8eee6","#46644f"];
+    return ["general", text(value) || "LOCAL BUSINESS","#e8eee6","#46644f"];
   };
   root.replaceChildren();
   const header = node("header","bia-dir__heading");
