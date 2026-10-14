@@ -8,6 +8,27 @@ This feature uses the existing Squarespace 7.1 + GitHub Pages + Code Block archi
 - `assets/explore.js` — progressively updates the featured community event from `explore/events.json`. The event copy remains present in Squarespace HTML as a crawlable fallback.
 - `explore/events.json` — current featured-event data. Update this file and the matching fallback copy/date/link in `pages/community-events.html` when replacing a featured event.
 
+## Recommended small Code Block loader
+
+For the five dedicated Squarespace visitor pages, use the new `assets/explore-loader.js` instead of pasting the large HTML file into Squarespace. This preserves the ability to update all page content centrally in GitHub.
+
+On the main page at `/explore-and-enjoy`, paste:
+
+```html
+<div id="bia-explore-page" data-explore-page="explore-and-enjoy">
+  <h1>Explore &amp; Enjoy Stirling-Rawdon</h1>
+  <p>Discover local farms, visitor experiences, community events, and local stories.</p>
+</div>
+<link rel="stylesheet" href="https://cybertect2023.github.io/BIA-Directory/assets/explore.css">
+<script defer src="https://cybertect2023.github.io/BIA-Directory/assets/explore-loader.js"></script>
+```
+
+For the supporting pages, duplicate the Code Block and change only `data-explore-page` to one of: `farms-local-food`, `things-to-do`, `community-events`, or `local-stories`. Replace the fallback H1 and summary in each copied block with that page's own heading and summary.
+
+**Do not add `pages/home-explore-section.html` below the existing homepage navigation cards**; it duplicates homepage discovery choices. Point the existing Explore & Enjoy button to `/explore-and-enjoy` after all four destination pages exist and have been tested.
+
+The loader uses client-side JavaScript to fetch HTML from GitHub Pages. This is convenient for updates, but Squarespace/Google may not index every dynamically injected text section reliably. For strongest SEO, paste the static HTML from `pages/*.html` into the Squarespace page Code Block and keep shared styling in GitHub. The small-loader version includes a crawlable fallback heading and description.
+
 ## Squarespace Code Blocks
 
 For each page, add one Code Block, paste the matching `pages/*.html` file, and add these shared asset tags at the top of the same Code Block:
