@@ -136,3 +136,77 @@
 @media(max-width:1040px){.bia-explore--farms .bia-farms__destinations{grid-template-columns:repeat(2,minmax(0,1fr))}.bia-explore--farms .bia-farms__destination:last-child{grid-column:1/-1}}
 @media(max-width:800px){.bia-explore--farms .bia-farms__market-layout,.bia-explore--farms .bia-farms__section-heading,.bia-explore--farms .bia-farms__closing-grid{grid-template-columns:1fr}.bia-explore--farms .bia-farms__day-plan{grid-template-columns:1fr}.bia-explore--farms .bia-farms__closing-actions{align-items:flex-start}}
 @media(max-width:680px){.bia-explore--farms .bia-farms__crumbs,.bia-explore--farms .bia-farms__hero .bia-explore__hero-inner{width:calc(100% - 30px)}.bia-explore--farms .bia-farms__quick-nav .bia-explore__wrap{gap:.65rem 1rem}.bia-explore--farms .bia-farms__quick-label{width:100%}.bia-explore--farms .bia-farms__quick-nav a{white-space:normal}.bia-explore--farms .bia-farms__destinations{grid-template-columns:1fr}.bia-explore--farms .bia-farms__destination:last-child{grid-column:auto}.bia-explore--farms .bia-farms__hero{min-height:540px}.bia-explore--farms .bia-farms__hero-actions{align-items:flex-start;flex-direction:column}}
+
+
+/* Things to Do: visitor-first editorial landing page */
+.bia-explore--things .bia-things__crumbs{width:min(1200px,calc(100% - 64px));margin:0 auto;padding:1.15rem 0;color:#506758}
+.bia-explore--things .bia-things__hero{min-height:clamp(475px,48vw,670px)}
+.bia-explore--things .bia-things__hero .bia-explore__hero-inner{width:min(1200px,calc(100% - 64px))}
+.bia-explore--things .bia-things__hero h1{max-width:800px;font-size:clamp(2.8rem,6vw,5.7rem);letter-spacing:-.042em}
+.bia-explore--things .bia-things__hero .bia-explore__hero-copy{max-width:660px;font-size:clamp(1.08rem,1.6vw,1.34rem);line-height:1.6}
+.bia-explore--things .bia-things__hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:1rem 1.5rem}
+.bia-explore--things .bia-things__hero-link{color:#fff!important;font-size:.91rem;font-weight:700;text-underline-offset:5px}
+.bia-explore--things .bia-things__jump-nav{background:#f8f9f6;border-bottom:1px solid #dce6dd}
+.bia-explore--things .bia-things__jump-nav .bia-explore__wrap{display:flex;align-items:center;flex-wrap:wrap;gap:.7rem 2rem;padding:1.15rem 0}
+.bia-explore--things .bia-things__jump-title{font:700 .71rem/1.4 Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#69806c}
+.bia-explore--things .bia-things__jump-nav a{text-decoration:none;font-size:.89rem;font-weight:700}
+.bia-explore--things .bia-things__intro-section{padding:clamp(3rem,5.5vw,5.5rem) 0}
+.bia-explore--things .bia-things__intro-layout{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(280px,.9fr);gap:clamp(2rem,7vw,7rem);align-items:center}
+.bia-explore--things .bia-things__intro-layout h2{margin:0;max-width:680px}
+.bia-explore--things .bia-things__intro-layout>div:last-child p{font-size:clamp(1rem,1.35vw,1.13rem);line-height:1.75}
+.bia-explore--things .bia-things__intro-layout>div:last-child p:last-child{margin-bottom:0}
+.bia-explore--things .bia-things__section-lead{max-width:740px;font-size:clamp(1.04rem,1.4vw,1.17rem);margin-bottom:2rem}
+.bia-explore--things .bia-things__spotlights{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem}
+.bia-explore--things .bia-things__spotlight{display:flex;flex-direction:column;justify-content:space-between;min-width:0;padding:clamp(1.5rem,3.5vw,3rem);min-height:460px}
+.bia-explore--things .bia-things__spotlight--theatre{background:#e5ebdf;border-top:5px solid #426448}
+.bia-explore--things .bia-things__spotlight--museum{background:#e9e6df;border-top:5px solid #80745b}
+.bia-explore--things .bia-things__spotlight-top{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:2rem}
+.bia-explore--things .bia-things__spotlight-top span:first-child{font:700 .7rem/1.5 Arial,sans-serif;text-transform:uppercase;letter-spacing:.12em;color:#4f6653}
+.bia-explore--things .bia-things__spotlight-top span:last-child{font-size:2rem;color:#779079}
+.bia-explore--things .bia-things__spotlight h3{font-size:clamp(1.8rem,3.5vw,3.2rem);line-height:1.12;letter-spacing:-.03em}
+.bia-explore--things .bia-things__spotlight p{font-size:1rem;line-height:1.7;color:#425a49}
+.bia-explore--things .bia-things__spotlight .bia-things__details{font-weight:700;font-size:.87rem;color:#3c5f45}
+.bia-explore--things .bia-things__spotlight-actions{display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-top:1.5rem}
+.bia-explore--things .bia-things__spotlight-actions>a:not(.bia-explore__button){font-weight:700;font-size:.88rem;text-underline-offset:4px}
+.bia-explore--things .bia-things__season{font-size:.79rem;font-weight:700;color:#695f49;max-width:230px;line-height:1.5}
+.bia-explore--things .bia-things__outdoors .bia-explore__split{grid-template-columns:minmax(0,1fr) minmax(310px,.85fr)}
+.bia-explore--things .bia-things__outdoor-stops{border-top:1px solid #d7e2d8;margin:1.6rem 0}
+.bia-explore--things .bia-things__outdoor-stops article{padding:1.15rem 0;border-bottom:1px solid #d7e2d8}
+.bia-explore--things .bia-things__outdoor-stops h3{font-size:1.18rem;line-height:1.3;margin:0 0 .4rem}
+.bia-explore--things .bia-things__outdoor-stops p{font-size:.96rem;line-height:1.7;margin:0}
+.bia-explore--things .bia-things__inline-actions{display:flex;flex-wrap:wrap;gap:.8rem 1.3rem}
+.bia-explore--things .bia-things__inline-actions a{font-size:.88rem;font-weight:700;text-underline-offset:4px}
+.bia-explore--things .bia-things__outdoor-image{margin:0}
+.bia-explore--things .bia-things__outdoor-image img{height:clamp(370px,43vw,560px)}
+.bia-explore--things .bia-things__outdoor-image figcaption{margin-top:.6rem}
+.bia-explore--things .bia-things__section-heading{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(240px,.8fr);gap:2rem;align-items:end;margin-bottom:2rem}
+.bia-explore--things .bia-things__section-heading h2{margin-bottom:0}
+.bia-explore--things .bia-things__section-heading>p{max-width:400px;margin:0}
+.bia-explore--things .bia-things__extras{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem}
+.bia-explore--things .bia-things__extra{background:#fff;border:1px solid #d2ddd2;padding:clamp(1.4rem,2.8vw,2.3rem);display:flex;flex-direction:column}
+.bia-explore--things .bia-things__extra-type{font:700 .71rem/1.5 Arial,sans-serif;text-transform:uppercase;letter-spacing:.09em;color:#416449;margin-bottom:1.3rem}
+.bia-explore--things .bia-things__extra h3{font-size:clamp(1.45rem,2.4vw,2rem)}
+.bia-explore--things .bia-things__extra p{font-size:.97rem;line-height:1.7}
+.bia-explore--things .bia-things__extra .bia-things__details{font-size:.83rem;color:#416449;font-weight:700}
+.bia-explore--things .bia-things__extra a{font-size:.93rem;font-weight:700;margin-top:auto;padding-top:.7rem;text-underline-offset:4px}
+.bia-explore--things .bia-things__notice{font-size:.87rem;margin:1.4rem 0 0}
+.bia-explore--things .bia-things__village-layout{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(300px,.75fr);gap:clamp(2rem,7vw,7rem);align-items:center}
+.bia-explore--things .bia-things__village-layout p{line-height:1.75}
+.bia-explore--things .bia-things__button-row{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.5rem}
+.bia-explore--things .bia-things__local-links{background:#f5f4ed;padding:clamp(1.5rem,3.5vw,2.6rem);border-top:4px solid #416449}
+.bia-explore--things .bia-things__aside-eyebrow{display:block;margin:0 0 1rem;font:700 .7rem/1.5 Arial,sans-serif;text-transform:uppercase;letter-spacing:.12em;color:#657869}
+.bia-explore--things .bia-things__local-links>a{display:flex;align-items:baseline;justify-content:space-between;gap:.75rem;padding:.85rem 0;border-bottom:1px solid #dce2d8;text-decoration:none;font-weight:700;font-size:.95rem}
+.bia-explore--things .bia-things__local-links>a:hover{text-decoration:underline;text-underline-offset:4px}
+.bia-explore--things .bia-things__local-links>p{font-size:.87rem;margin:1.3rem 0 0}
+.bia-explore--things .bia-things__itinerary{border-top:1px solid #cedbce}
+.bia-explore--things .bia-things__itinerary-stop{display:grid;grid-template-columns:180px minmax(0,1fr);gap:2rem;border-bottom:1px solid #cedbce;padding:1.65rem 0}
+.bia-explore--things .bia-things__daypart{font:700 .72rem/1.5 Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase;color:#416449}
+.bia-explore--things .bia-things__itinerary-stop h3{font-size:clamp(1.3rem,2vw,1.7rem);margin-bottom:.5rem}
+.bia-explore--things .bia-things__itinerary-stop p{font-size:.97rem;line-height:1.7;max-width:710px}
+.bia-explore--things .bia-things__itinerary-stop a{font-size:.9rem;font-weight:700}
+.bia-explore--things .bia-things__closing{background:#e8eee7}
+.bia-explore--things .bia-things__closing-layout{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(250px,.65fr);gap:3rem;align-items:center}
+.bia-explore--things .bia-things__closing-links{display:flex;flex-direction:column;gap:.7rem;align-items:stretch}
+.bia-explore--things .bia-things__back-link{text-align:center;font-size:.9rem;font-weight:700;margin-top:.3rem}
+@media(max-width:850px){.bia-explore--things .bia-things__intro-layout,.bia-explore--things .bia-things__section-heading,.bia-explore--things .bia-things__village-layout,.bia-explore--things .bia-things__closing-layout{grid-template-columns:1fr;gap:1.5rem}.bia-explore--things .bia-things__outdoors .bia-explore__split{grid-template-columns:1fr;gap:2rem}.bia-explore--things .bia-things__spotlight{min-height:430px}}
+@media(max-width:680px){.bia-explore--things .bia-things__crumbs,.bia-explore--things .bia-things__hero .bia-explore__hero-inner{width:calc(100% - 30px)}.bia-explore--things .bia-things__hero{min-height:540px}.bia-explore--things .bia-things__hero h1{font-size:clamp(2.65rem,11vw,4rem)}.bia-explore--things .bia-things__hero-actions{align-items:flex-start;flex-direction:column}.bia-explore--things .bia-things__jump-nav .bia-explore__wrap{gap:.7rem 1.1rem}.bia-explore--things .bia-things__jump-title{width:100%}.bia-explore--things .bia-things__spotlights,.bia-explore--things .bia-things__extras{grid-template-columns:1fr}.bia-explore--things .bia-things__spotlight{min-height:400px}.bia-explore--things .bia-things__itinerary-stop{grid-template-columns:1fr;gap:.7rem}.bia-explore--things .bia-things__closing-links{align-items:stretch}}
