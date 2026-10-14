@@ -1,4 +1,21 @@
 /* Stirling-Rawdon BIA Explore & Enjoy. Scoped so directory and site styles stay intact. */
+/* Squarespace 7.1 Fluid Engine constrains Code Blocks to their grid-column span.
+   Give only the Explore & Enjoy loader block the full row so its 4-card
+   layout can use the page width rather than a narrow centered column. */
+#bia-explore-page{width:100%;max-width:none}
+@media (min-width:901px){
+  .fluid-engine > .fe-block:has(#bia-explore-page),
+  .fluid-engine .fe-block:has(#bia-explore-page){
+    grid-column:1 / -1 !important;
+    width:100%;
+    max-width:none;
+  }
+  #bia-explore-page .bia-explore__wrap,
+  #bia-explore-page .bia-explore__hero-inner{
+    width:min(1200px,calc(100% - 64px));
+  }
+}
+
 .bia-explore,.bia-explore *{box-sizing:border-box}
 .bia-explore{--ex-ink:#263a2e;--ex-muted:#607267;--ex-green:#416449;--ex-sage:#edf2ec;--ex-cream:#f7f5ef;--ex-line:#dfe6de;color:var(--ex-ink);font:inherit;font-size:16px;line-height:1.65;width:100%;margin:0 auto}
 .bia-explore img{display:block;max-width:100%}
