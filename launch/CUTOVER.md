@@ -20,3 +20,9 @@
 GitHub commits cannot create, rename, or publish Squarespace pages; those changes require the Squarespace interface or a separately authorized site-management integration. Do not populate unverified URLs into `businesses.json` because that activates dead links.
 
 `businesses.json` includes an entry awaiting content review; verify that record before public promotion. Only publish approved contact data.
+
+## Launch linking update
+- All 29 individual Squarespace pages were reported as created by the site editor.
+- All 29 profileUrl fields have been committed in businesses.json to the matching JSON-ID slug paths.
+- URL accessibility has NOT been verified automatically; before replacing the canonical directory, use the staging /business-directory-update page to click each business card and confirm it renders its correct profile.
+- Keep canonical /business-directory and its blog collection untouched until the final manual Squarespace swap and redirects are ready.
