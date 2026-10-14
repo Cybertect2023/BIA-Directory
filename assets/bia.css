@@ -89,3 +89,24 @@
 @media(max-width:800px){#bia-business-profile .bia-profile__hero{grid-template-columns:1fr;}#bia-business-profile .bia-profile__art{min-height:205px;order:-1;}#bia-business-profile .bia-profile__visit{grid-template-columns:1fr;}#bia-business-profile .bia-profile__map,#bia-business-profile .bia-profile__map iframe{min-height:275px;}}
 @media(max-width:640px){#bia-directory .bia-dir__tools,#bia-directory .bia-dir__grid,#bia-business-profile .bia-profile__two-col{grid-template-columns:1fr;}#bia-directory .bia-dir__body{padding:19px;}#bia-business-profile .bia-profile__panel,#bia-business-profile .bia-profile__visit-info{padding:22px;}#bia-business-profile .bia-profile__title{font-size:2.5rem!important;}#bia-business-profile .bia-profile__buttons{width:100%;}#bia-business-profile .bia-profile__button{flex:1;}}
 @media(prefers-reduced-motion:reduce){#bia-directory .bia-dir__card,#bia-business-profile .bia-profile__button{transition:none;}}
+
+/* Featured resource and community contribution panels */
+#bia-business-profile .bia-profile__feature-link{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center;margin:0 0 22px;padding:30px 34px;border-radius:17px;background:linear-gradient(115deg,#183f31,#315f45);box-shadow:0 12px 28px rgba(29,65,45,.12);}
+#bia-business-profile .bia-profile__feature-link .bia-profile__eyebrow{color:#c8dece;margin-bottom:8px;}
+#bia-business-profile .bia-profile__feature-link h2{font:750 clamp(1.55rem,2.5vw,2.15rem)/1.2 Arial,sans-serif!important;letter-spacing:-.025em;color:#fff;margin:0 0 9px!important;}
+#bia-business-profile .bia-profile__feature-link p:not(.bia-profile__eyebrow){color:#e2eee5;font-size:1rem;line-height:1.65;margin:0;max-width:680px;}
+#bia-business-profile .bia-profile__feature-link .bia-profile__button{background:#fff;color:#244d36!important;white-space:nowrap;box-shadow:0 3px 10px rgba(0,0,0,.1);}
+#bia-business-profile .bia-profile__community-note{max-width:950px;margin:0 0 28px;padding:19px 22px 18px;border:1px solid #dce7dc;border-left:4px solid #547c5c;border-radius:4px 12px 12px 4px;background:#f5f8f3;}
+#bia-business-profile .bia-profile__community-note .bia-profile__eyebrow{margin-bottom:5px;}
+#bia-business-profile .bia-profile__community-copy{color:#485c4c;font-size:.96rem;line-height:1.6;margin:0;}
+#bia-business-profile[data-profile-id="cybertect"]{--bia-green:#315b43;--bia-ink:#203a2b;--bia-muted:#586e5f;}
+#bia-business-profile[data-profile-id="cybertect"] .bia-profile__art{background:linear-gradient(145deg,#e6eee7,#d2e2d5);}
+#bia-business-profile[data-profile-id="cybertect"] .bia-profile__art-symbol{color:#315b43;background:rgba(255,255,255,.76);}
+#bia-business-profile[data-profile-id="cybertect"] .bia-profile__art-label{color:#315b43;}
+#bia-business-profile[data-profile-id="cybertect"] .bia-profile__category{background:#e3ede5;color:#315b43;}
+#bia-business-profile[data-profile-id="cybertect"] .bia-profile__button:not(.bia-profile__feature-link .bia-profile__button){background:#315b43;}
+#bia-business-profile[data-profile-id="cybertect"] .bia-profile__button--outline{background:#fff;color:#315b43!important;border-color:#a9c0ad;}
+@media(max-width:640px){
+  #bia-business-profile .bia-profile__feature-link{grid-template-columns:1fr;gap:18px;padding:24px;}
+  #bia-business-profile .bia-profile__feature-link .bia-profile__button{justify-self:start;white-space:normal;}
+}
