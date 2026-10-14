@@ -197,8 +197,15 @@
     empty.hidden=filtered.length!==0;
   }
   search.addEventListener("input",render);
-  category.addEventListener("change",render);
-  reset.addEventListener("click",()=>{search.value="";category.value="";render();search.focus();});
+  // Keep selected category in the URL so homepage shortcuts and shared links work.
+  const syncCategoryUrl = () => {
+    const currentUrl = new URL(window.location.href);
+    if (category.value) currentUrl.searchParams.set("category", category.value);
+    else currentUrl.searchParams.delete("category");
+    window.history.replaceState(window.history.state, "", currentUrl.pathname + currentUrl.search + currentUrl.hash);
+  };
+  category.addEventListener("change", () => { syncCategoryUrl(); render(); });
+  reset.addEventListener("click",()=>{search.value="";category.value="";syncCategoryUrl();render();search.focus();});
   fetch(DATA_URL,{cache:"no-cache"})
     .then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.json();})
     .then(data=>{
@@ -206,6 +213,14 @@
       businesses=data.businesses.filter(b=>b&&typeof b==="object"&&text(b.name)).sort((a,b)=>text(a.name).localeCompare(text(b.name),"en-CA"));
       for(const cat of [...new Set(businesses.map(b=>text(b.category)).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"en-CA"))){
         const option=node("option",null,cat);option.value=cat;category.append(option);
+      }
+      // Apply deep links like /business-directory?category=Food%20%26%20Dining.
+      const requestedCategory = new URLSearchParams(window.location.search).get("category");
+      if (requestedCategory) {
+        const match = [...category.options].find(option =>
+          option.value && option.value.toLocaleLowerCase("en-CA") === requestedCategory.trim().toLocaleLowerCase("en-CA")
+        );
+        if (match) category.value = match.value;
       }
       notice.hidden=false;
       notice.textContent="Business hours and services may change. Please confirm details with individual businesses before visiting.";
