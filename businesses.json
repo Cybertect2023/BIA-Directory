@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "directory": "Stirling-Rawdon BIA",
-  "sourceNote": "Directory contains only the 15 business listings currently shown on the official Visit Stirling-Rawdon business directory. No 2022 legacy records are included.",
+  "sourceNote": "The original 15 listings reflect only businesses currently shown on the official Visit Stirling-Rawdon directory. Additional businesses have been added at the BIA's request.",
   "businesses": [
     {
       "id": "jim-s-pizza-restaurant",
@@ -478,6 +478,469 @@
       "featured": false,
       "profileUrl": "",
       "verificationStatus": "verified"
+    },
+    {
+      "id": "cybertect",
+      "name": "CyberTECT",
+      "category": "Professional Services",
+      "description": "Digital operations, cybersecurity, backup and recovery, AI governance, and practical oversight for rural and small organizations.",
+      "address": "190 Bell Blvd., Suite 1002, Belleville, ON K8P 5L2",
+      "phone": "",
+      "email": "info@cybertect.ca",
+      "website": "https://cybertect.ca/",
+      "facebook": "",
+      "instagram": "",
+      "relatedLinks": [
+        {
+          "label": "Explore Quinte Protects",
+          "url": "https://cybertect.ca/quinte-protects/"
+        }
+      ],
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Digital Operations Review",
+        "Cybersecurity & Staff Readiness",
+        "Backup & Recovery Validation",
+        "AI Readiness & Governance"
+      ],
+      "profileUrl": "",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://cybertect.ca/",
+      "about": "CyberTECT helps rural businesses, professional offices, and community organizations manage digital risk, strengthen recovery, and make informed decisions about cybersecurity, cloud systems, vendors, and AI."
+    },
+    {
+      "id": "lighthouse-tutoring",
+      "name": "Lighthouse Tutoring",
+      "category": "Education & Learning",
+      "description": "Personalized tutoring and academic support for students, available in person in Stirling and other regional communities.",
+      "address": "8 Mill Street, Stirling, ON K0K 3E0",
+      "phone": "613-707-7199",
+      "email": "info@lighthousetutoring.ca",
+      "website": "https://www.lighthousetutoring.ca/",
+      "facebook": "https://www.facebook.com/lighthousetutoringpec/",
+      "instagram": "https://www.instagram.com/lighthouse_tutoring/",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "One-on-One Tutoring",
+        "Group Tutoring",
+        "Homework Help",
+        "Reading & Writing Support",
+        "Test Preparation"
+      ],
+      "profileUrl": "",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.lighthousetutoring.ca/",
+      "about": "Lighthouse Tutoring provides personalized learning support, tutoring, homework help, and test preparation. Its Stirling location is at 8 Mill Street."
+    },
+    {
+      "id": "the-fairway-golf",
+      "name": "The Fairway Golf",
+      "category": "Sports & Recreation",
+      "description": "Indoor golf simulator lounge in Stirling, with Trackman practice, virtual courses, memberships, events, and lessons.",
+      "address": "400 Front Street West, Building 1, Unit 3, Stirling, ON K0K 3E0",
+      "phone": "613-906-9971",
+      "email": "Stirling@thefairwaygolf.ca",
+      "website": "https://thefairwaygolf.ca/",
+      "facebook": "",
+      "instagram": "",
+      "relatedLinks": [
+        {
+          "label": "The Fairway Golf on Linktree",
+          "url": "https://linktr.ee/thefairwaygolf"
+        }
+      ],
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "24-hour access",
+        "tuesday": "24-hour access",
+        "wednesday": "24-hour access",
+        "thursday": "24-hour access",
+        "friday": "24-hour access",
+        "saturday": "24-hour access",
+        "sunday": "24-hour access"
+      },
+      "services": [
+        "Indoor Golf Simulators",
+        "Golf Practice",
+        "Virtual Courses",
+        "Memberships",
+        "Lessons & Swing Analysis"
+      ],
+      "profileUrl": "",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://thefairwaygolf.ca/events-and-socials/",
+      "about": "The Fairway Golf offers indoor Trackman golf simulators for practice, virtual courses, games, memberships, lessons, swing analysis, and events. The Stirling lounge is open for bookings 24 hours a day, seven days a week."
+    },
+    {
+      "id": "jason-fornarolo-cpa",
+      "name": "Jason Fornarolo CPA",
+      "category": "Professional Services",
+      "description": "Accounting services for individuals and local businesses.",
+      "address": "123 Willett Road, Stirling, ON",
+      "phone": "647-823-2371",
+      "email": "jasonfornarolo@gmail.com",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Accounting"
+      ],
+      "profileUrl": "",
+      "verificationStatus": "needs-review",
+      "sourceUrl": "https://www.cpaontario.ca/protecting-the-public/directories/firm/jason-5wusvi",
+      "about": "Jason Fornarolo is a CPA based in Stirling. Business services and contact details should be confirmed directly."
+    },
+    {
+      "id": "kitchens-by-paul-holden",
+      "name": "Kitchens by Paul Holden",
+      "category": "Home & Garden",
+      "description": "Custom kitchen design and cabinetry for residential projects.",
+      "address": "425 West Front Street, Stirling, ON K0K 3E0",
+      "phone": "613-395-1490",
+      "email": "info@kitchensbypaulholden.com",
+      "website": "https://kitchensbypaulholden.com/",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Kitchen Design",
+        "Custom Cabinetry",
+        "Kitchen Renovations"
+      ],
+      "profileUrl": "",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://kitchensbypaulholden.com/",
+      "about": "Kitchens by Paul Holden provides custom kitchen design and cabinetry from its Stirling location."
+    },
+    {
+      "id": "paradise-cannabis-stirling",
+      "name": "Paradise Cannabis — Stirling",
+      "category": "Shops & Retail",
+      "description": "Locally owned recreational cannabis store serving Stirling.",
+      "address": "28 Mill Street, Stirling, ON K0K 3E0",
+      "phone": "613-395-2223",
+      "email": "",
+      "website": "https://paradisecannabis.ca/shop-stirling-store/",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "10am - 8pm",
+        "tuesday": "10am - 8pm",
+        "wednesday": "10am - 8pm",
+        "thursday": "10am - 8pm",
+        "friday": "10am - 9pm",
+        "saturday": "10am - 8pm",
+        "sunday": "10am - 7pm"
+      },
+      "services": [
+        "Recreational Cannabis Retail"
+      ],
+      "profileUrl": "",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://paradisecannabis.ca/shop-stirling-store/",
+      "about": "Paradise Cannabis operates a recreational cannabis retail store on Mill Street in Stirling."
+    },
+    {
+      "id": "fresh-and-hot-pizza",
+      "name": "Fresh & Hot Pizza",
+      "category": "Food & Dining",
+      "description": "Pizza and other takeout food from its Stirling location.",
+      "address": "1 Mill Street, Stirling, ON K0K 3E0",
+      "phone": "613-395-0404",
+      "email": "info@freshnhotpizza.ca",
+      "website": "https://freshnhotpizza.ca/",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Pizza",
+        "Takeout",
+        "Online Ordering"
+      ],
+      "profileUrl": "",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://freshnhotpizza.ca/locations/",
+      "about": "Fresh & Hot Pizza serves Stirling from its Mill Street location and offers online ordering."
+    },
+    {
+      "id": "rona-rollins-building-supplies",
+      "name": "RONA Rollins Building Supplies",
+      "category": "Home & Garden",
+      "description": "Local building supply and hardware store offering lumber, delivery, estimating, and home improvement products.",
+      "address": "436 Front Street West, Stirling, ON K0K 3E0",
+      "phone": "613-395-3361",
+      "email": "info.stirling08133@rona.ca",
+      "website": "https://www.rona.ca/en/store/ontario/stirling/rona-rollins-building-supplies-stirling-08133",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "7am - 5pm",
+        "tuesday": "7am - 5pm",
+        "wednesday": "7am - 5pm",
+        "thursday": "7am - 5pm",
+        "friday": "7am - 5pm",
+        "saturday": "8am - 4pm",
+        "sunday": "Closed"
+      },
+      "services": [
+        "Building Supplies",
+        "Lumber Yard",
+        "Delivery",
+        "Estimation Center",
+        "Key Cutting"
+      ],
+      "profileUrl": "",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.rona.ca/en/store/ontario/stirling/rona-rollins-building-supplies-stirling-08133",
+      "about": "RONA Rollins Building Supplies provides building materials, home improvement products, lumber, delivery, and in-store services in Stirling."
+    },
+    {
+      "id": "r-and-s-home-hardware",
+      "name": "R & S Home Hardware",
+      "category": "Home & Garden",
+      "description": "Locally operated hardware and home improvement store.",
+      "address": "9 Tuftsville Road, Unit A, Stirling, ON K0K 3E0",
+      "phone": "613-395-3346",
+      "email": "",
+      "website": "https://www.homehardware.ca/en/store/10186",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Hardware",
+        "Home Improvement Supplies"
+      ],
+      "profileUrl": "",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.homehardware.ca/en/store/10186",
+      "about": "R & S Home Hardware serves Stirling from its Tuftsville Road location."
+    },
+    {
+      "id": "stirling-dental-centre",
+      "name": "Stirling Dental Centre",
+      "category": "Health, Wellness & Beauty",
+      "description": "General, cosmetic, orthodontic, and restorative dentistry in Stirling.",
+      "address": "9B Tuftsville Road, Stirling, ON K0K 3E0",
+      "phone": "613-395-2800",
+      "email": "info@stirlingdentalcentre.com",
+      "website": "https://stirlingdentalcentre.com/",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "8am - 5pm",
+        "tuesday": "7am - 4pm",
+        "wednesday": "8am - 5pm",
+        "thursday": "8am - 5pm",
+        "friday": "8am - 2pm",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Family Dentistry",
+        "Dental Hygiene",
+        "Cosmetic Dentistry",
+        "Preventive Dentistry",
+        "Orthodontics"
+      ],
+      "profileUrl": "",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://stirlingdentalcentre.com/",
+      "about": "Stirling Dental Centre provides general, cosmetic, orthodontic, and restorative dentistry. The practice lists Dr. Lauren Allen, Dr. Qian Tu, and Dr. Nura Mazloom."
+    },
+    {
+      "id": "pet-valu-stirling",
+      "name": "Pet Valu — Creekside Centre",
+      "category": "Shops & Retail",
+      "description": "Pet food, supplies, and services for dogs, cats, birds, fish, and small animals.",
+      "address": "9 Tuftsville Road, Stirling, ON K0K 3E0",
+      "phone": "613-395-3423",
+      "email": "",
+      "website": "https://store.petvalu.ca/location/2443/",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "9am - 9pm",
+        "tuesday": "9am - 9pm",
+        "wednesday": "9am - 9pm",
+        "thursday": "9am - 9pm",
+        "friday": "9am - 9pm",
+        "saturday": "9am - 6pm",
+        "sunday": "10am - 6pm"
+      },
+      "services": [
+        "Pet Food & Supplies",
+        "Self-Serve Dog Wash"
+      ],
+      "profileUrl": "",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://store.petvalu.ca/location/2443/",
+      "about": "Pet Valu's Creekside Centre location is on Tuftsville Road near Edward Street Park and the Stirling-Rawdon Dog Park."
+    },
+    {
+      "id": "back40-powersports",
+      "name": "Back40 Powersports",
+      "category": "Automotive",
+      "description": "Powersports dealership for ATVs, side-by-sides, dirt bikes, snowmobiles, and power equipment, with parts and service.",
+      "address": "45 East Front Street, Stirling, ON K0K 3E0",
+      "phone": "613-395-5557",
+      "email": "",
+      "website": "https://back40powersports.ca/en/",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "8am - 5pm",
+        "tuesday": "8am - 5pm",
+        "wednesday": "8am - 5pm",
+        "thursday": "8am - 5pm",
+        "friday": "8am - 5pm",
+        "saturday": "9am - 2pm",
+        "sunday": "Closed"
+      },
+      "services": [
+        "ATVs",
+        "Side-by-Sides",
+        "Dirt Bikes",
+        "Power Equipment",
+        "Parts & Accessories",
+        "Service"
+      ],
+      "profileUrl": "",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://back40powersports.ca/en/",
+      "about": "Back40 Powersports is a full-service dealership in Stirling for powersports vehicles, power equipment, parts, accessories, and maintenance."
+    },
+    {
+      "id": "holmestown-barber",
+      "name": "Holmestown Barber",
+      "category": "Health, Wellness & Beauty",
+      "description": "Barber shop offering haircuts in Stirling.",
+      "address": "8 Mill Street, Stirling, ON K0K 3E0",
+      "phone": "613-661-6333",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Barber Services",
+        "Haircuts"
+      ],
+      "profileUrl": "",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.stirling-rawdon.com/business-development/business-directory/",
+      "about": "Holmestown Barber is listed by the Township of Stirling-Rawdon at 8 Mill Street."
+    },
+    {
+      "id": "the-vape-shop-stirling",
+      "name": "The Vape Shop",
+      "category": "Shops & Retail",
+      "description": "Vape retail shop at 40 Mill Street in Stirling.",
+      "address": "40 Mill Street, Stirling, ON K0K 3E0",
+      "phone": "647-574-4727",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Vape Products"
+      ],
+      "profileUrl": "",
+      "verificationStatus": "needs-review",
+      "sourceUrl": "https://canada247.info/explore/ontario/hastings_county/stirling_rawdon/stirling/the-vape-shop-647-574-4727.html",
+      "about": "The Vape Shop is publicly listed at 40 Mill Street in Stirling. Its business contact details and active official online profiles need confirmation."
     }
   ]
 }
