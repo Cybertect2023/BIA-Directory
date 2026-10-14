@@ -104,7 +104,6 @@
 #bia-business-profile[data-profile-id="cybertect"] .bia-profile__art-symbol{color:#315b43;background:rgba(255,255,255,.76);}
 #bia-business-profile[data-profile-id="cybertect"] .bia-profile__art-label{color:#315b43;}
 #bia-business-profile[data-profile-id="cybertect"] .bia-profile__category{background:#e3ede5;color:#315b43;}
-#bia-business-profile[data-profile-id="cybertect"] .bia-profile__button:not(.bia-profile__feature-link .bia-profile__button){background:#315b43;}
 #bia-business-profile[data-profile-id="cybertect"] .bia-profile__button--outline{background:#fff;color:#315b43!important;border-color:#a9c0ad;}
 @media(max-width:640px){
   #bia-business-profile .bia-profile__feature-link{grid-template-columns:1fr;gap:18px;padding:24px;}
