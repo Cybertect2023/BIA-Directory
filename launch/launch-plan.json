@@ -6,240 +6,298 @@
     "stagingPath": "/business-directory-update",
     "finalPath": "/business-directory"
   },
-  "note": "PLANNING ONLY: do not add proposedPath to businesses.json until matching Squarespace profile page URL is confirmed.",
-  "migrationPolicy": "Preserve the existing live directory until profile URLs and redirects have been tested.",
+  "note": "The user reports that all 29 Squarespace profile pages are created. The suggested routes have been committed into businesses.json; exact HTTP URLs still require checking before the directory cutover.",
+  "migrationPolicy": "Leave /business-directory serving the current live directory until the 29 staging card destinations have been tested.",
   "profilePages": [
     {
       "businessId": "jim-s-pizza-restaurant",
       "businessName": "Jimmy's Special Pizza & Fish & Chips",
       "suggestedSquarespaceSlug": "jim-s-pizza-restaurant",
       "proposedPath": "/jim-s-pizza-restaurant",
-      "currentProfileUrl": "",
-      "pageConfirmed": false
+      "currentProfileUrl": "/jim-s-pizza-restaurant",
+      "pageConfirmed": false,
+      "pageCreatedUserReported": true,
+      "profileUrlCommitted": true
     },
     {
       "businessId": "brad-comeau-law-office",
       "businessName": "Brad Comeau Law Office",
       "suggestedSquarespaceSlug": "brad-comeau-law-office",
       "proposedPath": "/brad-comeau-law-office",
-      "currentProfileUrl": "",
-      "pageConfirmed": false
+      "currentProfileUrl": "/brad-comeau-law-office",
+      "pageConfirmed": false,
+      "pageCreatedUserReported": true,
+      "profileUrlCommitted": true
     },
     {
       "businessId": "creekside-yoga",
       "businessName": "Creekside Yoga",
       "suggestedSquarespaceSlug": "creekside-yoga",
       "proposedPath": "/creekside-yoga",
-      "currentProfileUrl": "",
-      "pageConfirmed": false
+      "currentProfileUrl": "/creekside-yoga",
+      "pageConfirmed": false,
+      "pageCreatedUserReported": true,
+      "profileUrlCommitted": true
     },
     {
       "businessId": "mccurdy-collision-centre",
       "businessName": "McCurdy Collision Centre",
       "suggestedSquarespaceSlug": "mccurdy-collision-centre",
       "proposedPath": "/mccurdy-collision-centre",
-      "currentProfileUrl": "",
-      "pageConfirmed": false
+      "currentProfileUrl": "/mccurdy-collision-centre",
+      "pageConfirmed": false,
+      "pageCreatedUserReported": true,
+      "profileUrlCommitted": true
     },
     {
       "businessId": "food-boutique-stirling",
       "businessName": "Food Boutique Stirling",
       "suggestedSquarespaceSlug": "food-boutique-stirling",
       "proposedPath": "/food-boutique-stirling",
-      "currentProfileUrl": "",
-      "pageConfirmed": false
+      "currentProfileUrl": "/food-boutique-stirling",
+      "pageConfirmed": false,
+      "pageCreatedUserReported": true,
+      "profileUrlCommitted": true
     },
     {
       "businessId": "smokin-barrel-bar-grill",
       "businessName": "The Smokin' Barrel Bar & Grill",
       "suggestedSquarespaceSlug": "smokin-barrel-bar-grill",
       "proposedPath": "/smokin-barrel-bar-grill",
-      "currentProfileUrl": "",
-      "pageConfirmed": false
+      "currentProfileUrl": "/smokin-barrel-bar-grill",
+      "pageConfirmed": false,
+      "pageCreatedUserReported": true,
+      "profileUrlCommitted": true
     },
     {
       "businessId": "blooms-flowers",
       "businessName": "Blooms Flowers",
       "suggestedSquarespaceSlug": "blooms-flowers",
       "proposedPath": "/blooms-flowers",
-      "currentProfileUrl": "",
-      "pageConfirmed": false
+      "currentProfileUrl": "/blooms-flowers",
+      "pageConfirmed": false,
+      "pageCreatedUserReported": true,
+      "profileUrlCommitted": true
     },
     {
       "businessId": "rawdon-creek-soap-co",
       "businessName": "Rawdon Creek Soap Co.",
       "suggestedSquarespaceSlug": "rawdon-creek-soap-co",
       "proposedPath": "/rawdon-creek-soap-co",
-      "currentProfileUrl": "",
-      "pageConfirmed": false
+      "currentProfileUrl": "/rawdon-creek-soap-co",
+      "pageConfirmed": false,
+      "pageCreatedUserReported": true,
+      "profileUrlCommitted": true
     },
     {
       "businessId": "firehall-cafe",
       "businessName": "The Firehall Cafe",
       "suggestedSquarespaceSlug": "firehall-cafe",
       "proposedPath": "/firehall-cafe",
-      "currentProfileUrl": "",
-      "pageConfirmed": false
+      "currentProfileUrl": "/firehall-cafe",
+      "pageConfirmed": false,
+      "pageCreatedUserReported": true,
+      "profileUrlCommitted": true
     },
     {
       "businessId": "stirling-festival-theatre",
       "businessName": "Stirling Festival Theatre",
       "suggestedSquarespaceSlug": "stirling-festival-theatre",
       "proposedPath": "/stirling-festival-theatre",
-      "currentProfileUrl": "",
-      "pageConfirmed": false
+      "currentProfileUrl": "/stirling-festival-theatre",
+      "pageConfirmed": false,
+      "pageCreatedUserReported": true,
+      "profileUrlCommitted": true
     },
     {
       "businessId": "farm-girl-cafe",
       "businessName": "Farm Girl Cafe",
       "suggestedSquarespaceSlug": "farm-girl-cafe",
       "proposedPath": "/farm-girl-cafe",
-      "currentProfileUrl": "",
-      "pageConfirmed": false
+      "currentProfileUrl": "/farm-girl-cafe",
+      "pageConfirmed": false,
+      "pageCreatedUserReported": true,
+      "profileUrlCommitted": true
     },
     {
       "businessId": "rustic-routes",
       "businessName": "Rustic Routes",
       "suggestedSquarespaceSlug": "rustic-routes",
       "proposedPath": "/rustic-routes",
-      "currentProfileUrl": "",
-      "pageConfirmed": false
+      "currentProfileUrl": "/rustic-routes",
+      "pageConfirmed": false,
+      "pageCreatedUserReported": true,
+      "profileUrlCommitted": true
     },
     {
       "businessId": "stirling-book-company",
       "businessName": "Stirling Book Company",
       "suggestedSquarespaceSlug": "stirling-book-company",
       "proposedPath": "/stirling-book-company",
-      "currentProfileUrl": "",
-      "pageConfirmed": false
+      "currentProfileUrl": "/stirling-book-company",
+      "pageConfirmed": false,
+      "pageCreatedUserReported": true,
+      "profileUrlCommitted": true
     },
     {
       "businessId": "vintage-junction",
       "businessName": "The Vintage Junction",
       "suggestedSquarespaceSlug": "vintage-junction",
       "proposedPath": "/vintage-junction",
-      "currentProfileUrl": "",
-      "pageConfirmed": false
+      "currentProfileUrl": "/vintage-junction",
+      "pageConfirmed": false,
+      "pageCreatedUserReported": true,
+      "profileUrlCommitted": true
     },
     {
       "businessId": "blue-collar-therapy",
       "businessName": "Blue Collar Therapy",
       "suggestedSquarespaceSlug": "blue-collar-therapy",
       "proposedPath": "/blue-collar-therapy",
-      "currentProfileUrl": "",
-      "pageConfirmed": false
+      "currentProfileUrl": "/blue-collar-therapy",
+      "pageConfirmed": false,
+      "pageCreatedUserReported": true,
+      "profileUrlCommitted": true
     },
     {
       "businessId": "cybertect",
       "businessName": "CyberTECT",
       "suggestedSquarespaceSlug": "cybertect",
       "proposedPath": "/cybertect",
-      "currentProfileUrl": "",
-      "pageConfirmed": false
+      "currentProfileUrl": "/cybertect",
+      "pageConfirmed": false,
+      "pageCreatedUserReported": true,
+      "profileUrlCommitted": true
     },
     {
       "businessId": "lighthouse-tutoring",
       "businessName": "Lighthouse Tutoring",
       "suggestedSquarespaceSlug": "lighthouse-tutoring",
       "proposedPath": "/lighthouse-tutoring",
-      "currentProfileUrl": "",
-      "pageConfirmed": false
+      "currentProfileUrl": "/lighthouse-tutoring",
+      "pageConfirmed": false,
+      "pageCreatedUserReported": true,
+      "profileUrlCommitted": true
     },
     {
       "businessId": "the-fairway-golf",
       "businessName": "The Fairway Golf",
       "suggestedSquarespaceSlug": "the-fairway-golf",
       "proposedPath": "/the-fairway-golf",
-      "currentProfileUrl": "",
-      "pageConfirmed": false
+      "currentProfileUrl": "/the-fairway-golf",
+      "pageConfirmed": false,
+      "pageCreatedUserReported": true,
+      "profileUrlCommitted": true
     },
     {
       "businessId": "jason-fornarolo-cpa",
       "businessName": "Jason Fornarolo CPA",
       "suggestedSquarespaceSlug": "jason-fornarolo-cpa",
       "proposedPath": "/jason-fornarolo-cpa",
-      "currentProfileUrl": "",
-      "pageConfirmed": false
+      "currentProfileUrl": "/jason-fornarolo-cpa",
+      "pageConfirmed": false,
+      "pageCreatedUserReported": true,
+      "profileUrlCommitted": true
     },
     {
       "businessId": "kitchens-by-paul-holden",
       "businessName": "Kitchens by Paul Holden",
       "suggestedSquarespaceSlug": "kitchens-by-paul-holden",
       "proposedPath": "/kitchens-by-paul-holden",
-      "currentProfileUrl": "",
-      "pageConfirmed": false
+      "currentProfileUrl": "/kitchens-by-paul-holden",
+      "pageConfirmed": false,
+      "pageCreatedUserReported": true,
+      "profileUrlCommitted": true
     },
     {
       "businessId": "paradise-cannabis-stirling",
       "businessName": "Paradise Cannabis — Stirling",
       "suggestedSquarespaceSlug": "paradise-cannabis-stirling",
       "proposedPath": "/paradise-cannabis-stirling",
-      "currentProfileUrl": "",
-      "pageConfirmed": false
+      "currentProfileUrl": "/paradise-cannabis-stirling",
+      "pageConfirmed": false,
+      "pageCreatedUserReported": true,
+      "profileUrlCommitted": true
     },
     {
       "businessId": "fresh-and-hot-pizza",
       "businessName": "Fresh & Hot Pizza",
       "suggestedSquarespaceSlug": "fresh-and-hot-pizza",
       "proposedPath": "/fresh-and-hot-pizza",
-      "currentProfileUrl": "",
-      "pageConfirmed": false
+      "currentProfileUrl": "/fresh-and-hot-pizza",
+      "pageConfirmed": false,
+      "pageCreatedUserReported": true,
+      "profileUrlCommitted": true
     },
     {
       "businessId": "rona-rollins-building-supplies",
       "businessName": "RONA Rollins Building Supplies",
       "suggestedSquarespaceSlug": "rona-rollins-building-supplies",
       "proposedPath": "/rona-rollins-building-supplies",
-      "currentProfileUrl": "",
-      "pageConfirmed": false
+      "currentProfileUrl": "/rona-rollins-building-supplies",
+      "pageConfirmed": false,
+      "pageCreatedUserReported": true,
+      "profileUrlCommitted": true
     },
     {
       "businessId": "r-and-s-home-hardware",
       "businessName": "R & S Home Hardware",
       "suggestedSquarespaceSlug": "r-and-s-home-hardware",
       "proposedPath": "/r-and-s-home-hardware",
-      "currentProfileUrl": "",
-      "pageConfirmed": false
+      "currentProfileUrl": "/r-and-s-home-hardware",
+      "pageConfirmed": false,
+      "pageCreatedUserReported": true,
+      "profileUrlCommitted": true
     },
     {
       "businessId": "stirling-dental-centre",
       "businessName": "Stirling Dental Centre",
       "suggestedSquarespaceSlug": "stirling-dental-centre",
       "proposedPath": "/stirling-dental-centre",
-      "currentProfileUrl": "",
-      "pageConfirmed": false
+      "currentProfileUrl": "/stirling-dental-centre",
+      "pageConfirmed": false,
+      "pageCreatedUserReported": true,
+      "profileUrlCommitted": true
     },
     {
       "businessId": "pet-valu-stirling",
       "businessName": "Pet Valu — Creekside Centre",
       "suggestedSquarespaceSlug": "pet-valu-stirling",
       "proposedPath": "/pet-valu-stirling",
-      "currentProfileUrl": "",
-      "pageConfirmed": false
+      "currentProfileUrl": "/pet-valu-stirling",
+      "pageConfirmed": false,
+      "pageCreatedUserReported": true,
+      "profileUrlCommitted": true
     },
     {
       "businessId": "back40-powersports",
       "businessName": "Back40 Powersports",
       "suggestedSquarespaceSlug": "back40-powersports",
       "proposedPath": "/back40-powersports",
-      "currentProfileUrl": "",
-      "pageConfirmed": false
+      "currentProfileUrl": "/back40-powersports",
+      "pageConfirmed": false,
+      "pageCreatedUserReported": true,
+      "profileUrlCommitted": true
     },
     {
       "businessId": "holmestown-barber",
       "businessName": "Holmestown Barber",
       "suggestedSquarespaceSlug": "holmestown-barber",
       "proposedPath": "/holmestown-barber",
-      "currentProfileUrl": "",
-      "pageConfirmed": false
+      "currentProfileUrl": "/holmestown-barber",
+      "pageConfirmed": false,
+      "pageCreatedUserReported": true,
+      "profileUrlCommitted": true
     },
     {
       "businessId": "the-vape-shop-stirling",
       "businessName": "The Vape Shop",
       "suggestedSquarespaceSlug": "the-vape-shop-stirling",
       "proposedPath": "/the-vape-shop-stirling",
-      "currentProfileUrl": "",
-      "pageConfirmed": false
+      "currentProfileUrl": "/the-vape-shop-stirling",
+      "pageConfirmed": false,
+      "pageCreatedUserReported": true,
+      "profileUrlCommitted": true
     }
   ]
 }
