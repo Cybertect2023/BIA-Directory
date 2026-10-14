@@ -18,7 +18,8 @@
 #bia-directory .bia-dir__card--linked:hover,#bia-directory .bia-dir__card--linked:focus-within{transform:translateY(-4px);box-shadow:0 15px 30px rgba(24,44,30,.12);border-color:#9cb5a0;}
 #bia-directory .bia-dir__cover{height:125px;position:relative;overflow:hidden;background:var(--card-wash);display:flex;align-items:center;gap:14px;padding:22px;}
 #bia-directory .bia-dir__cover:after{content:"";position:absolute;width:165px;height:165px;border:1px solid rgba(255,255,255,.55);border-radius:50%;right:-28px;top:-76px;box-shadow:0 0 0 35px rgba(255,255,255,.17),0 0 0 70px rgba(255,255,255,.11);pointer-events:none;}
-#bia-directory .bia-dir__symbol{z-index:1;display:flex;align-items:center;justify-content:center;width:72px;height:72px;flex:none;background:rgba(255,255,255,.65);border:1px solid rgba(0,0,0,.075);border-radius:18px;font:400 36px/1 "Segoe UI Emoji","Apple Color Emoji","Noto Color Emoji",sans-serif!important;}
+#bia-directory .bia-dir__symbol{z-index:1;display:flex;align-items:center;justify-content:center;width:72px;height:72px;flex:none;background:rgba(255,255,255,.65);border:1px solid rgba(0,0,0,.075);border-radius:18px;color:var(--card-ink);}
+#bia-directory .bia-dir__symbol svg{width:36px;height:36px;display:block;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;}
 #bia-directory .bia-dir__cover-label{position:relative;z-index:1;margin-left:auto;max-width:135px;text-align:right;font:800 .69rem/1.5 Arial,sans-serif;letter-spacing:.1em;color:var(--card-ink);text-transform:uppercase;}
 #bia-directory .bia-dir__photo{position:absolute;z-index:2;inset:0;width:100%;height:100%;object-fit:cover;}
 #bia-directory .bia-dir__logo{position:absolute;z-index:2;top:18px;left:20px;height:85px;max-width:70%;object-fit:contain;}
@@ -53,7 +54,8 @@
 #bia-business-profile .bia-profile__button:hover{transform:translateY(-2px);}
 #bia-business-profile .bia-profile__art{position:relative;min-height:270px;background:var(--profile-wash,#e8edf4);border-radius:15px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;overflow:hidden;padding:28px;}
 #bia-business-profile .bia-profile__art:before{content:"";position:absolute;right:-85px;top:-100px;width:315px;height:315px;border:1px solid rgba(255,255,255,.6);border-radius:50%;box-shadow:0 0 0 55px rgba(255,255,255,.13),0 0 0 112px rgba(255,255,255,.08);}
-#bia-business-profile .bia-profile__art-symbol{z-index:1;display:flex;align-items:center;justify-content:center;width:110px;height:110px;background:rgba(255,255,255,.65);border:1px solid rgba(0,0,0,.06);border-radius:24px;font:400 58px/1 "Segoe UI Emoji","Apple Color Emoji","Noto Color Emoji",sans-serif!important;}
+#bia-business-profile .bia-profile__art-symbol{z-index:1;display:flex;align-items:center;justify-content:center;width:110px;height:110px;background:rgba(255,255,255,.65);border:1px solid rgba(0,0,0,.06);border-radius:24px;color:var(--profile-ink,#485e78);}
+#bia-business-profile .bia-profile__art-symbol svg{width:57px;height:57px;display:block;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;}
 #bia-business-profile .bia-profile__art-label{z-index:1;text-align:center;color:var(--profile-ink,#485e78);font:800 .75rem/1.45 Arial,sans-serif;letter-spacing:.12em;}
 #bia-business-profile .bia-profile__photo{z-index:2;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
 #bia-business-profile .bia-profile__logo{z-index:2;position:relative;max-width:84%;max-height:180px;object-fit:contain;}
