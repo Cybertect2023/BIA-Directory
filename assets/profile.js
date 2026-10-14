@@ -57,6 +57,23 @@
         "M7.5 12a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z",
         "M10 12V9h7a4 4 0 0 1 4 4"
       ],
+      location: [
+        "M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z",
+        "M12 12.6a2.7 2.7 0 1 0 0-5.4 2.7 2.7 0 0 0 0 5.4Z"
+      ],
+      phone: [
+        "M6 3.7 9.4 7l-2.1 2.6a14 14 0 0 0 7.1 7.1L17 14.6l3.3 3.4-1.4 2c-1.2 1.8-3.2 1.6-5.5.7A19 19 0 0 1 3.3 10.6C2.4 8.3 2.2 6.3 4 5.1l2-1.4Z"
+      ],
+      email: [
+        "M4 6h16a1.5 1.5 0 0 1 1.5 1.5v9A1.5 1.5 0 0 1 20 18H4a1.5 1.5 0 0 1-1.5-1.5v-9A1.5 1.5 0 0 1 4 6Z",
+        "m3 7 9 7 9-7"
+      ],
+      web: [
+        "M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z",
+        "M12 3c-3 3-4.5 6-4.5 9S9 18 12 21",
+        "M12 3c3 3 4.5 6 4.5 9S15 18 12 21",
+        "M3 12h18"
+      ],
       general: [
         "M4 21h16",
         "M6 21V8l6-4 6 4v13",
@@ -97,7 +114,7 @@
   function addContact(parent,label,value,href,symbol){
     if(!value)return;
     const r=el("div","bia-profile__contact-row");
-    r.append(el("span","bia-profile__contact-icon",symbol));
+    const contactIcon=el("span","bia-profile__contact-icon");contactIcon.append(makeLineIcon(symbol));r.append(contactIcon);
     const detail=el("div");detail.append(el("span","bia-profile__contact-label",label));
     detail.append(href?a(value,href,null,/^https?:\/\//.test(href)):el("span",null,value));
     r.append(detail);parent.append(r);
@@ -156,11 +173,11 @@
       root.append(section);
     }
     const contacts=el("div","bia-profile__contact-items");
-    if(address)addContact(contacts,"Address",address,"https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(address),"📍");
-    if(phone)addContact(contacts,"Phone",str(b.phone),"tel:"+phone,"☎");
+    if(address)addContact(contacts,"Address",address,"https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(address),"location");
+    if(phone)addContact(contacts,"Phone",str(b.phone),"tel:"+phone,"phone");
     const email=str(b.email);
-    if(email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))addContact(contacts,"Email",email,"mailto:"+email,"✉");
-    if(website)addContact(contacts,"Website",new URL(website).hostname.replace(/^www\./,""),website,"🌐");
+    if(email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))addContact(contacts,"Email",email,"mailto:"+email,"email");
+    if(website)addContact(contacts,"Website",new URL(website).hostname.replace(/^www\./,""),website,"web");
     const socials=el("div","bia-profile__social");
     for(const [field,label]of [["facebook","Facebook ↗"],["instagram","Instagram ↗"]]){
       const href=url(b[field]);if(href)socials.append(a(label,href,null,true));
