@@ -23,6 +23,10 @@
         "M18 3c-3 2.2-4 5.4-4 10h4V3",
         "M18 13v8"
       ],
+      shield: [
+        "M12 3 20 6v5c0 5.2-3.4 8.5-8 10-4.6-1.5-8-4.8-8-10V6l8-3Z",
+        "m8.5 12 2.2 2.2 4.8-5"
+      ],
       services: [
         "M5 8h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2Z",
         "M9 8V6a3 3 0 0 1 3-3 3 3 0 0 1 3 3v2",
@@ -129,6 +133,7 @@
     const c = str(value).toLowerCase();
     if (/restaurant|bakery|food|dining|caf[eé]|coffee/.test(c)) return ["dining","EAT & DRINK","#f3ebe0","#865e42"];
     if (/health|medical|wellness|therapy|beauty|dental/.test(c)) return ["wellness","WELLNESS","#eee7eb","#865b6b"];
+    if (/cyber|digital/.test(c)) return ["shield","DIGITAL RISK OVERSIGHT","#e5eee8","#315b43"];
     if (/professional|financial|legal|insurance|service/.test(c)) return ["services","PROFESSIONAL SERVICES","#e8edf4","#485e78"];
     if (/home|garden|hardware|construction|building suppl/.test(c)) return ["home","HOME & GARDEN","#e5ede4","#486853"];
     if (/automotive|auto repair|vehicle|powersport|collision/.test(c)) return ["auto","AUTOMOTIVE","#e5ebf2","#4c637b"];
@@ -150,6 +155,7 @@
   }
   function render(b){
     root.replaceChildren();
+    root.dataset.profileId=str(b.id);
     const name=str(b.name)||"Local Business";
     const [icon,label,wash,ink]=categoryTheme(b.category);
     root.style.setProperty("--profile-wash",wash);root.style.setProperty("--profile-ink",ink);
@@ -199,6 +205,24 @@
       const section=el("section","bia-profile__about");
       section.append(el("p","bia-profile__eyebrow","Get to know us"),el("h2",null,"About "+name));
       for(const paragraph of str(b.about).split(/\n\s*\n/).filter(Boolean))section.append(el("p",null,paragraph));
+      root.append(section);
+    }
+    const feature=b.highlightLink&&typeof b.highlightLink==="object"?b.highlightLink:null;
+    const featureHref=url(feature&&feature.url);
+    if(featureHref){
+      const section=el("section","bia-profile__feature-link");
+      const copy=el("div","bia-profile__feature-copy");
+      copy.append(el("p","bia-profile__eyebrow",str(feature.eyebrow)||"Featured resource"));
+      copy.append(el("h2",null,str(feature.title)||"Explore this resource"));
+      if(str(feature.description))copy.append(el("p",null,str(feature.description)));
+      section.append(copy);
+      section.append(a(str(feature.label)||"Learn more ↗",featureHref,"bia-profile__button",true));
+      root.append(section);
+    }
+    if(str(b.communityNote)){
+      const section=el("section","bia-profile__community-note");
+      section.append(el("p","bia-profile__eyebrow","Community contribution"));
+      section.append(el("p","bia-profile__community-copy",b.communityNote));
       root.append(section);
     }
     const relatedLinks=Array.isArray(b.relatedLinks)?b.relatedLinks:[];
