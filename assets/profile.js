@@ -172,6 +172,15 @@
       for(const paragraph of str(b.about).split(/\n\s*\n/).filter(Boolean))section.append(el("p",null,paragraph));
       root.append(section);
     }
+    const relatedLinks=Array.isArray(b.relatedLinks)?b.relatedLinks:[];
+    const validRelatedLinks=relatedLinks.map(item=>({label:str(item&&item.label),href:url(item&&item.url)})).filter(item=>item.href);
+    if(validRelatedLinks.length){
+      const section=el("section","bia-profile__about");
+      section.append(el("p","bia-profile__eyebrow","Explore more"),el("h2",null,"Related Links"));
+      const links=el("div","bia-profile__buttons");
+      for(const item of validRelatedLinks)links.append(a(item.label||"Learn more ↗",item.href,"bia-profile__button bia-profile__button--outline",true));
+      section.append(links);root.append(section);
+    }
     const contacts=el("div","bia-profile__contact-items");
     if(address)addContact(contacts,"Address",address,"https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(address),"location");
     if(phone)addContact(contacts,"Phone",str(b.phone),"tel:"+phone,"phone");
