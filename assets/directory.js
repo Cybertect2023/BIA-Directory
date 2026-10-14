@@ -24,16 +24,87 @@
       return u.origin === location.origin && ["https:", "http:"].includes(u.protocol) ? u.href : "";
     } catch (_) { return ""; }
   };
+
+  // Consistent, lightweight line artwork; no external icon library or emoji fonts.
+  const makeLineIcon = kind => {
+    const NS = "http://www.w3.org/2000/svg";
+    const shapes = {
+      dining: [
+        "M4 3v7a3 3 0 0 0 6 0V3",
+        "M7 3v18",
+        "M18 3c-3 2.2-4 5.4-4 10h4V3",
+        "M18 13v8"
+      ],
+      services: [
+        "M5 8h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2Z",
+        "M9 8V6a3 3 0 0 1 3-3 3 3 0 0 1 3 3v2",
+        "M3 13h18",
+        "M10 13v2h4v-2"
+      ],
+      wellness: [
+        "M20.5 8.6c0 4.2-5.4 8.4-8.5 10.8C8.9 17 3.5 12.8 3.5 8.6a4.5 4.5 0 0 1 8.5-2 4.5 4.5 0 0 1 8.5 2Z",
+        "M12 8v6",
+        "M9 11h6"
+      ],
+      active: [
+        "M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z",
+        "M12 3c3 3 4.5 6 4.5 9S15 18 12 21",
+        "M12 3c-3 3-4.5 6-4.5 9S9 18 12 21",
+        "M3 12h18"
+      ],
+      farm: [
+        "M12 22V4",
+        "M12 10c0-4 2.5-6 6-7-.1 4-2.1 6.4-6 7Z",
+        "M12 14c0-3.8-2.4-5.6-6-6.5.2 3.8 2.3 6.1 6 6.5Z",
+        "M12 18c0-3.2 2.5-5 6-5.6-.2 3.5-2.3 5.6-6 5.6Z"
+      ],
+      retail: [
+        "M5 9h14l-1 12H6L5 9Z",
+        "M9 10V7a3 3 0 0 1 6 0v3"
+      ],
+      stay: [
+        "M3 20V5",
+        "M3 12h18v8",
+        "M3 16h18",
+        "M7.5 12a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z",
+        "M10 12V9h7a4 4 0 0 1 4 4"
+      ],
+      general: [
+        "M4 21h16",
+        "M6 21V8l6-4 6 4v13",
+        "M9 21v-6h6v6",
+        "M9 10h.01",
+        "M12 10h.01",
+        "M15 10h.01"
+      ]
+    };
+    const svg = document.createElementNS(NS, "svg");
+    svg.setAttribute("viewBox", "0 0 24 24");
+    svg.setAttribute("aria-hidden", "true");
+    svg.setAttribute("focusable", "false");
+    svg.setAttribute("fill", "none");
+    svg.setAttribute("stroke", "currentColor");
+    svg.setAttribute("stroke-width", "1.7");
+    svg.setAttribute("stroke-linecap", "round");
+    svg.setAttribute("stroke-linejoin", "round");
+    for (const d of shapes[kind] || shapes.general) {
+      const path = document.createElementNS(NS, "path");
+      path.setAttribute("d", d);
+      svg.append(path);
+    }
+    return svg;
+  };
+
   const categoryStyle = value => {
     const c = text(value).toLowerCase();
-    if (/restaurant|bakery|food|dining|caf[eé]|coffee/.test(c)) return ["🍽️","EAT & DRINK","#f3ebe0","#865e42"];
-    if (/health|medical|wellness|therapy|dental/.test(c)) return ["❤️","WELLNESS","#eee7eb","#865b6b"];
-    if (/professional|financial|legal|insurance|service/.test(c)) return ["💼","SERVICES","#e8edf4","#485e78"];
-    if (/recreation|sport|fitness/.test(c)) return ["⚽","ACTIVE LIVING","#e6ede5","#416c5e"];
-    if (/farm|agricultur/.test(c)) return ["🌾","LOCAL GROWN","#eeedde","#6f7042"];
-    if (/shop|retail/.test(c)) return ["🛍️","SHOP LOCAL","#f0e7ee","#825a78"];
-    if (/accommod|lodg|stay/.test(c)) return ["🛏️","STAY & EXPLORE","#e7eef0","#4d7280"];
-    return ["🏬","STIRLING-RAWDON","#e8eee6","#46644f"];
+    if (/restaurant|bakery|food|dining|caf[eé]|coffee/.test(c)) return ["dining","EAT & DRINK","#f3ebe0","#865e42"];
+    if (/health|medical|wellness|therapy|dental/.test(c)) return ["wellness","WELLNESS","#eee7eb","#865b6b"];
+    if (/professional|financial|legal|insurance|service/.test(c)) return ["services","SERVICES","#e8edf4","#485e78"];
+    if (/recreation|sport|fitness/.test(c)) return ["active","ACTIVE LIVING","#e6ede5","#416c5e"];
+    if (/farm|agricultur/.test(c)) return ["farm","LOCAL GROWN","#eeedde","#6f7042"];
+    if (/shop|retail/.test(c)) return ["retail","SHOP LOCAL","#f0e7ee","#825a78"];
+    if (/accommod|lodg|stay/.test(c)) return ["stay","STAY & EXPLORE","#e7eef0","#4d7280"];
+    return ["general","STIRLING-RAWDON","#e8eee6","#46644f"];
   };
   root.replaceChildren();
   const header = node("header","bia-dir__heading");
@@ -61,7 +132,7 @@
     const [symbol,label,wash,ink]=categoryStyle(b.category);
     box.style.setProperty("--card-wash",wash);box.style.setProperty("--card-ink",ink);
     const cover=node("div","bia-dir__cover");
-    const icon=node("span","bia-dir__symbol",symbol);icon.setAttribute("aria-hidden","true");
+    const icon=node("span","bia-dir__symbol");icon.setAttribute("aria-hidden","true");icon.append(makeLineIcon(symbol));
     cover.append(icon,node("span","bia-dir__cover-label",label));
     const image=imageUrl(b.image);
     const logo=imageUrl(b.logo);
