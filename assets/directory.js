@@ -137,7 +137,12 @@
   };
   root.replaceChildren();
   const header = node("header","bia-dir__heading");
-  header.append(node("p","bia-dir__eyebrow","DISCOVER STIRLING-RAWDON"),node("h1",null,"Explore Local Businesses"),node("p",null,"Discover the people and places that make our community unique."));
+  const headingTitle=node("h1",null,"Explore Local Businesses");
+  const headingDescription=node("p",null,"Discover the people and places that make our community unique.");
+  const allBusinessesLink=node("a","bia-dir__all-link","← View all businesses");
+  allBusinessesLink.href="/business-directory";
+  allBusinessesLink.hidden=true;
+  header.append(node("p","bia-dir__eyebrow","DISCOVER STIRLING-RAWDON"),headingTitle,headingDescription,allBusinessesLink);
   const tools = node("div","bia-dir__tools");
   const searchLabel = node("label","bia-dir__sr-only","Search businesses");
   searchLabel.htmlFor="bia-dir-search";
@@ -155,6 +160,19 @@
   const notice=node("p","bia-dir__notice");notice.hidden=true;
   root.append(header,tools,count,results,empty,notice);
   let businesses=[];
+  // Curated homepage collections are separate from the directory's general categories.
+  const collectionInfo = {
+    "shop-local": {
+      title: "Shop Local",
+      description: "Explore local independent shops, specialty retailers, and makers in Stirling-Rawdon."
+    },
+    "eat-local": {
+      title: "Eat & Drink Local",
+      description: "Explore local cafés, restaurants, and places to eat in Stirling-Rawdon."
+    }
+  };
+  const requestedCollection=new URLSearchParams(window.location.search).get("collection");
+  let activeCollection=Object.prototype.hasOwnProperty.call(collectionInfo,requestedCollection)?requestedCollection:"";
   function card(b){
     const name=text(b.name)||"Local business", url=profileUrl(b.profileUrl);
     const box=node("article","bia-dir__card"+(url?" bia-dir__card--linked":""));
@@ -188,6 +206,7 @@
     const needle=search.value.trim().toLocaleLowerCase("en-CA");
     const cat=category.value;
     const filtered=businesses.filter(b=>{
+      if(activeCollection && !(Array.isArray(b.collections) && b.collections.includes(activeCollection))) return false;
       if(cat && text(b.category)!==cat)return false;
       const haystack=[b.name,b.category,b.description,b.address,...(Array.isArray(b.services)?b.services:[])].map(text).join(" ").toLocaleLowerCase("en-CA");
       return haystack.includes(needle);
@@ -200,12 +219,27 @@
   // Keep selected category in the URL so homepage shortcuts and shared links work.
   const syncCategoryUrl = () => {
     const currentUrl = new URL(window.location.href);
+    currentUrl.searchParams.delete("collection");
     if (category.value) currentUrl.searchParams.set("category", category.value);
     else currentUrl.searchParams.delete("category");
     window.history.replaceState(window.history.state, "", currentUrl.pathname + currentUrl.search + currentUrl.hash);
   };
-  category.addEventListener("change", () => { syncCategoryUrl(); render(); });
-  reset.addEventListener("click",()=>{search.value="";category.value="";syncCategoryUrl();render();search.focus();});
+  category.addEventListener("change", () => {
+    activeCollection="";
+    headingTitle.textContent="Explore Local Businesses";
+    headingDescription.textContent="Discover the people and places that make our community unique.";
+    allBusinessesLink.hidden=true;
+    syncCategoryUrl();
+    render();
+  });
+  reset.addEventListener("click",()=>{
+    search.value="";category.value="";
+    activeCollection="";
+    headingTitle.textContent="Explore Local Businesses";
+    headingDescription.textContent="Discover the people and places that make our community unique.";
+    allBusinessesLink.hidden=true;
+    syncCategoryUrl();render();search.focus();
+  });
   fetch(DATA_URL,{cache:"no-cache"})
     .then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.json();})
     .then(data=>{
@@ -214,9 +248,14 @@
       for(const cat of [...new Set(businesses.map(b=>text(b.category)).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"en-CA"))){
         const option=node("option",null,cat);option.value=cat;category.append(option);
       }
+      if (activeCollection) {
+        headingTitle.textContent=collectionInfo[activeCollection].title;
+        headingDescription.textContent=collectionInfo[activeCollection].description;
+        allBusinessesLink.hidden=false;
+      }
       // Apply deep links like /business-directory?category=Food%20%26%20Dining.
       const requestedCategory = new URLSearchParams(window.location.search).get("category");
-      if (requestedCategory) {
+      if (requestedCategory && !activeCollection) {
         const match = [...category.options].find(option =>
           option.value && option.value.toLocaleLowerCase("en-CA") === requestedCategory.trim().toLocaleLowerCase("en-CA")
         );
