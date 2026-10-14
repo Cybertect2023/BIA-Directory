@@ -207,8 +207,8 @@
       for(const cat of [...new Set(businesses.map(b=>text(b.category)).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"en-CA"))){
         const option=node("option",null,cat);option.value=cat;category.append(option);
       }
-      const unverified=businesses.filter(b=>b.verificationStatus==="needs-review").length;
-      if(unverified){notice.hidden=false;notice.textContent="TEST DIRECTORY: "+unverified+" historical listings still need verification before public launch.";}
+      notice.hidden=false;
+      notice.textContent="Business hours and services may change. Please confirm details with individual businesses before visiting.";
       render();
     })
     .catch(err=>{console.error("BIA directory:",err);count.textContent="Unable to load businesses.";notice.hidden=false;notice.textContent="The directory is temporarily unavailable. Please try again later.";});
