@@ -1,0 +1,88 @@
+/* Stirling-Rawdon BIA: shared directory/profile styles. Scoped to our two Code Block roots. */
+#bia-directory,#bia-business-profile{--bia-green:var(--bia-accent,#416449);--bia-ink:#263a2e;--bia-muted:#607267;--bia-border:#dfe6de;color:var(--bia-ink);width:100%;font-size:16px;line-height:1.6;}
+#bia-directory *,#bia-business-profile *{box-sizing:border-box;}
+#bia-directory [hidden],#bia-business-profile [hidden]{display:none!important;}
+#bia-directory a,#bia-business-profile a{color:var(--bia-green);}
+#bia-directory :is(a,button,input,select):focus-visible,#bia-business-profile a:focus-visible{outline:3px solid #487553;outline-offset:3px;}
+/* DIRECTORY */
+#bia-directory .bia-dir__heading{margin:0 0 30px;max-width:850px;}
+#bia-directory .bia-dir__heading h1{font-size:clamp(2.2rem,4vw,3.7rem)!important;line-height:1.13!important;margin:0 0 12px!important;}
+#bia-directory .bia-dir__heading>p:last-child{font-size:1.05rem;color:var(--bia-muted);margin:0;}
+#bia-directory .bia-dir__eyebrow,#bia-business-profile .bia-profile__eyebrow{font:750 .75rem/1.4 Arial,sans-serif;letter-spacing:.14em;color:var(--bia-green);text-transform:uppercase;margin:0 0 12px;}
+#bia-directory .bia-dir__sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
+#bia-directory .bia-dir__tools{display:grid;grid-template-columns:minmax(0,2fr) minmax(190px,1fr);gap:13px;margin:0 0 14px;}
+#bia-directory .bia-dir__search,#bia-directory .bia-dir__category{width:100%;min-width:0;min-height:52px;padding:12px 15px;background:#fff;color:#293a2e;border:1px solid #d7dfd7;border-radius:9px;font:400 1rem/1.5 Arial,sans-serif;}
+#bia-directory .bia-dir__summary{color:#78867b;font:400 .93rem/1.4 Arial,sans-serif;margin:15px 0 21px;}
+#bia-directory .bia-dir__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;}
+#bia-directory .bia-dir__card{position:relative;display:flex;flex-direction:column;min-width:0;background:#fff;border:1px solid #dde5dc;border-radius:14px;overflow:hidden;box-shadow:0 6px 22px rgba(24,44,30,.05);transition:transform .2s,box-shadow .2s,border-color .2s;}
+#bia-directory .bia-dir__card--linked:hover,#bia-directory .bia-dir__card--linked:focus-within{transform:translateY(-4px);box-shadow:0 15px 30px rgba(24,44,30,.12);border-color:#9cb5a0;}
+#bia-directory .bia-dir__cover{height:125px;position:relative;overflow:hidden;background:var(--card-wash);display:flex;align-items:center;gap:14px;padding:22px;}
+#bia-directory .bia-dir__cover:after{content:"";position:absolute;width:165px;height:165px;border:1px solid rgba(255,255,255,.55);border-radius:50%;right:-28px;top:-76px;box-shadow:0 0 0 35px rgba(255,255,255,.17),0 0 0 70px rgba(255,255,255,.11);pointer-events:none;}
+#bia-directory .bia-dir__symbol{z-index:1;display:flex;align-items:center;justify-content:center;width:72px;height:72px;flex:none;background:rgba(255,255,255,.65);border:1px solid rgba(0,0,0,.075);border-radius:18px;font:400 36px/1 "Segoe UI Emoji","Apple Color Emoji","Noto Color Emoji",sans-serif!important;}
+#bia-directory .bia-dir__cover-label{position:relative;z-index:1;margin-left:auto;max-width:135px;text-align:right;font:800 .69rem/1.5 Arial,sans-serif;letter-spacing:.1em;color:var(--card-ink);text-transform:uppercase;}
+#bia-directory .bia-dir__photo{position:absolute;z-index:2;inset:0;width:100%;height:100%;object-fit:cover;}
+#bia-directory .bia-dir__logo{position:absolute;z-index:2;top:18px;left:20px;height:85px;max-width:70%;object-fit:contain;}
+#bia-directory .bia-dir__body{padding:22px;display:flex;flex:1;flex-direction:column;gap:12px;}
+#bia-directory .bia-dir__tag{align-self:flex-start;background:#f0f5ee;color:#45664e;border-radius:40px;padding:6px 12px;font:700 .73rem/1.35 Arial,sans-serif;}
+#bia-directory .bia-dir__title{font:750 1.3rem/1.27 Arial,sans-serif!important;letter-spacing:-.025em;color:#263f2f!important;margin:0!important;}
+#bia-directory .bia-dir__description{font-size:.94rem;line-height:1.55;color:#627166;margin:0;}
+#bia-directory .bia-dir__location{font:400 .86rem/1.5 Arial,sans-serif;color:#728077;margin:0;}
+#bia-directory .bia-dir__footer{display:flex;align-items:center;flex-wrap:wrap;gap:9px;margin-top:auto;padding-top:16px;border-top:1px solid #edf0eb;}
+#bia-directory .bia-dir__view{margin-right:auto;color:#315b3c;font:700 .89rem/1.35 Arial,sans-serif;}
+#bia-directory .bia-dir__pending{margin-right:auto;color:#7c887d;font:600 .82rem/1.4 Arial,sans-serif;}
+#bia-directory .bia-dir__actions{display:flex;gap:7px;flex-wrap:wrap;}
+#bia-directory .bia-dir__action{position:relative;z-index:3;display:inline-flex;align-items:center;justify-content:center;min-height:39px;padding:8px 11px;text-decoration:none!important;font:700 .81rem/1.3 Arial,sans-serif!important;border:1px solid #dce4d9;border-radius:8px;color:#3c5e44!important;background:#fff;}
+#bia-directory .bia-dir__action:hover{background:#f2f6f0;}
+#bia-directory .bia-dir__card-link{position:absolute;inset:0;z-index:2;border-radius:14px;}
+#bia-directory .bia-dir__card-link:focus-visible{outline:3px solid #487553;outline-offset:-5px;}
+#bia-directory .bia-dir__empty{text-align:center;padding:3rem 1rem;}
+#bia-directory .bia-dir__empty button{padding:10px 16px;background:var(--bia-green);color:#fff;border:0;border-radius:8px;cursor:pointer;font:inherit;}
+#bia-directory .bia-dir__notice{margin:25px 0 0;padding:14px 17px;border-radius:8px;background:#fff6e2;color:#665126;font-size:.9rem;}
+/* PROFILE: wider layout and readable section headings */
+#bia-business-profile .bia-profile__loading{padding:35px 0;color:var(--bia-muted);}
+#bia-business-profile .bia-profile__crumbs{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font:650 .9rem/1.5 Arial,sans-serif;color:var(--bia-muted);margin:0 0 24px;}
+#bia-business-profile .bia-profile__crumbs a{text-decoration:none;}
+#bia-business-profile .bia-profile__hero{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(270px,.85fr);gap:35px;align-items:stretch;margin:0 0 28px;}
+#bia-business-profile .bia-profile__hero-copy{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:12px 0;}
+#bia-business-profile .bia-profile__category{display:inline-block;font:700 .8rem/1.35 Arial,sans-serif;background:#e8edf4;color:#485e78;padding:8px 13px;border-radius:50px;margin:0 0 18px;}
+#bia-business-profile .bia-profile__title{font-size:clamp(2.4rem,4.1vw,4rem)!important;line-height:1.11!important;letter-spacing:-.025em;margin:0 0 15px!important;}
+#bia-business-profile .bia-profile__intro{font-size:1.12rem;line-height:1.7;color:var(--bia-muted);margin:0 0 20px;max-width:680px;}
+#bia-business-profile .bia-profile__buttons{display:flex;flex-wrap:wrap;gap:11px;margin-top:6px;}
+#bia-business-profile .bia-profile__button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;text-decoration:none!important;padding:12px 19px;background:var(--bia-green);color:#fff!important;border-radius:9px;font:700 .94rem/1.4 Arial,sans-serif!important;transition:transform .15s;}
+#bia-business-profile .bia-profile__button--outline{border:1px solid #b7c8b8;background:#fff;color:var(--bia-green)!important;}
+#bia-business-profile .bia-profile__button:hover{transform:translateY(-2px);}
+#bia-business-profile .bia-profile__art{position:relative;min-height:270px;background:var(--profile-wash,#e8edf4);border-radius:15px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;overflow:hidden;padding:28px;}
+#bia-business-profile .bia-profile__art:before{content:"";position:absolute;right:-85px;top:-100px;width:315px;height:315px;border:1px solid rgba(255,255,255,.6);border-radius:50%;box-shadow:0 0 0 55px rgba(255,255,255,.13),0 0 0 112px rgba(255,255,255,.08);}
+#bia-business-profile .bia-profile__art-symbol{z-index:1;display:flex;align-items:center;justify-content:center;width:110px;height:110px;background:rgba(255,255,255,.65);border:1px solid rgba(0,0,0,.06);border-radius:24px;font:400 58px/1 "Segoe UI Emoji","Apple Color Emoji","Noto Color Emoji",sans-serif!important;}
+#bia-business-profile .bia-profile__art-label{z-index:1;text-align:center;color:var(--profile-ink,#485e78);font:800 .75rem/1.45 Arial,sans-serif;letter-spacing:.12em;}
+#bia-business-profile .bia-profile__photo{z-index:2;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+#bia-business-profile .bia-profile__logo{z-index:2;position:relative;max-width:84%;max-height:180px;object-fit:contain;}
+#bia-business-profile .bia-profile__two-col{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin:0 0 25px;}
+#bia-business-profile .bia-profile__panel{padding:30px;background:#f7f9f5;border:1px solid var(--bia-border);border-radius:14px;min-width:0;}
+#bia-business-profile .bia-profile__panel h2,#bia-business-profile .bia-profile__about h2,#bia-business-profile .bia-profile__visit h2{font:700 clamp(1.5rem,2vw,1.95rem)/1.25 Arial,sans-serif!important;letter-spacing:-.025em;color:#2d4936;margin:0 0 22px!important;}
+#bia-business-profile .bia-profile__hours{margin:0;}
+#bia-business-profile .bia-profile__hours-row{display:flex;justify-content:space-between;gap:18px;padding:11px 0;border-bottom:1px solid var(--bia-border);font:400 .97rem/1.45 Arial,sans-serif;}
+#bia-business-profile .bia-profile__hours-row:last-child{border-bottom:none;}
+#bia-business-profile .bia-profile__hours-row dt{font-weight:700;}
+#bia-business-profile .bia-profile__hours-row dd{margin:0;text-align:right;color:var(--bia-muted);}
+#bia-business-profile .bia-profile__services{list-style:none;margin:0;padding:0;display:grid;gap:13px;}
+#bia-business-profile .bia-profile__services li{display:flex;gap:11px;align-items:flex-start;font:400 1rem/1.55 Arial,sans-serif;}
+#bia-business-profile .bia-profile__services li:before{content:"✓";flex:0 0 23px;width:23px;height:23px;display:inline-flex;align-items:center;justify-content:center;background:#e2ecdf;color:#36603f;border-radius:50%;font:700 .8rem/1 Arial,sans-serif;margin-top:2px;}
+#bia-business-profile .bia-profile__about{max-width:950px;padding:25px 2px;margin:0 0 25px;}
+#bia-business-profile .bia-profile__about p:not(.bia-profile__eyebrow){color:var(--bia-muted);font-size:1.08rem;line-height:1.85;margin:0 0 14px;}
+#bia-business-profile .bia-profile__visit{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border:1px solid var(--bia-border);border-radius:15px;overflow:hidden;background:#fff;margin-top:4px;}
+#bia-business-profile .bia-profile__visit-info{padding:30px;}
+#bia-business-profile .bia-profile__contact-items{display:grid;gap:18px;}
+#bia-business-profile .bia-profile__contact-row{display:flex;align-items:flex-start;gap:13px;font:400 .98rem/1.6 Arial,sans-serif;overflow-wrap:anywhere;}
+#bia-business-profile .bia-profile__contact-icon{flex:0 0 24px;text-align:center;}
+#bia-business-profile .bia-profile__contact-label{display:block;font-weight:700;color:var(--bia-ink);}
+#bia-business-profile .bia-profile__map{min-height:315px;background:#f7f9f5;}
+#bia-business-profile .bia-profile__map iframe{width:100%;height:100%;min-height:315px;border:0;display:block;}
+#bia-business-profile .bia-profile__social{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;}
+#bia-business-profile .bia-profile__social a{padding:8px 13px;border:1px solid var(--bia-border);border-radius:8px;text-decoration:none;font:700 .86rem/1.4 Arial,sans-serif;}
+#bia-business-profile .bia-profile__back{margin:30px 0 5px;font:700 .9rem/1.4 Arial,sans-serif;}
+@media(min-width:1000px){#bia-business-profile,#bia-directory{width:min(1180px,calc(100vw - 96px));max-width:none;position:relative;left:50%;transform:translateX(-50%);}}
+@media(max-width:980px){#bia-directory .bia-dir__grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:800px){#bia-business-profile .bia-profile__hero{grid-template-columns:1fr;}#bia-business-profile .bia-profile__art{min-height:205px;order:-1;}#bia-business-profile .bia-profile__visit{grid-template-columns:1fr;}#bia-business-profile .bia-profile__map,#bia-business-profile .bia-profile__map iframe{min-height:275px;}}
+@media(max-width:640px){#bia-directory .bia-dir__tools,#bia-directory .bia-dir__grid,#bia-business-profile .bia-profile__two-col{grid-template-columns:1fr;}#bia-directory .bia-dir__body{padding:19px;}#bia-business-profile .bia-profile__panel,#bia-business-profile .bia-profile__visit-info{padding:22px;}#bia-business-profile .bia-profile__title{font-size:2.5rem!important;}#bia-business-profile .bia-profile__buttons{width:100%;}#bia-business-profile .bia-profile__button{flex:1;}}
+@media(prefers-reduced-motion:reduce){#bia-directory .bia-dir__card,#bia-business-profile .bia-profile__button{transition:none;}}
