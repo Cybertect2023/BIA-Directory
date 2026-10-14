@@ -137,27 +137,32 @@
       "id": "brad-comeau-law-office",
       "name": "Brad Comeau Law Office",
       "category": "Professional Services",
-      "description": "",
+      "description": "Real estate law, wills, powers of attorney and estate administration in Stirling.",
       "address": "33 Mill Street, Stirling, ON",
       "phone": "613-395-3397",
       "email": "",
-      "website": "",
+      "website": "https://countrylawyer.on.ca",
       "facebook": "",
       "instagram": "",
       "image": "",
       "featured": false,
       "hours": {
-        "monday": "",
-        "tuesday": "",
-        "wednesday": "",
-        "thursday": "",
-        "friday": "",
-        "saturday": "",
-        "sunday": ""
+        "monday": "8:30 AM – 4:30 PM",
+        "tuesday": "8:30 AM – 4:30 PM",
+        "wednesday": "8:30 AM – 4:30 PM",
+        "thursday": "8:30 AM – 4:30 PM",
+        "friday": "8:30 AM – 4:30 PM",
+        "saturday": "Closed",
+        "sunday": "Closed"
       },
-      "services": [],
+      "services": [
+        "Real estate: purchases, sales, mortgages and refinancing",
+        "Wills and powers of attorney",
+        "Estate administration"
+      ],
       "profileUrl": "",
-      "verificationStatus": "needs-review"
+      "verificationStatus": "needs-review",
+      "about": "Country Lawyer – Brad Comeau is a qualified real estate lawyer who has practised in Ontario for more than 30 years, including over 20 years in Stirling."
     },
     {
       "id": "mcdougall-insurance",
