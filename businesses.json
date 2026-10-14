@@ -482,20 +482,14 @@
     {
       "id": "cybertect",
       "name": "CyberTECT",
-      "category": "Professional Services",
-      "description": "Digital operations, cybersecurity, backup and recovery, AI governance, and practical oversight for rural and small organizations.",
+      "category": "Cybersecurity & Digital Operations",
+      "description": "Independent digital-risk guidance for rural businesses, professional offices, and community organizations across Ontario.",
       "address": "190 Bell Blvd., Suite 1002, Belleville, ON K8P 5L2",
       "phone": "",
       "email": "info@cybertect.ca",
       "website": "https://cybertect.ca/",
       "facebook": "",
       "instagram": "",
-      "relatedLinks": [
-        {
-          "label": "Explore Quinte Protects",
-          "url": "https://cybertect.ca/quinte-protects/"
-        }
-      ],
       "image": "",
       "featured": false,
       "hours": {
@@ -508,15 +502,25 @@
         "sunday": ""
       },
       "services": [
-        "Digital Operations Review",
+        "Digital Operations Checkup",
+        "AI & Digital Operations Review",
         "Cybersecurity & Staff Readiness",
         "Backup & Recovery Validation",
-        "AI Readiness & Governance"
+        "AI Readiness & Governance",
+        "Implementation & Ongoing Oversight"
       ],
       "profileUrl": "/cybertect",
       "verificationStatus": "verified",
       "sourceUrl": "https://cybertect.ca/",
-      "about": "CyberTECT helps rural businesses, professional offices, and community organizations manage digital risk, strengthen recovery, and make informed decisions about cybersecurity, cloud systems, vendors, and AI."
+      "about": "CyberTECT helps small organizations keep control of accounts, vendors, critical information, and recovery plans as people, providers, and technology change.\n\nWork can include digital-operations reviews, cybersecurity readiness, backup and recovery validation, AI governance, and practical ongoing oversight. Based in Hastings County, CyberTECT supports organizations across Ontario through remote-first service delivery.",
+      "highlightLink": {
+        "eyebrow": "A free regional initiative",
+        "title": "Quinte Protects",
+        "description": "Practical, age-specific guidance to help families recognize online risks and connect with trusted Canadian support services.",
+        "label": "Visit Quinte Protects ↗",
+        "url": "https://cybertect.ca/quinte-protects/"
+      },
+      "communityNote": "CyberTECT provides volunteer website support to the Stirling-Rawdon BIA and maintains this business directory."
     },
     {
       "id": "lighthouse-tutoring",
