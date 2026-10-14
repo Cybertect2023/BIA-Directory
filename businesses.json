@@ -34,7 +34,10 @@
       "profileUrl": "/jim-s-pizza-restaurant",
       "verificationStatus": "verified",
       "sourceUrl": "https://www.visitstirlingrawdon.ca/business-directory/blog-post-title-one-sxcf9-VE82Y-ay7d9-nbxe5-2arwl",
-      "about": "Whether you're traveling through the area and are looking for a quick bite or live in the area and have yet to experience the delights from Jimmy's Special Pizza & Fish & Chips, you have got to eat here. We're serving up delicious pizza, burgers, subs, steaks and hot sandwiches in Stirling. We're also fully licensed to serve your favourite beverages. Stop by and see us today!"
+      "about": "Whether you're traveling through the area and are looking for a quick bite or live in the area and have yet to experience the delights from Jimmy's Special Pizza & Fish & Chips, you have got to eat here. We're serving up delicious pizza, burgers, subs, steaks and hot sandwiches in Stirling. We're also fully licensed to serve your favourite beverages. Stop by and see us today!",
+      "collections": [
+        "eat-local"
+      ]
     },
     {
       "id": "brad-comeau-law-office",
@@ -161,7 +164,11 @@
       "image": "",
       "featured": false,
       "profileUrl": "/food-boutique-stirling",
-      "verificationStatus": "verified"
+      "verificationStatus": "verified",
+      "collections": [
+        "shop-local",
+        "eat-local"
+      ]
     },
     {
       "id": "smokin-barrel-bar-grill",
@@ -192,7 +199,10 @@
       "image": "",
       "featured": false,
       "profileUrl": "/smokin-barrel-bar-grill",
-      "verificationStatus": "verified"
+      "verificationStatus": "verified",
+      "collections": [
+        "eat-local"
+      ]
     },
     {
       "id": "blooms-flowers",
@@ -223,7 +233,10 @@
       "image": "",
       "featured": false,
       "profileUrl": "/blooms-flowers",
-      "verificationStatus": "verified"
+      "verificationStatus": "verified",
+      "collections": [
+        "shop-local"
+      ]
     },
     {
       "id": "rawdon-creek-soap-co",
@@ -255,7 +268,10 @@
       "image": "",
       "featured": false,
       "profileUrl": "/rawdon-creek-soap-co",
-      "verificationStatus": "verified"
+      "verificationStatus": "verified",
+      "collections": [
+        "shop-local"
+      ]
     },
     {
       "id": "firehall-cafe",
@@ -286,7 +302,10 @@
       "image": "",
       "featured": false,
       "profileUrl": "/firehall-cafe",
-      "verificationStatus": "verified"
+      "verificationStatus": "verified",
+      "collections": [
+        "eat-local"
+      ]
     },
     {
       "id": "stirling-festival-theatre",
@@ -350,7 +369,10 @@
       "image": "",
       "featured": false,
       "profileUrl": "/farm-girl-cafe",
-      "verificationStatus": "verified"
+      "verificationStatus": "verified",
+      "collections": [
+        "eat-local"
+      ]
     },
     {
       "id": "rustic-routes",
@@ -381,7 +403,10 @@
       "image": "",
       "featured": false,
       "profileUrl": "/rustic-routes",
-      "verificationStatus": "verified"
+      "verificationStatus": "verified",
+      "collections": [
+        "shop-local"
+      ]
     },
     {
       "id": "stirling-book-company",
@@ -413,7 +438,10 @@
       "image": "",
       "featured": false,
       "profileUrl": "/stirling-book-company",
-      "verificationStatus": "verified"
+      "verificationStatus": "verified",
+      "collections": [
+        "shop-local"
+      ]
     },
     {
       "id": "vintage-junction",
@@ -444,7 +472,10 @@
       "instagram": "",
       "image": "",
       "featured": false,
-      "profileUrl": "/vintage-junction"
+      "profileUrl": "/vintage-junction",
+      "collections": [
+        "shop-local"
+      ]
     },
     {
       "id": "blue-collar-therapy",
@@ -686,7 +717,10 @@
       "profileUrl": "/paradise-cannabis-stirling",
       "verificationStatus": "verified",
       "sourceUrl": "https://paradisecannabis.ca/shop-stirling-store/",
-      "about": "Paradise Cannabis operates a recreational cannabis retail store on Mill Street in Stirling."
+      "about": "Paradise Cannabis operates a recreational cannabis retail store on Mill Street in Stirling.",
+      "collections": [
+        "shop-local"
+      ]
     },
     {
       "id": "fresh-and-hot-pizza",
@@ -718,7 +752,10 @@
       "profileUrl": "/fresh-and-hot-pizza",
       "verificationStatus": "verified",
       "sourceUrl": "https://freshnhotpizza.ca/locations/",
-      "about": "Fresh & Hot Pizza serves Stirling from its Mill Street location and offers online ordering."
+      "about": "Fresh & Hot Pizza serves Stirling from its Mill Street location and offers online ordering.",
+      "collections": [
+        "eat-local"
+      ]
     },
     {
       "id": "rona-rollins-building-supplies",
