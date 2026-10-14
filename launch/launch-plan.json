@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "site": "https://www.visitstirlingrawdon.ca",
+  "directory": {
+    "existingLivePath": "/business-directory",
+    "stagingPath": "/business-directory-update",
+    "finalPath": "/business-directory"
+  },
+  "note": "PLANNING ONLY: do not add proposedPath to businesses.json until matching Squarespace profile page URL is confirmed.",
+  "migrationPolicy": "Preserve the existing live directory until profile URLs and redirects have been tested.",
+  "profilePages": [
+    {
+      "businessId": "jim-s-pizza-restaurant",
+      "businessName": "Jimmy's Special Pizza & Fish & Chips",
+      "suggestedSquarespaceSlug": "jim-s-pizza-restaurant",
+      "proposedPath": "/jim-s-pizza-restaurant",
+      "currentProfileUrl": "",
+      "pageConfirmed": false
+    },
+    {
+      "businessId": "brad-comeau-law-office",
+      "businessName": "Brad Comeau Law Office",
+      "suggestedSquarespaceSlug": "brad-comeau-law-office",
+      "proposedPath": "/brad-comeau-law-office",
+      "currentProfileUrl": "",
+      "pageConfirmed": false
+    },
+    {
+      "businessId": "creekside-yoga",
+      "businessName": "Creekside Yoga",
+      "suggestedSquarespaceSlug": "creekside-yoga",
+      "proposedPath": "/creekside-yoga",
+      "currentProfileUrl": "",
+      "pageConfirmed": false
+    },
+    {
+      "businessId": "mccurdy-collision-centre",
+      "businessName": "McCurdy Collision Centre",
+      "suggestedSquarespaceSlug": "mccurdy-collision-centre",
+      "proposedPath": "/mccurdy-collision-centre",
+      "currentProfileUrl": "",
+      "pageConfirmed": false
+    },
+    {
+      "businessId": "food-boutique-stirling",
+      "businessName": "Food Boutique Stirling",
+      "suggestedSquarespaceSlug": "food-boutique-stirling",
+      "proposedPath": "/food-boutique-stirling",
+      "currentProfileUrl": "",
+      "pageConfirmed": false
+    },
+    {
+      "businessId": "smokin-barrel-bar-grill",
+      "businessName": "The Smokin' Barrel Bar & Grill",
+      "suggestedSquarespaceSlug": "smokin-barrel-bar-grill",
+      "proposedPath": "/smokin-barrel-bar-grill",
+      "currentProfileUrl": "",
+      "pageConfirmed": false
+    },
+    {
+      "businessId": "blooms-flowers",
+      "businessName": "Blooms Flowers",
+      "suggestedSquarespaceSlug": "blooms-flowers",
+      "proposedPath": "/blooms-flowers",
+      "currentProfileUrl": "",
+      "pageConfirmed": false
+    },
+    {
+      "businessId": "rawdon-creek-soap-co",
+      "businessName": "Rawdon Creek Soap Co.",
+      "suggestedSquarespaceSlug": "rawdon-creek-soap-co",
+      "proposedPath": "/rawdon-creek-soap-co",
+      "currentProfileUrl": "",
+      "pageConfirmed": false
+    },
+    {
+      "businessId": "firehall-cafe",
+      "businessName": "The Firehall Cafe",
+      "suggestedSquarespaceSlug": "firehall-cafe",
+      "proposedPath": "/firehall-cafe",
+      "currentProfileUrl": "",
+      "pageConfirmed": false
+    },
+    {
+      "businessId": "stirling-festival-theatre",
+      "businessName": "Stirling Festival Theatre",
+      "suggestedSquarespaceSlug": "stirling-festival-theatre",
+      "proposedPath": "/stirling-festival-theatre",
+      "currentProfileUrl": "",
+      "pageConfirmed": false
+    },
+    {
+      "businessId": "farm-girl-cafe",
+      "businessName": "Farm Girl Cafe",
+      "suggestedSquarespaceSlug": "farm-girl-cafe",
+      "proposedPath": "/farm-girl-cafe",
+      "currentProfileUrl": "",
+      "pageConfirmed": false
+    },
+    {
+      "businessId": "rustic-routes",
+      "businessName": "Rustic Routes",
+      "suggestedSquarespaceSlug": "rustic-routes",
+      "proposedPath": "/rustic-routes",
+      "currentProfileUrl": "",
+      "pageConfirmed": false
+    },
+    {
+      "businessId": "stirling-book-company",
+      "businessName": "Stirling Book Company",
+      "suggestedSquarespaceSlug": "stirling-book-company",
+      "proposedPath": "/stirling-book-company",
+      "currentProfileUrl": "",
+      "pageConfirmed": false
+    },
+    {
+      "businessId": "vintage-junction",
+      "businessName": "The Vintage Junction",
+      "suggestedSquarespaceSlug": "vintage-junction",
+      "proposedPath": "/vintage-junction",
+      "currentProfileUrl": "",
+      "pageConfirmed": false
+    },
+    {
+      "businessId": "blue-collar-therapy",
+      "businessName": "Blue Collar Therapy",
+      "suggestedSquarespaceSlug": "blue-collar-therapy",
+      "proposedPath": "/blue-collar-therapy",
+      "currentProfileUrl": "",
+      "pageConfirmed": false
+    },
+    {
+      "businessId": "cybertect",
+      "businessName": "CyberTECT",
+      "suggestedSquarespaceSlug": "cybertect",
+      "proposedPath": "/cybertect",
+      "currentProfileUrl": "",
+      "pageConfirmed": false
+    },
+    {
+      "businessId": "lighthouse-tutoring",
+      "businessName": "Lighthouse Tutoring",
+      "suggestedSquarespaceSlug": "lighthouse-tutoring",
+      "proposedPath": "/lighthouse-tutoring",
+      "currentProfileUrl": "",
+      "pageConfirmed": false
+    },
+    {
+      "businessId": "the-fairway-golf",
+      "businessName": "The Fairway Golf",
+      "suggestedSquarespaceSlug": "the-fairway-golf",
+      "proposedPath": "/the-fairway-golf",
+      "currentProfileUrl": "",
+      "pageConfirmed": false
+    },
+    {
+      "businessId": "jason-fornarolo-cpa",
+      "businessName": "Jason Fornarolo CPA",
+      "suggestedSquarespaceSlug": "jason-fornarolo-cpa",
+      "proposedPath": "/jason-fornarolo-cpa",
+      "currentProfileUrl": "",
+      "pageConfirmed": false
+    },
+    {
+      "businessId": "kitchens-by-paul-holden",
+      "businessName": "Kitchens by Paul Holden",
+      "suggestedSquarespaceSlug": "kitchens-by-paul-holden",
+      "proposedPath": "/kitchens-by-paul-holden",
+      "currentProfileUrl": "",
+      "pageConfirmed": false
+    },
+    {
+      "businessId": "paradise-cannabis-stirling",
+      "businessName": "Paradise Cannabis — Stirling",
+      "suggestedSquarespaceSlug": "paradise-cannabis-stirling",
+      "proposedPath": "/paradise-cannabis-stirling",
+      "currentProfileUrl": "",
+      "pageConfirmed": false
+    },
+    {
+      "businessId": "fresh-and-hot-pizza",
+      "businessName": "Fresh & Hot Pizza",
+      "suggestedSquarespaceSlug": "fresh-and-hot-pizza",
+      "proposedPath": "/fresh-and-hot-pizza",
+      "currentProfileUrl": "",
+      "pageConfirmed": false
+    },
+    {
+      "businessId": "rona-rollins-building-supplies",
+      "businessName": "RONA Rollins Building Supplies",
+      "suggestedSquarespaceSlug": "rona-rollins-building-supplies",
+      "proposedPath": "/rona-rollins-building-supplies",
+      "currentProfileUrl": "",
+      "pageConfirmed": false
+    },
+    {
+      "businessId": "r-and-s-home-hardware",
+      "businessName": "R & S Home Hardware",
+      "suggestedSquarespaceSlug": "r-and-s-home-hardware",
+      "proposedPath": "/r-and-s-home-hardware",
+      "currentProfileUrl": "",
+      "pageConfirmed": false
+    },
+    {
+      "businessId": "stirling-dental-centre",
+      "businessName": "Stirling Dental Centre",
+      "suggestedSquarespaceSlug": "stirling-dental-centre",
+      "proposedPath": "/stirling-dental-centre",
+      "currentProfileUrl": "",
+      "pageConfirmed": false
+    },
+    {
+      "businessId": "pet-valu-stirling",
+      "businessName": "Pet Valu — Creekside Centre",
+      "suggestedSquarespaceSlug": "pet-valu-stirling",
+      "proposedPath": "/pet-valu-stirling",
+      "currentProfileUrl": "",
+      "pageConfirmed": false
+    },
+    {
+      "businessId": "back40-powersports",
+      "businessName": "Back40 Powersports",
+      "suggestedSquarespaceSlug": "back40-powersports",
+      "proposedPath": "/back40-powersports",
+      "currentProfileUrl": "",
+      "pageConfirmed": false
+    },
+    {
+      "businessId": "holmestown-barber",
+      "businessName": "Holmestown Barber",
+      "suggestedSquarespaceSlug": "holmestown-barber",
+      "proposedPath": "/holmestown-barber",
+      "currentProfileUrl": "",
+      "pageConfirmed": false
+    },
+    {
+      "businessId": "the-vape-shop-stirling",
+      "businessName": "The Vape Shop",
+      "suggestedSquarespaceSlug": "the-vape-shop-stirling",
+      "proposedPath": "/the-vape-shop-stirling",
+      "currentProfileUrl": "",
+      "pageConfirmed": false
+    }
+  ]
+}
