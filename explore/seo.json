@@ -1,10 +1,30 @@
 {
   "schemaVersion": 1,
   "pages": [
-    {"path":"/explore-and-enjoy","title":"Explore & Enjoy Stirling-Rawdon | Visit Stirling-Rawdon","description":"Plan a visit to Stirling-Rawdon, Ontario. Find local farms and food, things to do, community events, and stories from the village and countryside."},
-    {"path":"/explore-and-enjoy/farms-local-food","title":"Farms & Local Food in Stirling-Rawdon | Visit Stirling-Rawdon","description":"Discover Stirling-Rawdon farms, seasonal produce, the village farmers’ market, farm shops, and agricultural experiences in Hastings County."},
-    {"path":"/explore-and-enjoy/things-to-do","title":"Things to Do in Stirling-Rawdon, Ontario | Visit Stirling-Rawdon","description":"Plan a day in Stirling-Rawdon with live theatre, Farmtown Park, local shops and dining, parks, trails, and community heritage."},
-    {"path":"/explore-and-enjoy/community-events","title":"Stirling-Rawdon Community Events | Visit Stirling-Rawdon","description":"Explore Stirling-Rawdon’s seasonal markets, annual fair, theatre and music traditions, and community celebrations. Check the BIA calendar for current dates."},
-    {"path":"/explore-and-enjoy/local-stories","title":"Local Stories from Stirling-Rawdon | Visit Stirling-Rawdon","description":"Read about Stirling-Rawdon’s local businesses, agricultural heritage, community traditions, and historic village places."}
+    {
+      "path": "/explore-and-enjoy",
+      "title": "Explore & Enjoy Stirling-Rawdon | Visit Stirling-Rawdon",
+      "description": "Plan a visit to Stirling-Rawdon, Ontario. Find local farms and food, things to do, community events, and stories from the village and countryside."
+    },
+    {
+      "path": "/farms-local-food",
+      "title": "Farms & Local Food in Stirling-Rawdon | Visit Stirling-Rawdon",
+      "description": "Find Stirling-Rawdon's farmers' market, Cooney Farms Apple Store, Ontario Water Buffalo, alpaca farm visits, and local food experiences."
+    },
+    {
+      "path": "/things-to-do",
+      "title": "Things to Do in Stirling-Rawdon, Ontario | Visit Stirling-Rawdon",
+      "description": "Plan a day in Stirling-Rawdon with live theatre, Farmtown Park, local shops and dining, parks, trails, and community heritage."
+    },
+    {
+      "path": "/community-events",
+      "title": "Stirling-Rawdon Community Events | Visit Stirling-Rawdon",
+      "description": "Explore Stirling-Rawdon’s seasonal markets, annual fair, theatre and music traditions, and community celebrations. Check the BIA calendar for current dates."
+    },
+    {
+      "path": "/local-stories",
+      "title": "Local Stories from Stirling-Rawdon | Visit Stirling-Rawdon",
+      "description": "Read about Stirling-Rawdon’s local businesses, agricultural heritage, community traditions, and historic village places."
+    }
   ]
 }
