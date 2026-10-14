@@ -210,3 +210,62 @@
 .bia-explore--things .bia-things__back-link{text-align:center;font-size:.9rem;font-weight:700;margin-top:.3rem}
 @media(max-width:850px){.bia-explore--things .bia-things__intro-layout,.bia-explore--things .bia-things__section-heading,.bia-explore--things .bia-things__village-layout,.bia-explore--things .bia-things__closing-layout{grid-template-columns:1fr;gap:1.5rem}.bia-explore--things .bia-things__outdoors .bia-explore__split{grid-template-columns:1fr;gap:2rem}.bia-explore--things .bia-things__spotlight{min-height:430px}}
 @media(max-width:680px){.bia-explore--things .bia-things__crumbs,.bia-explore--things .bia-things__hero .bia-explore__hero-inner{width:calc(100% - 30px)}.bia-explore--things .bia-things__hero{min-height:540px}.bia-explore--things .bia-things__hero h1{font-size:clamp(2.65rem,11vw,4rem)}.bia-explore--things .bia-things__hero-actions{align-items:flex-start;flex-direction:column}.bia-explore--things .bia-things__jump-nav .bia-explore__wrap{gap:.7rem 1.1rem}.bia-explore--things .bia-things__jump-title{width:100%}.bia-explore--things .bia-things__spotlights,.bia-explore--things .bia-things__extras{grid-template-columns:1fr}.bia-explore--things .bia-things__spotlight{min-height:400px}.bia-explore--things .bia-things__itinerary-stop{grid-template-columns:1fr;gap:.7rem}.bia-explore--things .bia-things__closing-links{align-items:stretch}}
+
+
+/* Stirling Festival Theatre: stand-alone destination feature */
+.bia-explore--things .bia-things__theatre-feature{
+  display:grid;
+  grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);
+  background:#192d28;
+  color:#fff;
+  min-height:640px;
+}
+.bia-explore--things .bia-things__theatre-visual{position:relative;min-width:0;min-height:640px;overflow:hidden;background:#342820}
+.bia-explore--things .bia-things__theatre-visual>img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;position:absolute;inset:0}
+.bia-explore--things .bia-things__theatre-visual::after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.67));pointer-events:none}
+.bia-explore--things .bia-things__theatre-caption{position:absolute;z-index:1;bottom:1.25rem;left:clamp(1.3rem,4vw,3rem);right:1.5rem;font-size:.76rem;line-height:1.5;color:#f6eee2}
+.bia-explore--things .bia-things__theatre-caption a{color:#fff!important;text-underline-offset:3px}
+.bia-explore--things .bia-things__theatre-story{min-width:0;display:flex;flex-direction:column;justify-content:center;padding:clamp(2.3rem,5.5vw,5.6rem) clamp(2rem,5.3vw,5.8rem)}
+.bia-explore--things .bia-things__theatre-story .bia-explore__eyebrow{color:#d5bf8c!important;margin-bottom:1.35rem!important}
+.bia-explore--things .bia-things__theatre-story h2{color:#fff;max-width:710px;font-size:clamp(2.5rem,4.1vw,4.8rem);line-height:1.08;letter-spacing:-.035em;margin-bottom:1.5rem}
+.bia-explore--things .bia-things__theatre-story h2 em{font-weight:400;color:#dfc995}
+.bia-explore--things .bia-things__theatre-story p{color:#e0e6df;font-size:clamp(.96rem,1.1vw,1.07rem);line-height:1.75;max-width:670px;margin-bottom:1.15rem}
+.bia-explore--things .bia-things__theatre-story .bia-things__theatre-intro{color:#e7d3a4;font-size:clamp(1.1rem,1.5vw,1.38rem);font-weight:550;line-height:1.55}
+.bia-explore--things .bia-things__theatre-story strong{color:#fff;font-weight:750}
+.bia-explore--things .bia-things__theatre-cta{display:flex;align-items:center;flex-wrap:wrap;gap:1rem 1.4rem;margin:1.1rem 0 1.9rem}
+.bia-explore--things .bia-things__theatre-cta .bia-explore__button{background:#e7d3a4;border-color:#e7d3a4;color:#1b3228!important}
+.bia-explore--things .bia-things__theatre-cta .bia-explore__button:hover{background:#f5e4bd;border-color:#f5e4bd}
+.bia-explore--things .bia-things__theatre-cta>a:not(.bia-explore__button){color:#f4e9d3!important;font-weight:700;font-size:.92rem;text-underline-offset:4px}
+.bia-explore--things .bia-things__theatre-visit{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;border-top:1px solid rgba(255,255,255,.25);padding-top:1.2rem}
+.bia-explore--things .bia-things__theatre-visit div{display:flex;flex-direction:column;gap:.35rem}
+.bia-explore--things .bia-things__theatre-visit span{font:.7rem/1.45 Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#bdcbbb}
+.bia-explore--things .bia-things__theatre-visit strong,
+.bia-explore--things .bia-things__theatre-visit a{color:#fff!important;font-size:.91rem;line-height:1.4;font-weight:700}
+.bia-explore--things .bia-things__theatre-evening{background:#f3efe5;padding:clamp(2.6rem,5.8vw,5rem) 0}
+.bia-explore--things .bia-things__evening-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(290px,.9fr);gap:clamp(2rem,6vw,5.5rem);align-items:center}
+.bia-explore--things .bia-things__evening-grid h2{font-size:clamp(2.2rem,3.5vw,3.7rem)}
+.bia-explore--things .bia-things__evening-grid p:not(.bia-explore__eyebrow){max-width:640px;font-size:1.05rem;line-height:1.75}
+.bia-explore--things .bia-things__evening-links>a{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;text-decoration:none;font-size:clamp(.9rem,1.08vw,1.02rem);font-weight:700;padding:1.03rem 0;border-bottom:1px solid #cbd5c8}
+.bia-explore--things .bia-things__evening-links>a:first-child{border-top:1px solid #cbd5c8}
+.bia-explore--things .bia-things__evening-links>a:hover{text-decoration:underline;text-underline-offset:4px}
+.bia-explore--things .bia-things__heritage-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(285px,.75fr);align-items:center;gap:clamp(2rem,6vw,5rem)}
+.bia-explore--things .bia-things__heritage-grid>div>p:not(.bia-explore__eyebrow){font-size:1.03rem;line-height:1.75;max-width:680px}
+.bia-explore--things .bia-things__heritage-grid .bia-things__details{font-size:.9rem!important;font-weight:700;color:#4c6d51}
+.bia-explore--things .bia-things__heritage-aside{background:#e6e9df;border-top:4px solid #627c63;padding:clamp(1.5rem,3vw,2.5rem)}
+.bia-explore--things .bia-things__heritage-aside .bia-things__heritage-overline{font:.71rem/1.5 Arial,sans-serif;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#416449}
+.bia-explore--things .bia-things__heritage-aside p:not(.bia-things__heritage-overline){font-size:1.1rem;line-height:1.7;color:#3a4f3e}
+.bia-explore--things .bia-things__heritage-aside>a{font-size:.92rem;font-weight:700}
+@media(max-width:960px){
+  .bia-explore--things .bia-things__theatre-feature{grid-template-columns:1fr}
+  .bia-explore--things .bia-things__theatre-visual{min-height:450px}
+  .bia-explore--things .bia-things__theatre-story{padding:clamp(2.5rem,6vw,4rem) clamp(1.5rem,5vw,4rem)}
+  .bia-explore--things .bia-things__evening-grid,.bia-explore--things .bia-things__heritage-grid{grid-template-columns:1fr}
+}
+@media(max-width:680px){
+  .bia-explore--things .bia-things__theatre-visual{min-height:300px}
+  .bia-explore--things .bia-things__theatre-story{padding:2.5rem 1.1rem 3rem}
+  .bia-explore--things .bia-things__theatre-story h2{font-size:clamp(2.35rem,10vw,3.5rem)}
+  .bia-explore--things .bia-things__theatre-visit{grid-template-columns:1fr}
+  .bia-explore--things .bia-things__theatre-cta{flex-direction:column;align-items:flex-start}
+  .bia-explore--things .bia-things__theatre-caption{left:1rem;right:1rem}
+}
