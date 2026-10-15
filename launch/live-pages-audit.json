@@ -1,0 +1,127 @@
+{
+  "checkedAt": "2026-10-15T13:41:22.414Z",
+  "origin": "https://www.visitstirlingrawdon.ca",
+  "results": [
+    {
+      "path": "/",
+      "status": 200,
+      "finalUrl": "https://www.visitstirlingrawdon.ca/",
+      "title": "Visit Stirling-Rawdon",
+      "hasEmbed": false,
+      "hasExpectedKey": false,
+      "hasNoindex": false,
+      "hasLoginWall": false,
+      "error": ""
+    },
+    {
+      "path": "/explore-and-enjoy",
+      "status": 200,
+      "finalUrl": "https://www.visitstirlingrawdon.ca/explore-and-enjoy",
+      "title": "Explore &amp; Enjoy Stirling-Rawdon | Visit Stirling-Rawdon &mdash; Visit Stirling-Rawdon",
+      "hasEmbed": true,
+      "hasExpectedKey": true,
+      "hasNoindex": false,
+      "hasLoginWall": false,
+      "error": ""
+    },
+    {
+      "path": "/farms-local-food",
+      "status": 200,
+      "finalUrl": "https://www.visitstirlingrawdon.ca/farms-local-food",
+      "title": "Farms &amp; Local Food &mdash; Visit Stirling-Rawdon",
+      "hasEmbed": true,
+      "hasExpectedKey": true,
+      "hasNoindex": false,
+      "hasLoginWall": false,
+      "error": ""
+    },
+    {
+      "path": "/things-to-do",
+      "status": 200,
+      "finalUrl": "https://www.visitstirlingrawdon.ca/things-to-do",
+      "title": "Things to Do &mdash; Visit Stirling-Rawdon",
+      "hasEmbed": true,
+      "hasExpectedKey": true,
+      "hasNoindex": false,
+      "hasLoginWall": false,
+      "error": ""
+    },
+    {
+      "path": "/community-events",
+      "status": 200,
+      "finalUrl": "https://www.visitstirlingrawdon.ca/community-events",
+      "title": "Community Events &mdash; Visit Stirling-Rawdon",
+      "hasEmbed": true,
+      "hasExpectedKey": true,
+      "hasNoindex": false,
+      "hasLoginWall": false,
+      "error": ""
+    },
+    {
+      "path": "/local-stories",
+      "status": 200,
+      "finalUrl": "https://www.visitstirlingrawdon.ca/local-stories",
+      "title": "Local Stories &mdash; Visit Stirling-Rawdon",
+      "hasEmbed": true,
+      "hasExpectedKey": true,
+      "hasNoindex": false,
+      "hasLoginWall": false,
+      "error": ""
+    },
+    {
+      "path": "/eat-and-drink",
+      "status": 200,
+      "finalUrl": "https://www.visitstirlingrawdon.ca/eat-and-drink",
+      "title": "Eat &amp; Drink &mdash; Visit Stirling-Rawdon",
+      "hasEmbed": true,
+      "hasExpectedKey": true,
+      "hasNoindex": false,
+      "hasLoginWall": false,
+      "error": ""
+    },
+    {
+      "path": "/shop-local",
+      "status": 200,
+      "finalUrl": "https://www.visitstirlingrawdon.ca/shop-local",
+      "title": "Shop Local &mdash; Visit Stirling-Rawdon",
+      "hasEmbed": true,
+      "hasExpectedKey": true,
+      "hasNoindex": false,
+      "hasLoginWall": false,
+      "error": ""
+    },
+    {
+      "path": "/plan-your-visit",
+      "status": 200,
+      "finalUrl": "https://www.visitstirlingrawdon.ca/plan-your-visit",
+      "title": "Plan Your Visit to Stirling-Rawdon &mdash; Visit Stirling-Rawdon",
+      "hasEmbed": true,
+      "hasExpectedKey": true,
+      "hasNoindex": false,
+      "hasLoginWall": false,
+      "error": ""
+    },
+    {
+      "path": "/events",
+      "status": 200,
+      "finalUrl": "https://www.visitstirlingrawdon.ca/events",
+      "title": "Appointments 3 &mdash; Visit Stirling-Rawdon",
+      "hasEmbed": false,
+      "hasExpectedKey": false,
+      "hasNoindex": false,
+      "hasLoginWall": false,
+      "error": ""
+    },
+    {
+      "path": "/business-directory",
+      "status": 200,
+      "finalUrl": "https://www.visitstirlingrawdon.ca/business-directory",
+      "title": "Business Directory &mdash; Visit Stirling-Rawdon",
+      "hasEmbed": false,
+      "hasExpectedKey": false,
+      "hasNoindex": false,
+      "hasLoginWall": false,
+      "error": ""
+    }
+  ]
+}
