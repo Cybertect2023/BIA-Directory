@@ -1,0 +1,34 @@
+name: Verify connected visitor pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/verify-visitor-integration.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install existing test dependencies
+        run: npm ci --ignore-scripts
+      - name: Validate seven visitor guides and interactive map deep links
+        run: node scripts/check-visitor-crosslinks.mjs
+      - name: Verify map generator has no stale outputs
+        run: npm test
+      - name: Test interactive map in simulated DOM
+        run: npm run test:dom
+      - name: Check JavaScript syntax
+        run: |
+          node --check assets/explore-loader.js
+          node --check assets/visitor-map.js
