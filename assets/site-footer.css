@@ -1,0 +1,139 @@
+/*
+ * Stirling-Rawdon BIA sitewide footer. Scoped to .sr-footer.
+ * Typography deliberately inherits the approved Squarespace BIA font settings.
+ * Do not replace the live Squarespace newsletter form with a simulated form.
+ */
+#sr-site-footer{width:100%;min-width:0}
+.sr-footer,.sr-footer *{box-sizing:border-box}
+.sr-footer{
+  --sr-bg:#1d4352;
+  --sr-ink:#f4f7f4;
+  --sr-muted:#d1dedb;
+  --sr-soft:#aac3bc;
+  --sr-line:rgba(228,242,238,.22);
+  --sr-accent:#dceee4;
+  position:relative;
+  isolation:isolate;
+  width:100%;
+  margin:0;
+  padding:0;
+  color:var(--sr-ink);
+  background:linear-gradient(112deg,#214e60 0%,#173949 55%,#234d4b 100%);
+  font-family:var(--body-font-font-family,inherit);
+  font-size:16px;
+  line-height:1.55;
+  text-align:left;
+  overflow:hidden;
+}
+.sr-footer::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  background:radial-gradient(circle at 86% 5%,rgba(146,194,173,.11),transparent 33%);
+}
+.sr-footer__inner{width:min(1200px,calc(100% - 64px));margin:0 auto;position:relative}
+.sr-footer :is(h2,h3,p){margin:0}
+.sr-footer :is(h2,h3){
+  font-family:var(--heading-font-font-family,inherit);
+  font-weight:400;
+  text-transform:none;
+  letter-spacing:normal;
+  color:var(--sr-ink);
+}
+.sr-footer a{color:var(--sr-ink);text-decoration:none;text-underline-offset:5px;transition:color .2s,border-color .2s,background-color .2s,transform .2s}
+.sr-footer a:hover{color:#fff;text-decoration:underline}
+.sr-footer a:focus-visible{outline:3px solid #e3f7d9;outline-offset:5px;border-radius:3px}
+.sr-footer__feature{
+  display:grid;
+  grid-template-columns:minmax(0,1.4fr) minmax(250px,.6fr);
+  align-items:center;
+  gap:48px;
+  padding:56px 0 54px;
+  border-bottom:1px solid var(--sr-line);
+}
+.sr-footer__eyebrow{
+  color:#d5e7db;
+  font-family:var(--body-font-font-family,inherit);
+  font-size:.73rem;
+  font-weight:700;
+  letter-spacing:.17em;
+  line-height:1.5;
+  text-transform:uppercase;
+  margin-bottom:15px!important;
+}
+.sr-footer__feature h2{
+  max-width:790px;
+  font-size:clamp(2rem,3.5vw,3.65rem);
+  line-height:1.16;
+  margin-bottom:14px!important;
+}
+.sr-footer__feature h2 span{color:#d4e7dc}
+.sr-footer__feature-copy>p:last-child{color:var(--sr-muted);max-width:670px;font-size:1rem;line-height:1.7}
+.sr-footer__feature-actions{display:flex;flex-direction:column;gap:12px;justify-self:end;width:min(100%,265px)}
+.sr-footer .sr-footer__button{
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+  min-height:49px;padding:12px 19px;
+  border:1px solid var(--sr-accent);border-radius:999px;
+  font-family:var(--body-font-font-family,inherit);
+  font-size:.84rem;font-weight:700;line-height:1.4;
+  text-decoration:none;
+}
+.sr-footer .sr-footer__button span{font-size:1.2rem;line-height:1;transition:transform .2s}
+.sr-footer .sr-footer__button:hover span{transform:translate(2px,-2px)}
+.sr-footer .sr-footer__button--light{background:var(--sr-accent);color:#213e42}
+.sr-footer .sr-footer__button--light:hover{background:#fff;color:#213e42;text-decoration:none}
+.sr-footer .sr-footer__button--outline{background:transparent;color:#f6faf8;border-color:rgba(232,244,237,.67)}
+.sr-footer .sr-footer__button--outline:hover{background:rgba(255,255,255,.10);color:#fff;text-decoration:none}
+.sr-footer__main{
+  display:grid;
+  grid-template-columns:minmax(220px,1.55fr) repeat(3,minmax(0,1fr));
+  gap:clamp(22px,3.8vw,64px);
+  padding:48px 0 53px;
+}
+.sr-footer__identity{min-width:0}
+.sr-footer__logo-link{display:inline-block;line-height:0;margin:0 0 17px}
+.sr-footer__logo{display:block;width:155px;max-width:100%;height:auto;object-fit:contain}
+.sr-footer__identity>p{max-width:265px;color:var(--sr-muted);font-size:.91rem;line-height:1.7;margin-bottom:18px}
+.sr-footer .sr-footer__email{font-size:.84rem;font-weight:650;color:#f4f8f5;overflow-wrap:anywhere;text-decoration:underline;text-decoration-color:rgba(224,245,232,.3)}
+.sr-footer__email span{display:inline-block;padding-left:3px}
+.sr-footer__links{display:flex;flex-direction:column;align-items:flex-start;gap:11px;min-width:0}
+.sr-footer__links h3{font-size:clamp(1.13rem,1.7vw,1.55rem);line-height:1.27;margin:0 0 13px!important}
+.sr-footer__links a{display:inline-block;color:var(--sr-muted);font-size:.9rem;line-height:1.4}
+.sr-footer__links a:hover{color:#fff}
+.sr-footer__bottom{
+  display:flex;align-items:center;justify-content:space-between;gap:14px 35px;
+  border-top:1px solid var(--sr-line);
+  padding:20px 0 24px;
+}
+.sr-footer__bottom p,.sr-footer__bottom a{color:#c3d6d2;font-size:.76rem;line-height:1.7}
+.sr-footer__bottom-links{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+@media(max-width:970px){
+ .sr-footer__feature{grid-template-columns:minmax(0,1fr) minmax(220px,.6fr);gap:28px}
+ .sr-footer__main{grid-template-columns:minmax(210px,1.4fr) repeat(3,minmax(0,1fr));gap:24px}
+ .sr-footer__links h3{font-size:1.26rem}
+}
+@media(max-width:760px){
+ .sr-footer__feature{grid-template-columns:1fr;gap:25px;padding:44px 0 40px}
+ .sr-footer__feature h2{font-size:clamp(2rem,5vw,2.8rem)}
+ .sr-footer__feature-actions{width:100%;max-width:none;flex-direction:row;justify-self:stretch}
+ .sr-footer .sr-footer__button{flex:1}
+ .sr-footer__main{grid-template-columns:repeat(2,minmax(0,1fr));gap:35px 27px;padding:39px 0}
+ .sr-footer__identity{grid-column:1/-1}
+ .sr-footer__identity>p{max-width:550px}
+ .sr-footer__bottom{flex-direction:column;align-items:flex-start}
+}
+@media(max-width:480px){
+ .sr-footer__inner{width:calc(100% - 36px)}
+ .sr-footer__feature{padding:36px 0}
+ .sr-footer__feature h2{font-size:clamp(1.85rem,8vw,2.4rem)}
+ .sr-footer__feature-actions{flex-direction:column;max-width:310px}
+ .sr-footer__main{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:20px;row-gap:30px}
+ .sr-footer__identity{grid-column:1/-1}
+ .sr-footer__links h3{font-size:1.16rem;margin-bottom:6px!important}
+ .sr-footer__links a{font-size:.85rem;overflow-wrap:anywhere}
+ .sr-footer__bottom-links{gap:7px 18px}
+ .sr-footer__logo{width:140px}
+}
+@media(prefers-reduced-motion:reduce){.sr-footer a,.sr-footer .sr-footer__button span{transition:none}}
