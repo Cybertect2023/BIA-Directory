@@ -268,7 +268,7 @@
       "image": "",
       "featured": false,
       "profileUrl": "/rawdon-creek-soap-co",
-      "verificationStatus": "verified",
+      "verificationStatus": "needs-review",
       "collections": [
         "shop-local"
       ]
@@ -413,10 +413,10 @@
       "name": "Stirling Book Company",
       "category": "Shops & Retail",
       "description": "Independent bookstore with new books, games, puzzles, greeting cards, stationery, journals, and pens.",
-      "address": "36 Mill Street, Stirling, ON",
+      "address": "22 Mill Street, Stirling, ON K0K 3E0",
       "phone": "613-395-3030",
       "website": "https://stirlingbookco.ca",
-      "sourceUrl": "https://www.visitstirlingrawdon.ca/business-directory/blog-post-title-one-sxcf9-VE82Y-hc3gf-terp6-ekydd",
+      "sourceUrl": "https://stirlingbookco.ca/",
       "about": "Stirling Book Company is your local independent book store. We offer a highly curated wide variety of new books across all genres. Our shelves are filled with the latest releases and beloved classics. We also carry a selection of games, puzzles, greetings cards, stationery, journals, and pens.",
       "hours": {
         "monday": "Closed",
