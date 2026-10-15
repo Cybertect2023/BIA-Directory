@@ -17,7 +17,7 @@
     })
     .then(html => {
       const documentFragment = new DOMParser().parseFromString(html, "text/html");
-      const footer = documentFragment.querySelector("footer.sr-footer");
+      const footer = documentFragment.querySelector(".sr-footer");
       if (!footer) throw new Error("Footer template missing its root element");
       const imported = document.importNode(footer, true);
       const year = imported.querySelector("[data-sr-footer-year]");
