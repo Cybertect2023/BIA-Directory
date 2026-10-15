@@ -1,6 +1,6 @@
 # Explore & Enjoy: Squarespace implementation
 
-This feature uses the existing Squarespace 7.1 + GitHub Pages + Code Block architecture. It is scoped under `.bia-explore`; it does not edit `businesses.json`, `assets/bia.css`, `assets/directory.js`, or `assets/profile.js`.
+This feature uses the existing Squarespace 7.1 + GitHub Pages + Code Block architecture. Visitor-guide CSS and JavaScript are scoped under `.bia-explore` and do not overwrite the directory or profile scripts. A verified Stirling Book Company address correction and a Rawdon Creek Soap Co. address-review flag were made in `businesses.json` while researching Shop Local.
 
 ## Shared assets
 
@@ -10,7 +10,7 @@ This feature uses the existing Squarespace 7.1 + GitHub Pages + Code Block archi
 
 ## Recommended small Code Block loader
 
-For the visitor hub, its four supporting guides and the separate Eat & Drink guide (six pages total), use `assets/explore-loader.js` instead of pasting the large HTML templates into Squarespace. This keeps page content centrally editable in GitHub.
+For the visitor hub, its four supporting guides, Eat & Drink and Shop Local (**seven pages total**), use `assets/explore-loader.js` instead of pasting large HTML templates into Squarespace. This keeps content centrally editable in GitHub.
 
 On the main page at `/explore-and-enjoy`, paste:
 
@@ -23,7 +23,7 @@ On the main page at `/explore-and-enjoy`, paste:
 <script defer src="https://cybertect2023.github.io/BIA-Directory/assets/explore-loader.js"></script>
 ```
 
-For the four supporting Explore pages, duplicate the Code Block and change `data-explore-page` to one of: `farms-local-food`, `things-to-do`, `community-events`, or `local-stories`. The **Eat & Drink** guide uses `data-explore-page="eat-and-drink"` with the same loader; see [DINING.md](./DINING.md) for its tested fallback snippet, editorial sources, SEO and homepage-link instructions.
+For the four supporting Explore pages, change `data-explore-page` to `farms-local-food`, `things-to-do`, `community-events`, or `local-stories`. **Eat & Drink** uses `data-explore-page="eat-and-drink"`; see [DINING.md](./DINING.md). **Shop Local** uses `data-explore-page="shop-local"`; see [SHOPPING.md](./SHOPPING.md). Both use the same loader and are staged behind safe directory links until published.
 
 **Do not add `pages/home-explore-section.html` below the existing homepage navigation cards**; it duplicates homepage discovery choices. Point the existing Explore & Enjoy button to `/explore-and-enjoy` after all four destination pages exist and have been tested.
 
@@ -31,18 +31,15 @@ The loader uses client-side JavaScript to fetch HTML from GitHub Pages. This is 
 
 ## Squarespace Code Blocks
 
-For each page, add one Code Block, paste the matching `pages/*.html` file, and add these shared asset tags at the top of the same Code Block:
+For the recommended hosted-template approach, use the small Code Block shown above and **change only the page key, fallback H1, and fallback description**. The shared `assets/explore.css` and `assets/explore-loader.js` scripts remain the same across pages.
 
-```html
-<link rel="stylesheet" href="https://cybertect2023.github.io/BIA-Directory/assets/explore.css">
-<script defer src="https://cybertect2023.github.io/BIA-Directory/assets/explore.js"></script>
-```
+An alternative is to paste the entire `pages/*.html` template into Squarespace and load only the shared stylesheet. That makes the editorial content available without template-fetch JavaScript, but GitHub changes will no longer automatically update that HTML. Do not paste both the full HTML and the small-loader block on the same page.
 
-**Do not paste `home-explore-section.html` beneath the homepage's existing three category cards.** It would duplicate their purpose. Keep the three cards and update their destinations to published landing pages when available. Eat & Drink should eventually link to `/eat-and-drink`, not its older filtered-directory URL.
+**Do not paste `home-explore-section.html` on the homepage.** It duplicates the three existing navigation cards. When the new landing pages are published, update the existing Shop Local and Eat & Drink buttons to point to their new routes.
 
 ## Page setup and SEO
 
-Create ordinary Squarespace pages with flat URLs. Keep them out of primary navigation until published and tested. The Explore & Enjoy hub is `/explore-and-enjoy`, and the new Eat & Drink guide is `/eat-and-drink`. Squarespace page nesting must not be assumed.
+Create ordinary Squarespace pages with flat URLs. Keep them out of primary navigation until published and tested. The Explore & Enjoy hub is `/explore-and-enjoy`; Eat & Drink uses `/eat-and-drink`; Shop Local uses `/shop-local`. Squarespace page nesting must not be assumed.
 
 | Page | URL | SEO title | SEO description |
 | --- | --- | --- | --- |
@@ -52,6 +49,7 @@ Create ordinary Squarespace pages with flat URLs. Keep them out of primary navig
 | Community Events | `/community-events` | Community Events in Stirling-Rawdon \| Festivals, Markets & Local Traditions | Explore Stirling-Rawdon festivals, holiday markets, Farmtown Park’s tree and wreath displays, the Stirling Fair, theatre, and family events. Find dates and organizer links. |
 | Woven Into Stirling | `/local-stories` | Woven Into Stirling \| Local Stories & Business Profiles | Meet the people behind Stirling Festival Theatre, Rawdon Creek Soap Co., and Blue Collar Therapy. Real local business stories shared with the Stirling-Rawdon BIA. |
 | Eat & Drink | `/eat-and-drink` | Eat & Drink in Stirling-Rawdon \| Cafés, Restaurants & Theatre Nights | Explore Stirling-Rawdon cafés, restaurants, pizza, local food and a special night at Stirling Festival Theatre. Find where to eat on Mill Street and West Front Street. |
+| Shop Local | `/shop-local` | Shop Local in Stirling-Rawdon \| Boutiques, Books, Gifts & Vintage Finds | Explore independent shops in Stirling-Rawdon, Ontario. Discover books, handmade soaps, flowers, vintage finds, home décor, specialty foods and downtown shopping. |
 
 Set each page's slug and SEO fields in **Page Settings**. The full GitHub template supplies its own H1. Do not add a second H1 to the Squarespace section outside the Code Block. An initial fallback H1 inside the loader container is replaced at runtime.
 
@@ -63,8 +61,18 @@ Set each page's slug and SEO fields in **Page Settings**. The full GitHub templa
 - `pages/things-to-do.html` — visitor guide, outdoor places, culture and sample day.
 - `pages/community-events.html` — annual traditions, current event feature and calendar handoff.
 - `pages/local-stories.html` — sourced story archive and verified-business directory route.
+- `pages/shop-local.html` — curated storefront guide, gift/housewares/books filters, main-street stroll, everyday shopping and visitor itineraries. [SHOPPING.md](./SHOPPING.md) contains source verification and cutover steps.
 - `pages/eat-and-drink.html` — six BIA food profiles, coffee/lunch/dinner/takeout filters, theatre-night dining, two-street pocket guide, sample itinerary and farm-to-village links. See [DINING.md](./DINING.md).
 - `story-template.html` — reusable editorial page structure for future features; replace every bracketed field before publishing.
+
+## Shop Local maintenance
+
+- The `/shop-local` guide is sourced from six curated visitor-shopping business profiles and four additional practical retail/service profiles.
+- It has progressive-enhancement filters for gifts, home and vintage, books, Stirling-made products and specialty food, provided by `assets/explore-loader.js`.
+- Links from other visitor guides are staged as `data-launch-href="/shop-local"` while their active `href` continues pointing to the published curated directory. Switch them only after Squarespace has published `/shop-local`.
+- The Stirling Book Company moved from 36 to 22 Mill Street, and the change is reflected in `businesses.json`.
+- Rawdon Creek Soap Co. currently has conflicting addresses on its own website; its directory record is marked `needs-review`, and the editorial guide deliberately omits the number. Confirm directly with the operator.
+- See [SHOPPING.md](./SHOPPING.md) for the full build record, source links, staged linking and activation instructions.
 
 ## Community Events maintenance
 
@@ -114,4 +122,4 @@ The visitor guide pages generally use existing BIA Squarespace-hosted imagery as
 1. Wait for the GitHub Pages deployment and test `/assets/explore.css`, `/assets/explore.js`, and `/explore/events.json` at `https://cybertect2023.github.io/BIA-Directory/`.
 2. Paste the page snippets and asset tags into Squarespace Code Blocks. Squarespace editor previews can suppress embedded scripts; confirm the public page in a private/incognito browser after saving.
 3. Check every page at desktop and mobile widths. Verify card links, event link, page breadcrumbs, BIA calendar, directory filters, official links, focus outlines, and image loading.
-4. Keep the existing three homepage navigation cards. After `/eat-and-drink` is publicly tested, change the homepage Eat & Drink button from the curated directory to `/eat-and-drink`. Leave the Shop Local destination as its curated directory until its own guide is published.
+4. Keep the existing three homepage navigation cards. After `/eat-and-drink` and `/shop-local` have each been publicly tested, update only the existing Eat & Drink and Shop Local button destinations, and activate the associated staged links in GitHub. Do not redirect early.
