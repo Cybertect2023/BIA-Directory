@@ -42,6 +42,7 @@ test('real DOM: filters, collections, saved lifecycle, ordering, selection, link
  click(doc,'.vm-toolbar button');assert.equal(count(doc),2);
  assert.equal(doc.querySelector('.vm-card').dataset.place,'farm-girl-cafe');
  click(doc,'[data-place="rustic-routes"] [data-reorder="-1"]');assert.equal(doc.querySelector('.vm-card').dataset.place,'rustic-routes');
+ assert.equal(doc.activeElement,doc.querySelector('[data-place="rustic-routes"] h3 button'),'reordering to the first position keeps focus on that stop');
  click(doc,'[data-place="rustic-routes"] h3 button');
  assert.equal(doc.querySelector('.vm-detail h3').textContent,'Rustic Routes');
  assert.equal(doc.querySelector('.vm-shell').dataset.view,'map');
@@ -65,6 +66,9 @@ test('actual Leaflet and markercluster load, markers select, clustering survives
  click(doc,'[data-place="farm-girl-cafe"] h3 button');await f.wait(()=>doc.querySelector('.leaflet-popup'));
  assert.ok(doc.querySelector('.leaflet-popup').textContent.includes('Farm Girl Cafe'));
  assert.equal(doc.querySelector('.vm-detail h3').textContent,'Farm Girl Cafe');
+ const otherMarker=doc.querySelector('.leaflet-marker-icon[title="Fresh & Hot Pizza"]');
+ assert.ok(otherMarker);otherMarker.dispatchEvent(new w.KeyboardEvent('keydown',{key:'Enter',bubbles:true}));
+ assert.equal(doc.querySelector('.vm-detail h3').textContent,'Fresh & Hot Pizza','Enter selects a marker as well as opening its popup');
  click(doc,'.vm-filter-row button');
  const c=doc.querySelector('.vm-filter-row select');c.value='farms';c.dispatchEvent(new w.Event('change'));
  assert.equal(count(doc),4);assert.equal(doc.querySelector('.vm-results-meta').textContent,'4 places · 3 verified pins');

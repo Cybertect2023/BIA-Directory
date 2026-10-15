@@ -74,6 +74,8 @@ These businesses remain searchable and saveable. No placeholder coordinates or r
 
 ## Source discrepancies and limits
 
+- Resumed review on 2026-10-14 rechecked theatre parking/accessibility sources and searched the remaining priority pins. Hastings County also publishes the ambiguous Firehall point (44.2971, -77.5464), overlapping the 33 Mill Street lawyer point rather than resolving the 39 Mill Street property. It remains withheld: https://hastingscounty.com/adventures/explore . No new coordinates were inferred from neighbouring shops. Alpaca Ridge's operator continues to publish 152 Smith Road and appointment-only visits; the exact pin remains unresolved.
+
 - Rawdon Creek Soap: directory 26 Mill Street versus operator 127 North Street, Unit 1. Operator structured coordinates point to North Street too. Await canonical correction before enabling a pin.
 - Lighthouse Tutoring has multiple locations. Its site-wide coordinates describe Picton, not Stirling. The Stirling address is separately published; the 8 Mill Street property pin comes from co-located Blue Collar Therapy’s operator directions. Picton metadata was deliberately not used.
 - OSM still calls 25 Mill Street “The Village Junction”; the exact address is used, with the canonical BIA name “The Vintage Junction”.

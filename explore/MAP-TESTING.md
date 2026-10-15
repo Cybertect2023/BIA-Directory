@@ -18,7 +18,17 @@ HTTP 429, current status unverified: Farm Girl Cafe, Rustic Routes, Stirling Boo
 
 ## Rendered-browser review
 
-Pending hosted-browser review after the first deployment. A JSDOM pass is not a claim of mobile visual verification.
+Reviewed the deployed GitHub Pages interface in Chromium on 2026-10-14:
+
+- Desktop split view rendered with live OSM tiles, visible attribution and clustered pins. Dining filter returned six places/four verified pins; selecting Farm Girl Cafe opened its details. Apple Maps walking directions carried the canonical destination address.
+- Dinner & a Show returned seven stops/five verified pins. Saving the cafe and theatre, reordering them, and reloading retained both stops and their order.
+- Keyboard review found focus dropped to the body when a moved stop reached the end of its list, and Enter on a marker opened only its popup. Both are corrected with regression assertions. Phone selection now scrolls the selected details into view.
+- Real iframe viewport review at 390, 320 and 768 CSS pixels (content widths 373, 303 and 751 after browser scrollbar/borders) showed no horizontal document overflow. At phone width the list loaded with **zero tile requests** until a place/map was selected. Search for theatre returned one place/one pin; selecting it loaded the map and theatre details.
+- The exact short activation snippet mounted successfully through `explore-loader.js` in the loader fixture at phone width. This checks the GitHub integration, not the surrounding Squarespace theme.
+- With JavaScript disallowed by iframe sandbox, the generated fallback retained all 40 destination links and the editorial guide; no interactive app was mounted.
+- Reusable review fixtures: `tests/visitor-map-preview.html` and `tests/visitor-map-loader.html`, both marked noindex. These are viewport tests, not physical-device, touch, VoiceOver or TalkBack certification. Browser failure simulation is covered by the DOM suite rather than browser network interception.
+
+The original implementation was committed as `9db9c3437aeda6df02712e2539ed400baa78c171`; GitHub Pages run `38668167702` completed successfully. The resumed review preserves all directory, profile, homepage and existing guide source files.
 
 ## Activation limit
 

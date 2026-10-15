@@ -147,7 +147,10 @@ export async function mount(host) {
   }
   function reorder(id,offset){const index=saved.indexOf(id),to=index+offset;if(to<0||to>=saved.length)return;
     [saved[index],saved[to]]=[saved[to],saved[index]];persist();render();
-    results.querySelector('[data-place="'+id+'"] [data-reorder="'+offset+'"]')?.focus();
+    const card=results.querySelector('[data-place="'+id+'"]');
+    // At either end, the just-used control becomes disabled. Keep keyboard focus
+    // on this stop instead of dropping it back to the document body.
+    (card.querySelector('[data-reorder="'+offset+'"]:not(:disabled)')||card.querySelector('h3 button')).focus();
     announce(byId.get(id).name+' moved '+(offset<0?'earlier':'later')+' in your saved list.');
   }
   function setView(view){
@@ -166,14 +169,17 @@ export async function mount(host) {
       const marker=markers.get(p.id);
       if(marker)focusMarker(marker);
     }
-    if(focus)detail.focus({preventScroll:true});
+    if(focus){
+      detail.focus({preventScroll:true});
+      if(window.matchMedia('(max-width:650px)').matches)detail.scrollIntoView({block:'start',behavior:'auto'});
+    }
   }
   function renderCard(p){
     const li=el('li','vm-card');li.dataset.place=p.id;li.dataset.selected=String(state.selected===p.id);
     li.append(el('span','vm-category',CATEGORIES[p.visitorCategory]));
     const title=el('h3');title.append(button(p.name,()=>select(p)));li.append(title);
     if(p.address&&!p.hideAddress)li.append(el('p','',p.address));
-    if(!hasPoint(p))li.append(el('p','vm-pending',p.status==='address-conflict'||p.status==='address-changed'?'Address being checked · pin withheld':'In the directory · pin awaiting verification'));
+    if(!hasPoint(p))li.append(el('p','vm-pending',p.status==='address-conflict'||p.status==='address-changed'?'Address being checked · pin withheld':'Location pin awaiting verification'));
     const actions=el('div','vm-card-actions');actions.append(saveControl(p));const profile=profileControl(p);if(profile)actions.append(profile);
     if(state.savedOnly){
       for(const [offset,label]of[[-1,'Move earlier'],[1,'Move later']]){const b=button(label,()=>reorder(p.id,offset));b.dataset.reorder=offset;b.disabled=saved.indexOf(p.id)+offset<0||saved.indexOf(p.id)+offset>=saved.length;b.setAttribute('aria-label',label+': '+p.name);actions.append(b);}
@@ -234,7 +240,7 @@ export async function mount(host) {
     for(const p of visible().filter(hasPoint)){
       const marker=window.L.marker([p.lat,p.lon],{title:p.name,alt:p.name,keyboard:true,riseOnHover:true,icon:icon(p)});
       marker.bindPopup(popup(p));marker.on('click',()=>{state.selected=p.id;render(false);});
-      marker.on('add',()=>{const node=marker.getElement();if(node){node.setAttribute('aria-label',p.name);node.addEventListener('keydown',event=>{if(event.key===' '){event.preventDefault();marker.fire('click');marker.openPopup();}});}});
+      marker.on('add',()=>{const node=marker.getElement();if(node){node.setAttribute('aria-label',p.name);node.addEventListener('keydown',event=>{if(event.key===' '||event.key==='Enter'){event.preventDefault();marker.fire('click');marker.openPopup();}});}});
       markers.set(p.id,marker);cluster.addLayer(marker);
     }
   }
