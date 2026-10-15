@@ -64,6 +64,19 @@ Set each Squarespace page's URL slug and SEO title/description in **Page Setting
 - `pages/local-stories.html` — sourced story archive and verified-business directory route.
 - `story-template.html` — reusable editorial page structure for future features; replace every bracketed field before publishing.
 
+## Woven Into Stirling: editorial interview source and privacy
+
+The Local Stories page (`pages/local-stories.html`) is based on three voluntary first-person submissions to the BIA's 2025 **Woven Into Stirling: Tell Us Your Idyllic Story** interview survey. Each source respondent explicitly checked the consent field granting the BIA permission to share their story and any submitted photos publicly. The archived ZIP includes no photo attachments.
+
+Published features:
+- Ken MacDougall / Stirling Festival Theatre (submitted 2025-06-02)
+- Julie Amodeo / Rawdon Creek Soap Co. (submitted 2025-08-06)
+- Brad Parsons / Parsons Therapy (submitted 2025-09-26), now presented under the verified Blue Collar Therapy name with the historical name and submission date disclosed.
+
+**Privacy:** Do not commit or publish the raw submitted CSV/ZIP, respondent contact emails, full interview metadata, or unsolicited personal details. The public page contains edited feature copy, short verbatim attributed excerpts, interview month/year, current official business links and existing BIA profile URLs. The interviews are historical records, not claims that business details or planned events remain unchanged.
+
+**Future updates:** Keep quotes faithful to the consented submissions. Verify current business branding and links, and seek consent for new interviews or portraits. Don't imply images supplied by the interviewees when none exist. The main public form URL has not been confirmed and therefore is not shown as a submission button.
+
 ## Research sources
 
 - [Township parks and playgrounds](https://www.stirling-rawdon.com/parks-recreation-culture/parks-and-playgrounds/)
