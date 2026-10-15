@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "verifiedOn": "2026-10-14",
+  "verifiedOn": "2026-10-15",
   "license": "OSM-derived coordinates © OpenStreetMap contributors, ODbL 1.0. Operator coordinates are attributed per record.",
   "businessLocations": [
     {
@@ -32,6 +32,35 @@
       }
     },
     {
+      "businessId": "creekside-yoga",
+      "lat": 44.2973,
+      "lon": -77.54656,
+      "pointType": "property",
+      "addressFingerprint": "69e28e44",
+      "verification": {
+        "date": "2026-10-15",
+        "sources": [
+          "https://creeksideyoga.ca/",
+          "https://www.visitstirlingrawdon.ca/business-directory"
+        ],
+        "note": "BIA-approved address-level property pin at the operator-confirmed 43 Mill Street. Exact entrance not surveyed."
+      }
+    },
+    {
+      "businessId": "smokin-barrel-bar-grill",
+      "lat": 44.2958499,
+      "lon": -77.548275,
+      "pointType": "property",
+      "addressFingerprint": "84c208c8",
+      "verification": {
+        "date": "2026-10-14",
+        "sources": [
+          "https://smokinbarrel.ca"
+        ],
+        "note": "Operator-published GeoCoordinates; agrees with 23 West Front Street."
+      }
+    },
+    {
       "businessId": "blooms-flowers",
       "lat": 44.2957889,
       "lon": -77.5481092,
@@ -43,6 +72,21 @@
           "https://www.openstreetmap.org/node/7057009683"
         ],
         "note": "Named OSM place or exact address matches canonical directory; property point, not a verified entrance."
+      }
+    },
+    {
+      "businessId": "firehall-cafe",
+      "lat": 44.2971167,
+      "lon": -77.5464667,
+      "pointType": "property",
+      "addressFingerprint": "866f15e9",
+      "verification": {
+        "date": "2026-10-15",
+        "sources": [
+          "https://www.hmdb.org/m.asp?m=273147",
+          "https://www.visitstirlingrawdon.ca/business-directory"
+        ],
+        "note": "BIA-approved property pin at confirmed 39 Mill Street address. Historical marker coordinates used; property point, not a surveyed cafe entrance."
       }
     },
     {
@@ -88,6 +132,97 @@
       }
     },
     {
+      "businessId": "stirling-book-company",
+      "lat": 44.29683,
+      "lon": -77.5471068,
+      "pointType": "property",
+      "addressFingerprint": "b2e88d31",
+      "verification": {
+        "date": "2026-10-14",
+        "sources": [
+          "https://stirlingbookco.ca/",
+          "https://www.openstreetmap.org/node/10121722992"
+        ],
+        "note": "Canonical address corrected upstream to 22 Mill Street during development. Operator relocation notice and footer confirm it; exact OSM address node still has previous tenant Antique Elegance. Property marker, not entrance."
+      }
+    },
+    {
+      "businessId": "vintage-junction",
+      "lat": 44.2968079,
+      "lon": -77.546802,
+      "pointType": "property",
+      "addressFingerprint": "b356ac94",
+      "verification": {
+        "date": "2026-10-14",
+        "sources": [
+          "https://www.openstreetmap.org/node/10121722994",
+          "https://www.visitstirlingrawdon.ca/vintage-junction"
+        ],
+        "note": "Exact 25 Mill Street address match. OSM calls this The Village Junction; canonical directory name retained."
+      }
+    },
+    {
+      "businessId": "blue-collar-therapy",
+      "lat": 44.2965628,
+      "lon": -77.5474997,
+      "pointType": "property",
+      "addressFingerprint": "c41eeaa7",
+      "verification": {
+        "date": "2026-10-14",
+        "sources": [
+          "https://parsonstherapy.ca",
+          "https://www.lighthousetutoring.ca/"
+        ],
+        "note": "Shared 8 Mill Street property. Coordinate from Blue Collar Therapy operator directions link; address matches directory. Individual suite entrances unverified."
+      }
+    },
+    {
+      "businessId": "cybertect",
+      "lat": 44.18693,
+      "lon": -77.39764,
+      "pointType": "property",
+      "addressFingerprint": "026edf42",
+      "verification": {
+        "date": "2026-10-15",
+        "sources": [
+          "https://cybertect.ca/",
+          "https://www.openstreetmap.org/way/384461473"
+        ],
+        "note": "BIA-approved regional pin for CyberTECT's confirmed Belleville mailing address. Marker is an approximate Bell-Front commercial-area point, not a verified suite entrance or a Stirling storefront."
+      }
+    },
+    {
+      "businessId": "lighthouse-tutoring",
+      "lat": 44.2965628,
+      "lon": -77.5474997,
+      "pointType": "property",
+      "addressFingerprint": "6354b1c7",
+      "verification": {
+        "date": "2026-10-14",
+        "sources": [
+          "https://parsonstherapy.ca",
+          "https://www.lighthousetutoring.ca/"
+        ],
+        "note": "Shared 8 Mill Street property. Coordinate from Blue Collar Therapy operator directions link; address matches directory. Individual suite entrances unverified."
+      }
+    },
+    {
+      "businessId": "the-fairway-golf",
+      "lat": 44.2924616,
+      "lon": -77.5625096,
+      "pointType": "property",
+      "addressFingerprint": "1f718f83",
+      "verification": {
+        "date": "2026-10-15",
+        "sources": [
+          "https://thefairwaygolf.ca/",
+          "https://www.visitstirlingrawdon.ca/business-directory",
+          "https://stirling-carpet-flooring-ltd-stirling.bellevilledirect.ca/profile/"
+        ],
+        "note": "BIA-approved property pin at 400 Front Street West. Coordinate identifies the 400 Front Street West property; Building 1 Unit 3 entrance not separately surveyed."
+      }
+    },
+    {
       "businessId": "kitchens-by-paul-holden",
       "lat": 44.2919571,
       "lon": -77.5630898,
@@ -97,34 +232,6 @@
         "date": "2026-10-14",
         "sources": [
           "https://www.openstreetmap.org/node/10066667268"
-        ],
-        "note": "Named OSM place or exact address matches canonical directory; property point, not a verified entrance."
-      }
-    },
-    {
-      "businessId": "r-and-s-home-hardware",
-      "lat": 44.2976991,
-      "lon": -77.5431002,
-      "pointType": "property",
-      "addressFingerprint": "2bfde5b0",
-      "verification": {
-        "date": "2026-10-14",
-        "sources": [
-          "https://www.openstreetmap.org/node/7056994950"
-        ],
-        "note": "Named OSM place or exact address matches canonical directory; property point, not a verified entrance."
-      }
-    },
-    {
-      "businessId": "back40-powersports",
-      "lat": 44.2963488,
-      "lon": -77.5458697,
-      "pointType": "property",
-      "addressFingerprint": "98ec9b86",
-      "verification": {
-        "date": "2026-10-14",
-        "sources": [
-          "https://www.openstreetmap.org/node/10121762536"
         ],
         "note": "Named OSM place or exact address matches canonical directory; property point, not a verified entrance."
       }
@@ -144,47 +251,61 @@
       }
     },
     {
-      "businessId": "smokin-barrel-bar-grill",
-      "lat": 44.2958499,
-      "lon": -77.548275,
+      "businessId": "rona-rollins-building-supplies",
+      "lat": 44.2926402,
+      "lon": -77.5639628,
       "pointType": "property",
-      "addressFingerprint": "84c208c8",
+      "addressFingerprint": "dd9b85ca",
       "verification": {
         "date": "2026-10-14",
         "sources": [
-          "https://smokinbarrel.ca"
+          "https://www.openstreetmap.org/way/400807501"
         ],
-        "note": "Operator-published GeoCoordinates; agrees with 23 West Front Street."
+        "note": "Mean of named RONA building polygon vertices (closing duplicate excluded); property marker, not entrance."
       }
     },
     {
-      "businessId": "blue-collar-therapy",
-      "lat": 44.2965628,
-      "lon": -77.5474997,
+      "businessId": "r-and-s-home-hardware",
+      "lat": 44.2976991,
+      "lon": -77.5431002,
       "pointType": "property",
-      "addressFingerprint": "c41eeaa7",
+      "addressFingerprint": "2bfde5b0",
       "verification": {
         "date": "2026-10-14",
         "sources": [
-          "https://parsonstherapy.ca",
-          "https://www.lighthousetutoring.ca/"
+          "https://www.openstreetmap.org/node/7056994950"
         ],
-        "note": "Shared 8 Mill Street property. Coordinate from Blue Collar Therapy operator directions link; address matches directory. Individual suite entrances unverified."
+        "note": "Named OSM place or exact address matches canonical directory; property point, not a verified entrance."
       }
     },
     {
-      "businessId": "lighthouse-tutoring",
-      "lat": 44.2965628,
-      "lon": -77.5474997,
+      "businessId": "stirling-dental-centre",
+      "lat": 44.2976991,
+      "lon": -77.5431002,
       "pointType": "property",
-      "addressFingerprint": "6354b1c7",
+      "addressFingerprint": "33496cdf",
+      "verification": {
+        "date": "2026-10-15",
+        "sources": [
+          "https://stirlingdentalcentre.com/",
+          "https://www.visitstirlingrawdon.ca/business-directory",
+          "https://www.openstreetmap.org/node/7056994950"
+        ],
+        "note": "BIA-approved property pin for 9B Tuftsville Road in Creekside Plaza. Shared plaza property point; unit entrance not surveyed."
+      }
+    },
+    {
+      "businessId": "back40-powersports",
+      "lat": 44.2963488,
+      "lon": -77.5458697,
+      "pointType": "property",
+      "addressFingerprint": "98ec9b86",
       "verification": {
         "date": "2026-10-14",
         "sources": [
-          "https://parsonstherapy.ca",
-          "https://www.lighthousetutoring.ca/"
+          "https://www.openstreetmap.org/node/10121762536"
         ],
-        "note": "Shared 8 Mill Street property. Coordinate from Blue Collar Therapy operator directions link; address matches directory. Individual suite entrances unverified."
+        "note": "Named OSM place or exact address matches canonical directory; property point, not a verified entrance."
       }
     },
     {
@@ -203,47 +324,18 @@
       }
     },
     {
-      "businessId": "rona-rollins-building-supplies",
-      "lat": 44.2926402,
-      "lon": -77.5639628,
+      "businessId": "the-vape-shop-stirling",
+      "lat": 44.2971042,
+      "lon": -77.5464426,
       "pointType": "property",
-      "addressFingerprint": "dd9b85ca",
+      "addressFingerprint": "10781925",
       "verification": {
-        "date": "2026-10-14",
+        "date": "2026-10-15",
         "sources": [
-          "https://www.openstreetmap.org/way/400807501"
+          "https://www.visitstirlingrawdon.ca/business-directory",
+          "https://www.openstreetmap.org/node/10121753819"
         ],
-        "note": "Mean of named RONA building polygon vertices (closing duplicate excluded); property marker, not entrance."
-      }
-    },
-    {
-      "businessId": "vintage-junction",
-      "lat": 44.2968079,
-      "lon": -77.546802,
-      "pointType": "property",
-      "addressFingerprint": "b356ac94",
-      "verification": {
-        "date": "2026-10-14",
-        "sources": [
-          "https://www.openstreetmap.org/node/10121722994",
-          "https://www.visitstirlingrawdon.ca/vintage-junction"
-        ],
-        "note": "Exact 25 Mill Street address match. OSM calls this The Village Junction; canonical directory name retained."
-      }
-    },
-    {
-      "businessId": "stirling-book-company",
-      "lat": 44.29683,
-      "lon": -77.5471068,
-      "pointType": "property",
-      "addressFingerprint": "b2e88d31",
-      "verification": {
-        "date": "2026-10-14",
-        "sources": [
-          "https://stirlingbookco.ca/",
-          "https://www.openstreetmap.org/node/10121722992"
-        ],
-        "note": "Canonical address corrected upstream to 22 Mill Street during development. Operator relocation notice and footer confirm it; exact OSM address node still has previous tenant Antique Elegance. Property marker, not entrance."
+        "note": "BIA-approved property pin for the confirmed 40 Mill Street address. Shared nearby property marker; storefront entrance not surveyed."
       }
     }
   ],
@@ -268,15 +360,6 @@
       "checked": "2026-10-14"
     },
     {
-      "businessId": "firehall-cafe",
-      "status": "needs-verification",
-      "reason": "Address 39 Mill Street confirmed; secondary coordinate coincides with OSM lawyer at 33 Mill Street. Do not use this ambiguous pin.",
-      "sources": [
-        "https://canada247.info/explore/ontario/hastings_county/stirling_rawdon/stirling/firehall-cafe-stirling-343-263-5011.html"
-      ],
-      "checked": "2026-10-14"
-    },
-    {
       "businessId": "food-boutique-stirling",
       "status": "needs-verification",
       "reason": "County confirms 27 West Front Street; operator uses 27–29. Exact property coordinate not confidently resolved. Both canonical profileUrl and legacy sourceUrl returned HTTP 404 on 2026-10-14; map links to the Food & Dining directory until the profile exists.",
@@ -288,28 +371,10 @@
       "profileStatus": "unavailable"
     },
     {
-      "businessId": "cybertect",
-      "status": "needs-verification",
-      "reason": "Published Belleville business address retained in directory; visitor-facing suite location/entrance not verified. No Stirling placeholder pin.",
-      "sources": [
-        "https://cybertect.ca/"
-      ],
-      "checked": "2026-10-14"
-    },
-    {
       "businessId": "jason-fornarolo-cpa",
       "status": "needs-verification",
       "reason": "Do not map a potentially residential address without independent evidence it is an intentionally published public business destination.",
       "sources": [],
-      "checked": "2026-10-14"
-    },
-    {
-      "businessId": "creekside-yoga",
-      "status": "needs-verification",
-      "reason": "Operator confirms 43 Mill Street; exact property coordinate remains unverified.",
-      "sources": [
-        "https://creeksideyoga.ca/"
-      ],
       "checked": "2026-10-14"
     },
     {
@@ -318,31 +383,6 @@
       "reason": "28 Mill Street in canonical directory; exact storefront coordinate unverified.",
       "sources": [
         "https://paradisecannabis.ca/shop-stirling-store/"
-      ],
-      "checked": "2026-10-14"
-    },
-    {
-      "businessId": "the-vape-shop-stirling",
-      "status": "needs-verification",
-      "reason": "40 Mill Street in canonical directory; exact storefront coordinate unverified.",
-      "sources": [],
-      "checked": "2026-10-14"
-    },
-    {
-      "businessId": "the-fairway-golf",
-      "status": "needs-verification",
-      "reason": "Operator confirms 400 Front Street West, Building 1 Unit 3. OSM unit labels do not resolve the building/suite distinction confidently.",
-      "sources": [
-        "https://thefairwaygolf.ca/"
-      ],
-      "checked": "2026-10-14"
-    },
-    {
-      "businessId": "stirling-dental-centre",
-      "status": "needs-verification",
-      "reason": "9B Tuftsville Road is in a shared plaza; exact unit point not verified.",
-      "sources": [
-        "https://stirlingdentalcentre.com/"
       ],
       "checked": "2026-10-14"
     },
