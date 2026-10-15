@@ -51,7 +51,7 @@ These businesses remain searchable and saveable. Pins approved by the BIA are li
 | McCurdy Collision Centre | needs-verification | Directory and collision network list 89 Belleville Road. Open mapping also labels a Tim Hortons at that address. Collision building/entrance needs confirmation. [source 1](https://ccsdealers.com/en/locations/Canada/Ontario-Southeast/) [source 2](https://www.openstreetmap.org/way/1544365508) |
 | Food Boutique Stirling | needs-verification | County confirms 27 West Front Street; operator uses 27–29. Exact property coordinate not confidently resolved. [source 1](https://www.hastingscounty.com/adventures/experiences/food-boutique) [source 2](https://www.facebook.com/foodboutiquestirling/) |
 | Jason Fornarolo CPA | needs-verification | Do not map a potentially residential address without independent evidence it is an intentionally published public business destination.  |
-| Paradise Cannabis — Stirling | needs-verification | 28 Mill Street in canonical directory; exact storefront coordinate unverified. [source 1](https://paradisecannabis.ca/shop-stirling-store/) |
+
 | Pet Valu — Creekside Centre | needs-verification | 9 Tuftsville Road is in a shared plaza; do not reuse an adjacent tenant pin. [source 1](https://store.petvalu.ca/location/2443/) |
 
 ## Visitor facilities
@@ -83,4 +83,4 @@ Food Boutique’s canonical `/food-boutique-stirling` and legacy `sourceUrl` bot
 
 18 profile URLs returned HTTP 200 and contained the profile component. Ten additional profile requests encountered Squarespace HTTP 429 rate limiting; these URLs remain canonical but their current response status is not claimed as verified. Exact response evidence is summarized in MAP-TESTING.md. No automated retries were made against the rate-limited URLs in that batch.
 
-Stirling Book Company’s initial address conflict was resolved by upstream commit `af08c1d` during this task. The current canonical address is 22 Mill Street, and its verified property pin is now included. Final coverage: **23 business pins, 6 unresolved businesses, 9 additional destination pins, 2 additional places awaiting coordinates**.
+Stirling Book Company’s initial address conflict was resolved by upstream commit `af08c1d` during this task. The current canonical address is 22 Mill Street, and its verified property pin is now included. Final coverage: **24 business pins, 5 unresolved businesses, 9 additional destination pins, 2 additional places awaiting coordinates**.
