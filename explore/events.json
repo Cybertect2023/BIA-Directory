@@ -1,15 +1,84 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "lastVerified": "2026-10-14",
   "featuredEvents": [
     {
+      "id": "million-dollar-quartet-2026",
+      "category": "Theatre & live music",
+      "title": "Million Dollar Quartet",
+      "dateLabel": "October 21–24, 2026",
+      "startDate": "2026-10-21T00:00:00-04:00",
+      "endDate": "2026-10-24T23:59:59-04:00",
+      "location": "Stirling Festival Theatre · 41 West Front Street",
+      "description": "A live stage production at Stirling Festival Theatre. Check the theatre for performance times and tickets.",
+      "url": "https://www.stirlingfestivaltheatre.com/buy-tickets",
+      "linkLabel": "Shows & tickets",
+      "source": "https://www.stirlingfestivaltheatre.com/"
+    },
+    {
+      "id": "stirlingfest-2026",
+      "category": "Music festival",
+      "title": "StirlingFest 2026",
+      "dateLabel": "October 24–26, 2026",
+      "startDate": "2026-10-24T00:00:00-04:00",
+      "endDate": "2026-10-26T23:59:59-04:00",
+      "location": "St. John's Anglican Church · 73 North Street",
+      "description": "Three concerts bringing classical, jazz and stringband music to St. John's Anglican Church. Reserve through the organizer.",
+      "url": "https://www.stirlingfest.com/index.html",
+      "linkLabel": "Festival program",
+      "source": "https://www.stirlingfest.com/index.html"
+    },
+    {
+      "id": "library-halloween-2026",
+      "category": "Family & library",
+      "title": "Spooktacular Halloween Bash",
+      "dateLabel": "October 31, 2026 · 10:30 a.m.",
+      "startDate": "2026-10-31T10:30:00-04:00",
+      "endDate": "2026-10-31T13:00:00-04:00",
+      "location": "Stirling-Rawdon Public Library · 43 West Front Street",
+      "description": "Costume fun, games and crafts for families. No registration required; confirm details with the library.",
+      "url": "https://stirlinglibrary.com/spooktacular-halloween-bash-saturday-october-31st-at-1030am/",
+      "linkLabel": "Library event details",
+      "source": "https://stirlinglibrary.com/spooktacular-halloween-bash-saturday-october-31st-at-1030am/"
+    },
+    {
       "id": "holiday-market-2026",
+      "category": "Holiday market",
       "title": "Holiday Market in the Village",
-      "dateLabel": "Friday, November 6, 2026 · 4–8 p.m.",
-      "startDate": "2026-11-06T16:00:00-04:00",
-      "description": "Mill Street fills with seasonal vendors, local businesses, and holiday atmosphere. Check the organizer’s updates for vendor details and event-day information.",
-      "url": "/holiday-market-2026",
-      "linkLabel": "Event details",
-      "source": "https://www.visitstirlingrawdon.ca/holiday-market-2026"
+      "dateLabel": "November 6, 2026 · 4–8 p.m.",
+      "startDate": "2026-11-06T16:00:00-05:00",
+      "endDate": "2026-11-06T20:00:00-05:00",
+      "location": "Mill Street · Downtown Stirling",
+      "description": "An outdoor holiday market along Mill Street, with local vendors and a festive downtown atmosphere. Follow the organizer for vendor updates.",
+      "url": "https://www.hastings.ca/adventures/events/holiday-market-village-downtown-stirling",
+      "linkLabel": "Holiday market details",
+      "source": "https://www.hastings.ca/adventures/events/holiday-market-village-downtown-stirling"
+    },
+    {
+      "id": "deck-the-halls-2026",
+      "category": "Trees, wreaths & family",
+      "title": "Deck the Halls at Farmtown Park",
+      "dateLabel": "November 19–22, 2026",
+      "startDate": "2026-11-19T18:00:00-05:00",
+      "endDate": "2026-11-22T15:00:00-05:00",
+      "location": "Farmtown Park · 437 West Front Street",
+      "description": "Explore decorated Christmas trees and wreaths inside Heritage Village, enter the raffles and enjoy seasonal family activities. Admission details are on Farmtown Park's site.",
+      "url": "https://www.farmtownpark.ca/events/wesc2ekhloe9cg6hl2grma02591gog",
+      "linkLabel": "Hours & admission",
+      "source": "https://www.farmtownpark.ca/events/wesc2ekhloe9cg6hl2grma02591gog"
+    },
+    {
+      "id": "panto-2026",
+      "category": "Holiday theatre",
+      "title": "Puss 'N Boots – A Panto Pirate Adventure",
+      "dateLabel": "November 20 – December 31, 2026",
+      "startDate": "2026-11-20T00:00:00-05:00",
+      "endDate": "2026-12-31T23:59:59-05:00",
+      "location": "Stirling Festival Theatre · 41 West Front Street",
+      "description": "Stirling Festival Theatre's seasonal pantomime: a reason to pair a performance with dinner and shopping downtown.",
+      "url": "https://www.stirlingfestivaltheatre.com/buy-tickets",
+      "linkLabel": "Show dates & tickets",
+      "source": "https://www.stirlingfestivaltheatre.com/"
     }
   ]
 }
