@@ -30,15 +30,29 @@
     } catch (_) { return false; }
   };
 
+  // Render a short upcoming-events list from GitHub data.
+  // Expired events disappear automatically; no need to manually clear stale dates.
+  // Legacy data-bia-event cards remain supported for older Squarespace snippets.
   const hydrateEvents = async (layout) => {
     const widgets = layout.querySelectorAll("[data-bia-event]");
-    if (!widgets.length) return;
+    const list = layout.querySelector("[data-bia-event-list]");
+    if (!widgets.length && !list) return;
+
+    const element = (tag, className, content) => {
+      const node = document.createElement(tag);
+      if (className) node.className = className;
+      if (typeof content === "string") node.textContent = content;
+      return node;
+    };
+
     try {
       const response = await fetch(rootUrl + "explore/events.json", {cache: "no-cache"});
-      if (!response.ok) return;
+      if (!response.ok) throw new Error("Event list HTTP " + response.status);
       const data = await response.json();
-      for (const event of data.featuredEvents || []) {
-        if (!event || !event.id) continue;
+      const entries = Array.isArray(data.featuredEvents) ? data.featuredEvents : [];
+
+      for (const event of entries) {
+        if (!event || typeof event.id !== "string") continue;
         for (const card of widgets) {
           if (card.getAttribute("data-bia-event") !== event.id) continue;
           const title = card.querySelector("[data-event-title]");
@@ -53,9 +67,54 @@
           if (link && typeof event.linkLabel === "string") link.textContent = event.linkLabel;
         }
       }
+
+      if (list) {
+        const now = Date.now();
+        const upcoming = entries
+          .filter(event =>
+            event &&
+            typeof event.title === "string" &&
+            typeof event.startDate === "string" &&
+            typeof event.endDate === "string" &&
+            Number.isFinite(Date.parse(event.startDate)) &&
+            Date.parse(event.endDate) >= now &&
+            typeof event.url === "string" &&
+            validateLink(event.url)
+          )
+          .sort((a, b) => Date.parse(a.startDate) - Date.parse(b.startDate))
+          .slice(0, 6);
+        if (!upcoming.length) {
+          list.replaceChildren(element("p", "bia-events__empty", "No upcoming events have been added to this featured list yet. The BIA, Township, library and theatre calendars below have the latest organizer announcements."));
+        } else {
+          const cards = upcoming.map(event => {
+            const card = element("article", "bia-events__listing");
+            const top = element("div", "bia-events__listing-top");
+            top.append(
+              element("span", "bia-events__listing-type", event.category || "Community event"),
+              element("span", "bia-events__listing-date", event.dateLabel || "")
+            );
+            const title = element("h3", "", event.title);
+            const location = element("p", "bia-events__listing-location", event.location || "Stirling-Rawdon");
+            const description = element("p", "bia-events__listing-description", event.description || "");
+            const link = element("a", "", (event.linkLabel || "Event details") + " ↗");
+            link.href = new URL(event.url, window.location.origin).href;
+            if (new URL(link.href).origin !== window.location.origin) {
+              link.target = "_blank";
+              link.rel = "noopener noreferrer";
+            }
+            card.append(top, title, location, description, link);
+            return card;
+          });
+          list.replaceChildren(...cards);
+        }
+      }
     } catch (error) {
-      // Keep the fallback event text embedded in the page template.
       console.warn("Explore & Enjoy event details could not be refreshed:", error);
+      if (list) {
+        list.replaceChildren(element("p", "bia-events__empty", "The event list is temporarily unavailable. Check the BIA, Township, library or theatre calendars below for current details."));
+      }
+    } finally {
+      if (list) list.setAttribute("aria-busy", "false");
     }
   };
 
