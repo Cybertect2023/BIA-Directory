@@ -337,3 +337,112 @@
   .bia-explore--stories .bia-stories__feature-links{align-items:flex-start;flex-direction:column}
   .bia-explore--stories .bia-stories__story-main h2{font-size:clamp(2.1rem,8vw,3rem)}
 }
+
+
+/* Community Events: visitor guide, seasonal highlights and recurring programs */
+.bia-explore--events .bia-events__crumbs{width:min(1200px,calc(100% - 64px));margin:0 auto;padding:1.1rem 0;color:#536b5a}
+.bia-explore--events .bia-events__hero{min-height:clamp(460px,50vw,660px)}
+.bia-explore--events .bia-events__hero .bia-explore__hero-inner{width:min(1200px,calc(100% - 64px))}
+.bia-explore--events .bia-events__hero h1{max-width:820px;letter-spacing:-.045em}
+.bia-explore--events .bia-events__hero .bia-explore__hero-copy{max-width:680px;line-height:1.6;font-size:clamp(1.1rem,1.6vw,1.34rem)}
+.bia-explore--events .bia-events__hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:1rem 1.5rem;margin-top:.8rem}
+.bia-explore--events .bia-events__hero-link{color:#fff!important;font-weight:700;text-underline-offset:5px;font-size:.91rem}
+.bia-explore--events .bia-events__quick-nav{background:#f7f8f4;border-bottom:1px solid #d6e2d6}
+.bia-explore--events .bia-events__quick-nav .bia-explore__wrap{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem 1.8rem;padding:1.05rem 0}
+.bia-explore--events .bia-events__quick-label{color:#5e7464;font:700 .7rem/1.5 Arial,sans-serif;text-transform:uppercase;letter-spacing:.13em}
+.bia-explore--events .bia-events__quick-nav a{font-size:.89rem;font-weight:700;text-decoration:none}
+.bia-explore--events .bia-events__intro{padding:clamp(3rem,6.3vw,6rem) 0}
+.bia-explore--events .bia-events__intro-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(290px,.92fr);gap:clamp(2rem,6vw,6rem);align-items:center}
+.bia-explore--events .bia-events__intro-grid h2{margin-bottom:0;letter-spacing:-.035em}
+.bia-explore--events .bia-events__intro-grid>div:last-child p{font-size:clamp(1rem,1.25vw,1.12rem);line-height:1.75}
+.bia-explore--events .bia-events__intro-grid>div:last-child p:last-child{margin-bottom:0}
+.bia-explore--events .bia-events__section-heading{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(250px,.8fr);gap:2.3rem;align-items:end;margin-bottom:2.2rem}
+.bia-explore--events .bia-events__section-heading h2{margin-bottom:0}
+.bia-explore--events .bia-events__section-heading>p{font-size:.98rem;line-height:1.7;margin:0;max-width:445px}
+.bia-explore--events .bia-events__upcoming-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.2rem}
+.bia-explore--events .bia-events__listing{background:#fff;border:1px solid #d8e3d8;border-top:4px solid #58795b;padding:clamp(1.35rem,2.6vw,2.3rem);display:flex;flex-direction:column;min-width:0}
+.bia-explore--events .bia-events__listing-top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.4rem .9rem;margin-bottom:1.25rem}
+.bia-explore--events .bia-events__listing-type{font:700 .7rem/1.5 Arial,sans-serif;text-transform:uppercase;letter-spacing:.12em;color:#59775d}
+.bia-explore--events .bia-events__listing-date{font-size:.87rem;font-weight:700;color:#365e42}
+.bia-explore--events .bia-events__listing h3{font-size:clamp(1.45rem,2.25vw,2.15rem);line-height:1.18;letter-spacing:-.025em;margin-bottom:.7rem}
+.bia-explore--events .bia-events__listing-location{color:#4a684f!important;font-size:.84rem;font-weight:700}
+.bia-explore--events .bia-events__listing-description{font-size:.96rem;line-height:1.73}
+.bia-explore--events .bia-events__listing a{margin-top:auto;align-self:flex-start;padding-top:.7rem;font-size:.91rem;font-weight:700;text-underline-offset:4px}
+.bia-explore--events .bia-events__loading,.bia-explore--events .bia-events__empty{grid-column:1/-1;background:#fff;border-left:4px solid #719173;padding:2rem;font-size:1rem;color:#3e5844}
+.bia-explore--events .bia-events__calendar-links{display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.6rem;margin:2rem 0 1rem}
+.bia-explore--events .bia-events__calendar-links>a:not(.bia-explore__button){font-size:.88rem;font-weight:700;text-underline-offset:4px}
+.bia-explore--events .bia-events__source-note{font-size:.84rem;color:#667669;max-width:850px}
+.bia-explore--events .bia-events__holiday-heading{max-width:850px;margin-bottom:2rem}
+.bia-explore--events .bia-events__holiday-heading h2{font-size:clamp(2rem,4.5vw,4.25rem);letter-spacing:-.035em}
+.bia-explore--events .bia-events__holiday-heading>p:not(.bia-explore__eyebrow){font-size:1.1rem;line-height:1.78;max-width:775px}
+.bia-explore--events .bia-events__holiday-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.3rem}
+.bia-explore--events .bia-events__holiday-feature{display:flex;flex-direction:column;min-width:0;min-height:520px;padding:clamp(1.45rem,3.15vw,3.1rem)}
+.bia-explore--events .bia-events__holiday-feature--market{background:#253f35;color:#f6f7f3}
+.bia-explore--events .bia-events__holiday-feature--trees{background:#eee8dc;color:#263f30}
+.bia-explore--events .bia-events__holiday-feature-top{display:flex;align-items:center;flex-wrap:wrap;gap:.6rem 1rem;justify-content:space-between;font:700 .69rem/1.5 Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;padding-bottom:1.2rem;border-bottom:1px solid rgba(103,127,109,.5)}
+.bia-explore--events .bia-events__holiday-feature--market .bia-events__holiday-feature-top{color:#d6e5d8;border-color:rgba(255,255,255,.24)}
+.bia-explore--events .bia-events__holiday-feature-content{display:flex;flex-direction:column;align-items:flex-start;flex:1;padding-top:clamp(1.6rem,3.4vw,3.5rem)}
+.bia-explore--events .bia-events__holiday-feature h3{font-size:clamp(1.9rem,3.5vw,3.6rem);letter-spacing:-.035em;line-height:1.12;margin:.5rem 0 1.2rem}
+.bia-explore--events .bia-events__holiday-date{font-size:.86rem;font-weight:700;letter-spacing:.02em}
+.bia-explore--events .bia-events__holiday-feature p:not(.bia-events__holiday-date){font-size:1rem;line-height:1.75}
+.bia-explore--events .bia-events__holiday-feature--market h3,.bia-explore--events .bia-events__holiday-feature--market p{color:#f6f7f3}
+.bia-explore--events .bia-events__holiday-feature--trees h3{color:#304f3b}
+.bia-explore--events .bia-events__holiday-feature--trees p{color:#405945}
+.bia-explore--events .bia-events__holiday-place{font-size:.85rem!important;font-weight:700;margin-top:1.3rem}
+.bia-explore--events .bia-events__admission{font-size:.88rem!important}
+.bia-explore--events .bia-events__holiday-feature .bia-explore__button{margin-top:auto}
+.bia-explore--events .bia-events__holiday-feature--market .bia-explore__button{background:#ead8ad;border-color:#ead8ad;color:#244031!important}
+.bia-explore--events .bia-events__holiday-feature--trees .bia-explore__button{background:#3b6146;border-color:#3b6146}
+.bia-explore--events .bia-events__holiday-feature--trees .bia-explore__button:hover{background:#2b4e38}
+.bia-explore--events .bia-events__holiday-footnote{display:grid;grid-template-columns:minmax(0,.8fr) minmax(260px,1.2fr);gap:clamp(1.5rem,4vw,4rem);padding:clamp(1.6rem,3.5vw,3.2rem) 0;border-bottom:1px solid #dae2d8}
+.bia-explore--events .bia-events__holiday-footnote h3{font-size:clamp(1.25rem,2.3vw,2rem)}
+.bia-explore--events .bia-events__holiday-footnote p:not(.bia-explore__eyebrow){font-size:.97rem;line-height:1.75}
+.bia-explore--events .bia-events__holiday-footnote a{font-size:.9rem;font-weight:700}
+.bia-explore--events .bia-events__traditions h2{max-width:920px}
+.bia-explore--events .bia-events__traditions-intro{max-width:710px;font-size:1.08rem;margin-bottom:2.3rem}
+.bia-explore--events .bia-events__season-list{border-top:1px solid #c7d9c9}
+.bia-explore--events .bia-events__season-list>article{display:grid;grid-template-columns:minmax(145px,.33fr) minmax(0,1.67fr);gap:clamp(1.4rem,4.2vw,4.2rem);padding:clamp(1.45rem,3.15vw,3.1rem) 0;border-bottom:1px solid #c7d9c9}
+.bia-explore--events .bia-events__season-label{display:flex;flex-direction:column;gap:.5rem}
+.bia-explore--events .bia-events__season-label>span{font:500 clamp(1.6rem,2.4vw,2.5rem)/1.1 Georgia,serif;color:#35573e}
+.bia-explore--events .bia-events__season-label small{font:.72rem/1.45 Arial,sans-serif;letter-spacing:.09em;text-transform:uppercase;color:#647967}
+.bia-explore--events .bia-events__season-content h3{font-size:clamp(1.25rem,2vw,1.8rem)}
+.bia-explore--events .bia-events__season-content p{max-width:790px;font-size:.97rem;line-height:1.78}
+.bia-explore--events .bia-events__season-content a{display:inline-block;font-size:.88rem;font-weight:700;margin:0 1.2rem .4rem 0;text-underline-offset:4px}
+.bia-explore--events .bia-events__community-layout{display:grid;grid-template-columns:minmax(0,.9fr) minmax(320px,1.1fr);gap:clamp(2rem,6vw,6rem);align-items:center}
+.bia-explore--events .bia-events__community-layout>div:first-child p:not(.bia-explore__eyebrow){font-size:1.03rem;line-height:1.75}
+.bia-explore--events .bia-events__organizer-links{border-top:1px solid #d3e0d4}
+.bia-explore--events .bia-events__organizer-links>a{display:flex;justify-content:space-between;gap:1rem;padding:1.3rem 0;border-bottom:1px solid #d3e0d4;text-decoration:none}
+.bia-explore--events .bia-events__organizer-links>a:hover{text-decoration:underline;text-underline-offset:4px}
+.bia-explore--events .bia-events__organizer-links>a>span:first-child{display:flex;flex-direction:column;gap:.4rem}
+.bia-explore--events .bia-events__organizer-links strong{font-size:1.02rem}
+.bia-explore--events .bia-events__organizer-links small{font-size:.84rem;line-height:1.5;color:#647767}
+.bia-explore--events .bia-events__visit{background:#f5f2e9}
+.bia-explore--events .bia-events__visit-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(270px,.8fr);gap:clamp(2rem,6vw,6rem);align-items:center}
+.bia-explore--events .bia-events__visit-grid>div:first-child>p:not(.bia-explore__eyebrow){font-size:1.04rem;line-height:1.75;max-width:690px}
+.bia-explore--events .bia-events__visit-ctas{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.3rem}
+.bia-explore--events .bia-events__visit-note{padding:clamp(1.5rem,3.5vw,3rem);background:#e6ece1;border-top:4px solid #42674c}
+.bia-explore--events .bia-events__visit-note h3{font-size:clamp(1.55rem,2.8vw,2.4rem)}
+.bia-explore--events .bia-events__visit-note p:not(.bia-explore__eyebrow){font-size:.97rem;line-height:1.75}
+.bia-explore--events .bia-events__visit-note a{font-size:.9rem;font-weight:700}
+.bia-explore--events .bia-events__closing{background:#e7eee5}
+.bia-explore--events .bia-events__closing-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(240px,.7fr);gap:3rem;align-items:center}
+.bia-explore--events .bia-events__closing-grid p:not(.bia-explore__eyebrow){max-width:730px;line-height:1.75}
+.bia-explore--events .bia-events__closing-links{display:flex;flex-direction:column;gap:.85rem}
+@media(max-width:900px){
+ .bia-explore--events .bia-events__intro-grid,.bia-explore--events .bia-events__section-heading,.bia-explore--events .bia-events__holiday-footnote,.bia-explore--events .bia-events__community-layout,.bia-explore--events .bia-events__visit-grid,.bia-explore--events .bia-events__closing-grid{grid-template-columns:1fr;gap:1.4rem}
+}
+@media(max-width:680px){
+ .bia-explore--events .bia-events__crumbs,.bia-explore--events .bia-events__hero .bia-explore__hero-inner{width:calc(100% - 30px)}
+ .bia-explore--events .bia-events__hero{min-height:550px}
+ .bia-explore--events .bia-events__hero-actions{flex-direction:column;align-items:flex-start}
+ .bia-explore--events .bia-events__quick-label{width:100%}
+ .bia-explore--events .bia-events__quick-nav .bia-explore__wrap{gap:.7rem 1.2rem}
+ .bia-explore--events .bia-events__upcoming-list,.bia-explore--events .bia-events__holiday-grid{grid-template-columns:1fr}
+ .bia-explore--events .bia-events__holiday-feature{min-height:auto}
+ .bia-explore--events .bia-events__holiday-feature-content{padding-top:1.5rem}
+ .bia-explore--events .bia-events__holiday-feature .bia-explore__button{margin-top:1rem}
+ .bia-explore--events .bia-events__season-list>article{grid-template-columns:1fr;gap:.85rem}
+ .bia-explore--events .bia-events__season-label{flex-direction:row;flex-wrap:wrap;align-items:baseline;gap:.6rem 1rem}
+ .bia-explore--events .bia-events__calendar-links{align-items:flex-start;flex-direction:column}
+ .bia-explore--events .bia-events__visit-ctas{flex-direction:column;align-items:flex-start}
+}
