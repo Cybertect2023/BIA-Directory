@@ -321,6 +321,7 @@
 .bia-explore--stories .bia-stories__closing-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(230px,.65fr);gap:clamp(2rem,6vw,6rem);align-items:center}
 .bia-explore--stories .bia-stories__closing-grid p:not(.bia-explore__eyebrow){max-width:710px;line-height:1.75}
 .bia-explore--stories .bia-stories__closing-links{display:flex;flex-direction:column;gap:.85rem;align-items:stretch}
+.bia-explore--stories .bia-stories__back-link{text-align:center;font-size:.9rem;font-weight:700;margin-top:.4rem;text-underline-offset:4px}
 @media(max-width:900px){
   .bia-explore--stories .bia-stories__opening-grid,.bia-explore--stories .bia-stories__more-header,.bia-explore--stories .bia-stories__closing-grid{grid-template-columns:1fr;gap:1.3rem}
   .bia-explore--stories .bia-stories__index{grid-template-columns:1fr}
