@@ -237,6 +237,22 @@
       }
     },
     {
+      "businessId": "stirling-cannabis",
+      "lat": 44.29672,
+      "lon": -77.54686,
+      "pointType": "property",
+      "addressFingerprint": "fdbf231b",
+      "verification": {
+        "date": "2026-10-15",
+        "sources": [
+          "https://paradisecannabis.ca/shop-stirling-store/",
+          "https://www.visitstirlingrawdon.ca/business-directory",
+          "https://www.openstreetmap.org/node/10121722994"
+        ],
+        "note": "BIA-approved approximate property pin at the confirmed 28 Mill Street storefront, identified in the BIA-provided Google Street View image. Property point, not a surveyed entrance."
+      }
+    },
+    {
       "businessId": "fresh-and-hot-pizza",
       "lat": 44.296375,
       "lon": -77.5472072,
@@ -375,15 +391,6 @@
       "status": "needs-verification",
       "reason": "Do not map a potentially residential address without independent evidence it is an intentionally published public business destination.",
       "sources": [],
-      "checked": "2026-10-14"
-    },
-    {
-      "businessId": "paradise-cannabis-stirling",
-      "status": "needs-verification",
-      "reason": "28 Mill Street in canonical directory; exact storefront coordinate unverified.",
-      "sources": [
-        "https://paradisecannabis.ca/shop-stirling-store/"
-      ],
       "checked": "2026-10-14"
     },
     {
