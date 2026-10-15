@@ -10,7 +10,7 @@ This feature uses the existing Squarespace 7.1 + GitHub Pages + Code Block archi
 
 ## Recommended small Code Block loader
 
-For the five dedicated Squarespace visitor pages, use the new `assets/explore-loader.js` instead of pasting the large HTML file into Squarespace. This preserves the ability to update all page content centrally in GitHub.
+For the visitor hub, its four supporting guides and the separate Eat & Drink guide (six pages total), use `assets/explore-loader.js` instead of pasting the large HTML templates into Squarespace. This keeps page content centrally editable in GitHub.
 
 On the main page at `/explore-and-enjoy`, paste:
 
@@ -23,7 +23,7 @@ On the main page at `/explore-and-enjoy`, paste:
 <script defer src="https://cybertect2023.github.io/BIA-Directory/assets/explore-loader.js"></script>
 ```
 
-For the supporting pages, duplicate the Code Block and change only `data-explore-page` to one of: `farms-local-food`, `things-to-do`, `community-events`, or `local-stories`. Replace the fallback H1 and summary in each copied block with that page's own heading and summary.
+For the four supporting Explore pages, duplicate the Code Block and change `data-explore-page` to one of: `farms-local-food`, `things-to-do`, `community-events`, or `local-stories`. The **Eat & Drink** guide uses `data-explore-page="eat-and-drink"` with the same loader; see [DINING.md](./DINING.md) for its tested fallback snippet, editorial sources, SEO and homepage-link instructions.
 
 **Do not add `pages/home-explore-section.html` below the existing homepage navigation cards**; it duplicates homepage discovery choices. Point the existing Explore & Enjoy button to `/explore-and-enjoy` after all four destination pages exist and have been tested.
 
@@ -38,21 +38,22 @@ For each page, add one Code Block, paste the matching `pages/*.html` file, and a
 <script defer src="https://cybertect2023.github.io/BIA-Directory/assets/explore.js"></script>
 ```
 
-The `home-explore-section.html` snippet is one page section to insert on the homepage. Keep the current Shop Local and Eat & Drink cards and their curated directory URLs.
+**Do not paste `home-explore-section.html` beneath the homepage's existing three category cards.** It would duplicate their purpose. Keep the three cards and update their destinations to published landing pages when available. Eat & Drink should eventually link to `/eat-and-drink`, not its older filtered-directory URL.
 
 ## Page setup and SEO
 
-All new pages should be created as regular pages. Keep them out of the primary navigation until the BIA selects its final menu placement. The four visitor guide pages use flat Squarespace layout-page slugs (`/farms-local-food`, `/things-to-do`, `/community-events`, `/local-stories`). Keep the hub at `/explore-and-enjoy`. Ordinary Squarespace pages should not be assumed to support nested URLs.
+Create ordinary Squarespace pages with flat URLs. Keep them out of primary navigation until published and tested. The Explore & Enjoy hub is `/explore-and-enjoy`, and the new Eat & Drink guide is `/eat-and-drink`. Squarespace page nesting must not be assumed.
 
 | Page | URL | SEO title | SEO description |
 | --- | --- | --- | --- |
-| Explore & Enjoy | `/explore-and-enjoy` | Explore & Enjoy Stirling-Rawdon | Visit Stirling-Rawdon | Plan a visit to Stirling-Rawdon, Ontario. Find local farms and food, things to do, community events, and stories from the village and countryside. |
-| Farms & Local Food | `/farms-local-food` | Farms & Local Food in Stirling-Rawdon | Visit Stirling-Rawdon | Discover Stirling-Rawdon farms, seasonal produce, the village farmers’ market, farm shops, and agricultural experiences in Hastings County. |
-| Things to Do | `/things-to-do` | Things to Do in Stirling-Rawdon, Ontario | Visit Stirling-Rawdon | Plan a day in Stirling-Rawdon with live theatre, Farmtown Park, local shops and dining, parks, trails, and community heritage. |
-| Community Events | `/community-events` | Stirling-Rawdon Community Events | Visit Stirling-Rawdon | Explore Stirling-Rawdon’s seasonal markets, annual fair, theatre and music traditions, and community celebrations. Check the BIA calendar for current dates. |
-| Local Stories | `/local-stories` | Local Stories from Stirling-Rawdon | Visit Stirling-Rawdon | Read about Stirling-Rawdon’s local businesses, agricultural heritage, community traditions, and historic village places. |
+| Explore & Enjoy | `/explore-and-enjoy` | Explore & Enjoy Stirling-Rawdon \| Visit Stirling-Rawdon | Plan a visit to Stirling-Rawdon, Ontario. Find local farms and food, things to do, community events, and stories from the village and countryside. |
+| Farms & Local Food | `/farms-local-food` | Farms & Local Food in Stirling-Rawdon \| Visit Stirling-Rawdon | Find Stirling-Rawdon's farmers' market, Cooney Farms Apple Store, Ontario Water Buffalo, alpaca farm visits, and local food experiences. |
+| Things to Do | `/things-to-do` | Things to Do in Stirling-Rawdon, Ontario \| Visit Stirling-Rawdon | Plan a day in Stirling-Rawdon with live theatre, Farmtown Park, local shops and dining, parks, trails, and community heritage. |
+| Community Events | `/community-events` | Community Events in Stirling-Rawdon \| Festivals, Markets & Local Traditions | Explore Stirling-Rawdon festivals, holiday markets, Farmtown Park’s tree and wreath displays, the Stirling Fair, theatre, and family events. Find dates and organizer links. |
+| Woven Into Stirling | `/local-stories` | Woven Into Stirling \| Local Stories & Business Profiles | Meet the people behind Stirling Festival Theatre, Rawdon Creek Soap Co., and Blue Collar Therapy. Real local business stories shared with the Stirling-Rawdon BIA. |
+| Eat & Drink | `/eat-and-drink` | Eat & Drink in Stirling-Rawdon \| Cafés, Restaurants & Theatre Nights | Explore Stirling-Rawdon cafés, restaurants, pizza, local food and a special night at Stirling Festival Theatre. Find where to eat on Mill Street and West Front Street. |
 
-Set each Squarespace page's URL slug and SEO title/description in **Page Settings → General / SEO**. Assign the hub H1 as the page heading and preserve the heading hierarchy in the Code Block. Do not create a second H1 outside the supplied content.
+Set each page's slug and SEO fields in **Page Settings**. The full GitHub template supplies its own H1. Do not add a second H1 to the Squarespace section outside the Code Block. An initial fallback H1 inside the loader container is replaced at runtime.
 
 ## Page snippets
 
@@ -62,6 +63,7 @@ Set each Squarespace page's URL slug and SEO title/description in **Page Setting
 - `pages/things-to-do.html` — visitor guide, outdoor places, culture and sample day.
 - `pages/community-events.html` — annual traditions, current event feature and calendar handoff.
 - `pages/local-stories.html` — sourced story archive and verified-business directory route.
+- `pages/eat-and-drink.html` — six BIA food profiles, coffee/lunch/dinner/takeout filters, theatre-night dining, two-street pocket guide, sample itinerary and farm-to-village links. See [DINING.md](./DINING.md).
 - `story-template.html` — reusable editorial page structure for future features; replace every bracketed field before publishing.
 
 ## Community Events maintenance
@@ -105,11 +107,11 @@ Published features:
 - [BIA heritage feature](https://www.visitstirlingrawdon.ca/news-and-features/then-and-now)
 - [BIA business directory](https://www.visitstirlingrawdon.ca/business-directory)
 
-Photographs use existing BIA Squarespace-hosted images already used by the live site. The images are decorative where the photo's precise subject is not documented in the source page; the adjacent HTML carries the full meaning. No stock image is presented as a Stirling-Rawdon location.
+The visitor guide pages generally use existing BIA Squarespace-hosted imagery as decoration when the precise subject is not documented; the theatre feature in Things to Do also currently embeds an auditorium image from the theatre's own website. Confirm reuse permission for external photography before a large public promotional launch. Do not present decorative town photography as a picture of a restaurant or menu item.
 
 ## Verification checklist
 
 1. Wait for the GitHub Pages deployment and test `/assets/explore.css`, `/assets/explore.js`, and `/explore/events.json` at `https://cybertect2023.github.io/BIA-Directory/`.
 2. Paste the page snippets and asset tags into Squarespace Code Blocks. Squarespace editor previews can suppress embedded scripts; confirm the public page in a private/incognito browser after saving.
 3. Check every page at desktop and mobile widths. Verify card links, event link, page breadcrumbs, BIA calendar, directory filters, official links, focus outlines, and image loading.
-4. Keep current homepage Eat & Drink and Shop Local sections and their destinations unchanged.
+4. Keep the existing three homepage navigation cards. After `/eat-and-drink` is publicly tested, change the homepage Eat & Drink button from the curated directory to `/eat-and-drink`. Leave the Shop Local destination as its curated directory until its own guide is published.
