@@ -15,7 +15,8 @@
     "things-to-do": "pages/things-to-do.html",
     "community-events": "pages/community-events.html",
     "local-stories": "pages/local-stories.html",
-    "eat-and-drink": "pages/eat-and-drink.html"
+    "eat-and-drink": "pages/eat-and-drink.html",
+    "shop-local": "pages/shop-local.html"
   };
 
   const page = host.dataset.explorePage;
@@ -119,6 +120,53 @@
     }
   };
 
+  // Progressive-enhancement interest filters for Shop Local.
+  // Without JavaScript the full editorial guide and all merchant profiles remain visible.
+  const hydrateShops = layout => {
+    const buttons = [...layout.querySelectorAll("[data-shop-filter]")];
+    const merchants = [...layout.querySelectorAll("[data-shop-tags]")];
+    const status = layout.querySelector("[data-shop-filter-status]");
+    if (!buttons.length || !merchants.length) return;
+
+    const names = {
+      all: "all six featured independent shops",
+      gifts: "thoughtful gifts",
+      home: "home and vintage",
+      books: "books and stationery",
+      made: "made in Stirling",
+      food: "food lover finds"
+    };
+    const show = value => {
+      const filter = Object.prototype.hasOwnProperty.call(names, value) ? value : "all";
+      let visible = 0;
+      for (const card of merchants) {
+        const tags = (card.getAttribute("data-shop-tags") || "").split(/\s+/);
+        const selected = filter === "all" || tags.includes(filter);
+        card.hidden = !selected;
+        if (selected) visible++;
+      }
+      for (const button of buttons) {
+        button.setAttribute("aria-pressed", String(button.getAttribute("data-shop-filter") === filter));
+      }
+      if (status) {
+        status.textContent = filter === "all"
+          ? "Showing all six featured independent shops."
+          : "Showing " + visible + " " + (visible === 1 ? "shop" : "shops") + " for " + names[filter] + ".";
+      }
+    };
+
+    for (const button of buttons) {
+      button.addEventListener("click", () => show(button.getAttribute("data-shop-filter")));
+    }
+    // Direct links from the street guide should always reveal the merchant.
+    for (const link of layout.querySelectorAll('a[href^="#shop-"]')) {
+      link.addEventListener("click", () => show("all"));
+    }
+    const requestedInterest = new URLSearchParams(window.location.search).get("interest");
+    const hasMerchantHash = window.location.hash.startsWith("#shop-");
+    show(hasMerchantHash ? "all" : requestedInterest || "all");
+  };
+
   // Progressive enhancement for the Eat & Drink discovery filters.
   // All six business profiles remain visible and readable without JavaScript.
   const hydrateDining = layout => {
@@ -175,6 +223,7 @@
       const imported = document.importNode(layout, true);
       host.replaceChildren(imported);
       hydrateDining(imported);
+      hydrateShops(imported);
       void hydrateEvents(imported);
       // In-page anchors in fetched HTML do not exist at initial navigation.
       // After insertion, honour direct links such as /things-to-do#stirling-festival-theatre.
