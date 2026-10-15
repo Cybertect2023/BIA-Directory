@@ -14,7 +14,8 @@
     "farms-local-food": "pages/farms-local-food.html",
     "things-to-do": "pages/things-to-do.html",
     "community-events": "pages/community-events.html",
-    "local-stories": "pages/local-stories.html"
+    "local-stories": "pages/local-stories.html",
+    "eat-and-drink": "pages/eat-and-drink.html"
   };
 
   const page = host.dataset.explorePage;
@@ -118,6 +119,50 @@
     }
   };
 
+  // Progressive enhancement for the Eat & Drink discovery filters.
+  // All six business profiles remain visible and readable without JavaScript.
+  const hydrateDining = layout => {
+    const controls = [...layout.querySelectorAll("[data-eat-filter]")];
+    const places = [...layout.querySelectorAll("[data-eat-tags]")];
+    const feedback = layout.querySelector("[data-eat-filter-feedback]");
+    if (!controls.length || !places.length) return;
+
+    const allowed = new Set(["all", "coffee", "lunch", "dinner", "takeout"]);
+    const names = {
+      coffee: "coffee and cafés",
+      lunch: "lunch",
+      dinner: "dinner",
+      takeout: "takeout and easy meals"
+    };
+    const applyFilter = value => {
+      const key = allowed.has(value) ? value : "all";
+      let visible = 0;
+      for (const place of places) {
+        const tags = (place.getAttribute("data-eat-tags") || "").split(/\s+/);
+        const show = key === "all" || tags.includes(key);
+        place.hidden = !show;
+        if (show) visible++;
+      }
+      for (const control of controls) {
+        control.setAttribute("aria-pressed", String(control.getAttribute("data-eat-filter") === key));
+      }
+      if (feedback) {
+        feedback.textContent = key === "all"
+          ? "Showing all six village food businesses."
+          : "Showing " + visible + " " + (visible === 1 ? "place" : "places") + " for " + names[key] + ".";
+      }
+    };
+    for (const control of controls) {
+      control.addEventListener("click", () => applyFilter(control.dataset.eatFilter));
+    }
+    for (const link of layout.querySelectorAll('a[href^="#eat-"]')) {
+      link.addEventListener("click", () => applyFilter("all"));
+    }
+    const suggestedMeal = new URLSearchParams(window.location.search).get("meal");
+    const targetId = window.location.hash.replace(/^#/, "");
+    applyFilter(targetId.startsWith("eat-") ? "all" : suggestedMeal || "all");
+  };
+
   fetch(rootUrl + templates[page], { cache: "no-cache" })
     .then((response) => {
       if (!response.ok) throw new Error("Explore page HTTP " + response.status);
@@ -129,7 +174,17 @@
       if (!layout) throw new Error("Explore page template is missing its wrapper");
       const imported = document.importNode(layout, true);
       host.replaceChildren(imported);
+      hydrateDining(imported);
       void hydrateEvents(imported);
+      // In-page anchors in fetched HTML do not exist at initial navigation.
+      // After insertion, honour direct links such as /things-to-do#stirling-festival-theatre.
+      if (window.location.hash) {
+        const targetId = decodeURIComponent(window.location.hash.slice(1));
+        const target = document.getElementById(targetId);
+        if (target && imported.contains(target)) {
+          requestAnimationFrame(() => target.scrollIntoView({block: "start"}));
+        }
+      }
     })
     .catch((error) => {
       console.error("Unable to load Explore & Enjoy content:", error);
