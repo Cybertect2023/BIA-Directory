@@ -794,12 +794,23 @@
  .bia-explore--shop .bia-shop__filter{transition:none}
 }
 
-/* Explore & Enjoy hub: taller photographs on the four visitor-guide cards.
-   Keep card widths, approved typography and all other page templates unchanged. */
-.bia-explore #choose-your-day .bia-explore__card-image{height:250px}
+/* Explore & Enjoy hub: editorial-sized guide photography and more breathing room.
+   Scoped to the four hub cards only; preserve approved BIA typefaces and link styling. */
+.bia-explore #choose-your-day .bia-explore__card-image{height:320px}
+.bia-explore #choose-your-day .bia-explore__card-body{
+  min-height:235px;
+  padding:1.4rem 1.3rem 1.75rem;
+}
+.bia-explore #choose-your-day .bia-explore__card-body .bia-explore__text-link{
+  margin-top:auto;
+}
 @media(max-width:900px){
-  .bia-explore #choose-your-day .bia-explore__card-image{height:240px}
+  .bia-explore #choose-your-day .bia-explore__card-image{height:290px}
 }
 @media(max-width:680px){
-  .bia-explore #choose-your-day .bia-explore__card-image{height:230px}
+  .bia-explore #choose-your-day .bia-explore__card-image{height:260px}
+  .bia-explore #choose-your-day .bia-explore__card-body{
+    min-height:205px;
+    padding:1.3rem 1.2rem 1.5rem;
+  }
 }
