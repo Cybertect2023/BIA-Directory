@@ -35,6 +35,11 @@
       "path": "/shop-local",
       "title": "Shop Local in Stirling-Rawdon | Boutiques, Books, Gifts & Vintage Finds",
       "description": "Explore independent shops in Stirling-Rawdon, Ontario. Discover books, handmade soaps, flowers, vintage finds, home décor, specialty foods and downtown shopping."
+    },
+    {
+      "path": "/plan-your-visit",
+      "title": "Stirling-Rawdon Visitor Map | Restaurants, Shops & Things to Do",
+      "description": "Explore Stirling-Rawdon with an interactive visitor map. Discover local restaurants, shops, Stirling Festival Theatre, farms, parks, attractions and places to visit."
     }
   ]
 }

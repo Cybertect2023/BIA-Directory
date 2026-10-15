@@ -16,13 +16,22 @@
     "community-events": "pages/community-events.html",
     "local-stories": "pages/local-stories.html",
     "eat-and-drink": "pages/eat-and-drink.html",
-    "shop-local": "pages/shop-local.html"
+    "shop-local": "pages/shop-local.html",
+    "plan-your-visit": "pages/plan-your-visit.html"
   };
 
   const page = host.dataset.explorePage;
   if (!Object.prototype.hasOwnProperty.call(templates, page)) {
     host.append(document.createTextNode(" This visitor guide is not configured."));
     return;
+  }
+
+  // The visitor map owns its styles and dependencies. No requests on other guides.
+  if (page === "plan-your-visit") {
+    const style = document.createElement("link");
+    style.rel = "stylesheet";
+    style.href = rootUrl + "assets/visitor-map.css";
+    document.head.append(style);
   }
 
   const validateLink = (value) => {
@@ -222,6 +231,11 @@
       if (!layout) throw new Error("Explore page template is missing its wrapper");
       const imported = document.importNode(layout, true);
       host.replaceChildren(imported);
+      if (page === "plan-your-visit") {
+        import(rootUrl + "assets/visitor-map.js")
+          .then(module => module.mountAll(imported))
+          .catch(error => console.warn("Visitor map enhancement unavailable; static links remain usable:", error));
+      }
       hydrateDining(imported);
       hydrateShops(imported);
       void hydrateEvents(imported);

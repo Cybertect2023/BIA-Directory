@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "tiles": {
+    "url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+    "attributionText": "\u00a9 OpenStreetMap contributors",
+    "attributionUrl": "https://www.openstreetmap.org/copyright",
+    "maxZoom": 19
+  },
+  "initialView": {
+    "center": [
+      44.2966,
+      -77.5482
+    ],
+    "zoom": 15
+  }
+}

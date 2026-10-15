@@ -54,3 +54,7 @@ Only publish approved business information. Do not store passwords, internal BIA
 4. Keep the original HTML templates as backups until the new loaders have been visually verified on desktop and mobile.
 
 The GitHub files do not grant visitors access to GitHub credentials or write permissions.
+
+## Interactive visitor map
+
+The standalone GitHub Pages preview is `/plan-your-visit/`. Activation instructions, SEO options, maintenance and component reuse are in [explore/VISITOR-MAP.md](explore/VISITOR-MAP.md). Review [geographic verification](explore/MAP-VERIFICATION.md) and [test evidence](explore/MAP-TESTING.md) before publishing the Squarespace destination. The new loader route does not add homepage sections or links from existing visitor pages.

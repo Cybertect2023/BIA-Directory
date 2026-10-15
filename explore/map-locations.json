@@ -1,0 +1,636 @@
+{
+  "schemaVersion": 1,
+  "verifiedOn": "2026-10-14",
+  "license": "OSM-derived coordinates © OpenStreetMap contributors, ODbL 1.0. Operator coordinates are attributed per record.",
+  "businessLocations": [
+    {
+      "businessId": "jim-s-pizza-restaurant",
+      "lat": 44.2962012,
+      "lon": -77.5477191,
+      "pointType": "property",
+      "addressFingerprint": "18ade20b",
+      "verification": {
+        "date": "2026-10-14",
+        "sources": [
+          "https://www.openstreetmap.org/node/7057024030"
+        ],
+        "note": "Named OSM place or exact address matches canonical directory; property point, not a verified entrance."
+      }
+    },
+    {
+      "businessId": "brad-comeau-law-office",
+      "lat": 44.2971042,
+      "lon": -77.5464426,
+      "pointType": "property",
+      "addressFingerprint": "2cc3f46b",
+      "verification": {
+        "date": "2026-10-14",
+        "sources": [
+          "https://www.openstreetmap.org/node/10121753819"
+        ],
+        "note": "Named OSM place or exact address matches canonical directory; property point, not a verified entrance."
+      }
+    },
+    {
+      "businessId": "blooms-flowers",
+      "lat": 44.2957889,
+      "lon": -77.5481092,
+      "pointType": "property",
+      "addressFingerprint": "8b29776f",
+      "verification": {
+        "date": "2026-10-14",
+        "sources": [
+          "https://www.openstreetmap.org/node/7057009683"
+        ],
+        "note": "Named OSM place or exact address matches canonical directory; property point, not a verified entrance."
+      }
+    },
+    {
+      "businessId": "stirling-festival-theatre",
+      "lat": 44.2956235,
+      "lon": -77.548764,
+      "pointType": "property",
+      "addressFingerprint": "366030e4",
+      "verification": {
+        "date": "2026-10-14",
+        "sources": [
+          "https://www.openstreetmap.org/node/7057009673"
+        ],
+        "note": "Named OSM place or exact address matches canonical directory; property point, not a verified entrance."
+      }
+    },
+    {
+      "businessId": "farm-girl-cafe",
+      "lat": 44.296712,
+      "lon": -77.5472385,
+      "pointType": "property",
+      "addressFingerprint": "e32dd498",
+      "verification": {
+        "date": "2026-10-14",
+        "sources": [
+          "https://www.openstreetmap.org/node/10121776963"
+        ],
+        "note": "Named OSM place or exact address matches canonical directory; property point, not a verified entrance."
+      }
+    },
+    {
+      "businessId": "rustic-routes",
+      "lat": 44.296795,
+      "lon": -77.5471529,
+      "pointType": "property",
+      "addressFingerprint": "5c28b31f",
+      "verification": {
+        "date": "2026-10-14",
+        "sources": [
+          "https://www.openstreetmap.org/node/10121722991"
+        ],
+        "note": "Named OSM place or exact address matches canonical directory; property point, not a verified entrance."
+      }
+    },
+    {
+      "businessId": "kitchens-by-paul-holden",
+      "lat": 44.2919571,
+      "lon": -77.5630898,
+      "pointType": "property",
+      "addressFingerprint": "8236e55c",
+      "verification": {
+        "date": "2026-10-14",
+        "sources": [
+          "https://www.openstreetmap.org/node/10066667268"
+        ],
+        "note": "Named OSM place or exact address matches canonical directory; property point, not a verified entrance."
+      }
+    },
+    {
+      "businessId": "r-and-s-home-hardware",
+      "lat": 44.2976991,
+      "lon": -77.5431002,
+      "pointType": "property",
+      "addressFingerprint": "2bfde5b0",
+      "verification": {
+        "date": "2026-10-14",
+        "sources": [
+          "https://www.openstreetmap.org/node/7056994950"
+        ],
+        "note": "Named OSM place or exact address matches canonical directory; property point, not a verified entrance."
+      }
+    },
+    {
+      "businessId": "back40-powersports",
+      "lat": 44.2963488,
+      "lon": -77.5458697,
+      "pointType": "property",
+      "addressFingerprint": "98ec9b86",
+      "verification": {
+        "date": "2026-10-14",
+        "sources": [
+          "https://www.openstreetmap.org/node/10121762536"
+        ],
+        "note": "Named OSM place or exact address matches canonical directory; property point, not a verified entrance."
+      }
+    },
+    {
+      "businessId": "fresh-and-hot-pizza",
+      "lat": 44.296375,
+      "lon": -77.5472072,
+      "pointType": "property",
+      "addressFingerprint": "03cf8fec",
+      "verification": {
+        "date": "2026-10-14",
+        "sources": [
+          "https://www.openstreetmap.org/node/872513238"
+        ],
+        "note": "Named OSM place or exact address matches canonical directory; property point, not a verified entrance."
+      }
+    },
+    {
+      "businessId": "smokin-barrel-bar-grill",
+      "lat": 44.2958499,
+      "lon": -77.548275,
+      "pointType": "property",
+      "addressFingerprint": "84c208c8",
+      "verification": {
+        "date": "2026-10-14",
+        "sources": [
+          "https://smokinbarrel.ca"
+        ],
+        "note": "Operator-published GeoCoordinates; agrees with 23 West Front Street."
+      }
+    },
+    {
+      "businessId": "blue-collar-therapy",
+      "lat": 44.2965628,
+      "lon": -77.5474997,
+      "pointType": "property",
+      "addressFingerprint": "c41eeaa7",
+      "verification": {
+        "date": "2026-10-14",
+        "sources": [
+          "https://parsonstherapy.ca",
+          "https://www.lighthousetutoring.ca/"
+        ],
+        "note": "Shared 8 Mill Street property. Coordinate from Blue Collar Therapy operator directions link; address matches directory. Individual suite entrances unverified."
+      }
+    },
+    {
+      "businessId": "lighthouse-tutoring",
+      "lat": 44.2965628,
+      "lon": -77.5474997,
+      "pointType": "property",
+      "addressFingerprint": "6354b1c7",
+      "verification": {
+        "date": "2026-10-14",
+        "sources": [
+          "https://parsonstherapy.ca",
+          "https://www.lighthousetutoring.ca/"
+        ],
+        "note": "Shared 8 Mill Street property. Coordinate from Blue Collar Therapy operator directions link; address matches directory. Individual suite entrances unverified."
+      }
+    },
+    {
+      "businessId": "holmestown-barber",
+      "lat": 44.2965628,
+      "lon": -77.5474997,
+      "pointType": "property",
+      "addressFingerprint": "6354b1c7",
+      "verification": {
+        "date": "2026-10-14",
+        "sources": [
+          "https://parsonstherapy.ca",
+          "https://www.lighthousetutoring.ca/"
+        ],
+        "note": "Shared 8 Mill Street property. Coordinate from Blue Collar Therapy operator directions link; address matches directory. Individual suite entrances unverified."
+      }
+    },
+    {
+      "businessId": "rona-rollins-building-supplies",
+      "lat": 44.2926402,
+      "lon": -77.5639628,
+      "pointType": "property",
+      "addressFingerprint": "dd9b85ca",
+      "verification": {
+        "date": "2026-10-14",
+        "sources": [
+          "https://www.openstreetmap.org/way/400807501"
+        ],
+        "note": "Mean of named RONA building polygon vertices (closing duplicate excluded); property marker, not entrance."
+      }
+    },
+    {
+      "businessId": "vintage-junction",
+      "lat": 44.2968079,
+      "lon": -77.546802,
+      "pointType": "property",
+      "addressFingerprint": "b356ac94",
+      "verification": {
+        "date": "2026-10-14",
+        "sources": [
+          "https://www.openstreetmap.org/node/10121722994",
+          "https://www.visitstirlingrawdon.ca/vintage-junction"
+        ],
+        "note": "Exact 25 Mill Street address match. OSM calls this The Village Junction; canonical directory name retained."
+      }
+    },
+    {
+      "businessId": "stirling-book-company",
+      "lat": 44.29683,
+      "lon": -77.5471068,
+      "pointType": "property",
+      "addressFingerprint": "b2e88d31",
+      "verification": {
+        "date": "2026-10-14",
+        "sources": [
+          "https://stirlingbookco.ca/",
+          "https://www.openstreetmap.org/node/10121722992"
+        ],
+        "note": "Canonical address corrected upstream to 22 Mill Street during development. Operator relocation notice and footer confirm it; exact OSM address node still has previous tenant Antique Elegance. Property marker, not entrance."
+      }
+    }
+  ],
+  "unresolvedBusinesses": [
+    {
+      "businessId": "rawdon-creek-soap-co",
+      "status": "address-conflict",
+      "reason": "Operator lists Unit 1, 127 North Street; directory lists 26 Mill Street. Withhold pin and directions pending canonical correction.",
+      "sources": [
+        "https://www.rawdoncreeksoap.com/"
+      ],
+      "checked": "2026-10-14"
+    },
+    {
+      "businessId": "mccurdy-collision-centre",
+      "status": "needs-verification",
+      "reason": "Directory and collision network list 89 Belleville Road. Open mapping also labels a Tim Hortons at that address. Collision building/entrance needs confirmation.",
+      "sources": [
+        "https://ccsdealers.com/en/locations/Canada/Ontario-Southeast/",
+        "https://www.openstreetmap.org/way/1544365508"
+      ],
+      "checked": "2026-10-14"
+    },
+    {
+      "businessId": "firehall-cafe",
+      "status": "needs-verification",
+      "reason": "Address 39 Mill Street confirmed; secondary coordinate coincides with OSM lawyer at 33 Mill Street. Do not use this ambiguous pin.",
+      "sources": [
+        "https://canada247.info/explore/ontario/hastings_county/stirling_rawdon/stirling/firehall-cafe-stirling-343-263-5011.html"
+      ],
+      "checked": "2026-10-14"
+    },
+    {
+      "businessId": "food-boutique-stirling",
+      "status": "needs-verification",
+      "reason": "County confirms 27 West Front Street; operator uses 27–29. Exact property coordinate not confidently resolved. Both canonical profileUrl and legacy sourceUrl returned HTTP 404 on 2026-10-14; map links to the Food & Dining directory until the profile exists.",
+      "sources": [
+        "https://www.hastingscounty.com/adventures/experiences/food-boutique",
+        "https://www.facebook.com/foodboutiquestirling/"
+      ],
+      "checked": "2026-10-14",
+      "profileStatus": "unavailable"
+    },
+    {
+      "businessId": "cybertect",
+      "status": "needs-verification",
+      "reason": "Published Belleville business address retained in directory; visitor-facing suite location/entrance not verified. No Stirling placeholder pin.",
+      "sources": [
+        "https://cybertect.ca/"
+      ],
+      "checked": "2026-10-14"
+    },
+    {
+      "businessId": "jason-fornarolo-cpa",
+      "status": "needs-verification",
+      "reason": "Do not map a potentially residential address without independent evidence it is an intentionally published public business destination.",
+      "sources": [],
+      "checked": "2026-10-14"
+    },
+    {
+      "businessId": "creekside-yoga",
+      "status": "needs-verification",
+      "reason": "Operator confirms 43 Mill Street; exact property coordinate remains unverified.",
+      "sources": [
+        "https://creeksideyoga.ca/"
+      ],
+      "checked": "2026-10-14"
+    },
+    {
+      "businessId": "paradise-cannabis-stirling",
+      "status": "needs-verification",
+      "reason": "28 Mill Street in canonical directory; exact storefront coordinate unverified.",
+      "sources": [
+        "https://paradisecannabis.ca/shop-stirling-store/"
+      ],
+      "checked": "2026-10-14"
+    },
+    {
+      "businessId": "the-vape-shop-stirling",
+      "status": "needs-verification",
+      "reason": "40 Mill Street in canonical directory; exact storefront coordinate unverified.",
+      "sources": [],
+      "checked": "2026-10-14"
+    },
+    {
+      "businessId": "the-fairway-golf",
+      "status": "needs-verification",
+      "reason": "Operator confirms 400 Front Street West, Building 1 Unit 3. OSM unit labels do not resolve the building/suite distinction confidently.",
+      "sources": [
+        "https://thefairwaygolf.ca/"
+      ],
+      "checked": "2026-10-14"
+    },
+    {
+      "businessId": "stirling-dental-centre",
+      "status": "needs-verification",
+      "reason": "9B Tuftsville Road is in a shared plaza; exact unit point not verified.",
+      "sources": [
+        "https://stirlingdentalcentre.com/"
+      ],
+      "checked": "2026-10-14"
+    },
+    {
+      "businessId": "pet-valu-stirling",
+      "status": "needs-verification",
+      "reason": "9 Tuftsville Road is in a shared plaza; do not reuse an adjacent tenant pin.",
+      "sources": [
+        "https://store.petvalu.ca/location/2443/"
+      ],
+      "checked": "2026-10-14"
+    }
+  ],
+  "places": [
+    {
+      "id": "farmtown-park",
+      "name": "Farmtown Park",
+      "visitorCategory": "things",
+      "address": "437 West Front Street, Stirling, ON",
+      "website": "https://www.farmtownpark.ca/",
+      "description": "Explore agricultural heritage. Check seasonal admission and special-event dates with the museum.",
+      "pointType": "property",
+      "verification": {
+        "date": "2026-10-14",
+        "sources": [
+          "https://mapcarta.com/W755497436",
+          "https://www.stirling-rawdon.com/parks-recreation-culture/farmtown-park/"
+        ],
+        "note": "OSM mapped property centre via Mapcarta. Use operator directions for vehicle entrance, not this point."
+      },
+      "lat": 44.2882,
+      "lon": -77.56307
+    },
+    {
+      "id": "stirling-library",
+      "name": "Stirling-Rawdon Public Library",
+      "visitorCategory": "arts",
+      "address": "43 West Front Street, Stirling, ON",
+      "website": "https://stirlinglibrary.com/",
+      "description": "A downtown stop for books, community programs and local discovery. Check the library for current hours.",
+      "pointType": "property",
+      "verification": {
+        "date": "2026-10-14",
+        "sources": [
+          "https://www.openstreetmap.org/node/7057009672",
+          "https://www.stirling-rawdon.com/parks-recreation-culture/library/"
+        ],
+        "note": "Property or landmark point; public entrance not separately verified."
+      },
+      "lat": 44.295554,
+      "lon": -77.549049
+    },
+    {
+      "id": "covered-bridge",
+      "name": "Rotary Covered Bridge",
+      "visitorCategory": "outdoors",
+      "address": "Mill Street, Stirling, ON",
+      "website": "https://www.stirling-rawdon.com/parks-recreation-culture/healthy-living/",
+      "description": "Pause beside Rawdon Creek at the covered footbridge, close to Mill Street shops.",
+      "pointType": "bridge-end",
+      "verification": {
+        "date": "2026-10-14",
+        "sources": [
+          "https://www.openstreetmap.org/way/1100643616",
+          "https://www.stirling-rawdon.com/parks-recreation-culture/healthy-living/"
+        ],
+        "note": "Northwest endpoint of the mapped covered footbridge. Pedestrian landmark, not a vehicle destination."
+      },
+      "lat": 44.2966101,
+      "lon": -77.5467819
+    },
+    {
+      "id": "henry-street-park",
+      "name": "Henry Street Park",
+      "visitorCategory": "outdoors",
+      "address": "85 Henry Street, Stirling, ON",
+      "website": "https://www.stirling-rawdon.com/parks-recreation-culture/parks-and-playgrounds/",
+      "description": "Park and playground beside Rawdon Creek. The Township describes washrooms near the ball field; seasonal availability needs confirmation.",
+      "pointType": "property",
+      "verification": {
+        "date": "2026-10-14",
+        "sources": [
+          "https://www.openstreetmap.org/way/73651123",
+          "https://www.stirling-rawdon.com/parks-recreation-culture/parks-and-playgrounds/",
+          "https://www.stirling-rawdon.com/parks-recreation-culture/healthy-living/"
+        ],
+        "note": "Centre of bounds of park polygon matched to Township 85 Henry Street park; not an entrance or washroom pin."
+      },
+      "lat": 44.2945228,
+      "lon": -77.54625
+    },
+    {
+      "id": "station-park",
+      "name": "Station Park",
+      "visitorCategory": "outdoors",
+      "address": "Station Park, Stirling, ON",
+      "website": "https://www.stirling-rawdon.com/parks-recreation-culture/parks-and-playgrounds/",
+      "description": "A green-space stop beside the Heritage Trail and former railway station.",
+      "pointType": "property",
+      "verification": {
+        "date": "2026-10-14",
+        "sources": [
+          "https://www.openstreetmap.org/way/1100647273",
+          "https://www.stirling-rawdon.com/parks-recreation-culture/parks-and-playgrounds/"
+        ],
+        "note": "Centre of bounds of named OSM park polygon. Trail entrance is not asserted."
+      },
+      "lat": 44.29828265,
+      "lon": -77.5507963
+    },
+    {
+      "id": "heritage-trail",
+      "name": "Heritage Trail — North Street access",
+      "visitorCategory": "outdoors",
+      "address": "North Street near the former railway station, Stirling, ON",
+      "website": "https://www.stirling-rawdon.com/parks-recreation-culture/healthy-living/",
+      "description": "Follow the Township’s published railway-trail walk from North Street. Check posted trail rules and conditions before setting out.",
+      "pointType": "property",
+      "verification": {
+        "date": "2026-10-14",
+        "sources": [
+          "https://www.stirling-rawdon.com/parks-recreation-culture/healthy-living/"
+        ],
+        "note": "Township describes access near the LCBO south of 122 North Street. Exact trailhead coordinate not verified; no pin or coordinate directions."
+      },
+      "status": "needs-verification"
+    },
+    {
+      "id": "kings-mill",
+      "name": "King’s Mill Conservation Area",
+      "visitorCategory": "outdoors",
+      "address": "King’s Mill Conservation Area, Stirling-Rawdon, ON",
+      "website": "https://ltc.on.ca/conservation_lands/kings-mill/",
+      "description": "A conservation-area stop on Squires Creek. The historic mill is closed to the public; check Lower Trent Conservation for visitor guidance.",
+      "pointType": "property",
+      "verification": {
+        "date": "2026-10-14",
+        "sources": [
+          "https://ltc.on.ca/conservation_lands/kings-mill/"
+        ],
+        "note": "Operator-published GPS at three-decimal precision; general site location, not a surveyed entrance."
+      },
+      "lat": 44.333,
+      "lon": -77.625
+    },
+    {
+      "id": "cooney-farms",
+      "name": "Cooney Farms / The Apple Store",
+      "visitorCategory": "farms",
+      "address": "10 Wellmans Road, Stirling, ON",
+      "website": "https://cooneyfarms.com/",
+      "description": "Browse apples and farm-store goods. Check with the store before making a countryside trip.",
+      "pointType": "property",
+      "verification": {
+        "date": "2026-10-14",
+        "sources": [
+          "https://cooneyfarms.com/"
+        ],
+        "note": "Operator-published GeoCoordinates and postal address."
+      },
+      "lat": 44.3618921,
+      "lon": -77.5976907
+    },
+    {
+      "id": "ontario-water-buffalo",
+      "name": "Ontario Water Buffalo / The Buff Stuff Store",
+      "visitorCategory": "farms",
+      "address": "3346 Stirling-Marmora Road, Stirling, ON",
+      "website": "https://www.ontariowaterbuffalo.ca/",
+      "description": "Explore buffalo dairy and farm products. Check tour arrangements and visitor instructions with the operator.",
+      "pointType": "property",
+      "verification": {
+        "date": "2026-10-14",
+        "sources": [
+          "https://www.ontariowaterbuffalo.ca/contact-us"
+        ],
+        "note": "Operator-published businessLocationCoordinates and address."
+      },
+      "lat": 44.3382192,
+      "lon": -77.5794257
+    },
+    {
+      "id": "alpaca-ridge-farms",
+      "name": "Alpaca Ridge Farms",
+      "visitorCategory": "farms",
+      "address": "152 Smith Road, Stirling, ON",
+      "website": "https://alpacaridgefarms.com/tours/",
+      "description": "Book an alpaca experience with the farm before travelling. Visit the operator’s site for arrangements.",
+      "pointType": "property",
+      "verification": {
+        "date": "2026-10-14",
+        "sources": [
+          "https://alpacaridgefarms.com/",
+          "https://alpacaridgefarms.com/tours/"
+        ],
+        "note": "Public visitor address verified; precise property/visitor entrance coordinate remains unresolved."
+      },
+      "status": "needs-verification"
+    },
+    {
+      "id": "market-in-the-village",
+      "name": "Market in the Village",
+      "visitorCategory": "farms",
+      "address": "Covered Bridge area, Mill Street, Stirling, ON",
+      "website": "https://www.facebook.com/marketinthevillagestirling/",
+      "description": "Seasonal local growers and makers by the covered bridge. Check the organizer for the next market date.",
+      "pointType": "landmark",
+      "verification": {
+        "date": "2026-10-14",
+        "sources": [
+          "https://www.stirling-rawdon.com/parks-recreation-culture/",
+          "https://www.hastingscounty.com/adventures/experiences/farmers-market-village-stirling",
+          "https://www.openstreetmap.org/way/1100643616"
+        ],
+        "note": "Shared bridge-area landmark, not a stall, vehicle entrance or claim that the market is operating today."
+      },
+      "lat": 44.2966101,
+      "lon": -77.5467819
+    }
+  ],
+  "collections": [
+    {
+      "id": "theatre",
+      "name": "Dinner & a Show",
+      "description": "Choose a village food stop, then make your way to the theatre. Confirm dining hours and leave time for your performance.",
+      "ids": [
+        "smokin-barrel-bar-grill",
+        "food-boutique-stirling",
+        "farm-girl-cafe",
+        "firehall-cafe",
+        "jim-s-pizza-restaurant",
+        "fresh-and-hot-pizza",
+        "stirling-festival-theatre"
+      ]
+    },
+    {
+      "id": "downtown",
+      "name": "A Day in Downtown Stirling",
+      "description": "Coffee, independent shops, the library and a pause at the covered bridge. Pick the stops that suit your day.",
+      "ids": [
+        "farm-girl-cafe",
+        "rustic-routes",
+        "stirling-book-company",
+        "blooms-flowers",
+        "vintage-junction",
+        "stirling-library",
+        "covered-bridge",
+        "firehall-cafe"
+      ]
+    },
+    {
+      "id": "family",
+      "name": "Family Afternoon",
+      "description": "Mix a museum or park visit with a food stop. Check opening dates and admission before travelling.",
+      "ids": [
+        "farmtown-park",
+        "henry-street-park",
+        "stirling-library",
+        "covered-bridge",
+        "jim-s-pizza-restaurant",
+        "fresh-and-hot-pizza"
+      ]
+    },
+    {
+      "id": "countryside",
+      "name": "Farms & Countryside",
+      "description": "Build a country outing around farm stores, booked experiences and the seasonal market.",
+      "ids": [
+        "cooney-farms",
+        "ontario-water-buffalo",
+        "alpaca-ridge-farms",
+        "market-in-the-village",
+        "farmtown-park"
+      ]
+    },
+    {
+      "id": "stroll",
+      "name": "Shop & Stroll",
+      "description": "Browse downtown shops and stop for coffee. Saved stops can be arranged in your preferred order.",
+      "ids": [
+        "rustic-routes",
+        "blooms-flowers",
+        "stirling-book-company",
+        "vintage-junction",
+        "farm-girl-cafe",
+        "food-boutique-stirling",
+        "covered-bridge"
+      ]
+    }
+  ]
+}

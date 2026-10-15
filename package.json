@@ -1,0 +1,11 @@
+{
+  "name": "stirling-bia-directory",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:map": "node scripts/build-visitor-map.mjs",
+    "test": "node --test tests/visitor-map.test.mjs && node scripts/build-visitor-map.mjs --check",
+    "test:dom": "node --test tests/visitor-map-dom.test.mjs"
+  },
+  "devDependencies": { "jsdom": "26.1.0" }
+}
