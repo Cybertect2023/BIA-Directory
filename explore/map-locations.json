@@ -466,7 +466,7 @@
       "visitorCategory": "outdoors",
       "address": "85 Henry Street, Stirling, ON",
       "website": "https://www.stirling-rawdon.com/parks-recreation-culture/parks-and-playgrounds/",
-      "description": "Park and playground beside Rawdon Creek. The Township describes washrooms near the ball field; seasonal availability needs confirmation.",
+      "description": "Park and playground beside Rawdon Creek.",
       "pointType": "property",
       "verification": {
         "date": "2026-10-14",
@@ -475,7 +475,7 @@
           "https://www.stirling-rawdon.com/parks-recreation-culture/parks-and-playgrounds/",
           "https://www.stirling-rawdon.com/parks-recreation-culture/healthy-living/"
         ],
-        "note": "Centre of bounds of park polygon matched to Township 85 Henry Street park; not an entrance or washroom pin."
+        "note": "Centre of bounds of park polygon matched to Township 85 Henry Street park; not an entrance pin."
       },
       "lat": 44.2945228,
       "lon": -77.54625
