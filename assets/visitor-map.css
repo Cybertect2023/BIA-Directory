@@ -1,9 +1,9 @@
 /* All product styles are scoped. Leaflet styles are only loaded on map-bearing pages. */
 .bia-visit,.bia-visit *{box-sizing:border-box}
-.bia-visit{--vm-ink:#263a2e;--vm-green:#416449;--vm-cream:#f7f5ef;--vm-line:#d6ddd2;--vm-muted:#58685d;--vm-rust:#9b4d2f;color:var(--vm-ink);font:16px/1.6 Arial,sans-serif;background:var(--vm-cream);width:100%;overflow-wrap:anywhere}
+.bia-visit{--vm-ink:#263a2e;--vm-green:#416449;--vm-cream:#f7f5ef;--vm-line:#d6ddd2;--vm-muted:#58685d;--vm-rust:#9b4d2f;color:var(--vm-ink);font:16px/1.6 var(--body-font-font-family,Arial,sans-serif);background:var(--vm-cream);width:100%;overflow-wrap:anywhere}
 .bia-visit [hidden]{display:none!important}
 .bia-visit :is(h1,h2,h3,h4,p){margin:0 0 1rem}
-.bia-visit :is(h1,h2,h3){font-family:Georgia,'Times New Roman',serif;font-weight:400;line-height:1.12;letter-spacing:-.025em;color:var(--vm-ink)}
+.bia-visit :is(h1,h2,h3){font-family:var(--heading-font-font-family,Georgia,'Times New Roman',serif);font-weight:400;line-height:1.12;letter-spacing:-.025em;color:var(--vm-ink)}
 .bia-visit h1{font-size:clamp(2.6rem,5.6vw,5rem);max-width:950px}
 .bia-visit h2{font-size:clamp(1.9rem,3vw,2.8rem)}
 .bia-visit h3{font-size:1.35rem}
