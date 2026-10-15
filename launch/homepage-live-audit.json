@@ -1,0 +1,51 @@
+{
+  "checkedAt": "2026-10-15T14:23:09.281Z",
+  "homepage": {
+    "status": 200,
+    "links": [
+      {
+        "name": "Eat & Drink",
+        "labels": [
+          "Explore Dining"
+        ],
+        "expected": "/eat-and-drink",
+        "found": {
+          "text": "Explore Dining",
+          "href": "/business-directory?category=Food%20%26%20Dining"
+        },
+        "pass": false
+      },
+      {
+        "name": "Shop Local",
+        "labels": [
+          "Explore Shops"
+        ],
+        "expected": "/shop-local",
+        "found": {
+          "text": "Explore Shops",
+          "href": "/business-directory?collection=shop-local"
+        },
+        "pass": false
+      },
+      {
+        "name": "Explore & Enjoy",
+        "labels": [
+          "What's Happening",
+          "Explore Stirling-Rawdon"
+        ],
+        "expected": "/explore-and-enjoy",
+        "found": {
+          "text": "Explore Stirling-Rawdon",
+          "href": "/explore-and-enjoy"
+        },
+        "pass": true
+      }
+    ]
+  },
+  "events": {
+    "status": 200,
+    "title": "Stirling-Rawdon Events | Community Calendar & Festivals — Visit Stirling-Rawdon",
+    "titleCorrected": true
+  },
+  "pass": false
+}
