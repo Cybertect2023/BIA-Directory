@@ -1,0 +1,31 @@
+{
+  "checkedAt": "2026-10-15T18:27:46.845318+00:00",
+  "results": [
+    {
+      "viewport": "desktop",
+      "width": 1280,
+      "http": 200,
+      "imageHeightPx": 320,
+      "bodyHeightPx": 235,
+      "cardCount": 4,
+      "imgNaturalWidth": 1600,
+      "stylesheetLinks": [
+        "https://cybertect2023.github.io/BIA-Directory/assets/explore.css"
+      ],
+      "pass": true
+    },
+    {
+      "viewport": "phone",
+      "width": 390,
+      "http": 200,
+      "imageHeightPx": 260,
+      "bodyHeightPx": 205,
+      "cardCount": 4,
+      "imgNaturalWidth": 1600,
+      "stylesheetLinks": [
+        "https://cybertect2023.github.io/BIA-Directory/assets/explore.css"
+      ],
+      "pass": true
+    }
+  ]
+}
