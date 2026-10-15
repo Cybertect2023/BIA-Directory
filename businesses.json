@@ -690,11 +690,11 @@
       "about": "Kitchens by Paul Holden provides custom kitchen design and cabinetry from its Stirling location."
     },
     {
-      "id": "paradise-cannabis-stirling",
-      "name": "Paradise Cannabis — Stirling",
+      "id": "stirling-cannabis",
+      "name": "Stirling Cannabis",
       "category": "Shops & Retail",
-      "description": "Locally owned recreational cannabis store serving Stirling.",
-      "address": "28 Mill Street, Stirling, ON K0K 3E0",
+      "description": "Recreational cannabis store at 28 Mill Street in Stirling.",
+      "address": "28 Mill St, Stirling, ON K0K 3E0",
       "phone": "613-395-2223",
       "email": "",
       "website": "https://paradisecannabis.ca/shop-stirling-store/",
@@ -714,10 +714,10 @@
       "services": [
         "Recreational Cannabis Retail"
       ],
-      "profileUrl": "/paradise-cannabis-stirling",
+      "profileUrl": "/stirling-cannabis",
       "verificationStatus": "verified",
       "sourceUrl": "https://paradisecannabis.ca/shop-stirling-store/",
-      "about": "Paradise Cannabis operates a recreational cannabis retail store on Mill Street in Stirling.",
+      "about": "Stirling Cannabis is the local recreational cannabis store at 28 Mill Street in Stirling. Its location is listed on the Paradise Cannabis website.",
       "collections": [
         "shop-local"
       ]
