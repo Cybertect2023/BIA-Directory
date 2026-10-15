@@ -1,6 +1,6 @@
 # Map verification report
 
-Checked 2026-10-14. Coordinates are place/property markers unless explicitly stated otherwise. They are not surveyed public entrances. Business details are joined from `businesses.json`; this report is a review snapshot, not an application dataset.
+Checked 2026-10-15. Coordinates are place/property markers unless explicitly stated otherwise. They are not surveyed public entrances. Business details are joined from `businesses.json`; this report is a review snapshot, not an application dataset.
 
 ## Verified directory pins
 
@@ -43,21 +43,15 @@ Checked 2026-10-14. Coordinates are place/property markers unless explicitly sta
 
 ## Unresolved directory pins
 
-These businesses remain searchable and saveable. No placeholder coordinates or routing to unverified destinations are exposed.
+These businesses remain searchable and saveable. Pins approved by the BIA are listed above as address-level property markers; they do not certify an entrance.
 
 | Business | Status | Resolution needed |
 | --- | --- | --- |
 | Rawdon Creek Soap Co. | address-conflict | Operator lists Unit 1, 127 North Street; directory lists 26 Mill Street. Withhold pin and directions pending canonical correction. [source 1](https://www.rawdoncreeksoap.com/) |
 | McCurdy Collision Centre | needs-verification | Directory and collision network list 89 Belleville Road. Open mapping also labels a Tim Hortons at that address. Collision building/entrance needs confirmation. [source 1](https://ccsdealers.com/en/locations/Canada/Ontario-Southeast/) [source 2](https://www.openstreetmap.org/way/1544365508) |
-| The Firehall Cafe | needs-verification | Address 39 Mill Street confirmed; secondary coordinate coincides with OSM lawyer at 33 Mill Street. Do not use this ambiguous pin. [source 1](https://canada247.info/explore/ontario/hastings_county/stirling_rawdon/stirling/firehall-cafe-stirling-343-263-5011.html) |
 | Food Boutique Stirling | needs-verification | County confirms 27 West Front Street; operator uses 27–29. Exact property coordinate not confidently resolved. [source 1](https://www.hastingscounty.com/adventures/experiences/food-boutique) [source 2](https://www.facebook.com/foodboutiquestirling/) |
-| CyberTECT | needs-verification | Published Belleville business address retained in directory; visitor-facing suite location/entrance not verified. No Stirling placeholder pin. [source 1](https://cybertect.ca/) |
 | Jason Fornarolo CPA | needs-verification | Do not map a potentially residential address without independent evidence it is an intentionally published public business destination.  |
-| Creekside Yoga | needs-verification | Operator confirms 43 Mill Street; exact property coordinate remains unverified. [source 1](https://creeksideyoga.ca/) |
 | Paradise Cannabis — Stirling | needs-verification | 28 Mill Street in canonical directory; exact storefront coordinate unverified. [source 1](https://paradisecannabis.ca/shop-stirling-store/) |
-| The Vape Shop | needs-verification | 40 Mill Street in canonical directory; exact storefront coordinate unverified.  |
-| The Fairway Golf | needs-verification | Operator confirms 400 Front Street West, Building 1 Unit 3. OSM unit labels do not resolve the building/suite distinction confidently. [source 1](https://thefairwaygolf.ca/) |
-| Stirling Dental Centre | needs-verification | 9B Tuftsville Road is in a shared plaza; exact unit point not verified. [source 1](https://stirlingdentalcentre.com/) |
 | Pet Valu — Creekside Centre | needs-verification | 9 Tuftsville Road is in a shared plaza; do not reuse an adjacent tenant pin. [source 1](https://store.petvalu.ca/location/2443/) |
 
 ## Visitor facilities
@@ -74,7 +68,7 @@ These businesses remain searchable and saveable. No placeholder coordinates or r
 
 ## Source discrepancies and limits
 
-- Resumed review on 2026-10-14 rechecked theatre parking/accessibility sources and searched the remaining priority pins. Hastings County also publishes the ambiguous Firehall point (44.2971, -77.5464), overlapping the 33 Mill Street lawyer point rather than resolving the 39 Mill Street property. It remains withheld: https://hastingscounty.com/adventures/explore . No new coordinates were inferred from neighbouring shops. Alpaca Ridge's operator continues to publish 152 Smith Road and appointment-only visits; the exact pin remains unresolved.
+- On 2026-10-15 the BIA approved address-level property pins for Firehall Cafe, Creekside Yoga, The Vape Shop, The Fairway Golf, and Stirling Dental Centre. CyberTECT's approved regional pin is in Belleville; it marks the Bell-Front commercial area near the published mailing address and does not claim a Stirling storefront or exact suite entrance. The remaining unresolved pins stay withheld.
 
 - Rawdon Creek Soap: directory 26 Mill Street versus operator 127 North Street, Unit 1. Operator structured coordinates point to North Street too. Await canonical correction before enabling a pin.
 - Lighthouse Tutoring has multiple locations. Its site-wide coordinates describe Picton, not Stirling. The Stirling address is separately published; the 8 Mill Street property pin comes from co-located Blue Collar Therapy’s operator directions. Picton metadata was deliberately not used.
@@ -89,4 +83,4 @@ Food Boutique’s canonical `/food-boutique-stirling` and legacy `sourceUrl` bot
 
 18 profile URLs returned HTTP 200 and contained the profile component. Ten additional profile requests encountered Squarespace HTTP 429 rate limiting; these URLs remain canonical but their current response status is not claimed as verified. Exact response evidence is summarized in MAP-TESTING.md. No automated retries were made against the rate-limited URLs in that batch.
 
-Stirling Book Company’s initial address conflict was resolved by upstream commit `af08c1d` during this task. The current canonical address is 22 Mill Street, and its verified property pin is now included. Final coverage: **17 business pins, 12 unresolved businesses, 9 additional destination pins, 2 additional places awaiting coordinates**.
+Stirling Book Company’s initial address conflict was resolved by upstream commit `af08c1d` during this task. The current canonical address is 22 Mill Street, and its verified property pin is now included. Final coverage: **23 business pins, 6 unresolved businesses, 9 additional destination pins, 2 additional places awaiting coordinates**.
