@@ -25,6 +25,11 @@
       "path": "/local-stories",
       "title": "Woven Into Stirling | Local Stories & Business Profiles",
       "description": "Meet the people behind Stirling Festival Theatre, Rawdon Creek Soap Co., and Blue Collar Therapy. Real local business stories shared with the Stirling-Rawdon BIA."
+    },
+    {
+      "path": "/eat-and-drink",
+      "title": "Eat & Drink in Stirling-Rawdon | Cafés, Restaurants & Theatre Nights",
+      "description": "Explore Stirling-Rawdon cafés, restaurants, pizza, local food and a special night at Stirling Festival Theatre. Find where to eat on Mill Street and West Front Street."
     }
   ]
 }
