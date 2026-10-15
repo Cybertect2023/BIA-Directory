@@ -461,6 +461,7 @@
 .bia-explore--eat .bia-eat__hero-content{width:min(1200px,calc(100% - 64px));margin-inline:auto;padding:clamp(4.2rem,9vw,8.4rem) 0;position:relative;z-index:1}
 .bia-explore--eat .bia-eat__hero .bia-explore__eyebrow{color:#e5cd9b!important;margin-bottom:clamp(1.1rem,3vw,2rem)!important}
 .bia-explore--eat .bia-eat__hero h1{font-size:clamp(3rem,6.2vw,6.6rem);line-height:1.02;letter-spacing:-.051em;color:#fff;max-width:900px;margin:0 0 1.65rem}
+.bia-explore--eat .bia-eat__hero-topic{display:block;font:700 clamp(.65rem,1vw,.8rem)/1.4 Arial,sans-serif;letter-spacing:.17em;text-transform:uppercase;color:#f0d59c;margin:0 0 1.4rem}
 .bia-explore--eat .bia-eat__hero h1 em{font-family:Georgia,serif;font-weight:400;letter-spacing:-.055em;color:#f4d8a1}
 .bia-explore--eat .bia-eat__hero-intro{max-width:685px;font-size:clamp(1.12rem,1.65vw,1.35rem);line-height:1.72;color:#f2f4eb;margin-bottom:1.8rem}
 .bia-explore--eat .bia-eat__hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:.9rem 1.6rem}
@@ -530,6 +531,7 @@
 .bia-explore--eat .bia-eat__theatre h2 em{font:italic 500 1em/1 Georgia,serif;letter-spacing:-.04em;color:#e8ce9c}
 .bia-explore--eat .bia-eat__theatre p{font-size:1rem;line-height:1.8;color:#d7e0d7;max-width:730px}
 .bia-explore--eat .bia-eat__theatre .bia-eat__theatre-lede{font-size:clamp(1.1rem,1.55vw,1.3rem);color:#f0e5cc;line-height:1.62}
+.bia-explore--eat .bia-eat__theatre .bia-eat__theatre-example{font-size:.89rem;line-height:1.7;color:#efddae;border-left:3px solid #bfa56d;padding:.15rem 0 .15rem 1.1rem;margin:1.5rem 0}
 .bia-explore--eat .bia-eat__theatre-buttons{display:flex;flex-wrap:wrap;gap:.9rem 1.6rem;align-items:center;margin-top:2rem}
 .bia-explore--eat .bia-eat__theatre-buttons .bia-explore__button{background:#e1c78f;border-color:#e1c78f;color:#263d2e!important}
 .bia-explore--eat .bia-eat__theatre-buttons>a:not(.bia-explore__button){color:#f4e7c8!important;font-weight:700;font-size:.91rem;text-underline-offset:4px}
