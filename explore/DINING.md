@@ -4,13 +4,21 @@
 
 This page is an editorial visitor landing page, not a duplicate of the searchable food directory. Its core job is to convert theatre audiences, weekend visitors, market shoppers and people exploring Stirling into customers for village food businesses.
 
-The connecting routes are:
+The planned connecting routes are (staged to use the working directory as a temporary fallback until Squarespace publishing):
 
 1. The existing homepage **Eat & Drink** tile -> `/eat-and-drink` (must be changed manually in Squarespace once this page exists).
 2. The Explore & Enjoy hub, Things to Do, Farms & Local Food, Community Events and Local Stories -> the guide.
 3. The Things to Do theatre section -> `/eat-and-drink?meal=dinner#find-your-table`, which applies the dinner filter automatically.
 4. Each guide entry -> its individual BIA business profile and, where confirmed, a direct menu, phone number or directions.
 5. The guide -> Farms & Local Food, theatre events, Shop Local, and the BIA calendar, giving visitors a reason to extend the outing.
+
+## Staged cross-links and launch switch
+
+**Important:** The five already built visitor pages (Explore & Enjoy hub, Farms & Local Food, Things to Do, Community Events and Local Stories) have staged Eat & Drink links. While this new Squarespace page is not yet published, their actual `href` continues pointing to the live `/business-directory?collection=eat-local` fallback. Each link has a `data-launch-href` attribute containing the future `/eat-and-drink` route. This deliberately prevents visitors from seeing a 404 during the build.
+
+Once `/eat-and-drink` has been created, published and checked in an incognito browser, activate it in a single GitHub batch: for every `pages/*.html` template, replace `href="/business-directory?collection=eat-local" data-launch-href="/eat-and-drink..."` with `href="/eat-and-drink..."`, preserving the full destination including query or anchor. Do not globally replace every curated-directory link: several deliberate directory CTAs should remain. You can ask ChatGPT to perform this exact batch update once the public page is verified.
+
+Next manually change the homepage **Eat & Drink** button to `/eat-and-drink` in Squarespace. The normal Squarespace page layout must be created in the UI; a GitHub commit does not publish that route.
 
 ## Squarespace page creation
 
