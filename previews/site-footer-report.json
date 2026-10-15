@@ -1,0 +1,30 @@
+[
+  {
+    "view": "desktop",
+    "width": 1440,
+    "horizontalOverflowPx": 0,
+    "allLinks": 20,
+    "headings": [
+      "Your next favourite place might be right here.",
+      "Discover",
+      "Explore & Plan",
+      "Our BIA"
+    ],
+    "logoLoaded": true,
+    "fontFamily": "Arial, sans-serif"
+  },
+  {
+    "view": "mobile",
+    "width": 390,
+    "horizontalOverflowPx": 0,
+    "allLinks": 20,
+    "headings": [
+      "Your next favourite place might be right here.",
+      "Discover",
+      "Explore & Plan",
+      "Our BIA"
+    ],
+    "logoLoaded": true,
+    "fontFamily": "Arial, sans-serif"
+  }
+]
