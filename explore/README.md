@@ -5,8 +5,8 @@ This feature uses the existing Squarespace 7.1 + GitHub Pages + Code Block archi
 ## Shared assets
 
 - `assets/explore.css` — responsive editorial layout, scoped to the Explore & Enjoy component and inheriting the site's typography.
-- `assets/explore.js` — progressively updates the featured community event from `explore/events.json`. The event copy remains present in Squarespace HTML as a crawlable fallback.
-- `explore/events.json` — current featured-event data. Update this file and the matching fallback copy/date/link in `pages/community-events.html` when replacing a featured event.
+- `assets/explore-loader.js` — loads the visitor page template and, for Community Events, renders upcoming listings from `explore/events.json` with automatic expiry. `assets/explore.js` is a legacy compatibility script for older static Code Blocks.
+- `explore/events.json` — curated verified event data (`schemaVersion: 2`) with dates, end times, sources and organizer links. Add new confirmed events here; expired entries automatically disappear from the "upcoming" list. The evergreen annual traditions and 2026 holiday showcases remain editorial HTML and require a periodic seasonal content review.
 
 ## Recommended small Code Block loader
 
@@ -63,6 +63,16 @@ Set each Squarespace page's URL slug and SEO title/description in **Page Setting
 - `pages/community-events.html` — annual traditions, current event feature and calendar handoff.
 - `pages/local-stories.html` — sourced story archive and verified-business directory route.
 - `story-template.html` — reusable editorial page structure for future features; replace every bracketed field before publishing.
+
+## Community Events maintenance
+
+- Squarespace page slug: `/community-events`; Code Block: `data-explore-page="community-events"` using the shared `assets/explore-loader.js`.
+- Update `explore/events.json` for new confirmed events. Every event needs `id`, `category`, `title`, `dateLabel`, `startDate`, `endDate`, `location`, `description`, `url`, `linkLabel`, `source`. Use complete offset-aware ISO 8601 dates in the **Stirling, Ontario timezone**: `-04:00` in daylight time, `-05:00` in standard time. Don't reuse the old `-04:00` offset for November.
+- Only list organizer-confirmed dates and link to official event details. The featured list is capped at six upcoming items and is automatically sorted by start date. It drops items as soon as their `endDate` passes.
+- The permanent editorial sections are kept in `pages/community-events.html`: 2026 Holiday Market on November 6, Farmtown Park's **Deck the Halls** on November 19–22, and other annual traditions. **These dated 2026 editorials must be refreshed or recast for 2027**; the auto-expiration applies to upcoming feed cards only.
+- The official Farmtown Park name for 2026 is **Deck the Halls**, featuring decorated trees and wreaths. A previous BIA article covering the festival of trees and Light the Night dates is from **2025**; do not use those 2025 dates as 2026 dates.
+- Recurring activities are links to the official library, township, arena and theatre schedules, not one BIA calendar entry for each weekly occurrence.
+- Verified 2026 sources include: [Hastings County Holiday Market](https://www.hastings.ca/adventures/events/holiday-market-village-downtown-stirling), [Farmtown Park Deck the Halls](https://www.farmtownpark.ca/events/wesc2ekhloe9cg6hl2grma02591gog), [StirlingFest](https://www.stirlingfest.com/index.html), [Stirling Festival Theatre](https://www.stirlingfestivaltheatre.com/), [Stirling-Rawdon Public Library](https://stirlinglibrary.com/programs/), [Township event calendar](https://www.stirling-rawdon.com/parks-recreation-culture/event-calendar/), and [Stirling Fair](https://www.stirlingfair.com/).
 
 ## Woven Into Stirling: editorial interview source and privacy
 
