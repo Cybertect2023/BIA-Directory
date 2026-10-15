@@ -17,7 +17,7 @@ test('all 29 businesses are accounted for once; every published pin has dated ev
   assert.match(p.verification.date,/^\d{4}-\d{2}-\d{2}$/);assert.ok(p.verification.sources.length);
   for(const source of p.verification.sources)assert.ok(safeUrl(source));
  }
- assert.equal(places.filter(hasPoint).length,26);
+ assert.equal(places.filter(hasPoint).length,32);
 });
 test('business details remain canonical and stale coordinates fail closed',()=>{
  for(const b of directory.businesses){const p=places.find(p=>p.id===b.id);assert.equal(p.name,b.name);assert.equal(p.address,b.address);}
