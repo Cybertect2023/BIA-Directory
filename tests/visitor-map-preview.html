@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Visitor map responsive review</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#e4e7e1;color:#263a2e;font:15px/1.5 system-ui,sans-serif}
+    header{padding:12px 20px;background:white}h1{font-size:18px;margin:0 0 8px}
+    label{margin-right:16px}select{font:inherit;padding:6px}a{color:#416449}
+    main{padding:16px;overflow:auto}iframe{display:block;height:800px;width:390px;border:1px solid #869283;background:#fff;margin:auto}
+    p{margin:8px 0 0;font-size:13px}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Visitor map responsive review</h1>
+    <label>Viewport <select id="size"><option value="320">320 px</option><option value="390" selected>390 px</option><option value="768">768 px</option><option value="1280">1280 px</option></select></label>
+    <label>Page <select id="mode"><option value="standalone">Standalone page</option><option value="loader">Squarespace loader fixture</option><option value="nojs">Without JavaScript</option></select></label>
+    <a href="../plan-your-visit/">Open full page</a>
+    <p>Real iframe viewports for layout review, not device or touch emulation. No automated map panning or tile requests.</p>
+  </header>
+  <main><iframe id="preview" title="Visitor map preview at selected width" src="../plan-your-visit/"></iframe></main>
+  <script>
+    const size=document.getElementById('size'),mode=document.getElementById('mode'),frame=document.getElementById('preview');
+    size.addEventListener('change',()=>{frame.style.width=size.value+'px';});
+    mode.addEventListener('change',()=>{
+      if(mode.value==='nojs')frame.setAttribute('sandbox','allow-same-origin allow-popups');
+      else frame.removeAttribute('sandbox');
+      frame.src=mode.value==='loader'?'visitor-map-loader.html':'../plan-your-visit/';
+    });
+  </script>
+</body>
+</html>
