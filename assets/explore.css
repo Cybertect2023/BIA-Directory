@@ -793,3 +793,13 @@
 @media(prefers-reduced-motion:reduce){
  .bia-explore--shop .bia-shop__filter{transition:none}
 }
+
+/* Explore & Enjoy hub: taller photographs on the four visitor-guide cards.
+   Keep card widths, approved typography and all other page templates unchanged. */
+.bia-explore #choose-your-day .bia-explore__card-image{height:250px}
+@media(max-width:900px){
+  .bia-explore #choose-your-day .bia-explore__card-image{height:240px}
+}
+@media(max-width:680px){
+  .bia-explore #choose-your-day .bia-explore__card-image{height:230px}
+}
