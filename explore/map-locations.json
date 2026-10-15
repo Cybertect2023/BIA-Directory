@@ -348,10 +348,9 @@
       "verification": {
         "date": "2026-10-15",
         "sources": [
-          "https://www.visitstirlingrawdon.ca/business-directory",
-          "https://www.openstreetmap.org/node/10121753819"
+          "https://www.visitstirlingrawdon.ca/business-directory"
         ],
-        "note": "BIA-approved property pin for the confirmed 40 Mill Street address. Shared nearby property marker; storefront entrance not surveyed."
+        "note": "BIA-approved address-level property pin at the confirmed 40 Mill Street. Storefront entrance not surveyed."
       }
     }
   ],
