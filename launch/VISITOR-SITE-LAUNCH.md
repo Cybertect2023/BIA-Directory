@@ -12,9 +12,11 @@
 | --- | --- | --- |
 | Eat & Drink | Explore Dining | `/eat-and-drink` |
 | Shop Local | Explore Shops | `/shop-local` |
-| Explore & Enjoy | What's Happening | `/explore-and-enjoy` |
+| Explore & Enjoy | What's Happening → **Explore Stirling-Rawdon** | `/explore-and-enjoy` |
 
 The standalone calendar remains at `/events`. Visitors will also reach it from the Community Events guide. The directory remains at `/business-directory`, including its curated filtered views.
+
+Since this third card now opens the whole visitor hub instead of only events, also update its homepage description to: **Discover farms, live theatre, local attractions, community events and stories worth exploring in Stirling-Rawdon.** This helps the button and content accurately describe the destination.
 
 Use the built-in Squarespace link editor on each button. Do not use JavaScript to override homepage links, and do not paste `pages/home-explore-section.html` into the homepage.
 
