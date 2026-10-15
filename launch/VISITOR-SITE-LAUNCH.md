@@ -20,13 +20,34 @@ Since this third card now opens the whole visitor hub instead of only events, al
 
 Use the built-in Squarespace link editor on each button. Do not use JavaScript to override homepage links, and do not paste `pages/home-explore-section.html` into the homepage.
 
-## Main navigation
+## Main navigation and calendar discovery (approved 2026-10-15)
 
-Recommended minimal change: add **Explore & Enjoy** as a regular navigation link to the existing published page `/explore-and-enjoy`. Keep the other six destination pages under **Not Linked**; the hub, homepage and cross-links make them accessible. The map is prominently linked from every guide, so it does not need an additional main-navigation item unless the BIA wants it.
+The approved BIA branding and typography are unchanged.
 
-Consider adding `/plan-your-visit` as a footer text link labelled **Visitor Map / Plan Your Visit**. Prefer to keep the existing News, Events, Membership and Business Directory entries rather than remove them.
+Recommended six-item **Main Navigation**, in this order:
 
-Squarespace **Not Linked** is not the same as disabled or password-protected. Make sure the **Enable Page** toggle stays on.
+| Label | Link | Squarespace action |
+| --- | --- | --- |
+| About | Existing About page | Keep |
+| Explore & Enjoy | `/explore-and-enjoy` | Move existing enabled page from Not Linked to Main Navigation |
+| Plan Your Visit | `/plan-your-visit` | Move existing enabled visitor map from Not Linked to Main Navigation |
+| Business Directory | `/business-directory` | Keep |
+| Membership | Existing Membership page | Keep |
+| Contact | Existing Contact page | Keep |
+
+**Remove "News & Events" from the main navigation** because no News section is maintained and a direct link to the calendar is not a useful overview. Do **not** delete the actual events page at `/events`, change its slug, or remove its content. The homepage Explore & Enjoy discovery card leads to `/explore-and-enjoy`, which in turn links to `/community-events`. The Community Events guide prominently links to the existing `/events` calendar.
+
+Place the following three short links in an existing Squarespace **footer navigation** or visitor-links column:
+
+- **Community Events** → `/community-events`
+- **Events Calendar** → `/events`
+- **Plan Your Visit / Visitor Map** → `/plan-your-visit`
+
+Map footer links are managed in GitHub: the source `scripts/visitor-map-page.html` and generated copies already include both Community Events and the direct Events Calendar link.
+
+Under Squarespace Pages, move the **existing** enabled pages into Main Navigation; don't duplicate them. A page under **Not Linked** can remain public. Don't create a Squarespace folder labelled Explore & Enjoy that displaces the clickable visitor hub page.
+
+This changes the sitewide native Squarespace header and footer, so it must be applied manually in the Squarespace editor. GitHub changes cannot edit these native navigation items.
 
 ## Eight page SEO title checks
 
