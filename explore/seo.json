@@ -30,6 +30,11 @@
       "path": "/eat-and-drink",
       "title": "Eat & Drink in Stirling-Rawdon | Cafés, Restaurants & Theatre Nights",
       "description": "Explore Stirling-Rawdon cafés, restaurants, pizza, local food and a special night at Stirling Festival Theatre. Find where to eat on Mill Street and West Front Street."
+    },
+    {
+      "path": "/shop-local",
+      "title": "Shop Local in Stirling-Rawdon | Boutiques, Books, Gifts & Vintage Finds",
+      "description": "Explore independent shops in Stirling-Rawdon, Ontario. Discover books, handmade soaps, flowers, vintage finds, home décor, specialty foods and downtown shopping."
     }
   ]
 }
