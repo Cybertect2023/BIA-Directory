@@ -1,0 +1,40 @@
+name: Render redesigned BIA footer
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/render-site-footer.yml'
+      - 'scripts/render-site-footer.py'
+
+permissions:
+  contents: write
+
+jobs:
+  screenshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Chromium browser
+        run: |
+          python -m pip install playwright
+          python -m playwright install --with-deps chromium
+      - name: Render and check desktop and mobile footer
+        run: python scripts/render-site-footer.py
+      - name: Commit footer screenshot previews
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add previews/site-footer-desktop.jpg previews/site-footer-mobile.jpg previews/site-footer-report.json
+          if ! git diff --staged --quiet; then
+            git commit -m "Publish browser-rendered BIA footer design previews"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
