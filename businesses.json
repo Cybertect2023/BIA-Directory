@@ -203,7 +203,10 @@
       "collections": [
         "eat-local"
       ],
-      "deliveryHours": "Thursday - Saturday: 4pm - 8pm (up to 8.5 km)"
+      "deliveryHours": {
+        "label": "Delivery Hours (Thu–Sat)",
+        "value": "4:00 PM – 8:00 PM (up to an 8.5 km radius)"
+      }
     },
     {
       "id": "blooms-flowers",
