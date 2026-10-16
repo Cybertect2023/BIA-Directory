@@ -735,6 +735,30 @@
       "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
       "source": "https://www.ultramar.ca/",
       "checked": "2026-10-16"
+    },
+    {
+      "id": "boyer-ford-stirling",
+      "name": "Boyer Ford Stirling",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://www.boyerfordstirling.com/about-us/",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "stirling-pharmacy-guardian-drugs",
+      "name": "Stirling Pharmacy / Guardian Drugs",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://www.stirling-rawdon.com/business-development/business-directory/",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "stirling-medical-centre",
+      "name": "Stirling Medical Centre",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://www.stirling-rawdon.com/business-development/business-directory/",
+      "checked": "2026-10-16"
     }
   ],
   "places": [
