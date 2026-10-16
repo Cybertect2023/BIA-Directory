@@ -7,9 +7,9 @@ const data=JSON.parse(fs.readFileSync(new URL('../explore/map-locations.json',im
 const places=buildPlaces(directory,data);
 const base={q:'',category:'all',experience:'',selected:'',savedOnly:false};
 test('all 29 businesses are accounted for once; every published pin has dated evidence',()=>{
- assert.equal(directory.businesses.length,29);
+ assert.equal(directory.businesses.length,30);
  const records=[...data.businessLocations,...data.unresolvedBusinesses];
- assert.equal(records.length,29);assert.equal(new Set(records.map(p=>p.businessId)).size,29);
+ assert.equal(records.length,30);assert.equal(new Set(records.map(p=>p.businessId)).size,29);
  for(const b of directory.businesses)assert.ok(records.some(p=>p.businessId===b.id));
  assert.equal(new Set(places.map(p=>p.id)).size,places.length);
  for(const p of places.filter(hasPoint)){
@@ -17,7 +17,7 @@ test('all 29 businesses are accounted for once; every published pin has dated ev
   assert.match(p.verification.date,/^\d{4}-\d{2}-\d{2}$/);assert.ok(p.verification.sources.length);
   for(const source of p.verification.sources)assert.ok(safeUrl(source));
  }
- assert.equal(places.filter(hasPoint).length,33);
+ assert.equal(places.filter(hasPoint).length,34);
 });
 test('business details remain canonical and stale coordinates fail closed',()=>{
  for(const b of directory.businesses){const p=places.find(p=>p.id===b.id);assert.equal(p.name,b.name);assert.equal(p.address,b.address);}
@@ -31,7 +31,7 @@ test('search, accent handling, categories, reset and empty results',()=>{
  assert.equal(filterPlaces(places,{...base,category:'eat'},data.collections,[]).length,6);
  for(const category of Object.keys(CATEGORIES).filter(x=>x!=='all'))assert.ok(filterPlaces(places,{...base,category},data.collections,[]).every(p=>p.visitorCategory===category));
  assert.equal(filterPlaces(places,{...base,q:'zzzzunfindable'},data.collections,[]).length,0);
- assert.equal(filterPlaces(places,base,data.collections,[]).length,40);
+ assert.equal(filterPlaces(places,base,data.collections,[]).length,41);
  assert.equal(filterPlaces(places,base,data.collections,[]).at(-1).visitorCategory,'services');
 });
 test('all five curated collections resolve, in editorial order, with no adult retail in family/stroll',()=>{
