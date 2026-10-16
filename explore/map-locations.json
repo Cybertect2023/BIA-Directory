@@ -495,6 +495,86 @@
       "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
       "source": "https://www.facebook.com/thescoop7/",
       "checked": "2026-10-16"
+    },
+    {
+      "id": "mcintosh-motors",
+      "name": "McIntosh Motors",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://www.husqvarna.com/ca-en/locations/mcintosh-motors/?id=CDA08253-1",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "canada-post-stirling",
+      "name": "Canada Post",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://www.stirling-rawdon.com/business-development/business-directory/",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "natural-rhythms-health-centre",
+      "name": "Natural Rhythms Health Centre",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://www.facebook.com/NRHealth/",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "mindful-massage-therapy",
+      "name": "Mindful Massage Therapy",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://o.clinicsense.com/",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "peaceful-warrior-dojo",
+      "name": "Peaceful Warrior Dojo",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://www.peacefulwarrior.ca/",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "skinkles-pet-supplies-and-more",
+      "name": "Skinkle’s Pet Supplies & More",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://www.ruralroutes.com/orr_city_page.cfm?city=stirling",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "stirling-carpet-and-flooring",
+      "name": "Stirling Carpet & Flooring",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://www.stirlingflooring.com/",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "stirling-store-and-lock",
+      "name": "Stirling Store & Lock",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://www.stirlingstoreandlock.ca/",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "whitley-newman-insurance-and-financial-services",
+      "name": "Whitley Newman Insurance & Financial Services",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://whitleynewman.com/",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "stirling-train-station-antique-shop",
+      "name": "Stirling Train Station Antique Shop",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://www.doorsopenontario.on.ca/hastings-county/stirling-train-station",
+      "checked": "2026-10-16"
     }
   ],
   "places": [
