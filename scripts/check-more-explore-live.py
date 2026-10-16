@@ -45,6 +45,41 @@ with sync_playwright() as pw:
       print(json.dumps(row),flush=True)
       results.append(row)
     page.close()
+  homepage_links=[]
+  # Audit the actual rendered homepage Code Block and activate each card.
+  # Squarespace may have saved HTML different from the editor's working copy.
+  for title,anchor,_ in TARGETS:
+    selector={
+      "heritage-history":"#bia-discover a.discover-link[href*='heritage-history'], #bia-discover article:first-child a.discover-link",
+      "trails-outdoors":"#bia-discover a.discover-link[href*='trails-outdoors'], #bia-discover article:nth-child(2) a.discover-link",
+      "parks-family-fun":"#bia-discover article:nth-child(3) a.discover-link",
+    }[title]
+    page=browser.new_page(viewport={"width":1280,"height":900})
+    audit={"card":title,"expected":f"/things-to-do#{anchor}"}
+    try:
+      page.goto(ORIGIN+"/",wait_until="domcontentloaded",timeout=40000)
+      link=page.locator(selector).first
+      link.wait_for(state="visible",timeout=20000)
+      audit["rawHref"]=link.get_attribute("href")
+      audit["resolvedHref"]=link.evaluate("(e)=>e.href")
+      audit["actualTag"]=link.evaluate("(e)=>e.outerHTML")
+      if audit["rawHref"]==audit["expected"]:
+        link.click(timeout=15000)
+        page.wait_for_url("**/things-to-do#"+anchor,timeout=25000)
+        heading=page.locator("#bia-explore-page #"+anchor+" h2").first
+        heading.wait_for(state="visible",timeout=25000)
+        audit["afterClickUrl"]=page.url
+        audit["afterClickHeading"]=heading.inner_text()
+        audit["clickPass"]=True
+      else:
+        audit["clickPass"]=False
+        audit["problem"]="Published link href differs from the intended destination."
+    except Exception as ex:
+      audit["clickPass"]=False
+      audit["error"]=str(ex)[:550]
+    homepage_links.append(audit)
+    print("HOMEPAGE_CLICK",json.dumps(audit),flush=True)
+    page.close()
   context=browser.new_context()
   # New-business directory slugs are checked separately: they must not be
   # mistaken for confirmed working routes solely because they are in JSON.
@@ -57,7 +92,7 @@ with sync_playwright() as pw:
       profiles[slug]={"error":str(ex)[:200]}
   print("Profile URL checks:",json.dumps(profiles),flush=True)
   browser.close()
-report={"checkedAt":datetime.now(timezone.utc).isoformat(),"results":results,"profileLinks":profiles}
+report={"checkedAt":datetime.now(timezone.utc).isoformat(),"results":results,"profileLinks":profiles,"homepageLinks":homepage_links}
 Path("launch").mkdir(exist_ok=True)
 Path("launch/more-explore-live-audit.json").write_text(json.dumps(report,indent=2)+"\n",encoding="utf-8")
 print("All six direct-section tests pass:",all(x["pass"] for x in results),flush=True)
