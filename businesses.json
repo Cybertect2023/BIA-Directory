@@ -1353,6 +1353,342 @@
       "collections": [
         "eat-local"
       ]
+    },
+    {
+      "id": "mcintosh-motors",
+      "name": "McIntosh Motors",
+      "category": "Home & Garden",
+      "description": "Fourth-generation local dealer for outdoor power equipment, parts, and service.",
+      "address": "164 West Front Street, Stirling, ON K0K 3E0",
+      "phone": "613-395-3757",
+      "email": "",
+      "website": "https://www.husqvarna.com/ca-en/locations/mcintosh-motors/?id=CDA08253-1",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "9am - 5:30pm",
+        "tuesday": "9am - 5:30pm",
+        "wednesday": "9am - 5:30pm",
+        "thursday": "9am - 5:30pm",
+        "friday": "9am - 5:30pm",
+        "saturday": "9am - 4pm",
+        "sunday": "Closed"
+      },
+      "services": [
+        "Outdoor Power Equipment",
+        "Parts",
+        "Repair & Warranty Service"
+      ],
+      "profileUrl": "/mcintosh-motors",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.husqvarna.com/ca-en/locations/mcintosh-motors/?id=CDA08253-1",
+      "about": "McIntosh Motors is a fourth-generation Stirling business supplying and servicing outdoor power equipment."
+    },
+    {
+      "id": "canada-post-stirling",
+      "name": "Canada Post",
+      "category": "Professional Services",
+      "description": "Postal services and parcel pickup at the Stirling postal outlet.",
+      "address": "400 West Front Street, Unit 9, Stirling, ON K0K 3E0",
+      "phone": "",
+      "email": "",
+      "website": "https://www.canadapost-postescanada.ca/",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Mail Services",
+        "Parcel Services",
+        "Postal Supplies"
+      ],
+      "profileUrl": "/canada-post-stirling",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.stirling-rawdon.com/business-development/business-directory/",
+      "about": "Canada Post provides mail and parcel services from its Stirling outlet."
+    },
+    {
+      "id": "natural-rhythms-health-centre",
+      "name": "Natural Rhythms Health Centre",
+      "category": "Health, Wellness & Beauty",
+      "description": "Chiropractic wellness care focused on posture and general musculoskeletal health.",
+      "address": "400 West Front Street, Building 8, Stirling, ON K0K 3E0",
+      "phone": "613-395-4747",
+      "email": "drd@naturalrhythms.ca",
+      "website": "",
+      "facebook": "https://www.facebook.com/NRHealth/",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Chiropractic Care",
+        "Wellness Care",
+        "Posture Assessment"
+      ],
+      "profileUrl": "/natural-rhythms-health-centre",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.facebook.com/NRHealth/",
+      "about": "Natural Rhythms Health Centre provides chiropractic wellness care in Stirling."
+    },
+    {
+      "id": "mindful-massage-therapy",
+      "name": "Mindful Massage Therapy",
+      "category": "Health, Wellness & Beauty",
+      "description": "Registered massage therapy and complementary bodywork services.",
+      "address": "400 West Front Street, Unit 2, Stirling, ON K0K 3E0",
+      "phone": "",
+      "email": "",
+      "website": "https://o.clinicsense.com/",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Registered Massage Therapy",
+        "Bowen Therapy",
+        "CranioSacral Therapy",
+        "Reiki",
+        "Hypnosis"
+      ],
+      "profileUrl": "/mindful-massage-therapy",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://o.clinicsense.com/",
+      "about": "Mindful Massage Therapy, operated by Olga Tosevski, RMT, offers registered massage and complementary wellness services."
+    },
+    {
+      "id": "peaceful-warrior-dojo",
+      "name": "Peaceful Warrior Dojo",
+      "category": "Sports & Recreation",
+      "description": "Martial arts instruction in Aikido, Iaido, Jodo, and Kiro.",
+      "address": "400 West Front Street, Building 8, Stirling, ON K0K 3E0",
+      "phone": "613-243-5683",
+      "email": "",
+      "website": "https://www.peacefulwarrior.ca/",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Aikido",
+        "Iaido",
+        "Jodo",
+        "Kiro",
+        "Martial Arts Instruction"
+      ],
+      "profileUrl": "/peaceful-warrior-dojo",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.peacefulwarrior.ca/",
+      "about": "Peaceful Warrior Dojo offers martial arts training in Stirling under owner and instructor Dan Boyle."
+    },
+    {
+      "id": "skinkles-pet-supplies-and-more",
+      "name": "Skinkle’s Pet Supplies & More",
+      "category": "Shops & Retail",
+      "description": "One-stop pet supply shop with food, accessories, grooming, and a self-serve dog wash.",
+      "address": "400 West Front Street, Building 10, Stirling, ON K0K 3E0",
+      "phone": "613-395-0899",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Pet Food",
+        "Pet Supplies",
+        "Specialized Grooming",
+        "Self-Serve Dog Wash"
+      ],
+      "profileUrl": "/skinkles-pet-supplies-and-more",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.ruralroutes.com/orr_city_page.cfm?city=stirling",
+      "about": "Skinkle’s Pet Supplies & More provides pet food, supplies, grooming, and a self-serve dog wash for local pet owners.",
+      "collections": [
+        "shop-local"
+      ]
+    },
+    {
+      "id": "stirling-carpet-and-flooring",
+      "name": "Stirling Carpet & Flooring",
+      "category": "Home & Garden",
+      "description": "Family-owned flooring store offering flooring materials, installation, and related services.",
+      "address": "400 West Front Street, Stirling, ON K0K 3E0",
+      "phone": "613-395-1400",
+      "email": "stirlingflooring@hotmail.com",
+      "website": "https://www.stirlingflooring.com/",
+      "facebook": "https://www.facebook.com/stirlingflooring/",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "9am - 4pm",
+        "tuesday": "9am - 4pm",
+        "wednesday": "9am - 4pm",
+        "thursday": "9am - 4pm",
+        "friday": "9am - 4pm",
+        "saturday": "10am - 4pm",
+        "sunday": "Closed"
+      },
+      "services": [
+        "Flooring Sales",
+        "Carpet Installation",
+        "Hardwood",
+        "Vinyl",
+        "Tile & Laminate"
+      ],
+      "profileUrl": "/stirling-carpet-and-flooring",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.stirlingflooring.com/",
+      "about": "Stirling Carpet & Flooring is a family-owned local flooring business, operating since 1991."
+    },
+    {
+      "id": "stirling-store-and-lock",
+      "name": "Stirling Store & Lock",
+      "category": "Professional Services",
+      "description": "Secure self-storage, mobile storage, and shipping container sales and rentals.",
+      "address": "431 West Front Street, Stirling, ON K0K 3E0",
+      "phone": "613-395-0770",
+      "email": "info@stirlingstoreandlock.ca",
+      "website": "https://www.stirlingstoreandlock.ca/",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "8am - 5pm",
+        "tuesday": "8am - 5pm",
+        "wednesday": "8am - 5pm",
+        "thursday": "8am - 5pm",
+        "friday": "8am - 5pm",
+        "saturday": "Closed",
+        "sunday": "Closed"
+      },
+      "services": [
+        "Self Storage",
+        "Mobile Storage",
+        "Shipping Container Sales",
+        "Container Rentals"
+      ],
+      "profileUrl": "/stirling-store-and-lock",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.stirlingstoreandlock.ca/contact-us/",
+      "about": "Stirling Store & Lock offers secure storage units and portable storage options for Stirling and surrounding communities."
+    },
+    {
+      "id": "whitley-newman-insurance-and-financial-services",
+      "name": "Whitley Newman Insurance & Financial Services",
+      "category": "Professional Services",
+      "description": "Insurance and financial services for personal and business needs.",
+      "address": "22 North Street, Stirling, ON K0K 3E0",
+      "phone": "",
+      "email": "info@whitleyfinancial.com",
+      "website": "https://whitleynewman.com/",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Auto Insurance",
+        "Property Insurance",
+        "Life Insurance",
+        "Business Insurance",
+        "Financial Services"
+      ],
+      "profileUrl": "/whitley-newman-insurance-and-financial-services",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://whitleynewman.com/",
+      "about": "Whitley Newman provides insurance protection and financial services for individuals, families, and businesses."
+    },
+    {
+      "id": "stirling-train-station-antique-shop",
+      "name": "Stirling Train Station Antique Shop",
+      "category": "Shops & Retail",
+      "description": "Seasonal antique shop, tourist information centre, and heritage stop inside the historic train station.",
+      "address": "122 North Street, Stirling, ON K0K 3E0",
+      "phone": "613-922-8113",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Antiques & Collectibles",
+        "Tourist Information",
+        "Heritage Tours"
+      ],
+      "profileUrl": "/stirling-train-station-antique-shop",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.doorsopenontario.on.ca/hastings-county/stirling-train-station",
+      "about": "The Stirling Train Station houses a seasonal antique shop and tourist information centre in a historic former Grand Trunk Railway station.",
+      "collections": [
+        "shop-local"
+      ]
     }
   ]
 }
