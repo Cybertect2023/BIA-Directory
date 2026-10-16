@@ -1014,6 +1014,345 @@
       "verificationStatus": "verified",
       "sourceUrl": "https://www.stirling-rawdon.com/business-development/business-directory/",
       "about": "A downtown Stirling stop for nostalgic candy, gifts and toys."
+    },
+    {
+      "id": "the-honey-house-river-valley-apiaries",
+      "name": "The Honey House / River Valley Apiaries",
+      "category": "Shops & Retail",
+      "description": "A honey shop and apiary offering Ontario honey, beeswax candles, and gifts.",
+      "address": "231 Frankford Road, Stirling, ON K0K 3E0",
+      "phone": "613-970-8227",
+      "email": "",
+      "website": "https://www.rivervalleyapiaries.ca/",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "Closed",
+        "tuesday": "Closed",
+        "wednesday": "10am - 2pm",
+        "thursday": "Closed",
+        "friday": "10am - 2pm",
+        "saturday": "10am - 2pm",
+        "sunday": "Closed"
+      },
+      "services": [
+        "Ontario Honey",
+        "Beeswax Candles",
+        "Apiary Products",
+        "Gifts"
+      ],
+      "profileUrl": "/the-honey-house-river-valley-apiaries",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.rivervalleyapiaries.ca/",
+      "about": "River Valley Apiaries raises bees and makes Ontario Golden Honey, Buckwheat Honey, handcrafted beeswax candles, and related local products.",
+      "collections": [
+        "shop-local"
+      ]
+    },
+    {
+      "id": "goodkey-service-centre",
+      "name": "Goodkey Service Centre",
+      "category": "Automotive",
+      "description": "Automotive repair and maintenance shop serving Stirling.",
+      "address": "10 Frankford Road, Stirling, ON K0K 3E0",
+      "phone": "613-395-2171",
+      "email": "kevingoodkey@hotmail.com",
+      "website": "",
+      "facebook": "https://www.facebook.com/p/Goodkey-Service-Centre-100049615850505/",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Automotive Repair",
+        "Vehicle Maintenance",
+        "Diagnostics"
+      ],
+      "profileUrl": "/goodkey-service-centre",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.stirling-rawdon.com/business-development/business-directory/",
+      "about": "Goodkey Service Centre provides local vehicle repair and maintenance services from its Frankford Road location."
+    },
+    {
+      "id": "bank-of-montreal",
+      "name": "Bank of Montreal",
+      "category": "Professional Services",
+      "description": "Full-service banking branch serving personal and business customers.",
+      "address": "7 West Front Street, Stirling, ON K0K 3E0",
+      "phone": "613-395-3381",
+      "email": "",
+      "website": "https://branches.bmo.com/on/stirling/b0266/",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Personal Banking",
+        "Business Banking",
+        "Financial Services",
+        "ATM"
+      ],
+      "profileUrl": "/bank-of-montreal",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://branches.bmo.com/on/stirling/b0266/",
+      "about": "BMO's Stirling branch provides personal and business banking services at 7 West Front Street."
+    },
+    {
+      "id": "a-spa-of-feathers-and-fur",
+      "name": "A Spa of Feathers & Fur",
+      "category": "Health, Wellness & Beauty",
+      "description": "Grooming and care for dogs, cats, birds, and small animals.",
+      "address": "10 West Front Street, Stirling, ON K0K 3E0",
+      "phone": "613-395-2959",
+      "email": "ashley.jennifer.spa@gmail.com",
+      "website": "",
+      "facebook": "https://www.facebook.com/61581098393332/",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Pet Grooming",
+        "Dog Grooming",
+        "Cat Grooming",
+        "Small Animal & Bird Care"
+      ],
+      "profileUrl": "/a-spa-of-feathers-and-fur",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.stirling-rawdon.com/business-development/business-directory/",
+      "about": "A Spa of Feathers & Fur provides grooming and care services for dogs, cats, birds, and small animals."
+    },
+    {
+      "id": "beautiful-things-for-charity",
+      "name": "Beautiful Things for Charity",
+      "category": "Shops & Retail",
+      "description": "Charitable thrift store offering quality pre-owned goods and local support.",
+      "address": "14 West Front Street, Stirling, ON K0K 3E0",
+      "phone": "613-395-1038",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Thrift Store",
+        "Pre-Owned Goods",
+        "Charitable Giving"
+      ],
+      "profileUrl": "/beautiful-things-for-charity",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.stirling-rawdon.com/business-development/business-directory/",
+      "about": "Beautiful Things for Charity is a Stirling thrift store offering quality pre-owned goods while giving back to the community.",
+      "collections": [
+        "shop-local"
+      ]
+    },
+    {
+      "id": "mckillop-and-associates",
+      "name": "McKillop & Associates",
+      "category": "Professional Services",
+      "description": "Chartered Professional Accountant providing accounting services.",
+      "address": "16 West Front Street, Stirling, ON K0K 3E0",
+      "phone": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Accounting",
+        "Tax Services",
+        "Financial Statements"
+      ],
+      "profileUrl": "/mckillop-and-associates",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.stirling-rawdon.com/business-development/business-directory/",
+      "about": "McKillop & Associates is a Chartered Professional Accountant practice in downtown Stirling."
+    },
+    {
+      "id": "the-studio-in-stirling",
+      "name": "The Studio in Stirling",
+      "category": "Community, Arts & Organizations",
+      "description": "Art studio and gallery offering original artwork, classes, workshops, and community programming.",
+      "address": "21 West Front Street, Stirling, ON K0K 3E0",
+      "phone": "613-473-1592",
+      "email": "info@thestudioinstirling.ca",
+      "website": "https://thestudioinstirling.ca/",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "Closed",
+        "tuesday": "10am - 5pm",
+        "wednesday": "10am - 5pm",
+        "thursday": "10am - 5pm",
+        "friday": "10am - 5pm",
+        "saturday": "10am - 5pm",
+        "sunday": "Closed"
+      },
+      "services": [
+        "Original Artwork",
+        "Art Prints",
+        "Watercolour Classes",
+        "Workshops"
+      ],
+      "profileUrl": "/the-studio-in-stirling",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://thestudioinstirling.ca/",
+      "about": "The Studio in Stirling is an art space for original work, prints, watercolour instruction, workshops, and local creative programming."
+    },
+    {
+      "id": "savoury-house-chinese-cuisine",
+      "name": "Savoury House Chinese Cuisine",
+      "category": "Food & Dining",
+      "description": "Chinese and Cantonese cuisine for dine-in and takeout.",
+      "address": "24 West Front Street, Stirling, ON K0K 3E0",
+      "phone": "613-395-1288",
+      "email": "",
+      "website": "https://savouryhouse.wordpress.com/",
+      "facebook": "https://www.facebook.com/savouryhousestirling/",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "4pm - 8pm",
+        "tuesday": "11am - 8pm",
+        "wednesday": "11am - 8pm",
+        "thursday": "11am - 8pm",
+        "friday": "11am - 9pm",
+        "saturday": "3:30pm - 9pm",
+        "sunday": "11:30am - 8pm"
+      },
+      "services": [
+        "Chinese Cuisine",
+        "Cantonese Cuisine",
+        "Dine-In",
+        "Takeout"
+      ],
+      "profileUrl": "/savoury-house-chinese-cuisine",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://savouryhouse.wordpress.com/",
+      "about": "Savoury House serves Chinese and Cantonese dishes from its West Front Street restaurant.",
+      "collections": [
+        "eat-local"
+      ]
+    },
+    {
+      "id": "mill-creek-hair-and-spa",
+      "name": "Mill Creek Hair & Spa",
+      "category": "Health, Wellness & Beauty",
+      "description": "Hair and spa services, including manicures, pedicures, facials, and waxing.",
+      "address": "28 West Front Street, Stirling, ON K0K 3E0",
+      "phone": "613-395-7727",
+      "email": "millcreekhairandspa@gmail.com",
+      "website": "https://www.millcreekhairandspa.ca/",
+      "facebook": "https://www.facebook.com/stirlingspa/",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "Closed",
+        "tuesday": "10am - 6pm",
+        "wednesday": "10am - 6pm",
+        "thursday": "10am - 6pm",
+        "friday": "10am - 6pm",
+        "saturday": "10am - 2pm",
+        "sunday": "Closed"
+      },
+      "services": [
+        "Hair Services",
+        "Manicures & Pedicures",
+        "Facials",
+        "Waxing",
+        "Gift Certificates"
+      ],
+      "profileUrl": "/mill-creek-hair-and-spa",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.millcreekhairandspa.ca/contact",
+      "about": "Mill Creek Hair & Spa offers salon and spa services in downtown Stirling."
+    },
+    {
+      "id": "the-scoop-ice-cream",
+      "name": "The Scoop Ice Cream",
+      "category": "Food & Dining",
+      "description": "Seasonal ice cream shop serving a variety of Kawartha Dairy ice cream flavours.",
+      "address": "30 West Front Street, Stirling, ON K0K 3E0",
+      "phone": "",
+      "email": "",
+      "website": "",
+      "facebook": "https://www.facebook.com/thescoop7/",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Ice Cream",
+        "Frozen Treats",
+        "Seasonal Service"
+      ],
+      "profileUrl": "/the-scoop-ice-cream",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.facebook.com/thescoop7/",
+      "about": "The Scoop is a seasonal Stirling ice cream shop offering a wide variety of Kawartha Dairy ice cream flavours.",
+      "collections": [
+        "eat-local"
+      ]
     }
   ]
 }
