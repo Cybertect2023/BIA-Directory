@@ -6,6 +6,10 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/verify-visitor-integration.yml'
+      - 'scripts/check-visitor-crosslinks.mjs'
+      - 'pages/*.html'
+      - 'assets/explore-loader.js'
+      - 'assets/explore.css'
 
 permissions:
   contents: read
