@@ -61,4 +61,21 @@ const merchantTotal=[...shop.matchAll(/class="bia-shop__merchant(?:\s|")/g)].len
 assert.equal(merchantTotal,7,'Shop Local should show seven featured independent shops');
 assert(shop.includes('Showing all seven featured independent shops.'),'Initial Shop Local count must match the cards');
 assert(readFileSync('assets/explore-loader.js','utf8').includes('"Showing all " + visible + " featured independent shops."'),'Shop Local filters must use dynamic counts');
+
+// The three existing native Squarespace homepage cards should point to these
+// visitor-focused destinations instead of the old News & Features blog posts.
+// Their IDs must remain stable for Squarespace links and direct hash loading.
+for(const [id,landmark] of [
+ ['heritage-history','Farmtown Park'],
+ ['trails-outdoors','Heritage Trail from North Street'],
+ ['parks-family-fun','Stirling General Mercantile']
+]){
+ assert(things.includes('id="'+id+'"'),'Missing More to Explore destination: '+id);
+ assert(things.includes(landmark),'More to Explore destination needs a real local stop: '+landmark);
+}
+assert(things.includes('href="/plan-your-visit?vm_experience=family#visitor-map"'),'Family guide must link to visitor map');
+assert(things.includes('href="/shop-local#shop-mercantile"'),'Family guide must connect to candy-shop feature');
+assert(things.includes('href="/the-scoop-ice-cream"'),'Family guide must mention seasonal ice cream');
+assert(things.includes('href="/news-and-features/then-and-now"'),'Preserve historic Then & Now story as a supplementary resource');
+
 console.log(JSON.stringify({pages:pages.size,internalLinksChecked:checked,visitorGuideLinks:crossLinks,mapLinks,stagedLinks:0},null,2));
