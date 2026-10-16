@@ -711,6 +711,19 @@
 .bia-explore--shop .bia-shop__merchant-head--flowers .bia-shop__merchant-word{color:#a36e72}
 .bia-explore--shop .bia-shop__merchant-head--food{background:#f3e8cf}
 .bia-explore--shop .bia-shop__merchant-head--food .bia-shop__merchant-word{color:#8d7241}
+/* Stirling General Mercantile: editorial candy-shop spotlight. Reuses the
+   approved Shop Local type hierarchy and palette; no new font declarations. */
+.bia-explore--shop .bia-shop__merchant-head--candy{background:#f3dfc4}
+.bia-explore--shop .bia-shop__merchant-head--candy .bia-shop__merchant-word{color:#946a44}
+@media(min-width:751px){
+  .bia-explore--shop .bia-shop__merchant--candy{
+    grid-column:1/-1;
+    display:grid;
+    grid-template-columns:minmax(0,.83fr) minmax(0,1.17fr);
+    align-items:stretch;
+  }
+  .bia-explore--shop .bia-shop__merchant--candy .bia-shop__merchant-head{min-height:310px}
+}
 .bia-explore--shop .bia-shop__merchant-info{display:flex;flex-direction:column;align-items:flex-start;min-width:0;flex:1;padding:clamp(1.4rem,2.7vw,2.3rem)}
 .bia-explore--shop .bia-shop__merchant-info h3{font-size:clamp(1.5rem,2.25vw,2.3rem);letter-spacing:-.027em;line-height:1.2;margin:0 0 .95rem}
 .bia-explore--shop .bia-shop__merchant-lede{font-weight:700;font-size:1.04rem!important;line-height:1.6;color:#405e49!important}
