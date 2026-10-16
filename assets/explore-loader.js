@@ -138,7 +138,7 @@
     if (!buttons.length || !merchants.length) return;
 
     const names = {
-      all: "all six featured independent shops",
+      all: "featured independent shops",
       gifts: "thoughtful gifts",
       home: "home and vintage",
       books: "books and stationery",
@@ -159,7 +159,7 @@
       }
       if (status) {
         status.textContent = filter === "all"
-          ? "Showing all six featured independent shops."
+          ? "Showing all " + visible + " featured independent shops."
           : "Showing " + visible + " " + (visible === 1 ? "shop" : "shops") + " for " + names[filter] + ".";
       }
     };
