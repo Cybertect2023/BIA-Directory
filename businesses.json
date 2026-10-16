@@ -180,13 +180,13 @@
       "website": "https://smokinbarrel.ca",
       "sourceUrl": "https://www.visitstirlingrawdon.ca/business-directory/blog-post-title-one-sxcf9-VE82Y-as578",
       "hours": {
-        "monday": "6pm - 12am",
-        "tuesday": "6pm - 12am",
-        "wednesday": "6pm - 12am",
-        "thursday": "6pm - 12am",
-        "friday": "6pm - 12am",
-        "saturday": "8pm - 3am",
-        "sunday": "8pm - 3am"
+        "monday": "Closed",
+        "tuesday": "11am - 8pm",
+        "wednesday": "11am - 9pm",
+        "thursday": "11am - 9pm",
+        "friday": "11am - 9pm",
+        "saturday": "11am - 9pm",
+        "sunday": "11am - 8pm"
       },
       "about": "Small town hospitality with Big City eats. We offer hand crafted meals and cocktails, in a friendly and cozy environment, that you would normally have to travel to the city for. Our delicious slow-roasted meats, & handmade burgers, are complimented perfectly by our amazing wings. Fish n Chips more your style? We offer a 1pc or 2pc in our homemade beer batter. Top it off with an ice cold beer, or tasty Caesar, or one of our hand crafted seasonal cocktails! Let us become your new favourite place!",
       "services": [
@@ -202,7 +202,8 @@
       "verificationStatus": "verified",
       "collections": [
         "eat-local"
-      ]
+      ],
+      "deliveryHours": "Thursday - Saturday: 4pm - 8pm (up to 8.5 km)"
     },
     {
       "id": "blooms-flowers",
