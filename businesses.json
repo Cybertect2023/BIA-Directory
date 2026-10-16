@@ -1689,6 +1689,341 @@
       "collections": [
         "shop-local"
       ]
+    },
+    {
+      "id": "lcbo-stirling",
+      "name": "LCBO",
+      "category": "Shops & Retail",
+      "description": "Ontario beverage alcohol retailer offering wine, beer, spirits, and product guidance.",
+      "address": "125 North Street, Stirling, ON K0K 3E0",
+      "phone": "613-395-2605",
+      "email": "",
+      "website": "https://www.lcbo.com/en/stores/highway-14-victoria-414",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Wine",
+        "Beer",
+        "Spirits",
+        "Product Advice"
+      ],
+      "profileUrl": "/lcbo-stirling",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.lcbo.com/en/stores/highway-14-victoria-414",
+      "about": "The LCBO's Highway 14 & Victoria store serves Stirling from North Street.",
+      "collections": [
+        "shop-local"
+      ]
+    },
+    {
+      "id": "h-and-r-block-stirling",
+      "name": "H&R Block",
+      "category": "Professional Services",
+      "description": "Tax preparation and filing support for individuals and small businesses.",
+      "address": "127 North Street, Stirling, ON K0K 3E0",
+      "phone": "",
+      "email": "",
+      "website": "https://www.hrblock.ca/tax-office-near-me/127-north-street",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Tax Preparation",
+        "Tax Filing",
+        "Small Business Tax Support"
+      ],
+      "profileUrl": "/h-and-r-block-stirling",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.hrblock.ca/tax-office-near-me/127-north-street",
+      "about": "H&R Block provides tax preparation services from its Stirling office."
+    },
+    {
+      "id": "subway-stirling",
+      "name": "Subway",
+      "category": "Food & Dining",
+      "description": "Quick-service sandwiches, wraps, salads, and catering.",
+      "address": "127 North Street, Stirling, ON K0K 3E0",
+      "phone": "",
+      "email": "",
+      "website": "https://restaurants.subway.com/canada/on/stirling/127-north-street",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Sandwiches",
+        "Wraps",
+        "Salads",
+        "Catering",
+        "Takeout"
+      ],
+      "profileUrl": "/subway-stirling",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://restaurants.subway.com/canada/on/stirling/127-north-street",
+      "about": "Subway serves sandwiches, wraps, salads, and other quick-service favourites at its Stirling restaurant.",
+      "collections": [
+        "eat-local"
+      ]
+    },
+    {
+      "id": "vitos-pizza",
+      "name": "Vito’s Pizza",
+      "category": "Food & Dining",
+      "description": "Pizza and takeout food from the North Street location.",
+      "address": "160 North Street, Stirling, ON K0K 3E0",
+      "phone": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Pizza",
+        "Takeout"
+      ],
+      "profileUrl": "/vitos-pizza",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.yellowpages.ca/bus/Ontario/Stirling-Rawdon/Vito-s-Pizza/6927232.html",
+      "about": "Vito’s Pizza serves pizza and takeout from 160 North Street in Stirling.",
+      "collections": [
+        "eat-local"
+      ]
+    },
+    {
+      "id": "irwin-cabinet-works",
+      "name": "Irwin Cabinet Works",
+      "category": "Home & Garden",
+      "description": "Custom cabinetry manufactured in Stirling, with professional installation.",
+      "address": "160 North Street, Stirling, ON K0K 3E0",
+      "phone": "",
+      "email": "",
+      "website": "https://www.irwincabinetworks.com/",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Custom Cabinets",
+        "Kitchen Cabinetry",
+        "Cabinet Installation"
+      ],
+      "profileUrl": "/irwin-cabinet-works",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.irwincabinetworks.com/",
+      "about": "Irwin Cabinet Works manufactures custom cabinets in Stirling and provides professional installation."
+    },
+    {
+      "id": "stirling-pharmasave",
+      "name": "Stirling Pharmasave",
+      "category": "Health, Wellness & Beauty",
+      "description": "Community pharmacy offering prescriptions, health products, and pharmacy services.",
+      "address": "160 North Street, Unit 2, Stirling, ON K0K 3E0",
+      "phone": "613-395-2353",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Prescription Services",
+        "Pharmacy Services",
+        "Health Products"
+      ],
+      "profileUrl": "/stirling-pharmasave",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.stirling-rawdon.com/business-development/business-directory/",
+      "about": "Stirling Pharmasave is the local community pharmacy at 160 North Street, Unit 2."
+    },
+    {
+      "id": "nobes-granite",
+      "name": "Nobes Granite",
+      "category": "Home & Garden",
+      "description": "Fabricator of granite, quartz, porcelain, and custom countertops.",
+      "address": "166 North Street, Stirling, ON K0K 3E0",
+      "phone": "613-395-0628",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Granite Countertops",
+        "Quartz Countertops",
+        "Porcelain Countertops",
+        "Custom Fabrication"
+      ],
+      "profileUrl": "/nobes-granite",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://on.ruralroutes.com/9027.html",
+      "about": "Nobes Granite fabricates custom granite, quartz, and porcelain countertops in Stirling."
+    },
+    {
+      "id": "pro-one-stop",
+      "name": "Pro One Stop",
+      "category": "Shops & Retail",
+      "description": "Convenience store offering fuel, propane, laundry, and everyday essentials.",
+      "address": "208 North Street, Stirling, ON K0K 3E0",
+      "phone": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Convenience Store",
+        "Fuel",
+        "Propane",
+        "Laundry"
+      ],
+      "profileUrl": "/pro-one-stop",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.cylex-canada.ca/stirling-ontario/gas-stations/",
+      "about": "Pro One Stop is a local convenience stop for fuel, propane, laundry, and everyday goods.",
+      "collections": [
+        "shop-local"
+      ]
+    },
+    {
+      "id": "assured-home-healthcare",
+      "name": "Assured Home Healthcare",
+      "category": "Health, Wellness & Beauty",
+      "description": "Home healthcare services and supports for people living at home.",
+      "address": "234 North Street, Stirling, ON K0K 3E0",
+      "phone": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Home Healthcare",
+        "Personal Support",
+        "Care Services"
+      ],
+      "profileUrl": "/assured-home-healthcare",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.stirling-rawdon.com/business-development/business-directory/",
+      "about": "Assured Home Healthcare provides home health care services from its Stirling location."
+    },
+    {
+      "id": "north-street-chiropractic",
+      "name": "North Street Chiropractic",
+      "category": "Health, Wellness & Beauty",
+      "description": "Chiropractic care and massage therapy for a range of conditions.",
+      "address": "234 North Street, Stirling, ON K0K 3E0",
+      "phone": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Chiropractic Care",
+        "Massage Therapy"
+      ],
+      "profileUrl": "/north-street-chiropractic",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://stirlinglibrary.com/wp-content/uploads/2018/06/Stirling-Community-Guide-1.pdf",
+      "about": "North Street Chiropractic provides chiropractic care and massage therapy in Stirling."
     }
   ]
 }
