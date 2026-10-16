@@ -2024,6 +2024,342 @@
       "verificationStatus": "verified",
       "sourceUrl": "https://stirlinglibrary.com/wp-content/uploads/2018/06/Stirling-Community-Guide-1.pdf",
       "about": "North Street Chiropractic provides chiropractic care and massage therapy in Stirling."
+    },
+    {
+      "id": "ubhearing-stirling",
+      "name": "UBHearing",
+      "category": "Health, Wellness & Beauty",
+      "description": "Hearing clinic offering hearing aids and communication-device services.",
+      "address": "234 North Street, Stirling, ON K0K 3E0",
+      "phone": "613-395-6090",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Hearing Assessments",
+        "Hearing Aids",
+        "Communication Devices"
+      ],
+      "profileUrl": "/ubhearing-stirling",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://southeasthealthline.ca/displayService.aspx?id=180745",
+      "about": "UBHearing provides hearing and assistive-device services from its Stirling clinic."
+    },
+    {
+      "id": "stirling-dollar-plus-super-dollar-plus",
+      "name": "Stirling Dollar Plus / Super Dollar Plus",
+      "category": "Shops & Retail",
+      "description": "Discount retail store with everyday goods and seasonal merchandise.",
+      "address": "42 North Street, Stirling, ON K0K 3E0",
+      "phone": "613-661-0051",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Discount Goods",
+        "Household Items",
+        "Seasonal Merchandise"
+      ],
+      "profileUrl": "/stirling-dollar-plus-super-dollar-plus",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.stirling-rawdon.com/business-development/business-directory/",
+      "about": "Stirling Dollar Plus, also known as Super Dollar Plus, offers affordable everyday and seasonal goods.",
+      "collections": [
+        "shop-local"
+      ]
+    },
+    {
+      "id": "stirling-foodland",
+      "name": "Stirling Foodland",
+      "category": "Food & Dining",
+      "description": "Full-service grocery store offering fresh food, pantry staples, and household essentials.",
+      "address": "44 North Street, Stirling, ON K0K 3E0",
+      "phone": "613-395-2493",
+      "email": "",
+      "website": "https://www.foodland.ca/",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Groceries",
+        "Fresh Food",
+        "Bakery",
+        "Prepared Foods",
+        "Household Essentials"
+      ],
+      "profileUrl": "/stirling-foodland",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.foodland.ca/cupcake-decorating",
+      "about": "Stirling Foodland is the community grocery store at 44 North Street.",
+      "collections": [
+        "eat-local"
+      ]
+    },
+    {
+      "id": "mcdougall-insurance",
+      "name": "McDougall Insurance",
+      "category": "Professional Services",
+      "description": "Insurance and financial services for personal, commercial, and farm clients.",
+      "address": "26 Mill Street, Stirling, ON K0K 3E0",
+      "phone": "",
+      "email": "",
+      "website": "https://www.mcdougallinsurance.com/",
+      "facebook": "https://www.facebook.com/thedougallers/",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Auto Insurance",
+        "Home Insurance",
+        "Business Insurance",
+        "Farm Insurance",
+        "Financial Services"
+      ],
+      "profileUrl": "/mcdougall-insurance",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.mcdougallinsurance.com/",
+      "about": "McDougall Insurance provides insurance and financial services for individuals, families, farms, and businesses."
+    },
+    {
+      "id": "meraki-tattoo-lounge",
+      "name": "Meraki Tattoo Lounge",
+      "category": "Health, Wellness & Beauty",
+      "description": "Client-centred tattoo studio by appointment.",
+      "address": "8 Mill Street, Stirling, ON K0K 3E0",
+      "phone": "905-373-3047",
+      "email": "merakitattoolounge@gmail.com",
+      "website": "https://merakitattoolounge.wordpress.com/",
+      "facebook": "https://www.facebook.com/profile.php?id=61560275104759",
+      "instagram": "https://www.instagram.com/meraki.tattoo.lounge/",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Custom Tattoos",
+        "Tattoo Consultations",
+        "Appointment-Based Studio"
+      ],
+      "profileUrl": "/meraki-tattoo-lounge",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://merakitattoolounge.wordpress.com/",
+      "about": "Meraki Tattoo Lounge is a client-centred tattoo studio operated by Trinity MacFarlane."
+    },
+    {
+      "id": "farnsworth-construction",
+      "name": "Farnsworth Construction",
+      "category": "Home & Garden",
+      "description": "Custom home builder serving the Greater Quinte Region and Prince Edward County.",
+      "address": "29 Mill Street, Stirling, ON K0K 3E0",
+      "phone": "613-395-2636",
+      "email": "",
+      "website": "https://farconltd.com/",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Custom Homes",
+        "Home Building",
+        "Tarion Warranty"
+      ],
+      "profileUrl": "/farnsworth-construction",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://farconltd.com/",
+      "about": "Farnsworth Construction builds custom homes in the Greater Quinte Region and Prince Edward County."
+    },
+    {
+      "id": "m-hairstyles",
+      "name": "M Hairstyles",
+      "category": "Health, Wellness & Beauty",
+      "description": "Hair salon providing cutting and styling services.",
+      "address": "49 Mill Street, Stirling, ON K0K 3E0",
+      "phone": "613-395-2461",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Haircuts",
+        "Hair Styling",
+        "Salon Services"
+      ],
+      "profileUrl": "/m-hairstyles",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.yellowpages.ca/bus/Ontario/Stirling/M-Hairstyles/7210603.html",
+      "about": "M Hairstyles provides hair cutting and styling services in Stirling."
+    },
+    {
+      "id": "stirling-feed-and-seed",
+      "name": "Stirling Feed & Seed",
+      "category": "Home & Garden",
+      "description": "Feed and seed supplier serving local animal, farm, and outdoor needs.",
+      "address": "52 Mill Street, Stirling, ON K0K 3E0",
+      "phone": "613-395-2518",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Animal Feed",
+        "Seed",
+        "Farm Supplies"
+      ],
+      "profileUrl": "/stirling-feed-and-seed",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.ruralroutes.com/orr_show_page.cfm?htmlnum=4873",
+      "about": "Stirling Feed & Seed supplies feed and seed from its Mill Street store."
+    },
+    {
+      "id": "stirling-creamery-gay-lea-foods",
+      "name": "Stirling Creamery / Gay Lea Foods",
+      "category": "Food & Dining",
+      "description": "Dairy processing facility producing butter and cream products under Gay Lea Foods.",
+      "address": "1 Front Street, Stirling, ON K0K 3E0",
+      "phone": "1-800-513-7850",
+      "email": "cgrant@gayleafoods.com",
+      "website": "https://gaylea.com/",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Dairy Processing",
+        "Butter",
+        "Cream Products"
+      ],
+      "profileUrl": "/stirling-creamery-gay-lea-foods",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.harvesthastings.ca/listing/stirling-creamery/",
+      "about": "Stirling Creamery is a Gay Lea Foods facility with a long local history of processing dairy products.",
+      "collections": [
+        "eat-local"
+      ]
+    },
+    {
+      "id": "ultramar-stirling",
+      "name": "Ultramar",
+      "category": "Shops & Retail",
+      "description": "Fuel station and convenience stop serving drivers in Stirling.",
+      "address": "100 East Front Street, Stirling, ON K0K 3E0",
+      "phone": "",
+      "email": "",
+      "website": "https://www.ultramar.ca/",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Fuel",
+        "Convenience Store",
+        "Automotive Essentials"
+      ],
+      "profileUrl": "/ultramar-stirling",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.stirling-rawdon.com/business-development/business-directory/",
+      "about": "Ultramar provides fuel and convenience items from its East Front Street location.",
+      "collections": [
+        "shop-local"
+      ]
     }
   ]
 }
