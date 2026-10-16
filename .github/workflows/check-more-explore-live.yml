@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/check-more-explore-live.yml'
+      - 'scripts/check-more-explore-live.py'
 permissions:
   contents: write
 jobs:
