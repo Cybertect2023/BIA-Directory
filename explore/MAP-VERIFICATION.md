@@ -84,3 +84,52 @@ Food Boutique’s canonical `/food-boutique-stirling` and legacy `sourceUrl` bot
 18 profile URLs returned HTTP 200 and contained the profile component. Ten additional profile requests encountered Squarespace HTTP 429 rate limiting; these URLs remain canonical but their current response status is not claimed as verified. Exact response evidence is summarized in MAP-TESTING.md. No automated retries were made against the rate-limited URLs in that batch.
 
 Stirling Book Company’s initial address conflict was resolved by upstream commit `af08c1d` during this task. The current canonical address is 22 Mill Street, and its verified property pin is now included. Final coverage: **25 business pins, 5 unresolved businesses, 9 additional destination pins, 2 additional places awaiting coordinates**.
+
+
+## Corrected BIA listings added 2026-10-16
+
+The BIA confirmed the addresses below. They are included in the directory and marked `needs-verification` in `map-locations.json` until an approved coordinate is recorded; no coordinates were inferred from addresses.
+
+- The Honey House / River Valley Apiaries
+- Goodkey Service Centre
+- Bank of Montreal
+- A Spa of Feathers & Fur
+- Beautiful Things for Charity
+- McKillop & Associates
+- The Studio in Stirling
+- Savoury House Chinese Cuisine
+- Mill Creek Hair & Spa
+- The Scoop Ice Cream
+- McIntosh Motors
+- Canada Post
+- Natural Rhythms Health Centre
+- Mindful Massage Therapy
+- Peaceful Warrior Dojo
+- Skinkle’s Pet Supplies & More
+- Stirling Carpet & Flooring
+- Stirling Store & Lock
+- Whitley Newman Insurance & Financial Services
+- Stirling Train Station Antique Shop
+- LCBO
+- H&R Block
+- Subway
+- Vito’s Pizza
+- Irwin Cabinet Works
+- Stirling Pharmasave
+- Nobes Granite
+- Pro One Stop
+- Assured Home Healthcare
+- North Street Chiropractic
+- UBHearing
+- Stirling Dollar Plus / Super Dollar Plus
+- Stirling Foodland
+- McDougall Insurance
+- Meraki Tattoo Lounge
+- Farnsworth Construction
+- M Hairstyles
+- Stirling Feed & Seed
+- Stirling Creamery / Gay Lea Foods
+- Ultramar
+- Boyer Ford Stirling
+- Stirling Pharmacy / Guardian Drugs
+- Stirling Medical Centre
