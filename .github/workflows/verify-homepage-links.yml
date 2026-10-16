@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/verify-homepage-links.yml'
+      - 'scripts/check-live-homepage.mjs'
 
 permissions:
   contents: write
