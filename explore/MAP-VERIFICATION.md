@@ -1,6 +1,6 @@
 # Map verification report
 
-Checked 2026-10-15. Coordinates are place/property markers unless explicitly stated otherwise. They are not surveyed public entrances. Business details are joined from `businesses.json`; this report is a review snapshot, not an application dataset.
+Checked 2026-10-16. Coordinates are place/property markers unless explicitly stated otherwise. They are not surveyed public entrances. Business details are joined from `businesses.json`; this report is a review snapshot, not an application dataset.
 
 ## Verified directory pins
 
@@ -83,4 +83,4 @@ Food Boutique’s canonical `/food-boutique-stirling` and legacy `sourceUrl` bot
 
 18 profile URLs returned HTTP 200 and contained the profile component. Ten additional profile requests encountered Squarespace HTTP 429 rate limiting; these URLs remain canonical but their current response status is not claimed as verified. Exact response evidence is summarized in MAP-TESTING.md. No automated retries were made against the rate-limited URLs in that batch.
 
-Stirling Book Company’s initial address conflict was resolved by upstream commit `af08c1d` during this task. The current canonical address is 22 Mill Street, and its verified property pin is now included. Final coverage: **24 business pins, 5 unresolved businesses, 9 additional destination pins, 2 additional places awaiting coordinates**.
+Stirling Book Company’s initial address conflict was resolved by upstream commit `af08c1d` during this task. The current canonical address is 22 Mill Street, and its verified property pin is now included. Final coverage: **25 business pins, 5 unresolved businesses, 9 additional destination pins, 2 additional places awaiting coordinates**.
