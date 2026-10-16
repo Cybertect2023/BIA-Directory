@@ -191,6 +191,10 @@
         for(const [key,day] of Object.entries(days)){if(!str(hours[key]))continue;
           const row=el("div","bia-profile__hours-row");row.append(el("dt",null,day),el("dd",null,hours[key]));dl.append(row);
         }
+        const deliveryHours=str(b.deliveryHours);
+        if(deliveryHours){
+          const row=el("div","bia-profile__hours-row");row.append(el("dt",null,"Delivery"),el("dd",null,deliveryHours));dl.append(row);
+        }
         section.append(dl);columns.append(section);
       }
       if(services.length){
