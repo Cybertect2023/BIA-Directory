@@ -575,6 +575,86 @@
       "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
       "source": "https://www.doorsopenontario.on.ca/hastings-county/stirling-train-station",
       "checked": "2026-10-16"
+    },
+    {
+      "id": "lcbo-stirling",
+      "name": "LCBO",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://www.lcbo.com/en/stores/highway-14-victoria-414",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "h-and-r-block-stirling",
+      "name": "H&R Block",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://www.hrblock.ca/tax-office-near-me/127-north-street",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "subway-stirling",
+      "name": "Subway",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://restaurants.subway.com/canada/on/stirling/127-north-street",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "vitos-pizza",
+      "name": "Vito’s Pizza",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://www.yellowpages.ca/bus/Ontario/Stirling-Rawdon/Vito-s-Pizza/6927232.html",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "irwin-cabinet-works",
+      "name": "Irwin Cabinet Works",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://www.irwincabinetworks.com/",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "stirling-pharmasave",
+      "name": "Stirling Pharmasave",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://www.stirling-rawdon.com/business-development/business-directory/",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "nobes-granite",
+      "name": "Nobes Granite",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://on.ruralroutes.com/9027.html",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "pro-one-stop",
+      "name": "Pro One Stop",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://www.cylex-canada.ca/stirling-ontario/gas-stations/",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "assured-home-healthcare",
+      "name": "Assured Home Healthcare",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://www.stirling-rawdon.com/business-development/business-directory/",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "north-street-chiropractic",
+      "name": "North Street Chiropractic",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://stirlinglibrary.com/wp-content/uploads/2018/06/Stirling-Community-Guide-1.pdf",
+      "checked": "2026-10-16"
     }
   ],
   "places": [
