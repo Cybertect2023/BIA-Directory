@@ -1069,13 +1069,13 @@
       "image": "",
       "featured": false,
       "hours": {
-        "monday": "",
-        "tuesday": "",
-        "wednesday": "",
-        "thursday": "",
-        "friday": "",
-        "saturday": "",
-        "sunday": ""
+        "monday": "8am - 5pm",
+        "tuesday": "8am - 5pm",
+        "wednesday": "8am - 5pm",
+        "thursday": "8am - 5pm",
+        "friday": "8am - 5pm",
+        "saturday": "Closed",
+        "sunday": "Closed"
       },
       "services": [
         "Automotive Repair",
@@ -1101,13 +1101,13 @@
       "image": "",
       "featured": false,
       "hours": {
-        "monday": "",
-        "tuesday": "",
-        "wednesday": "",
-        "thursday": "",
-        "friday": "",
-        "saturday": "",
-        "sunday": ""
+        "monday": "10am - 5pm",
+        "tuesday": "10am - 5pm",
+        "wednesday": "10am - 5pm",
+        "thursday": "10am - 5pm",
+        "friday": "10am - 5pm",
+        "saturday": "Closed",
+        "sunday": "Closed"
       },
       "services": [
         "Personal Banking",
@@ -1134,13 +1134,13 @@
       "image": "",
       "featured": false,
       "hours": {
-        "monday": "",
-        "tuesday": "",
-        "wednesday": "",
-        "thursday": "",
-        "friday": "",
-        "saturday": "",
-        "sunday": ""
+        "monday": "8am - 5pm",
+        "tuesday": "8am - 5pm",
+        "wednesday": "8am - 5pm",
+        "thursday": "8am - 5pm",
+        "friday": "8am - 5pm",
+        "saturday": "8am - 4pm",
+        "sunday": "Closed"
       },
       "services": [
         "Pet Grooming",
@@ -1167,13 +1167,13 @@
       "image": "",
       "featured": false,
       "hours": {
-        "monday": "",
-        "tuesday": "",
-        "wednesday": "",
-        "thursday": "",
-        "friday": "",
-        "saturday": "",
-        "sunday": ""
+        "monday": "10am - 4pm",
+        "tuesday": "10am - 4pm",
+        "wednesday": "10am - 4pm",
+        "thursday": "10am - 4pm",
+        "friday": "10am - 4pm",
+        "saturday": "10am - 2pm",
+        "sunday": "Closed"
       },
       "services": [
         "Thrift Store",
@@ -1194,7 +1194,7 @@
       "category": "Professional Services",
       "description": "Chartered Professional Accountant providing accounting services.",
       "address": "16 West Front Street, Stirling, ON K0K 3E0",
-      "phone": "",
+      "phone": "613-395-1237",
       "email": "",
       "website": "",
       "facebook": "",
@@ -1267,13 +1267,13 @@
       "image": "",
       "featured": false,
       "hours": {
-        "monday": "4pm - 8pm",
-        "tuesday": "11am - 8pm",
-        "wednesday": "11am - 8pm",
-        "thursday": "11am - 8pm",
-        "friday": "11am - 9pm",
-        "saturday": "3:30pm - 9pm",
-        "sunday": "11:30am - 8pm"
+        "monday": "Closed",
+        "tuesday": "Closed",
+        "wednesday": "11:30am - 8:30pm",
+        "thursday": "11:30am - 8:30pm",
+        "friday": "11:30am - 8:30pm",
+        "saturday": "3:30pm - 8:30pm",
+        "sunday": "3:30pm - 8pm"
       },
       "services": [
         "Chinese Cuisine",
@@ -1356,7 +1356,8 @@
       "about": "The Scoop is a seasonal Stirling ice cream shop offering a wide variety of Kawartha Dairy ice cream flavours.",
       "collections": [
         "eat-local"
-      ]
+      ],
+      "seasonalNote": "Open during the summer season; specific dates and daily hours not confirmed."
     },
     {
       "id": "mcintosh-motors",
@@ -1404,13 +1405,13 @@
       "image": "",
       "featured": false,
       "hours": {
-        "monday": "",
-        "tuesday": "",
-        "wednesday": "",
-        "thursday": "",
-        "friday": "",
-        "saturday": "",
-        "sunday": ""
+        "monday": "8:30am - 5:30pm",
+        "tuesday": "8:30am - 5:30pm",
+        "wednesday": "8:30am - 5:30pm",
+        "thursday": "8:30am - 5:30pm",
+        "friday": "8:30am - 5:30pm",
+        "saturday": "9am - 12pm",
+        "sunday": "Closed"
       },
       "services": [
         "Mail Services",
@@ -1436,13 +1437,13 @@
       "image": "",
       "featured": false,
       "hours": {
-        "monday": "",
-        "tuesday": "",
-        "wednesday": "",
-        "thursday": "",
-        "friday": "",
-        "saturday": "",
-        "sunday": ""
+        "monday": "7am - 7pm",
+        "tuesday": "7am - 7pm",
+        "wednesday": "7am - 7pm",
+        "thursday": "7am - 7pm",
+        "friday": "7am - 7pm",
+        "saturday": "Closed",
+        "sunday": "Closed"
       },
       "services": [
         "Chiropractic Care",
@@ -1460,7 +1461,7 @@
       "category": "Health, Wellness & Beauty",
       "description": "Registered massage therapy and complementary bodywork services.",
       "address": "400 West Front Street, Unit 2, Stirling, ON K0K 3E0",
-      "phone": "",
+      "phone": "613-903-1160",
       "email": "",
       "website": "https://o.clinicsense.com/",
       "facebook": "",
@@ -1536,13 +1537,13 @@
       "image": "",
       "featured": false,
       "hours": {
-        "monday": "",
-        "tuesday": "",
-        "wednesday": "",
-        "thursday": "",
-        "friday": "",
-        "saturday": "",
-        "sunday": ""
+        "monday": "9am - 4pm",
+        "tuesday": "9am - 4pm",
+        "wednesday": "9am - 4pm",
+        "thursday": "9am - 4pm",
+        "friday": "9am - 4pm",
+        "saturday": "9am - 3pm",
+        "sunday": "Closed"
       },
       "services": [
         "Pet Food",
@@ -1631,7 +1632,7 @@
       "category": "Professional Services",
       "description": "Insurance and financial services for personal and business needs.",
       "address": "22 North Street, Stirling, ON K0K 3E0",
-      "phone": "",
+      "phone": "613-395-3333",
       "email": "info@whitleyfinancial.com",
       "website": "https://whitleynewman.com/",
       "facebook": "",
@@ -1639,13 +1640,13 @@
       "image": "",
       "featured": false,
       "hours": {
-        "monday": "",
-        "tuesday": "",
-        "wednesday": "",
-        "thursday": "",
-        "friday": "",
-        "saturday": "",
-        "sunday": ""
+        "monday": "8:30am - 4:30pm",
+        "tuesday": "8:30am - 4:30pm",
+        "wednesday": "8:30am - 4:30pm",
+        "thursday": "8:30am - 4:30pm",
+        "friday": "8:30am - 4:30pm",
+        "saturday": "Closed",
+        "sunday": "Closed"
       },
       "services": [
         "Auto Insurance",
@@ -1708,13 +1709,13 @@
       "image": "",
       "featured": false,
       "hours": {
-        "monday": "",
-        "tuesday": "",
-        "wednesday": "",
-        "thursday": "",
-        "friday": "",
-        "saturday": "",
-        "sunday": ""
+        "monday": "10am - 6pm",
+        "tuesday": "10am - 6pm",
+        "wednesday": "10am - 6pm",
+        "thursday": "10am - 6pm",
+        "friday": "10am - 8pm",
+        "saturday": "10am - 6pm",
+        "sunday": "11am - 6pm"
       },
       "services": [
         "Wine",
@@ -1736,7 +1737,7 @@
       "category": "Professional Services",
       "description": "Tax preparation and filing support for individuals and small businesses.",
       "address": "127 North Street, Stirling, ON K0K 3E0",
-      "phone": "",
+      "phone": "613-395-5151",
       "email": "",
       "website": "https://www.hrblock.ca/tax-office-near-me/127-north-street",
       "facebook": "",
@@ -1744,13 +1745,13 @@
       "image": "",
       "featured": false,
       "hours": {
-        "monday": "",
-        "tuesday": "",
-        "wednesday": "",
-        "thursday": "",
-        "friday": "",
-        "saturday": "",
-        "sunday": ""
+        "monday": "9am - 9pm",
+        "tuesday": "9am - 9pm",
+        "wednesday": "9am - 9pm",
+        "thursday": "9am - 9pm",
+        "friday": "9am - 9pm",
+        "saturday": "9am - 5pm",
+        "sunday": "12pm - 5pm"
       },
       "services": [
         "Tax Preparation",
@@ -1768,7 +1769,7 @@
       "category": "Food & Dining",
       "description": "Quick-service sandwiches, wraps, salads, and catering.",
       "address": "127 North Street, Stirling, ON K0K 3E0",
-      "phone": "",
+      "phone": "613-395-6400",
       "email": "",
       "website": "https://restaurants.subway.com/canada/on/stirling/127-north-street",
       "facebook": "",
@@ -1776,13 +1777,13 @@
       "image": "",
       "featured": false,
       "hours": {
-        "monday": "",
-        "tuesday": "",
-        "wednesday": "",
-        "thursday": "",
-        "friday": "",
-        "saturday": "",
-        "sunday": ""
+        "monday": "7am - 10pm",
+        "tuesday": "7am - 10pm",
+        "wednesday": "7am - 10pm",
+        "thursday": "7am - 10pm",
+        "friday": "7am - 10pm",
+        "saturday": "9am - 10pm",
+        "sunday": "9am - 9pm"
       },
       "services": [
         "Sandwiches",
@@ -1813,13 +1814,13 @@
       "image": "",
       "featured": false,
       "hours": {
-        "monday": "",
-        "tuesday": "",
-        "wednesday": "",
-        "thursday": "",
-        "friday": "",
-        "saturday": "",
-        "sunday": ""
+        "monday": "11am - 8pm",
+        "tuesday": "11am - 8pm",
+        "wednesday": "11am - 8pm",
+        "thursday": "11am - 8pm",
+        "friday": "11am - 8pm",
+        "saturday": "11am - 8pm",
+        "sunday": "Closed"
       },
       "services": [
         "Pizza",
@@ -1839,7 +1840,7 @@
       "category": "Home & Garden",
       "description": "Custom cabinetry manufactured in Stirling, with professional installation.",
       "address": "160 North Street, Stirling, ON K0K 3E0",
-      "phone": "",
+      "phone": "613-395-4024",
       "email": "",
       "website": "https://www.irwincabinetworks.com/",
       "facebook": "",
@@ -1847,11 +1848,11 @@
       "image": "",
       "featured": false,
       "hours": {
-        "monday": "",
-        "tuesday": "",
-        "wednesday": "",
-        "thursday": "",
-        "friday": "",
+        "monday": "9am - 4:30pm",
+        "tuesday": "9am - 4:30pm",
+        "wednesday": "9am - 4:30pm",
+        "thursday": "9am - 4:30pm",
+        "friday": "9am - 4:30pm",
         "saturday": "",
         "sunday": ""
       },
@@ -1879,13 +1880,13 @@
       "image": "",
       "featured": false,
       "hours": {
-        "monday": "",
-        "tuesday": "",
-        "wednesday": "",
-        "thursday": "",
-        "friday": "",
-        "saturday": "",
-        "sunday": ""
+        "monday": "9am - 5:30pm",
+        "tuesday": "9am - 5:30pm",
+        "wednesday": "9am - 5:30pm",
+        "thursday": "9am - 5:30pm",
+        "friday": "9am - 5:30pm",
+        "saturday": "Closed",
+        "sunday": "Closed"
       },
       "services": [
         "Prescription Services",
@@ -1911,13 +1912,13 @@
       "image": "",
       "featured": false,
       "hours": {
-        "monday": "",
-        "tuesday": "",
-        "wednesday": "",
-        "thursday": "",
-        "friday": "",
-        "saturday": "",
-        "sunday": ""
+        "monday": "9am - 4:30pm",
+        "tuesday": "9am - 4:30pm",
+        "wednesday": "9am - 4:30pm",
+        "thursday": "9am - 4:30pm",
+        "friday": "9am - 4pm",
+        "saturday": "Closed",
+        "sunday": "Closed"
       },
       "services": [
         "Granite Countertops",
@@ -1936,7 +1937,7 @@
       "category": "Shops & Retail",
       "description": "Convenience store offering fuel, propane, laundry, and everyday essentials.",
       "address": "208 North Street, Stirling, ON K0K 3E0",
-      "phone": "",
+      "phone": "613-395-5360",
       "email": "",
       "website": "",
       "facebook": "",
@@ -1944,13 +1945,13 @@
       "image": "",
       "featured": false,
       "hours": {
-        "monday": "",
-        "tuesday": "",
-        "wednesday": "",
-        "thursday": "",
-        "friday": "",
-        "saturday": "",
-        "sunday": ""
+        "monday": "7am - 10pm",
+        "tuesday": "7am - 10pm",
+        "wednesday": "7am - 10pm",
+        "thursday": "7am - 10pm",
+        "friday": "7am - 10pm",
+        "saturday": "7am - 10pm",
+        "sunday": "7am - 10pm"
       },
       "services": [
         "Convenience Store",
@@ -1972,7 +1973,7 @@
       "category": "Health, Wellness & Beauty",
       "description": "Home healthcare services and supports for people living at home.",
       "address": "234 North Street, Stirling, ON K0K 3E0",
-      "phone": "",
+      "phone": "613-395-1660",
       "email": "",
       "website": "",
       "facebook": "",
@@ -2004,7 +2005,7 @@
       "category": "Health, Wellness & Beauty",
       "description": "Chiropractic care and massage therapy for a range of conditions.",
       "address": "234 North Street, Stirling, ON K0K 3E0",
-      "phone": "",
+      "phone": "613-395-4778",
       "email": "",
       "website": "",
       "facebook": "",
@@ -2012,13 +2013,13 @@
       "image": "",
       "featured": false,
       "hours": {
-        "monday": "",
-        "tuesday": "",
-        "wednesday": "",
-        "thursday": "",
-        "friday": "",
-        "saturday": "",
-        "sunday": ""
+        "monday": "8am - 6:30pm",
+        "tuesday": "Closed",
+        "wednesday": "8am - 6:30pm",
+        "thursday": "Closed",
+        "friday": "8am - 5pm",
+        "saturday": "Closed",
+        "sunday": "Closed"
       },
       "services": [
         "Chiropractic Care",
@@ -2043,11 +2044,11 @@
       "image": "",
       "featured": false,
       "hours": {
-        "monday": "",
-        "tuesday": "",
-        "wednesday": "",
-        "thursday": "",
-        "friday": "",
+        "monday": "Closed",
+        "tuesday": "9am - 5pm by appointment",
+        "wednesday": "Closed",
+        "thursday": "Closed",
+        "friday": "Closed",
         "saturday": "",
         "sunday": ""
       },
@@ -2437,7 +2438,7 @@
       "category": "Health, Wellness & Beauty",
       "description": "Medical clinic providing local primary care services.",
       "address": "9-C Tuftsville Road, Stirling, ON K0K 3E0",
-      "phone": "",
+      "phone": "613-395-5566",
       "email": "",
       "website": "",
       "facebook": "",
@@ -2445,11 +2446,11 @@
       "image": "",
       "featured": false,
       "hours": {
-        "monday": "",
-        "tuesday": "",
-        "wednesday": "",
-        "thursday": "",
-        "friday": "",
+        "monday": "8:30am - 5pm",
+        "tuesday": "8:30am - 5pm",
+        "wednesday": "8:30am - 5pm",
+        "thursday": "8:30am - 5pm",
+        "friday": "8:30am - 1pm",
         "saturday": "",
         "sunday": ""
       },
