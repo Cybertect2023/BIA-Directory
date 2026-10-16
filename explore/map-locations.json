@@ -415,6 +415,86 @@
         "https://store.petvalu.ca/location/2443/"
       ],
       "checked": "2026-10-14"
+    },
+    {
+      "id": "the-honey-house-river-valley-apiaries",
+      "name": "The Honey House / River Valley Apiaries",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://www.rivervalleyapiaries.ca/",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "goodkey-service-centre",
+      "name": "Goodkey Service Centre",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://www.stirling-rawdon.com/business-development/business-directory/",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "bank-of-montreal",
+      "name": "Bank of Montreal",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://branches.bmo.com/on/stirling/b0266/",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "a-spa-of-feathers-and-fur",
+      "name": "A Spa of Feathers & Fur",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://www.stirling-rawdon.com/business-development/business-directory/",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "beautiful-things-for-charity",
+      "name": "Beautiful Things for Charity",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://www.stirling-rawdon.com/business-development/business-directory/",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "mckillop-and-associates",
+      "name": "McKillop & Associates",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://www.stirling-rawdon.com/business-development/business-directory/",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "the-studio-in-stirling",
+      "name": "The Studio in Stirling",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://thestudioinstirling.ca/",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "savoury-house-chinese-cuisine",
+      "name": "Savoury House Chinese Cuisine",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://savouryhouse.wordpress.com/",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "mill-creek-hair-and-spa",
+      "name": "Mill Creek Hair & Spa",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://www.millcreekhairandspa.ca/contact",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "the-scoop-ice-cream",
+      "name": "The Scoop Ice Cream",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://www.facebook.com/thescoop7/",
+      "checked": "2026-10-16"
     }
   ],
   "places": [
