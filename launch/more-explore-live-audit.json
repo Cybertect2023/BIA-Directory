@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-16T19:17:25.936264+00:00",
+  "checkedAt": "2026-10-16T19:32:34.695050+00:00",
   "results": [
     {
       "section": "heritage-history",
@@ -72,12 +72,44 @@
       "finalUrl": "https://www.visitstirlingrawdon.ca/the-scoop-ice-cream"
     },
     "stirling-general-mercantile": {
-      "http": 404,
+      "http": 200,
       "finalUrl": "https://www.visitstirlingrawdon.ca/stirling-general-mercantile"
     },
     "a-spa-of-feathers-and-fur": {
       "http": 200,
       "finalUrl": "https://www.visitstirlingrawdon.ca/a-spa-of-feathers-and-fur"
     }
-  }
+  },
+  "homepageLinks": [
+    {
+      "card": "heritage-history",
+      "expected": "/things-to-do#heritage-history",
+      "rawHref": "/things-to-do#heritage-history",
+      "resolvedHref": "https://www.visitstirlingrawdon.ca/things-to-do#heritage-history",
+      "actualTag": "<a class=\"discover-link\" href=\"/things-to-do#heritage-history\">\n        Explore Local History \u2197\n      </a>",
+      "afterClickUrl": "https://www.visitstirlingrawdon.ca/things-to-do#heritage-history",
+      "afterClickHeading": "Step into Stirling's story.",
+      "clickPass": true
+    },
+    {
+      "card": "trails-outdoors",
+      "expected": "/things-to-do#trails-outdoors",
+      "rawHref": "/things-to-do#trails-outdoors",
+      "resolvedHref": "https://www.visitstirlingrawdon.ca/things-to-do#trails-outdoors",
+      "actualTag": "<a class=\"discover-link\" href=\"/things-to-do#trails-outdoors\">\n        Explore Trails &amp; Walks \u2197\n      </a>",
+      "afterClickUrl": "https://www.visitstirlingrawdon.ca/things-to-do#trails-outdoors",
+      "afterClickHeading": "Take the long way around.",
+      "clickPass": true
+    },
+    {
+      "card": "parks-family-fun",
+      "expected": "/things-to-do#parks-family-fun",
+      "rawHref": "/things-to-do#parks-family-fun",
+      "resolvedHref": "https://www.visitstirlingrawdon.ca/things-to-do#parks-family-fun",
+      "actualTag": "<a class=\"discover-link\" href=\"/things-to-do#parks-family-fun\">\n        Plan Family Fun \u2197\n      </a>",
+      "afterClickUrl": "https://www.visitstirlingrawdon.ca/things-to-do#parks-family-fun",
+      "afterClickHeading": "A good day doesn't need a big itinerary.",
+      "clickPass": true
+    }
+  ]
 }
