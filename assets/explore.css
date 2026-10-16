@@ -839,6 +839,32 @@
 .bia-explore #choose-your-day .bia-explore__card-body .bia-explore__text-link{
   margin-top:auto;
 }
+/* All four Explore & Enjoy guide cards are single, keyboard-accessible links. */
+.bia-explore #choose-your-day a.bia-explore__card{
+  color:var(--ex-ink);
+  text-decoration:none!important;
+  cursor:pointer;
+  transition:transform .22s ease,box-shadow .22s ease;
+}
+.bia-explore #choose-your-day a.bia-explore__card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 12px 28px rgba(32,55,39,.12);
+}
+.bia-explore #choose-your-day a.bia-explore__card:focus-visible{
+  outline:3px solid var(--ex-green);
+  outline-offset:4px;
+}
+.bia-explore #choose-your-day .bia-explore__card-body .bia-explore__text-link{
+  color:var(--ex-green);
+}
+.bia-explore #choose-your-day a.bia-explore__card:hover .bia-explore__text-link{
+  border-bottom-color:currentColor;
+}
+@media(prefers-reduced-motion:reduce){
+  .bia-explore #choose-your-day a.bia-explore__card{transition:none}
+  .bia-explore #choose-your-day a.bia-explore__card:hover{transform:none}
+  .bia-explore #choose-your-day a.bia-explore__card:hover img{transform:none}
+}
 @media(max-width:900px){
   .bia-explore #choose-your-day .bia-explore__card-image{height:290px}
 }
