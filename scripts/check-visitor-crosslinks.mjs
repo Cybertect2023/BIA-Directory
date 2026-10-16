@@ -49,4 +49,16 @@ for(const [slug] of pages){
 assert(contents.get('/plan-your-visit').includes('href="https://www.visitstirlingrawdon.ca/shop-local"'),'map footer is missing Shop Local');
 assert(contents.get('/explore-and-enjoy').includes('href="/eat-and-drink"'),'hub is missing dining');
 assert(contents.get('/explore-and-enjoy').includes('href="/shop-local"'),'hub is missing shopping');
+
+const shop=contents.get('/shop-local');
+const things=contents.get('/things-to-do');
+assert(shop.includes('id="shop-mercantile"'),'Shop Local must feature the downtown candy shop');
+assert(shop.includes('href="/stirling-general-mercantile"'),'Candy shop feature must link to its BIA profile');
+assert(shop.includes('href="/a-spa-of-feathers-and-fur"'),'Shop Local must feature the downtown pet spa');
+assert(shop.includes('href="/pet-valu-stirling"'),'Pet-care visitor information must preserve the Pet Valu link');
+assert(things.includes('href="/shop-local#shop-mercantile"'),'Things to Do should connect families to the candy shop');
+const merchantTotal=[...shop.matchAll(/class="bia-shop__merchant(?:\s|")/g)].length;
+assert.equal(merchantTotal,7,'Shop Local should show seven featured independent shops');
+assert(shop.includes('Showing all seven featured independent shops.'),'Initial Shop Local count must match the cards');
+assert(readFileSync('assets/explore-loader.js','utf8').includes('"Showing all " + visible + " featured independent shops."'),'Shop Local filters must use dynamic counts');
 console.log(JSON.stringify({pages:pages.size,internalLinksChecked:checked,visitorGuideLinks:crossLinks,mapLinks,stagedLinks:0},null,2));
