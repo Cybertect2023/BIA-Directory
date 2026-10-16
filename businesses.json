@@ -2360,6 +2360,103 @@
       "collections": [
         "shop-local"
       ]
+    },
+    {
+      "id": "boyer-ford-stirling",
+      "name": "Boyer Ford Stirling",
+      "category": "Automotive",
+      "description": "Ford dealership offering new and used vehicles, repair, parts, and automotive financing.",
+      "address": "48 Belleville Road, Stirling, ON K0K 3E0",
+      "phone": "613-395-3375",
+      "email": "",
+      "website": "https://www.boyerfordstirling.com/",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "New Ford Vehicles",
+        "Used Vehicles",
+        "Vehicle Service & Repair",
+        "Ford Parts",
+        "Automotive Financing"
+      ],
+      "profileUrl": "/boyer-ford-stirling",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.boyerfordstirling.com/about-us/",
+      "about": "Boyer Ford Stirling offers new and used vehicles, Ford service and parts, and automotive financing."
+    },
+    {
+      "id": "stirling-pharmacy-guardian-drugs",
+      "name": "Stirling Pharmacy / Guardian Drugs",
+      "category": "Health, Wellness & Beauty",
+      "description": "Community pharmacy offering prescription and health services.",
+      "address": "9-D Tuftsville Road, Stirling, ON K0K 3E0",
+      "phone": "613-395-2110",
+      "email": "",
+      "website": "https://guardian-ida-remedysrx.ca/",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Prescription Services",
+        "Pharmacy Services",
+        "Health Products"
+      ],
+      "profileUrl": "/stirling-pharmacy-guardian-drugs",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.stirling-rawdon.com/business-development/business-directory/",
+      "about": "Stirling Pharmacy, a Guardian Drugs location, provides community pharmacy services on Tuftsville Road."
+    },
+    {
+      "id": "stirling-medical-centre",
+      "name": "Stirling Medical Centre",
+      "category": "Health, Wellness & Beauty",
+      "description": "Medical clinic providing local primary care services.",
+      "address": "9-C Tuftsville Road, Stirling, ON K0K 3E0",
+      "phone": "",
+      "email": "",
+      "website": "",
+      "facebook": "",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Primary Care",
+        "Medical Clinic Services"
+      ],
+      "profileUrl": "/stirling-medical-centre",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.stirling-rawdon.com/business-development/business-directory/",
+      "about": "Stirling Medical Centre provides local medical clinic services from Tuftsville Road."
     }
   ]
 }
