@@ -7,9 +7,9 @@ const data=JSON.parse(fs.readFileSync(new URL('../explore/map-locations.json',im
 const places=buildPlaces(directory,data);
 const base={q:'',category:'all',experience:'',selected:'',savedOnly:false};
 test('all 29 businesses are accounted for once; every published pin has dated evidence',()=>{
- assert.equal(directory.businesses.length,30);
+ assert.equal(directory.businesses.length,73);
  const records=[...data.businessLocations,...data.unresolvedBusinesses];
- assert.equal(records.length,30);assert.equal(new Set(records.map(p=>p.businessId)).size,29);
+ assert.equal(records.length,73);assert.equal(new Set(records.map(p=>p.businessId)).size,72);
  for(const b of directory.businesses)assert.ok(records.some(p=>p.businessId===b.id));
  assert.equal(new Set(places.map(p=>p.id)).size,places.length);
  for(const p of places.filter(hasPoint)){
@@ -28,10 +28,10 @@ test('business details remain canonical and stale coordinates fail closed',()=>{
 test('search, accent handling, categories, reset and empty results',()=>{
  assert.equal(filterPlaces(places,{...base,q:'FARM GIRL'},data.collections,[])[0].id,'farm-girl-cafe');
  assert.equal(filterPlaces(places,{...base,q:'cafÉ'},data.collections,[]).length>0,true);
- assert.equal(filterPlaces(places,{...base,category:'eat'},data.collections,[]).length,6);
+ assert.equal(filterPlaces(places,{...base,category:'eat'},data.collections,[]).length,12);
  for(const category of Object.keys(CATEGORIES).filter(x=>x!=='all'))assert.ok(filterPlaces(places,{...base,category},data.collections,[]).every(p=>p.visitorCategory===category));
  assert.equal(filterPlaces(places,{...base,q:'zzzzunfindable'},data.collections,[]).length,0);
- assert.equal(filterPlaces(places,base,data.collections,[]).length,41);
+ assert.equal(filterPlaces(places,base,data.collections,[]).length,84);
  assert.equal(filterPlaces(places,base,data.collections,[]).at(-1).visitorCategory,'services');
 });
 test('all five curated collections resolve, in editorial order, with no adult retail in family/stroll',()=>{
