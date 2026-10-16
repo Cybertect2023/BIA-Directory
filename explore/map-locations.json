@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "verifiedOn": "2026-10-15",
+  "verifiedOn": "2026-10-16",
   "license": "OSM-derived coordinates © OpenStreetMap contributors, ODbL 1.0. Operator coordinates are attributed per record.",
   "businessLocations": [
     {
@@ -351,6 +351,21 @@
           "https://www.visitstirlingrawdon.ca/business-directory"
         ],
         "note": "BIA-approved address-level property pin at the confirmed 40 Mill Street. Storefront entrance not surveyed."
+      }
+    },
+    {
+      "businessId": "stirling-general-mercantile",
+      "lat": 44.2959,
+      "lon": -77.548,
+      "pointType": "property",
+      "addressFingerprint": "149ad3b7",
+      "verification": {
+        "date": "2026-10-16",
+        "sources": [
+          "https://www.stirling-rawdon.com/business-development/business-directory/",
+          "https://www.facebook.com/StirlingGeneralMercantile/"
+        ],
+        "note": "Approximate address-level property marker at the BIA/Township-confirmed 26 West Front Street. The exact storefront entrance has not been surveyed."
       }
     }
   ],
