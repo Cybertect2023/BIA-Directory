@@ -24,6 +24,10 @@ with sync_playwright() as pw:
       try:
         url=f"{ORIGIN}/things-to-do#{anchor}"
         response=page.goto(url,wait_until="domcontentloaded",timeout=45000)
+        # Hash-only navigation stays in the same document and returns None in Playwright.
+        # Reload to verify the real public HTTP response for each direct link.
+        if response is None:
+          response=page.reload(wait_until="domcontentloaded",timeout=45000)
         target=page.locator("#bia-explore-page #"+anchor)
         target.wait_for(state="visible",timeout=25000)
         page.wait_for_timeout(1200)
@@ -51,6 +55,7 @@ with sync_playwright() as pw:
       profiles[slug]={"http":response.status,"finalUrl":response.url}
     except Exception as ex:
       profiles[slug]={"error":str(ex)[:200]}
+  print("Profile URL checks:",json.dumps(profiles),flush=True)
   browser.close()
 report={"checkedAt":datetime.now(timezone.utc).isoformat(),"results":results,"profileLinks":profiles}
 Path("launch").mkdir(exist_ok=True)
