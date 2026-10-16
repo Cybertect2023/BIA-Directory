@@ -49,7 +49,7 @@ with sync_playwright() as pw:
   # New-business directory slugs are checked separately: they must not be
   # mistaken for confirmed working routes solely because they are in JSON.
   profiles={}
-  for slug in ["stirling-train-station-antique-shop","the-scoop-ice-cream","stirling-general-mercantile"]:
+  for slug in ["stirling-train-station-antique-shop","the-scoop-ice-cream","stirling-general-mercantile","a-spa-of-feathers-and-fur"]:
     try:
       response=context.request.get(f"{ORIGIN}/{slug}",timeout=18000)
       profiles[slug]={"http":response.status,"finalUrl":response.url}
