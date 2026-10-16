@@ -982,6 +982,38 @@
       "verificationStatus": "needs-review",
       "sourceUrl": "https://canada247.info/explore/ontario/hastings_county/stirling_rawdon/stirling/the-vape-shop-647-574-4727.html",
       "about": "The Vape Shop is publicly listed at 40 Mill Street in Stirling. Its business contact details and active official online profiles need confirmation."
+    },
+    {
+      "id": "stirling-general-mercantile",
+      "name": "Stirling General Mercantile",
+      "category": "Shops & Retail",
+      "description": "A downtown candy and gift shop offering nostalgic sweets, gifts and toys.",
+      "address": "26 West Front Street, Stirling, ON K0K 3E0",
+      "phone": "613-243-8462",
+      "email": "stirlinggeneralmercantile@hotmail.com",
+      "website": "",
+      "facebook": "https://www.facebook.com/StirlingGeneralMercantile/",
+      "instagram": "",
+      "image": "",
+      "featured": false,
+      "hours": {
+        "monday": "",
+        "tuesday": "",
+        "wednesday": "",
+        "thursday": "",
+        "friday": "",
+        "saturday": "",
+        "sunday": ""
+      },
+      "services": [
+        "Candy",
+        "Gifts",
+        "Toys"
+      ],
+      "profileUrl": "/stirling-general-mercantile",
+      "verificationStatus": "verified",
+      "sourceUrl": "https://www.stirling-rawdon.com/business-development/business-directory/",
+      "about": "A downtown Stirling stop for nostalgic candy, gifts and toys."
     }
   ]
 }
