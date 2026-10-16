@@ -29,9 +29,10 @@
 .bia-visit .vm-toolbar{display:flex;gap:8px;flex-wrap:wrap}
 .bia-visit .vm-shell{display:grid;grid-template-columns:minmax(280px,.83fr) minmax(0,1.7fr);border:1px solid var(--vm-line);background:#fff;border-radius:6px;overflow:hidden}
 .bia-visit .vm-sidebar{min-width:0;border-right:1px solid var(--vm-line);display:flex;flex-direction:column;height:830px}
-.bia-visit .vm-controls{padding:20px 20px 14px;border-bottom:1px solid var(--vm-line);background:#fff}
+.bia-visit .vm-controls{width:100%;min-width:0;padding:20px 20px 14px;border-bottom:1px solid var(--vm-line);background:#fff}
 .bia-visit .vm-label{display:block;font-size:.76rem;font-weight:700;margin:0 0 5px;color:var(--vm-ink)}
-.bia-visit .vm-search{width:100%;min-height:46px;border:1px solid #8b998d;border-radius:3px;padding:10px 12px;background:#fff;color:var(--vm-ink);font-size:16px}
+/* Keep the search control inside its grid sidebar despite Squarespace input defaults. */
+.bia-visit .vm-controls input.vm-search{display:block;width:100%!important;max-width:100%!important;min-width:0!important;box-sizing:border-box!important;margin:0;min-height:46px;border:1px solid #8b998d;border-radius:3px;padding:10px 12px;background:#fff;color:var(--vm-ink);font-size:16px}
 .bia-visit .vm-filter-row{display:flex;gap:8px;align-items:end;margin-top:12px}
 .bia-visit .vm-filter-row label{flex:1;min-width:0}
 .bia-visit select{width:100%;min-height:44px;border:1px solid #8b998d;border-radius:3px;background:#fff;padding:8px;color:var(--vm-ink);font-size:.87rem}
