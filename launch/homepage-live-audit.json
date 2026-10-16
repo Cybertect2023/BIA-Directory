@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-15T14:23:09.281Z",
+  "checkedAt": "2026-10-16T19:28:24.116Z",
   "homepage": {
     "status": 200,
     "links": [
@@ -11,9 +11,9 @@
         "expected": "/eat-and-drink",
         "found": {
           "text": "Explore Dining",
-          "href": "/business-directory?category=Food%20%26%20Dining"
+          "href": "/eat-and-drink"
         },
-        "pass": false
+        "pass": true
       },
       {
         "name": "Shop Local",
@@ -23,9 +23,9 @@
         "expected": "/shop-local",
         "found": {
           "text": "Explore Shops",
-          "href": "/business-directory?collection=shop-local"
+          "href": "/shop-local"
         },
-        "pass": false
+        "pass": true
       },
       {
         "name": "Explore & Enjoy",
@@ -39,8 +39,256 @@
           "href": "/explore-and-enjoy"
         },
         "pass": true
+      },
+      {
+        "name": "Heritage & History",
+        "labels": [
+          "Discover More"
+        ],
+        "expected": "/things-to-do#heritage-history",
+        "found": {
+          "text": "Discover More ↗",
+          "href": "/things-to-do"
+        },
+        "pass": false
+      },
+      {
+        "name": "Trails & Outdoors",
+        "labels": [
+          "Explore the Trail"
+        ],
+        "expected": "/things-to-do#trails-outdoors",
+        "found": {
+          "text": "Explore the Trail ↗",
+          "href": "/things-to-do"
+        },
+        "pass": false
+      },
+      {
+        "name": "Parks & Family Fun",
+        "labels": [
+          "Find Local Parks"
+        ],
+        "expected": "/things-to-do#parks-family-fun",
+        "found": {
+          "text": "Find Local Parks ↗",
+          "href": "/1.%20/things-to-do"
+        },
+        "pass": false
       }
-    ]
+    ],
+    "moreToExploreDOM": {
+      "Discover More": {
+        "outerHTML": "<a class=\"discover-link\" href=\"/things-to-do#heritage-history\">\n        Discover More ↗\n      </a>",
+        "parentChain": [
+          {
+            "tag": "A",
+            "className": "discover-link",
+            "id": "",
+            "role": null,
+            "href": "/things-to-do#heritage-history",
+            "dataBlockType": null,
+            "dataBlockId": null,
+            "directAnchors": []
+          },
+          {
+            "tag": "ARTICLE",
+            "className": "discover-card",
+            "id": "",
+            "role": null,
+            "href": null,
+            "dataBlockType": null,
+            "dataBlockId": null,
+            "directAnchors": [
+              {
+                "text": "Discover More ↗",
+                "href": "/things-to-do#heritage-history"
+              }
+            ]
+          },
+          {
+            "tag": "DIV",
+            "className": "discover-grid",
+            "id": "",
+            "role": null,
+            "href": null,
+            "dataBlockType": null,
+            "dataBlockId": null,
+            "directAnchors": []
+          },
+          {
+            "tag": "SECTION",
+            "className": "",
+            "id": "bia-discover",
+            "role": null,
+            "href": null,
+            "dataBlockType": null,
+            "dataBlockId": null,
+            "directAnchors": []
+          },
+          {
+            "tag": "DIV",
+            "className": "sqs-code-container",
+            "id": "",
+            "role": null,
+            "href": null,
+            "dataBlockType": null,
+            "dataBlockId": null,
+            "directAnchors": []
+          },
+          {
+            "tag": "DIV",
+            "className": "sqs-block-content",
+            "id": "",
+            "role": null,
+            "href": null,
+            "dataBlockType": null,
+            "dataBlockId": null,
+            "directAnchors": []
+          }
+        ]
+      },
+      "Explore the Trail": {
+        "outerHTML": "<a class=\"discover-link\" href=\"/things-to-do#trails-outdoors\">\n        Explore the Trail ↗\n      </a>",
+        "parentChain": [
+          {
+            "tag": "A",
+            "className": "discover-link",
+            "id": "",
+            "role": null,
+            "href": "/things-to-do#trails-outdoors",
+            "dataBlockType": null,
+            "dataBlockId": null,
+            "directAnchors": []
+          },
+          {
+            "tag": "ARTICLE",
+            "className": "discover-card",
+            "id": "",
+            "role": null,
+            "href": null,
+            "dataBlockType": null,
+            "dataBlockId": null,
+            "directAnchors": [
+              {
+                "text": "Explore the Trail ↗",
+                "href": "/things-to-do#trails-outdoors"
+              }
+            ]
+          },
+          {
+            "tag": "DIV",
+            "className": "discover-grid",
+            "id": "",
+            "role": null,
+            "href": null,
+            "dataBlockType": null,
+            "dataBlockId": null,
+            "directAnchors": []
+          },
+          {
+            "tag": "SECTION",
+            "className": "",
+            "id": "bia-discover",
+            "role": null,
+            "href": null,
+            "dataBlockType": null,
+            "dataBlockId": null,
+            "directAnchors": []
+          },
+          {
+            "tag": "DIV",
+            "className": "sqs-code-container",
+            "id": "",
+            "role": null,
+            "href": null,
+            "dataBlockType": null,
+            "dataBlockId": null,
+            "directAnchors": []
+          },
+          {
+            "tag": "DIV",
+            "className": "sqs-block-content",
+            "id": "",
+            "role": null,
+            "href": null,
+            "dataBlockType": null,
+            "dataBlockId": null,
+            "directAnchors": []
+          }
+        ]
+      },
+      "Find Local Parks": {
+        "outerHTML": "<a class=\"discover-link\" href=\"1. /things-to-do#parks-family-fun\">\n        Find Local Parks ↗\n      </a>",
+        "parentChain": [
+          {
+            "tag": "A",
+            "className": "discover-link",
+            "id": "",
+            "role": null,
+            "href": "1. /things-to-do#parks-family-fun",
+            "dataBlockType": null,
+            "dataBlockId": null,
+            "directAnchors": []
+          },
+          {
+            "tag": "ARTICLE",
+            "className": "discover-card",
+            "id": "",
+            "role": null,
+            "href": null,
+            "dataBlockType": null,
+            "dataBlockId": null,
+            "directAnchors": [
+              {
+                "text": "Find Local Parks ↗",
+                "href": "1. /things-to-do#parks-family-fun"
+              }
+            ]
+          },
+          {
+            "tag": "DIV",
+            "className": "discover-grid",
+            "id": "",
+            "role": null,
+            "href": null,
+            "dataBlockType": null,
+            "dataBlockId": null,
+            "directAnchors": []
+          },
+          {
+            "tag": "SECTION",
+            "className": "",
+            "id": "bia-discover",
+            "role": null,
+            "href": null,
+            "dataBlockType": null,
+            "dataBlockId": null,
+            "directAnchors": []
+          },
+          {
+            "tag": "DIV",
+            "className": "sqs-code-container",
+            "id": "",
+            "role": null,
+            "href": null,
+            "dataBlockType": null,
+            "dataBlockId": null,
+            "directAnchors": []
+          },
+          {
+            "tag": "DIV",
+            "className": "sqs-block-content",
+            "id": "",
+            "role": null,
+            "href": null,
+            "dataBlockType": null,
+            "dataBlockId": null,
+            "directAnchors": []
+          }
+        ]
+      }
+    }
   },
   "events": {
     "status": 200,
