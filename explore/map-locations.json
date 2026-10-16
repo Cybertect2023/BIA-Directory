@@ -655,6 +655,86 @@
       "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
       "source": "https://stirlinglibrary.com/wp-content/uploads/2018/06/Stirling-Community-Guide-1.pdf",
       "checked": "2026-10-16"
+    },
+    {
+      "id": "ubhearing-stirling",
+      "name": "UBHearing",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://southeasthealthline.ca/displayService.aspx?id=180745",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "stirling-dollar-plus-super-dollar-plus",
+      "name": "Stirling Dollar Plus / Super Dollar Plus",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://www.stirling-rawdon.com/business-development/business-directory/",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "stirling-foodland",
+      "name": "Stirling Foodland",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://www.foodland.ca/",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "mcdougall-insurance",
+      "name": "McDougall Insurance",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://www.mcdougallinsurance.com/",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "meraki-tattoo-lounge",
+      "name": "Meraki Tattoo Lounge",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://merakitattoolounge.wordpress.com/",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "farnsworth-construction",
+      "name": "Farnsworth Construction",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://farconltd.com/",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "m-hairstyles",
+      "name": "M Hairstyles",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://www.yellowpages.ca/bus/Ontario/Stirling/M-Hairstyles/7210603.html",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "stirling-feed-and-seed",
+      "name": "Stirling Feed & Seed",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://www.ruralroutes.com/orr_show_page.cfm?htmlnum=4873",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "stirling-creamery-gay-lea-foods",
+      "name": "Stirling Creamery / Gay Lea Foods",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://www.harvesthastings.ca/listing/stirling-creamery/",
+      "checked": "2026-10-16"
+    },
+    {
+      "id": "ultramar-stirling",
+      "name": "Ultramar",
+      "status": "needs-verification",
+      "reason": "Directory address confirmed by the BIA; map coordinate awaiting verification.",
+      "source": "https://www.ultramar.ca/",
+      "checked": "2026-10-16"
     }
   ],
   "places": [
