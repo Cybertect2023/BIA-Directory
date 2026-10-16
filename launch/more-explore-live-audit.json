@@ -1,0 +1,79 @@
+{
+  "checkedAt": "2026-10-16T19:16:00.403452+00:00",
+  "results": [
+    {
+      "section": "heritage-history",
+      "viewport": "desktop",
+      "status": 200,
+      "heading": "Step into Stirling's story.",
+      "topPx": 56.2,
+      "scrollWidthExcessPx": 0,
+      "guideLoaded": true,
+      "pass": true
+    },
+    {
+      "section": "trails-outdoors",
+      "viewport": "desktop",
+      "status": 200,
+      "heading": "Take the long way around.",
+      "topPx": 56.4,
+      "scrollWidthExcessPx": 0,
+      "guideLoaded": true,
+      "pass": true
+    },
+    {
+      "section": "parks-family-fun",
+      "viewport": "desktop",
+      "status": 200,
+      "heading": "A good day doesn't need a big itinerary.",
+      "topPx": 56.4,
+      "scrollWidthExcessPx": 0,
+      "guideLoaded": true,
+      "pass": true
+    },
+    {
+      "section": "heritage-history",
+      "viewport": "phone",
+      "status": 200,
+      "heading": "Step into Stirling's story.",
+      "topPx": 73.8,
+      "scrollWidthExcessPx": 0,
+      "guideLoaded": true,
+      "pass": true
+    },
+    {
+      "section": "trails-outdoors",
+      "viewport": "phone",
+      "status": 200,
+      "heading": "Take the long way around.",
+      "topPx": 55.8,
+      "scrollWidthExcessPx": 0,
+      "guideLoaded": true,
+      "pass": true
+    },
+    {
+      "section": "parks-family-fun",
+      "viewport": "phone",
+      "status": 200,
+      "heading": "A good day doesn't need a big itinerary.",
+      "topPx": 56.2,
+      "scrollWidthExcessPx": 0,
+      "guideLoaded": true,
+      "pass": true
+    }
+  ],
+  "profileLinks": {
+    "stirling-train-station-antique-shop": {
+      "http": 200,
+      "finalUrl": "https://www.visitstirlingrawdon.ca/stirling-train-station-antique-shop"
+    },
+    "the-scoop-ice-cream": {
+      "http": 200,
+      "finalUrl": "https://www.visitstirlingrawdon.ca/the-scoop-ice-cream"
+    },
+    "stirling-general-mercantile": {
+      "http": 404,
+      "finalUrl": "https://www.visitstirlingrawdon.ca/stirling-general-mercantile"
+    }
+  }
+}
