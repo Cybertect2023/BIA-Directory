@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-16T19:16:00.403452+00:00",
+  "checkedAt": "2026-10-16T19:17:25.936264+00:00",
   "results": [
     {
       "section": "heritage-history",
@@ -36,7 +36,7 @@
       "viewport": "phone",
       "status": 200,
       "heading": "Step into Stirling's story.",
-      "topPx": 73.8,
+      "topPx": 23.8,
       "scrollWidthExcessPx": 0,
       "guideLoaded": true,
       "pass": true
@@ -74,6 +74,10 @@
     "stirling-general-mercantile": {
       "http": 404,
       "finalUrl": "https://www.visitstirlingrawdon.ca/stirling-general-mercantile"
+    },
+    "a-spa-of-feathers-and-fur": {
+      "http": 200,
+      "finalUrl": "https://www.visitstirlingrawdon.ca/a-spa-of-feathers-and-fur"
     }
   }
 }
