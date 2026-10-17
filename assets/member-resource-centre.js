@@ -9,6 +9,7 @@
   const root = "https://cybertect2023.github.io/BIA-Directory/";
   const template = host.dataset.biaMemberTemplate || "member-resource-centre.html";
   const safeUrl = value => {
+    if (typeof value !== "string" || !value.trim()) return null;
     try {
       const url = new URL(value, window.location.origin);
       return ["http:", "https:"].includes(url.protocol) ? url : null;
@@ -39,11 +40,97 @@
     if (document.querySelector('link[data-bia-member-centre-style]')) return;
     const style = document.createElement("link");
     style.rel = "stylesheet";
-    style.href = root + "assets/member-resource-centre.css?v=member-design-20261017";
+    style.href = root + "assets/member-resource-centre.css?v=member-backend-20261017";
     style.dataset.biaMemberCentreStyle = "true";
     document.head.append(style);
   };
   const showEmpty = (selector, message) => replace(selector, [el("p", "bia-member__empty", message)]);
+
+  const approved = (raw, type) => (Array.isArray(raw) ? raw : []).filter(item => {
+    if (!item || typeof item !== "object") return false;
+    if (type === "resources") return !item.status || item.status === "published";
+    return item.status === "published" && item.audience === "public" &&
+      (type !== "documents" || item.approvedForMemberDistribution === true);
+  });
+  const upcoming = raw => approved(raw, "workshops").filter(item => {
+    const date = Date.parse(item.startsAt || "");
+    return Number.isFinite(date) && date >= Date.now() && item.organizer && safeUrl(item.url);
+  }).sort((a, b) => Date.parse(a.startsAt) - Date.parse(b.startsAt));
+  const fillSelect = (selector, values) => {
+    const element = host.querySelector(selector);
+    if (!element) return;
+    const unique = [...new Set(values.map(value => String(value || "").trim()).filter(Boolean))]
+      .sort((a, b) => a.localeCompare(b, "en-CA"));
+    unique.forEach(value => {
+      const option = document.createElement("option");
+      option.value = value;
+      option.textContent = value;
+      element.append(option);
+    });
+  };
+  const installFilter = ({ cardSelector, searchSelector, selectPairs, countSelector, filterWrapper, items }) => {
+    const cards = [...host.querySelectorAll(cardSelector)];
+    const search = host.querySelector(searchSelector);
+    const selectors = selectPairs.map(pair => host.querySelector(pair.selector));
+    if (filterWrapper) {
+      const wrapper = host.querySelector(filterWrapper);
+      if (wrapper) wrapper.hidden = !cards.length;
+    }
+    selectPairs.forEach(pair => fillSelect(pair.selector, items.map(item => item[pair.key])));
+    const display = () => {
+      const query = (search?.value || "").trim().toLowerCase();
+      let matches = 0;
+      cards.forEach((card, index) => {
+        const item = items[index] || {};
+        const termMatches = card.textContent.toLowerCase().includes(query);
+        const selectsMatch = selectPairs.every((pair, j) => !selectors[j]?.value ||
+          String(item[pair.key] || "") === selectors[j].value);
+        card.hidden = !(termMatches && selectsMatch);
+        if (!card.hidden) matches++;
+      });
+      const count = host.querySelector(countSelector);
+      if (count && cards.length) count.textContent = "Showing " + matches + " of " + cards.length;
+      const noMatches = host.querySelector(cardSelector)?.parentElement?.querySelector(".bia-member__filter-empty");
+      if (noMatches) noMatches.hidden = matches > 0;
+    };
+    if (cards.length) {
+      const parent = cards[0].parentElement;
+      const noMatches = el("p", "bia-member__empty bia-member__filter-empty", "No matching results. Try another search or filter.");
+      noMatches.hidden = true;
+      parent.append(noMatches);
+    }
+    search?.addEventListener("input", display);
+    selectors.forEach(control => control?.addEventListener("change", display));
+    display();
+  };
+  const setupFilters = data => {
+    const resources = approved(data.resources, "resources");
+    installFilter({
+      cardSelector: "[data-member-resources] > .bia-member__resource",
+      searchSelector: "[data-member-resource-search]",
+      selectPairs: [{selector:"[data-member-resource-category]", key:"category"}],
+      countSelector:"[data-member-resource-count]",
+      items:resources
+    });
+    const documents = approved(data.documents, "documents");
+    installFilter({
+      cardSelector:"[data-member-documents] > .bia-member__document",
+      searchSelector:"[data-member-document-search]",
+      selectPairs:[{selector:"[data-member-document-type]",key:"type"}, {selector:"[data-member-document-year]",key:"year"}],
+      countSelector:"[data-member-document-count]",
+      filterWrapper:"[data-member-document-filters]",
+      items:documents
+    });
+    const news = approved(data.news, "news");
+    installFilter({
+      cardSelector:"[data-member-news] > .bia-member__news",
+      searchSelector:"[data-member-news-search]",
+      selectPairs:[{selector:"[data-member-news-category]",key:"category"}],
+      countSelector:"[data-member-news-count]",
+      filterWrapper:"[data-member-news-filters]",
+      items:news
+    });
+  };
 
   const hydrate = data => {
     const announcement = data.announcement || {};
@@ -56,7 +143,7 @@
     if (announcementLink && announcementUrl && announcement.linkLabel) {
       announcementLink.href = announcementUrl.href;
       announcementLink.textContent = announcement.linkLabel;
-      announcementLink.hidden = false;
+      announcementLink.hidden = announcement.status !== "published" || announcement.audience !== "public";
     }
 
     const meeting = data.meeting || {};
@@ -65,7 +152,7 @@
     if (meetingTitle) meetingTitle.textContent = meeting.title || "Schedule to be announced";
     if (meetingCopy) meetingCopy.textContent = meeting.copy || "Meeting notices and approved records will be posted here.";
 
-    const resources = Array.isArray(data.resources) ? data.resources : [];
+    const resources = approved(data.resources, "resources");
     if (resources.length) {
       replace("[data-member-resources]", resources.map(resource => {
         const card = el("article", "bia-member__resource");
@@ -78,13 +165,13 @@
       }));
     } else showEmpty("[data-member-resources]", "The business support directory is being prepared.");
 
-    const workshops = Array.isArray(data.workshops) ? data.workshops : [];
+    const workshops = upcoming(data.workshops);
     const workshopCount = host.querySelector("[data-member-workshop-count]");
     const workshopCopy = host.querySelector("[data-member-workshop-copy]");
     if (workshopCount) workshopCount.textContent = workshops.length ? `${workshops.length} upcoming ${workshops.length === 1 ? "opportunity" : "opportunities"}` : "Listings being verified";
     if (workshopCopy) workshopCopy.textContent = workshops.length ? "Registration is handled directly by each organizer." : "Workshop details are being verified before publication.";
     if (workshops.length) {
-      replace("[data-member-workshops]", workshops.slice(0, 6).map(workshop => {
+      replace("[data-member-workshops]", workshops.map(workshop => {
         const card = el("article", "bia-member__workshop");
         const copyBlock = el("div", "");
         card.append(el("time", "bia-member__workshop-date", workshop.dateLabel || "Date to be confirmed"));
@@ -98,7 +185,7 @@
       }));
     } else showEmpty("[data-member-workshops]", "Upcoming workshops are being verified. New listings will include the date, format, organizer, short description, and registration link.");
 
-    const documents = Array.isArray(data.documents) ? data.documents : [];
+    const documents = approved(data.documents, "documents").sort((a,b) => String(b.date || "").localeCompare(String(a.date || "")));
     if (documents.length) {
       replace("[data-member-documents]", documents.map(document => {
         const card = el("article", "bia-member__document");
@@ -111,7 +198,7 @@
       }));
     } else showEmpty("[data-member-documents]", "The document library is being organized for member access. Approved agendas, minutes, reports, policies, and AGM information will be added here.");
 
-    const benefits = Array.isArray(data.benefits) ? data.benefits : [];
+    const benefits = []; // Always withheld: private offers require a protected source, not GitHub Pages.
     if (benefits.length) {
       replace("[data-member-benefits]", benefits.map(benefit => {
         const card = el("article", "bia-member__benefit");
@@ -122,9 +209,9 @@
         if (benefit.instructions) card.append(el("p", "", benefit.instructions));
         return card;
       }));
-    } else showEmpty("[data-member-benefits]", "The private benefits directory will be added after eligibility and program guidelines are finalized.");
+    } else showEmpty("[data-member-benefits]", "There are no active member-to-member benefits. Governance approval and genuinely protected member storage are required before the directory can be activated.");
 
-    const news = Array.isArray(data.news) ? data.news : [];
+    const news = approved(data.news, "news").sort((a,b) => String(b.date || "").localeCompare(String(a.date || "")));
     if (news.length) {
       replace("[data-member-news]", news.map(item => {
         const card = el("article", "bia-member__news");
@@ -135,7 +222,8 @@
         if (destination) card.append(destination);
         return card;
       }));
-    } else showEmpty("[data-member-news]", "BIA news and member notices will appear here as they are published.");
+    } else showEmpty("[data-member-news]", "BIA news and member notices will appear here after verification and approval.");
+    setupFilters(data);
   };
 
   addStyles();
