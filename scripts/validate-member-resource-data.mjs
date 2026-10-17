@@ -28,7 +28,7 @@ const dateTimeOk = value => typeof value === "string" &&
 const fieldSets = {
   resources: new Set(["name","category","description","url","linkLabel","status","sourceUrl","verifiedAt"]),
   documents: new Set(["title","type","year","date","dateLabel","url","linkLabel","status","audience","approvedForMemberDistribution","publicReleaseApproved","verifiedAt","sourceUrl"]),
-  workshops: new Set(["title","description","organizer","format","startsAt","dateLabel","url","linkLabel","status","audience","verifiedAt","sourceUrl"]),
+  workshops: new Set(["title","description","organizer","format","startsAt","dateLabel","url","linkLabel","status","audience","verifiedAt","sourceUrl","imageUrl","imageCredit","topic"]),
   news: new Set(["title","description","category","date","dateLabel","url","linkLabel","status","audience","verifiedAt","sourceUrl"])
 };
 const checkExtraFields = (record, allowed, label, errors) => {
@@ -115,6 +115,8 @@ export function validateMemberData(data) {
     ["title","organizer","description","format","dateLabel"].forEach(k => requiredText(r,k,label,errors));
     if (!dateTimeOk(r.startsAt)) errors.push(label + ".startsAt must have date, time and timezone");
     if (!urlOk(r.url)) errors.push(label + ".url must link to the organizer registration/details page");
+    if (r.imageUrl && (!urlOk(r.imageUrl) || !r.imageUrl.startsWith("https://"))) errors.push(label + ".imageUrl must be an HTTPS event artwork URL");
+    if (r.imageUrl && (!r.imageCredit || !r.topic)) errors.push(label + " with artwork needs imageCredit and topic");
   });
 
   (Array.isArray(data.news) ? data.news : []).forEach((r,i) => {
