@@ -6,7 +6,7 @@ const read = name => readFileSync(name,"utf8");
 const templates = {
   "member-governance.html":["data-member-documents","data-member-document-filters","data-member-document-type","data-member-document-year"],
   "member-business-resources.html":["data-member-resources","data-member-resource-search","data-member-resource-category","data-member-workshops"],
-  "member-benefits.html":["data-member-benefits","pending","proposed"],
+  "member-benefits.html":["data-member-benefits","awaiting governance approval","proposed"],
   "member-news.html":["data-member-news","data-member-news-filters","data-member-news-category"]
 };
 test("all member detail templates have required data hooks and a navigation return",() => {
