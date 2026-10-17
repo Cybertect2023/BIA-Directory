@@ -1,0 +1,32 @@
+name: Member Resource Centre content checks
+
+on:
+  push:
+    paths:
+      - 'member-resource-data.json'
+      - 'scripts/validate-member-resource-data.mjs'
+      - 'scripts/test-member-resource-data.mjs'
+      - '.github/workflows/member-resource-validation.yml'
+  pull_request:
+    paths:
+      - 'member-resource-data.json'
+      - 'scripts/validate-member-resource-data.mjs'
+      - 'scripts/test-member-resource-data.mjs'
+      - '.github/workflows/member-resource-validation.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate-content:
+    name: Validate member content
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check member data
+        run: node scripts/validate-member-resource-data.mjs
+      - name: Test publishing rules
+        run: node --test scripts/test-member-resource-data.mjs
