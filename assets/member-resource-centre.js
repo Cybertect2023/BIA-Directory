@@ -40,7 +40,7 @@
     if (document.querySelector('link[data-bia-member-centre-style]')) return;
     const style = document.createElement("link");
     style.rel = "stylesheet";
-    style.href = root + "assets/member-resource-centre.css?v=member-backend-20261017";
+    style.href = root + "assets/member-resource-centre.css?v=member-seminars-20261017";
     style.dataset.biaMemberCentreStyle = "true";
     document.head.append(style);
   };
@@ -168,22 +168,65 @@
     const workshops = upcoming(data.workshops);
     const workshopCount = host.querySelector("[data-member-workshop-count]");
     const workshopCopy = host.querySelector("[data-member-workshop-copy]");
-    if (workshopCount) workshopCount.textContent = workshops.length ? `${workshops.length} upcoming ${workshops.length === 1 ? "opportunity" : "opportunities"}` : "Listings being verified";
-    if (workshopCopy) workshopCopy.textContent = workshops.length ? "Registration is handled directly by each organizer." : "Workshop details are being verified before publication.";
+    if (workshopCount) workshopCount.textContent = workshops.length
+      ? workshops.length + " upcoming " + (workshops.length === 1 ? "seminar" : "seminars")
+      : "New seminars being verified";
+    if (workshopCopy) workshopCopy.textContent = workshops.length
+      ? "Explore verified dates, official event artwork, and organizer registration pages."
+      : "Upcoming events will appear here once dates and registration details are confirmed.";
     if (workshops.length) {
       replace("[data-member-workshops]", workshops.map(workshop => {
-        const card = el("article", "bia-member__workshop");
-        const copyBlock = el("div", "");
-        card.append(el("time", "bia-member__workshop-date", workshop.dateLabel || "Date to be confirmed"));
-        copyBlock.append(el("h4", "", workshop.title || "Workshop"));
-        copyBlock.append(el("p", "bia-member__workshop-meta", [workshop.organizer, workshop.format].filter(Boolean).join(" · ")));
-        if (workshop.description) copyBlock.append(el("p", "", workshop.description));
-        const destination = link(workshop.url, workshop.linkLabel || "Registration and details");
-        if (destination) copyBlock.append(destination);
-        card.append(copyBlock);
+        const card = el("article", "bia-member__seminar");
+        const cover = el("div", "bia-member__seminar-cover");
+        const visual = el("div", "bia-member__seminar-visual");
+        const posterUrl = safeUrl(workshop.imageUrl);
+        if (posterUrl && posterUrl.protocol === "https:") {
+          const poster = el("img", "bia-member__seminar-image");
+          poster.src = posterUrl.href;
+          poster.alt = "Event artwork: " + (workshop.title || "Business seminar");
+          poster.loading = "lazy";
+          poster.decoding = "async";
+          const fallback = el("div", "bia-member__seminar-fallback", workshop.topic || "Business learning");
+          fallback.hidden = true;
+          poster.addEventListener("error", () => {
+            poster.hidden = true;
+            fallback.hidden = false;
+          }, {once:true});
+          visual.append(poster, fallback);
+        } else {
+          visual.append(el("div", "bia-member__seminar-fallback", workshop.topic || "Business learning"));
+        }
+        const imageLink = link(workshop.url, "");
+        if (imageLink) {
+          imageLink.className = "bia-member__seminar-image-link";
+          imageLink.setAttribute("aria-label", "Event details: " + (workshop.title || "Business seminar"));
+          imageLink.append(visual);
+          cover.append(imageLink);
+        } else cover.append(visual);
+
+        const body = el("div", "bia-member__seminar-body");
+        const labels = el("div", "bia-member__seminar-labels");
+        if (workshop.topic) labels.append(el("span", "bia-member__seminar-topic", workshop.topic));
+        labels.append(el("span", "bia-member__seminar-format", workshop.format || "Workshop"));
+        body.append(labels);
+        const date = el("time", "bia-member__seminar-date", workshop.dateLabel || "Date to be confirmed");
+        if (workshop.startsAt) date.dateTime = workshop.startsAt;
+        body.append(date);
+        body.append(el("h3", "bia-member__seminar-title", workshop.title || "Business seminar"));
+        if (workshop.organizer) body.append(el("p", "bia-member__seminar-organizer", "Presented by " + workshop.organizer));
+        if (workshop.description) body.append(el("p", "bia-member__seminar-description", workshop.description));
+        const destination = link(workshop.url, workshop.linkLabel || "Event information & registration");
+        if (destination) {
+          destination.className = "bia-member__seminar-action";
+          const arrow = el("span", "", "↗");
+          arrow.setAttribute("aria-hidden", "true");
+          destination.append(arrow);
+          body.append(destination);
+        }
+        card.append(cover, body);
         return card;
       }));
-    } else showEmpty("[data-member-workshops]", "Upcoming workshops are being verified. New listings will include the date, format, organizer, short description, and registration link.");
+    } else showEmpty("[data-member-workshops]", "There are no currently confirmed upcoming seminars. New opportunities will be added after dates and registration pages are verified.");
 
     const documents = approved(data.documents, "documents").sort((a,b) => String(b.date || "").localeCompare(String(a.date || "")));
     if (documents.length) {
