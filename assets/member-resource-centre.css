@@ -619,3 +619,47 @@
 @media(max-width:1150px){.bia-member--portal .bia-member__portal-top-inner{flex-wrap:wrap;padding-block:.8rem}.bia-member--portal .bia-member__portal-links{order:3;flex:1 0 100%;justify-content:flex-start;overflow-x:auto;gap:1.5rem}.bia-member--portal .bia-member__portal-members{margin-left:auto}}
 @media(max-width:740px){.bia-member--portal .bia-member__portal-top-inner{gap:.5rem}.bia-member--portal .bia-member__portal-brand strong{font-size:.95rem}.bia-member--portal .bia-member__portal-members{font-size:.76rem}.bia-member--portal .bia-member__portal-hero-layout{grid-template-columns:1fr;gap:1.3rem}.bia-member--portal .bia-member__hero{padding:2.5rem 0}.bia-member--portal .bia-member__portal-welcome{padding:1.15rem 1.3rem}.bia-member--portal .bia-member__nav{grid-template-columns:1fr}.bia-member--portal .bia-member__nav-card{min-height:180px;padding:1.3rem 1.25rem 1.3rem 5.2rem}.bia-member--portal .bia-member__nav-icon{top:1.35rem;left:1.05rem;width:43px;height:43px}.bia-member--portal .bia-member__hub-updates-grid{grid-template-columns:1fr}.bia-member--portal .bia-member__portal-links a{font-size:.82rem;padding:.7rem 0}.bia-member--portal .bia-member__portal-links a:after{bottom:.35rem}}
 @media(prefers-reduced-motion:reduce){.bia-member--portal .bia-member__portal-links a:after{transition:none}}
+
+/* Final mockup-matched visual composition across every member page */
+.bia-member--portal .bia-member__portal-heading{display:flex;align-items:center;gap:1.2rem;padding-top:2rem;padding-bottom:.75rem}
+.bia-member--portal .bia-member__portal-heading>span{display:flex;align-items:center;gap:.9rem;color:#163d4c;font:800 .75rem/1.4 Arial,sans-serif;letter-spacing:.17em;white-space:nowrap}
+.bia-member--portal .bia-member__portal-heading>span:before{content:"";width:37px;height:2px;background:#bd9655}
+.bia-member--portal .bia-member__portal-heading>p{margin:0 0 0 auto!important;color:#607782!important;font-size:.87rem;line-height:1.5;text-align:right}
+.bia-member--portal .bia-member__portal-heading--inside{padding-top:1.2rem;margin-bottom:1rem;border-bottom:1px solid #d9e2e0}
+.bia-member--portal .bia-member__portal-top{box-shadow:0 4px 19px #001e2520}
+.bia-member--portal .bia-member__portal-members{color:#f4e0b6}
+.bia-member--portal .bia-member__portal-lock{font-size:.93rem}
+.bia-member--portal .bia-member__portal-access:before{content:"🔒";font-size:.98rem}
+.bia-member--portal .bia-member__nav{padding-top:1rem}
+.bia-member--portal .bia-member__nav-card{transition:box-shadow .2s,transform .2s}
+.bia-member--portal .bia-member__nav-card:hover{transform:translateY(-3px);box-shadow:0 16px 35px #0b3b4723}
+.bia-member--portal .bia-member__nav-card--governance .bia-member__nav-action{color:#976e2c}
+.bia-member--portal .bia-member__nav-card--resources .bia-member__nav-action{color:#13727b}
+.bia-member--portal .bia-member__nav-card--benefits .bia-member__nav-action{color:#386b4b}
+.bia-member--portal .bia-member__nav-card--news .bia-member__nav-action{color:#37688d}
+.bia-member--portal .bia-member__hub-updates{padding-top:0}
+.bia-member--portal .bia-member__hub-updates-grid{background:transparent}
+.bia-member--portal .bia-member__portal-categories{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin:1.2rem 0 2.1rem}
+.bia-member--portal .bia-member__portal-categories button{display:flex;min-width:0;flex-direction:column;align-items:flex-start;text-align:left;padding:1.45rem;border:1px solid #e4ded2;border-left:5px solid #b79054;border-radius:8px;background:#fffcf7;color:#173f4d;cursor:pointer;box-shadow:0 6px 20px #153a4510;font:inherit;transition:transform .15s,box-shadow .15s}
+.bia-member--portal .bia-member__portal-categories button:nth-child(2){background:#f6faf7;border-color:#d5e6dc;border-left-color:#5d9176}
+.bia-member--portal .bia-member__portal-categories button:nth-child(3){background:#f6f9fc;border-color:#d7e4f0;border-left-color:#527fa6}
+.bia-member--portal .bia-member__portal-categories button:nth-child(4){background:#f3fafb;border-color:#cfe4e7;border-left-color:#29858b}
+.bia-member--portal .bia-member__portal-categories button:hover,.bia-member--portal .bia-member__portal-categories button:focus-visible{transform:translateY(-3px);box-shadow:0 12px 25px #153a4520}
+.bia-member--portal .bia-member__portal-category-symbol{display:grid;place-items:center;width:47px;height:47px;border-radius:50%;background:#b79054;color:#fff;font-size:1.5rem;margin-bottom:1rem}
+.bia-member--portal .bia-member__portal-categories button:nth-child(2) .bia-member__portal-category-symbol{background:#5d9176}
+.bia-member--portal .bia-member__portal-categories button:nth-child(3) .bia-member__portal-category-symbol{background:#527fa6}
+.bia-member--portal .bia-member__portal-categories button:nth-child(4) .bia-member__portal-category-symbol{background:#29858b}
+.bia-member--portal .bia-member__portal-categories strong{font-size:1.12rem;line-height:1.3}
+.bia-member--portal .bia-member__portal-categories small{margin:.5rem 0 1.5rem;color:#607782;font-size:.87rem;line-height:1.45}
+.bia-member--portal .bia-member__portal-categories em{margin-top:auto;color:#176d76;font-size:.85rem;font-weight:750;font-style:normal}
+.bia-member--portal .bia-member__portal-feature{padding:1.7rem;margin-bottom:2rem;border:1px solid #e5e2d7;border-left:5px solid #bb9654;border-radius:9px;background:#fffaf1;box-shadow:0 8px 24px #153a4510}
+.bia-member--portal .bia-member__portal-feature h3{margin:.3rem 0 .6rem;font-size:1.6rem}
+.bia-member--portal .bia-member__portal-feature p{max-width:800px}
+.bia-member--portal .bia-member__portal-feature a{font-weight:750}
+.bia-member--portal .bia-member__seminar-visual{height:190px}
+.bia-member--portal .bia-member__resource{border-top:3px solid #237d83}
+.bia-member--portal .bia-member__status-line{border-left-color:#bc9654}
+.bia-member--portal .bia-member__document-grid,.bia-member--portal .bia-member__resource-grid,.bia-member--portal .bia-member__news-list{gap:16px}
+.bia-member--portal .bia-member__empty{border-left:4px solid #b79054}
+@media(max-width:1000px){.bia-member--portal .bia-member__portal-categories{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.bia-member--portal .bia-member__portal-heading{align-items:flex-start;flex-direction:column;gap:.5rem}.bia-member--portal .bia-member__portal-heading>p{margin:0!important;text-align:left}.bia-member--portal .bia-member__portal-categories{grid-template-columns:1fr 1fr;gap:9px}.bia-member--portal .bia-member__portal-categories button{padding:1rem}.bia-member--portal .bia-member__portal-categories strong{font-size:.97rem}.bia-member--portal .bia-member__portal-categories small{font-size:.78rem}.bia-member--portal .bia-member__portal-category-symbol{width:36px;height:36px;font-size:1.2rem}}
