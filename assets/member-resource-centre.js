@@ -40,7 +40,7 @@
     if (document.querySelector('link[data-bia-member-centre-style]')) return;
     const style = document.createElement("link");
     style.rel = "stylesheet";
-    style.href = root + "assets/member-resource-centre.css?v=member-portal-20261017";
+    style.href = root + "assets/member-resource-centre.css?v=member-portal-polish-20261017";
     style.dataset.biaMemberCentreStyle = "true";
     document.head.append(style);
   };
@@ -279,6 +279,7 @@
       }));
     } else showEmpty("[data-member-news]", "BIA news and member notices will appear here after verification and approval.");
     setupFilters(data);
+    enhancePortalSections(data);
   };
 
   // Shared member portal shell. Navigation is real; access enforcement remains with Squarespace.
@@ -289,6 +290,36 @@
     {name:"Member Benefits",href:"/member-to-member-benefits",preview:"member-benefits.html"},
     {name:"News & Communications",href:"/bia-news-communications",preview:"member-news.html"}
   ];
+  const enhancePortalSections = data => {
+    // Browse category buttons filter approved document cards, without exposing private files.
+    const choices = [...host.querySelectorAll("[data-member-category]")];
+    choices.forEach(button => button.addEventListener("click", () => {
+      const filterBar = host.querySelector("[data-member-document-filters]");
+      const select = host.querySelector("[data-member-document-type]");
+      if (filterBar?.hidden || !select || select.options.length < 2) {
+        host.querySelector("#document-library")?.scrollIntoView({behavior:"smooth",block:"start"});
+        return;
+      }
+      const term = button.dataset.memberCategory.toLowerCase();
+      const option = [...select.options].find(o => o.value.toLowerCase().includes(term));
+      select.value = option?.value || "";
+      select.dispatchEvent(new Event("change",{bubbles:true}));
+      host.querySelector("[data-member-documents]")?.scrollIntoView({behavior:"smooth",block:"start"});
+    }));
+    // Feature only an actual approved public announcement, never example content.
+    const featured = host.querySelector("[data-member-news-feature]");
+    const publicItems = approved(data.news,"news").sort((a,b)=>String(b.date||"").localeCompare(String(a.date||"")));
+    if (featured && publicItems.length) {
+      const item = publicItems[0];
+      featured.append(el("p","bia-member__eyebrow",item.category || "BIA announcement"));
+      featured.append(el("h3","",item.title || "Member update"));
+      if (item.description) featured.append(el("p","",item.description));
+      const destination = link(item.url,item.linkLabel || "Read announcement");
+      if (destination) featured.append(destination);
+      featured.hidden = false;
+    }
+  };
+
   const buildPortal = () => {
     const page = host.querySelector(".bia-member");
     const hero = page?.querySelector(".bia-member__hero");
