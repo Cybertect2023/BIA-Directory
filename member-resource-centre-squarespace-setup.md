@@ -99,3 +99,15 @@ Use one Code Block per target Squarespace page. Set the block type to HTML. The 
 - `member-resource-data.json` = current public-safe placeholder data and general business support links
 
 The hub card links already point to the four Squarespace slugs. On GitHub Pages previews, the loader automatically substitutes the matching preview destinations instead.
+
+## Completed backend implementation
+
+The hub and all four detail templates now share a publishing-aware JSON loader. The business directory supports search and category filtering. Documents and news support search/filtering once genuinely public-safe approved records exist. Workshops automatically hide past dates. The member-to-member benefits area stays a proposal and deliberately never loads offers from GitHub Pages.
+
+**Maintenance and review instructions:** [Member Resource Centre backend guide](docs/member-resource-centre-maintenance.md).
+
+**Automated checks:** `scripts/validate-member-resource-data.mjs`, `scripts/test-member-resource-data.mjs`, and `scripts/test-member-template-contracts.mjs`. Checks detect common publication and template mistakes, but do not authorize any confidential release.
+
+**Important for the live hub:** The GitHub source now uses `member-backend-20261017` as the cache tag. The Squarespace `/members-home` Code Block may still have an older script URL. Its snippet needs to be refreshed separately in Squarespace; changing GitHub files does not rewrite the Squarespace Code Block.
+
+**Not completed here:** Creating the four actual Squarespace pages, establishing their protection, auditing current accounts/access plans/payment configuration, and implementing private record storage. Those changes remain deliberately untouched.
