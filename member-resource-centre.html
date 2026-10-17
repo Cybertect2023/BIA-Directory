@@ -1,15 +1,139 @@
-[eval]:1
-process.stdout.write(require('node:fs').readFileSync(member-resource-centre.html, 'utf8'))
-                                                     ^
+<section class="bia-member" aria-labelledby="bia-member-title">
+  <header class="bia-member__hero">
+    <div class="bia-member__wrap">
+      <p class="bia-member__eyebrow">Stirling-Rawdon Business Improvement Area</p>
+      <h1 id="bia-member-title">BIA Member Resource Centre</h1>
+      <p class="bia-member__lead">Access important BIA information, explore business development opportunities, connect with fellow members, and stay informed about initiatives supporting our local business community.</p>
+      <p class="bia-member__access-note">This is a private resource for verified BIA members. Access distribution is being prepared separately.</p>
+    </div>
+  </header>
 
-ReferenceError: member is not defined
-    at [eval]:1:54
-    at runScriptInThisContext (node:internal/vm:219:10)
-    at node:internal/process/execution:451:12
-    at [eval]-wrapper:6:24
-    at runScriptInContext (node:internal/process/execution:449:60)
-    at evalFunction (node:internal/process/execution:283:30)
-    at evalTypeScript (node:internal/process/execution:295:3)
-    at node:internal/main/eval_string:71:3
+  <nav class="bia-member__nav bia-member__wrap" aria-label="Member Resource Centre sections">
+    <a class="bia-member__nav-card" href="#governance">
+      <span class="bia-member__nav-number">01</span>
+      <span class="bia-member__nav-title">BIA Governance &amp; Documents</span>
+      <span>Agendas, approved minutes, reports, policies, and organizational records.</span>
+    </a>
+    <a class="bia-member__nav-card" href="#business-resources">
+      <span class="bia-member__nav-number">02</span>
+      <span class="bia-member__nav-title">Business Resources &amp; Development</span>
+      <span>Trusted support organizations, learning opportunities, and practical tools.</span>
+    </a>
+    <a class="bia-member__nav-card" href="#member-benefits">
+      <span class="bia-member__nav-number">03</span>
+      <span class="bia-member__nav-title">Member-to-Member Benefits</span>
+      <span>Private voluntary benefits offered by participating BIA businesses.</span>
+    </a>
+    <a class="bia-member__nav-card" href="#bia-news">
+      <span class="bia-member__nav-number">04</span>
+      <span class="bia-member__nav-title">BIA News &amp; Communications</span>
+      <span>Meetings, projects, participation opportunities, and operational updates.</span>
+    </a>
+  </nav>
 
-Node.js v24.19.0
+  <section class="bia-member__highlights" aria-label="Member updates">
+    <div class="bia-member__wrap bia-member__highlight-grid">
+      <article class="bia-member__highlight">
+        <p class="bia-member__label">Latest BIA announcement</p>
+        <h2 data-member-announcement-title>Loading announcement…</h2>
+        <p data-member-announcement-copy></p>
+        <a data-member-announcement-link hidden>Read update</a>
+      </article>
+      <article class="bia-member__highlight">
+        <p class="bia-member__label">Next scheduled BIA meeting</p>
+        <h2 data-member-meeting-title>Schedule to be announced</h2>
+        <p data-member-meeting-copy>Meeting notices and approved records will be posted here.</p>
+      </article>
+      <article class="bia-member__highlight">
+        <p class="bia-member__label">Business workshops</p>
+        <h2 data-member-workshop-count>Loading opportunities…</h2>
+        <p data-member-workshop-copy>Workshop details are being verified before publication.</p>
+        <a href="#business-resources">View learning opportunities</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="governance" class="bia-member__section bia-member__section--cream">
+    <div class="bia-member__wrap">
+      <div class="bia-member__section-heading">
+        <div>
+          <p class="bia-member__eyebrow">01 · Organizational information</p>
+          <h2>BIA Governance &amp; Documents</h2>
+        </div>
+        <p>Approved records will be organized by document type and year. Confidential board material is not included in this member library.</p>
+      </div>
+      <div class="bia-member__document-grid" data-member-documents aria-live="polite">
+        <p class="bia-member__empty">The document library is being organized for member access. Approved agendas, minutes, reports, policies, and AGM information will be added here.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="business-resources" class="bia-member__section">
+    <div class="bia-member__wrap">
+      <div class="bia-member__section-heading">
+        <div>
+          <p class="bia-member__eyebrow">02 · Practical support</p>
+          <h2>Business Resources &amp; Development</h2>
+        </div>
+        <p>The BIA connects members with established providers. Training, advisory support, financing, and registrations are handled by the organizations below.</p>
+      </div>
+
+      <h3 class="bia-member__subheading">Business support directory</h3>
+      <div class="bia-member__resource-grid" data-member-resources aria-live="polite"></div>
+
+      <div class="bia-member__workshops">
+        <div class="bia-member__workshop-heading">
+          <div>
+            <p class="bia-member__eyebrow">Curated listings</p>
+            <h3>Business Workshops &amp; Learning Opportunities</h3>
+          </div>
+          <p>Free or openly accessible opportunities for small businesses. Register directly with the organizer.</p>
+        </div>
+        <div class="bia-member__workshop-list" data-member-workshops aria-live="polite">
+          <p class="bia-member__empty">Upcoming workshops are being verified. New listings will include the date, format, organizer, short description, and registration link.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="member-benefits" class="bia-member__section bia-member__section--sage">
+    <div class="bia-member__wrap">
+      <div class="bia-member__section-heading">
+        <div>
+          <p class="bia-member__eyebrow">03 · Private member program</p>
+          <h2>Member-to-Member Benefits</h2>
+        </div>
+        <p>Voluntary benefits offered privately between eligible BIA businesses. This is not public advertising and the BIA does not negotiate or guarantee transactions.</p>
+      </div>
+      <div class="bia-member__benefit-layout">
+        <article class="bia-member__benefit-guidelines">
+          <h3>How the program works</h3>
+          <ul>
+            <li>Participation is voluntary and available on consistent terms to eligible members.</li>
+            <li>Each participating business receives one standing directory listing.</li>
+            <li>Businesses set and honour their own terms, conditions, exclusions, and expiry dates.</li>
+            <li>Offers stay within this restricted resource centre and are not publicly promoted by the BIA.</li>
+          </ul>
+        </article>
+        <div class="bia-member__benefit-list" data-member-benefits aria-live="polite">
+          <p class="bia-member__empty">The private benefits directory will be added after eligibility and program guidelines are finalized.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="bia-news" class="bia-member__section">
+    <div class="bia-member__wrap">
+      <div class="bia-member__section-heading">
+        <div>
+          <p class="bia-member__eyebrow">04 · Stay informed</p>
+          <h2>BIA News &amp; Communications</h2>
+        </div>
+        <p>Updates about BIA meetings, streetscape work, collective marketing, member participation, and important operational notices.</p>
+      </div>
+      <div class="bia-member__news-list" data-member-news aria-live="polite">
+        <p class="bia-member__empty">BIA news and member notices will appear here as they are published.</p>
+      </div>
+    </div>
+  </section>
+</section>
