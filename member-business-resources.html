@@ -1,4 +1,27 @@
-<section class="bia-member bia-member--detail" aria-labelledby="bia-member-title">
-  <header class="bia-member__hero"><div class="bia-member__wrap"><a class="bia-member__back-link" href="/members-home" data-member-preview-path="member-resource-centre.html">← Member Resource Centre</a><p class="bia-member__eyebrow">Practical support</p><h1 id="bia-member-title">Business Resources &amp; Development</h1><p class="bia-member__detail-intro">The BIA connects members with established providers for training, advisory support, financing, and business development.</p></div></header>
-  <section class="bia-member__section"><div class="bia-member__wrap"><h2 class="bia-member__subheading">Business support directory</h2><div class="bia-member__resource-grid" data-member-resources aria-live="polite"></div><div class="bia-member__workshops"><div class="bia-member__workshop-heading"><div><p class="bia-member__eyebrow">Curated listings</p><h3>Business Workshops &amp; Learning Opportunities</h3></div><p>Free or openly accessible opportunities for small businesses. Registration is handled directly by the organizer.</p></div><div class="bia-member__workshop-list" data-member-workshops aria-live="polite"></div></div></div></section>
+<section class="bia-member bia-member--detail bia-member--resources" aria-labelledby="bia-member-title">
+  <header class="bia-member__hero"><div class="bia-member__wrap">
+    <a class="bia-member__back-link" href="/members-home" data-member-preview-path="member-resource-centre.html">← Member Resource Centre</a>
+    <p class="bia-member__eyebrow">Practical support</p>
+    <h1 id="bia-member-title">Business Resources &amp; Development</h1>
+    <p class="bia-member__detail-intro">Explore business support organizations, tools, financing information and verified learning opportunities without searching through unrelated community events.</p>
+  </div></header>
+  <div class="bia-member__subnav"><div class="bia-member__wrap"><span>Business support</span><a href="#support-directory">Support directory</a><a href="#learning-opportunities">Workshops &amp; learning</a></div></div>
+  <section class="bia-member__section" id="support-directory" aria-labelledby="bia-member-support-title">
+    <div class="bia-member__wrap">
+      <div class="bia-member__section-heading"><div><p class="bia-member__eyebrow">Business support directory</p><h2 id="bia-member-support-title">Find the right support</h2></div><p>Browse established service providers and public programs. Each link leads to the organization responsible for its own services and eligibility.</p></div>
+      <div class="bia-member__toolbar">
+        <label class="bia-member__field"><span>Search support organizations</span><input type="search" data-member-resource-search placeholder="Search organizations and services"></label>
+        <label class="bia-member__field"><span>Area of support</span><select data-member-resource-category><option value="">All support areas</option></select></label>
+      </div>
+      <p class="bia-member__result-count" data-member-resource-count aria-live="polite"></p>
+      <div class="bia-member__resource-grid" data-member-resources aria-live="polite"></div>
+    </div>
+  </section>
+  <section class="bia-member__section bia-member__section--cream" id="learning-opportunities" aria-labelledby="bia-member-workshop-title">
+    <div class="bia-member__wrap">
+      <div class="bia-member__section-heading"><div><p class="bia-member__eyebrow">Events for business development</p><h2 id="bia-member-workshop-title">Workshops &amp; learning opportunities</h2></div><p>These listings are separate from the public community events calendar. Registration and details are provided by each organizer.</p></div>
+      <div class="bia-member__workshop-list" data-member-workshops aria-live="polite"></div>
+      <p class="bia-member__small-note">Upcoming workshops appear only after their organizer, date, registration details, and availability have been checked.</p>
+    </div>
+  </section>
 </section>
