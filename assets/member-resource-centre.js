@@ -112,7 +112,7 @@
       countSelector:"[data-member-resource-count]",
       items:resources
     });
-    const documents = approved(data.documents, "documents");
+    const documents = approved(data.documents, "documents").sort((a,b) => String(b.date || "").localeCompare(String(a.date || "")));
     installFilter({
       cardSelector:"[data-member-documents] > .bia-member__document",
       searchSelector:"[data-member-document-search]",
@@ -121,7 +121,7 @@
       filterWrapper:"[data-member-document-filters]",
       items:documents
     });
-    const news = approved(data.news, "news");
+    const news = approved(data.news, "news").sort((a,b) => String(b.date || "").localeCompare(String(a.date || "")));
     installFilter({
       cardSelector:"[data-member-news] > .bia-member__news",
       searchSelector:"[data-member-news-search]",
