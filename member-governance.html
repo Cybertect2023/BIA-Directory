@@ -9,11 +9,19 @@
   <section class="bia-member__section bia-member__section--cream" id="document-library" aria-labelledby="bia-member-doc-title">
     <div class="bia-member__wrap">
       <div class="bia-member__section-heading"><div><p class="bia-member__eyebrow">Governance archive</p><h2 id="bia-member-doc-title">Document library</h2></div><p>Only records cleared for general member distribution belong here. Confidential board records must remain in separately controlled storage.</p></div>
+      <div class="bia-member__portal-heading bia-member__portal-heading--inside"><span>BROWSE DOCUMENTS</span><p>Search approved documents or choose a category.</p></div>
       <div class="bia-member__toolbar" data-member-document-filters hidden>
         <label class="bia-member__field"><span>Search documents</span><input type="search" data-member-document-search placeholder="Search by title or year"></label>
         <label class="bia-member__field"><span>Document type</span><select data-member-document-type><option value="">All types</option></select></label>
         <label class="bia-member__field"><span>Year</span><select data-member-document-year><option value="">All years</option></select></label>
       </div>
+      <div class="bia-member__portal-categories" aria-label="Document categories">
+        <button type="button" data-member-category="Minutes"><span class="bia-member__portal-category-symbol" aria-hidden="true">▤</span><strong>Approved Minutes</strong><small>Meeting decisions and approved records</small><em>Browse minutes →</em></button>
+        <button type="button" data-member-category="Agenda"><span class="bia-member__portal-category-symbol" aria-hidden="true">▣</span><strong>Meeting Agendas</strong><small>Past and upcoming meeting agendas</small><em>Browse agendas →</em></button>
+        <button type="button" data-member-category="Policy"><span class="bia-member__portal-category-symbol" aria-hidden="true">◇</span><strong>Governance Policies</strong><small>Approved bylaws and policies</small><em>Browse policies →</em></button>
+        <button type="button" data-member-category="Report"><span class="bia-member__portal-category-symbol" aria-hidden="true">▥</span><strong>Annual Reports</strong><small>Reports and annual information</small><em>Browse reports →</em></button>
+      </div>
+      <div class="bia-member__portal-heading bia-member__portal-heading--inside"><span>RECENTLY ADDED DOCUMENTS</span><p>Only verified and approved records will appear here.</p></div>
       <p class="bia-member__result-count" data-member-document-count aria-live="polite"></p>
       <div class="bia-member__document-grid" data-member-documents aria-live="polite"></div>
     </div>
