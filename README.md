@@ -58,3 +58,22 @@ The GitHub files do not grant visitors access to GitHub credentials or write per
 ## Interactive visitor map
 
 The standalone GitHub Pages preview is `/plan-your-visit/`. Activation instructions, SEO options, maintenance and component reuse are in [explore/VISITOR-MAP.md](explore/VISITOR-MAP.md). Review [geographic verification](explore/MAP-VERIFICATION.md) and [test evidence](explore/MAP-TESTING.md) before publishing the Squarespace destination. The new loader route does not add homepage sections or links from existing visitor pages.
+
+
+## Member Resource Centre
+
+The protected Squarespace Member Site uses one short Code Block. The full layout, styling, and editable content are maintained here:
+
+- `pages/member-resource-centre.html`: the responsive Resource Centre layout.
+- `assets/member-resource-centre.css`: scoped Member Resource Centre styling.
+- `assets/member-resource-centre.js`: loader and safe rendering for structured data.
+- `member-resource-data.json`: announcements, approved document links, support-provider listings, verified workshops, voluntary benefits, and BIA news.
+
+Add this to the protected **Members Home** Code Block:
+
+```html
+<div id="bia-member-resource-centre">Loading the Member Resource Centre…</div>
+<script defer src="https://cybertect2023.github.io/BIA-Directory/assets/member-resource-centre.js"></script>
+```
+
+The loader adds its own scoped stylesheet. Do not put confidential board records, individual business promotions, membership-roster data, payment information, or access codes in `member-resource-data.json`. Add only approved member-facing information and direct document links that are appropriate for all verified members.
