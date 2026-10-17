@@ -247,18 +247,18 @@
       "name": "Rawdon Creek Soap Co.",
       "category": "Shops & Retail",
       "description": "Family-owned, mother-daughter business creating handcrafted soaps, candles, whipped tallow balms, and more.",
-      "address": "26 Mill Street, Stirling, ON",
+      "address": "Unit 1, 127 North Street, Stirling, ON K0K 3E0",
       "phone": "613-395-2620",
       "website": "https://www.rawdoncreeksoap.com",
       "sourceUrl": "https://www.visitstirlingrawdon.ca/business-directory/blog-post-title-one-sxcf9-VE82Y-maj5p",
       "about": "Located in the heart of Stirling, Ontario, Rawdon Creek Soap Co. is a family-owned business. What began in 2017 has continued to grow since we proudly took ownership in 2023. Today, our mother-daughter team carries on the tradition of creating high-quality, handcrafted products including soaps, candles, whipped tallow balms, and more.",
       "hours": {
         "monday": "Closed",
-        "tuesday": "Closed",
-        "wednesday": "10am - 3pm",
-        "thursday": "10am - 3pm",
+        "tuesday": "10am - 5pm",
+        "wednesday": "10am - 5pm",
+        "thursday": "10am - 5pm",
         "friday": "10am - 5pm",
-        "saturday": "",
+        "saturday": "10am - 3pm",
         "sunday": "Closed"
       },
       "services": [
