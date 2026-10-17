@@ -42,3 +42,22 @@ test("unknown contact fields are rejected from public feed", () => {
   const errors=validateMemberData(withChange({resources:[item,...base.resources.slice(1)]}));
   assert.ok(errors.some(message => message.includes("memberEmail")));
 });
+
+test("published seminar cards have verified artwork, dates and an event page", () => {
+  assert.ok(base.workshops.length > 0, "Expected verified seminars to be present");
+  for (const workshop of base.workshops) {
+    assert.equal(workshop.status,"published");
+    assert.equal(workshop.audience,"public");
+    assert.ok(workshop.imageUrl?.startsWith("https://"));
+    assert.ok(workshop.imageCredit?.length > 0);
+    assert.ok(workshop.topic?.length > 0);
+    assert.ok(workshop.sourceUrl?.startsWith("https://"));
+    assert.ok(Number.isFinite(Date.parse(workshop.startsAt)));
+  }
+});
+test("invalid or unattributed artwork is rejected", () => {
+  const first = {...base.workshops[0], imageUrl:"http://example.org/unverified.png", imageCredit:""};
+  const errors = validateMemberData(withChange({workshops:[first]}));
+  assert.ok(errors.some(message => message.includes(".imageUrl")));
+  assert.ok(errors.some(message => message.includes("imageCredit")));
+});
