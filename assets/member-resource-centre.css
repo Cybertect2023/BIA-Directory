@@ -430,3 +430,122 @@
   .bia-member__toolbar{padding:1rem;gap:1rem}
   .bia-member__field{flex-basis:100%}
 }
+
+/* Business seminar gallery: organizer-supplied event artwork, October 2026 */
+.bia-member--resources .bia-member__workshop-list{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:22px;align-items:stretch;
+}
+.bia-member--resources .bia-member__seminar{
+  display:flex;flex-direction:column;min-width:0;
+  overflow:hidden;border:1px solid #d6e2dc;border-radius:10px;
+  background:#fff;box-shadow:0 9px 25px rgba(20,57,65,.085);
+  transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;
+}
+.bia-member--resources .bia-member__seminar:hover{
+  transform:translateY(-4px);border-color:#9cc4bd;
+  box-shadow:0 17px 38px rgba(18,57,67,.15);
+}
+.bia-member--resources .bia-member__seminar-cover{
+  position:relative;flex:0 0 auto;
+  overflow:hidden;background:linear-gradient(135deg,#e5efec,#d7e6e2);
+  border-bottom:1px solid #dce6e2;
+}
+.bia-member--resources .bia-member__seminar-image-link{display:block;text-decoration:none}
+.bia-member--resources .bia-member__seminar-image-link:focus-visible{
+  outline:3px solid #b38b43;outline-offset:-4px
+}
+.bia-member--resources .bia-member__seminar-visual{
+  display:grid;place-items:center;overflow:hidden;
+  width:100%;height:225px;background:#e6efec;
+}
+.bia-member--resources .bia-member__seminar-image{
+  display:block;width:100%;height:100%;
+  object-fit:contain;object-position:center;
+  background:linear-gradient(135deg,#e7f0ed,#d9e7e2);
+}
+.bia-member--resources .bia-member__seminar-fallback{
+  display:grid;place-items:center;width:100%;height:100%;
+  padding:1.5rem;text-align:center;
+  background:linear-gradient(135deg,#184754,#377e7c);
+  color:#fff;font-size:1.42rem;line-height:1.25;font-weight:750;
+}
+.bia-member--resources .bia-member__seminar-body{
+  display:flex;flex:1;flex-direction:column;
+  padding:clamp(1.25rem,2vw,1.7rem);
+}
+.bia-member--resources .bia-member__seminar-labels{
+  display:flex;gap:.45rem;align-items:center;flex-wrap:wrap;
+  margin-bottom:1rem;
+}
+.bia-member--resources .bia-member__seminar-topic,
+.bia-member--resources .bia-member__seminar-format{
+  display:inline-block;padding:.3rem .65rem;border-radius:4px;
+  font:700 .67rem/1.35 Arial,sans-serif;
+  text-transform:uppercase;letter-spacing:.07em;
+}
+.bia-member--resources .bia-member__seminar-topic{
+  background:#e0eeea;color:#245b61;
+}
+.bia-member--resources .bia-member__seminar-format{
+  background:#f6efe1;color:#745628;
+}
+.bia-member--resources .bia-member__seminar-date{
+  display:block;margin-bottom:.7rem;
+  color:#287479;font-size:.88rem;font-weight:750;line-height:1.45;
+}
+.bia-member--resources .bia-member__seminar-title{
+  margin:0 0 .65rem;color:#173f4a;
+  font-size:clamp(1.27rem,1.7vw,1.53rem);
+  line-height:1.22;letter-spacing:-.025em;
+}
+.bia-member--resources .bia-member__seminar-organizer{
+  margin-bottom:.9rem!important;color:#43636a!important;
+  font-size:.81rem;font-weight:700;line-height:1.5;
+}
+.bia-member--resources .bia-member__seminar-description{
+  margin:0 0 1.55rem!important;color:#60777b!important;
+  font-size:.92rem;line-height:1.67;
+}
+.bia-member--resources .bia-member__seminar-action{
+  display:flex;justify-content:space-between;align-items:center;gap:1rem;
+  margin-top:auto;padding:1rem 0 0;
+  border-top:1px solid #dce7e3;
+  text-decoration:none;color:#1c5964;
+  font-size:.91rem;font-weight:750;line-height:1.4;
+}
+.bia-member--resources .bia-member__seminar-action span{
+  display:grid;place-items:center;flex:0 0 30px;width:30px;height:30px;
+  background:#e5f0ed;border-radius:50%;
+  color:#247377;font-size:1.16rem;
+}
+.bia-member--resources .bia-member__workshop-list>.bia-member__empty{
+  grid-column:1/-1;
+}
+.bia-member--resources .bia-member__section--seminars{
+  background:#f0f5f2;
+}
+.bia-member--resources .bia-member__seminar-eyebrow{
+  margin-bottom:.75rem!important;color:#247578!important;
+  font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;font-weight:750;
+}
+.bia-member--resources .bia-member__seminar-notice{
+  display:flex;align-items:center;gap:.75rem;flex-wrap:wrap;
+  margin:0 0 2rem!important;padding:.75rem 1.15rem;
+  border-left:3px solid #bda06c;background:#fff;
+  color:#5a7276!important;font-size:.89rem;line-height:1.55;
+}
+.bia-member--resources .bia-member__seminar-notice strong{color:#214c57}
+@media(max-width:1030px){
+  .bia-member--resources .bia-member__workshop-list{
+    grid-template-columns:repeat(2,minmax(0,1fr))
+  }
+}
+@media(max-width:620px){
+  .bia-member--resources .bia-member__workshop-list{grid-template-columns:1fr;gap:17px}
+  .bia-member--resources .bia-member__seminar-visual{height:220px}
+}
+@media(prefers-reduced-motion:reduce){
+  .bia-member--resources .bia-member__seminar{transition:none}
+  .bia-member--resources .bia-member__seminar:hover{transform:none}
+}
