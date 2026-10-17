@@ -24,7 +24,8 @@ The corresponding GitHub preview wrappers are in `previews/`. Styling is control
 ## Current data status
 
 - The existing seven public business support organization links remain in the `resources` array. These are the pre-existing curated links; their current availability should be checked periodically.
-- `documents`, `workshops`, `benefits`, and `news` are empty placeholders.
+- `workshops` now contains six organizer-sourced upcoming events (verified October 17, 2026), each with real event artwork, a dated listing, and a link to the corresponding organizer event page. Expired dates are automatically hidden by the frontend.
+- `documents`, `benefits`, and `news` remain empty placeholders.
 - `announcement` and `meeting` contain non-specific development placeholders, not published dates or event claims.
 - `programStatus.memberToMemberBenefits` is `pending-approval`.
 - No private data or actual member-only benefits are maintained in the public repository.
@@ -63,7 +64,10 @@ Only list a workshop once its **event-specific** details have been verified dire
   "startsAt": "2027-02-10T13:00:00-05:00",
   "dateLabel": "February 10, 2027",
   "url": "https://organizer.example/events/confirmed-workshop",
-  "linkLabel": "Registration and details",
+  "linkLabel": "Event details and registration",
+  "topic": "Marketing & e-commerce",
+  "imageUrl": "https://organizer.example/assets/event-poster.jpg",
+  "imageCredit": "Artwork displayed by the event organizer",
   "status": "published",
   "audience": "public",
   "verifiedAt": "2027-01-20",
@@ -71,9 +75,9 @@ Only list a workshop once its **event-specific** details have been verified dire
 }
 ```
 
-This is a **field reference, not an actual event**. Do not paste these example values as a listing. The loader shows only upcoming events with a valid start datetime and a working-looking HTTP(S) registration URL. Verification of link functionality and accuracy is a manual step.
+This is a **field reference, not an actual event**. The `imageUrl` should point to the event-specific promotional artwork directly displayed by its organizer (not a random stock image). Display it from the organizer source with appropriate attribution and confirm permission to republish or hotlink before full public launch. Do not paste these example values as a listing. The loader shows only upcoming events with a valid start datetime and a plausible HTTP(S) event page URL. The card image uses a responsive poster frame and falls back to a designed category panel if the host image fails to load. Verification of link functionality and accuracy is a manual step.
 
-Workshops are **not** inserted in the public community events calendar.
+Workshops are **not** inserted in the public community events calendar. The business page shows seminars ahead of the general resource directory, with the date, format, organizer and related artwork visible.
 
 ### Governance documents
 
