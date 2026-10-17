@@ -7,6 +7,7 @@
   host.dataset.loaded = "true";
 
   const root = "https://cybertect2023.github.io/BIA-Directory/";
+  const template = host.dataset.biaMemberTemplate || "member-resource-centre.html";
   const safeUrl = value => {
     try {
       const url = new URL(value, window.location.origin);
@@ -138,7 +139,7 @@
   };
 
   addStyles();
-  fetch(root + "member-resource-centre.html", {cache: "no-cache"})
+  fetch(root + template, {cache: "no-cache"})
     .then(response => {
       if (!response.ok) throw new Error("Member centre template HTTP " + response.status);
       return response.text();
@@ -148,6 +149,11 @@
       const layout = parsed.querySelector(".bia-member");
       if (!layout) throw new Error("Member centre wrapper is missing");
       host.replaceChildren(document.importNode(layout, true));
+      if (window.location.hostname.endsWith("github.io")) {
+        host.querySelectorAll("[data-member-preview-path]").forEach(anchor => {
+          anchor.href = root + "previews/" + anchor.dataset.memberPreviewPath;
+        });
+      }
       return fetch(root + "member-resource-data.json", {cache: "no-cache"});
     })
     .then(response => {
