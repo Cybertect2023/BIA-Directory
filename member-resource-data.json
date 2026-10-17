@@ -1,15 +1,65 @@
-[eval]:1
-process.stdout.write(require('node:fs').readFileSync(member-resource-data.json, 'utf8'))
-                                                     ^
-
-ReferenceError: member is not defined
-    at [eval]:1:54
-    at runScriptInThisContext (node:internal/vm:219:10)
-    at node:internal/process/execution:451:12
-    at [eval]-wrapper:6:24
-    at runScriptInContext (node:internal/process/execution:449:60)
-    at evalFunction (node:internal/process/execution:283:30)
-    at evalTypeScript (node:internal/process/execution:295:3)
-    at node:internal/main/eval_string:71:3
-
-Node.js v24.19.0
+{
+  "announcement": {
+    "title": "Member Resource Centre in development",
+    "copy": "The Stirling-Rawdon BIA is preparing a clearer private space for governance information, business resources, member communications, and voluntary member-to-member benefits."
+  },
+  "meeting": {
+    "title": "Schedule to be announced",
+    "copy": "The next BIA meeting notice and approved meeting records will be posted here."
+  },
+  "resources": [
+    {
+      "category": "Regional business support",
+      "name": "Trenval Business Development Corporation",
+      "description": "Business information, counselling, financing, and support for new and expanding businesses in the Quinte area.",
+      "url": "https://trenval.ca/",
+      "linkLabel": "Visit Trenval"
+    },
+    {
+      "category": "Regional business support",
+      "name": "Small Business Centre",
+      "description": "Quinte-area small-business consultations, tools, programs, and workshops for entrepreneurs and growing businesses.",
+      "url": "https://www.smallbusinessctr.com/",
+      "linkLabel": "Visit the Small Business Centre"
+    },
+    {
+      "category": "Regional economic development",
+      "name": "Bay of Quinte Business Centre",
+      "description": "A regional hub that connects businesses with development partners and local economic-development support.",
+      "url": "https://bqbc.ca/",
+      "linkLabel": "Visit Bay of Quinte Business Centre"
+    },
+    {
+      "category": "Digital development",
+      "name": "Digital Main Street",
+      "description": "Digital tools, learning resources, and programs intended to help small businesses adopt and use technology.",
+      "url": "https://digitalmainstreet.ca/",
+      "linkLabel": "Explore Digital Main Street"
+    },
+    {
+      "category": "Financing & advisory support",
+      "name": "Business Development Bank of Canada",
+      "description": "Financing, advisory services, articles, tools, and templates for Canadian entrepreneurs and small businesses.",
+      "url": "https://www.bdc.ca/en",
+      "linkLabel": "Visit BDC"
+    },
+    {
+      "category": "Startup financing & mentorship",
+      "name": "Futurpreneur Canada",
+      "description": "Financing, mentorship, and resources for eligible young entrepreneurs across Canada.",
+      "url": "https://futurpreneur.ca/en/",
+      "linkLabel": "Visit Futurpreneur"
+    },
+    {
+      "category": "Ontario programs",
+      "name": "Government of Ontario — Business & Economy",
+      "description": "Ontario information about registering a business, funding and tax credits, and getting help to start or grow a business.",
+      "url": "https://www.ontario.ca/page/business-and-economy",
+      "linkLabel": "Explore Ontario business resources"
+    }
+  ],
+  "documents": [],
+  "workshops": [],
+  "benefits": [],
+  "news": []
+}
