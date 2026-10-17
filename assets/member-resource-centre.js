@@ -104,6 +104,18 @@
     display();
   };
   const setupFilters = data => {
+    const seminars = upcoming(data.workshops);
+    installFilter({
+      cardSelector: "[data-member-workshops] > .bia-member__seminar",
+      searchSelector: "[data-member-seminar-search]",
+      selectPairs: [
+        {selector:"[data-member-seminar-topic]", key:"topic"},
+        {selector:"[data-member-seminar-format]", key:"format"}
+      ],
+      countSelector: "[data-member-seminar-count]",
+      filterWrapper: "[data-member-seminar-filters]",
+      items:seminars
+    });
     const resources = approved(data.resources, "resources");
     installFilter({
       cardSelector: "[data-member-resources] > .bia-member__resource",
