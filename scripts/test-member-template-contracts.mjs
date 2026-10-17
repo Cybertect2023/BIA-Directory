@@ -43,6 +43,6 @@ test("preview wrappers load the shared JS asset",() => {
    "member-benefits.html","member-news.html"].forEach(filename => {
     const html=read("previews/"+filename);
     assert.match(html,/member-resource-centre.js/);
-    assert.match(html,/member-backend-20261017/);
+    assert.match(html,/member-seminars-20261017/);
   });
 });
