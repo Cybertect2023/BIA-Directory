@@ -310,7 +310,7 @@
       links.append(a);
     });
     const mark = el("span","bia-member__portal-members");
-    mark.append(el("span","bia-member__portal-lock","◆"),el("span","", "Members Only"));
+    mark.append(el("span","bia-member__portal-lock","🔒"),el("span","", "Members Only"));
     shell.append(brand,links,mark);top.append(shell);page.prepend(top);
     const heroWrap = hero.querySelector(".bia-member__wrap");
     if (!heroWrap) return;
