@@ -61,5 +61,9 @@
   "documents": [],
   "workshops": [],
   "benefits": [],
-  "news": []
+  "news": [],
+  "schemaVersion": 1,
+  "programStatus": {
+    "memberToMemberBenefits": "pending-approval"
+  }
 }
