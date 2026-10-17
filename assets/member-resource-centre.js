@@ -40,7 +40,7 @@
     if (document.querySelector('link[data-bia-member-centre-style]')) return;
     const style = document.createElement("link");
     style.rel = "stylesheet";
-    style.href = root + "assets/member-resource-centre.css?v=member-seminars-20261017";
+    style.href = root + "assets/member-resource-centre.css?v=member-portal-20261017";
     style.dataset.biaMemberCentreStyle = "true";
     document.head.append(style);
   };
@@ -281,6 +281,67 @@
     setupFilters(data);
   };
 
+  // Shared member portal shell. Navigation is real; access enforcement remains with Squarespace.
+  const portalPages = [
+    {name:"Home",href:"/members-home",preview:"member-resource-centre.html"},
+    {name:"Documents",href:"/bia-governance-documents",preview:"member-governance.html"},
+    {name:"Resources",href:"/business-resources-development",preview:"member-business-resources.html"},
+    {name:"Member Benefits",href:"/member-to-member-benefits",preview:"member-benefits.html"},
+    {name:"News & Communications",href:"/bia-news-communications",preview:"member-news.html"}
+  ];
+  const buildPortal = () => {
+    const page = host.querySelector(".bia-member");
+    const hero = page?.querySelector(".bia-member__hero");
+    if (!page || !hero) return;
+    page.classList.add("bia-member--portal");
+    const top = el("nav","bia-member__portal-top");
+    top.setAttribute("aria-label","Member resource centre navigation");
+    const shell = el("div","bia-member__wrap bia-member__portal-top-inner");
+    const brand = el("a","bia-member__portal-brand");
+    brand.href = "/members-home";
+    brand.dataset.memberPreviewPath = "member-resource-centre.html";
+    brand.append(el("strong","", "STIRLING-RAWDON"),el("small","", "BUSINESS IMPROVEMENT AREA"));
+    const links = el("div","bia-member__portal-links");
+    portalPages.forEach(item => {
+      const a = el("a", item.preview === template ? "is-active" : "", item.name);
+      a.href = item.href;
+      a.dataset.memberPreviewPath = item.preview;
+      if (item.preview === template) a.setAttribute("aria-current","page");
+      links.append(a);
+    });
+    const mark = el("span","bia-member__portal-members");
+    mark.append(el("span","bia-member__portal-lock","◆"),el("span","", "Members Only"));
+    shell.append(brand,links,mark);top.append(shell);page.prepend(top);
+    const heroWrap = hero.querySelector(".bia-member__wrap");
+    if (!heroWrap) return;
+    heroWrap.classList.add("bia-member__portal-hero-layout");
+    const heroText = el("div","bia-member__portal-hero-copy");
+    const heroNodes = [...heroWrap.children];
+    // Preserve existing page heading and copy. Move old back-link to top of content if present.
+    heroNodes.forEach(child => {
+      if (!child.classList.contains("bia-member__access-note")) heroText.append(child);
+    });
+    const badge = el("p","bia-member__portal-access","For verified Stirling-Rawdon BIA members only.");
+    const heroNote = el("aside","bia-member__portal-welcome");
+    heroNote.append(
+      el("span","bia-member__portal-overline","WELCOME TO YOUR"),
+      el("strong","",template === "member-governance.html" ? "MEMBER DOCUMENT LIBRARY" : "MEMBER RESOURCE CENTRE"),
+      el("p","",({
+        "member-resource-centre.html":"Supporting a stronger local business community through shared resources, connections and opportunities.",
+        "member-governance.html":"Find approved records and governance information in one organized space.",
+        "member-business-resources.html":"Explore seminars, trusted support organizations and tools for business development.",
+        "member-benefits.html":"A dedicated space for the proposed private exchange of voluntary member offers.",
+        "member-news.html":"Find BIA project updates, meeting information and member notices in one place."
+      })[template])
+    );
+    const oldNote = heroWrap.querySelector(".bia-member__access-note");
+    oldNote?.remove();
+    heroWrap.replaceChildren(heroText,heroNote);
+    heroText.append(badge);
+    // Rebuild headings as functional section labels instead of adding fake content.
+    page.querySelectorAll(".bia-member__section-heading").forEach(heading => heading.classList.add("bia-member__portal-section-head"));
+  };
+
   addStyles();
   fetch(root + template, {cache: "no-cache"})
     .then(response => {
@@ -292,6 +353,7 @@
       const layout = parsed.querySelector(".bia-member");
       if (!layout) throw new Error("Member centre wrapper is missing");
       host.replaceChildren(document.importNode(layout, true));
+      buildPortal();
       if (window.location.hostname.endsWith("github.io")) {
         host.querySelectorAll("[data-member-preview-path]").forEach(anchor => {
           anchor.href = root + "previews/" + anchor.dataset.memberPreviewPath;
