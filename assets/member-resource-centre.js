@@ -138,7 +138,7 @@
   };
 
   addStyles();
-  fetch(root + "pages/member-resource-centre.html", {cache: "no-cache"})
+  fetch(root + "member-resource-centre.html", {cache: "no-cache"})
     .then(response => {
       if (!response.ok) throw new Error("Member centre template HTTP " + response.status);
       return response.text();
