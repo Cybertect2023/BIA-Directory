@@ -39,7 +39,7 @@
     if (document.querySelector('link[data-bia-member-centre-style]')) return;
     const style = document.createElement("link");
     style.rel = "stylesheet";
-    style.href = root + "assets/member-resource-centre.css?v=streetscape";
+    style.href = root + "assets/member-resource-centre.css?v=member-design-20261017";
     style.dataset.biaMemberCentreStyle = "true";
     document.head.append(style);
   };
