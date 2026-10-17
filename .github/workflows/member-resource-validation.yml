@@ -1,32 +1,44 @@
-name: Member Resource Centre content checks
+name: Member Resource Centre checks
 
 on:
   push:
     paths:
       - 'member-resource-data.json'
+      - 'member-*.html'
+      - 'assets/member-resource-centre.*'
+      - 'previews/member-*.html'
       - 'scripts/validate-member-resource-data.mjs'
       - 'scripts/test-member-resource-data.mjs'
+      - 'scripts/test-member-template-contracts.mjs'
       - '.github/workflows/member-resource-validation.yml'
   pull_request:
     paths:
       - 'member-resource-data.json'
+      - 'member-*.html'
+      - 'assets/member-resource-centre.*'
+      - 'previews/member-*.html'
       - 'scripts/validate-member-resource-data.mjs'
       - 'scripts/test-member-resource-data.mjs'
+      - 'scripts/test-member-template-contracts.mjs'
       - '.github/workflows/member-resource-validation.yml'
 
 permissions:
   contents: read
 
 jobs:
-  validate-content:
-    name: Validate member content
+  validate-member-centre:
+    name: Member resource content and template checks
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Check member data
+      - name: JavaScript syntax
+        run: node --check assets/member-resource-centre.js
+      - name: Check public member data
         run: node scripts/validate-member-resource-data.mjs
-      - name: Test publishing rules
+      - name: Test data publishing rules
         run: node --test scripts/test-member-resource-data.mjs
+      - name: Test page template contracts
+        run: node --test scripts/test-member-template-contracts.mjs
