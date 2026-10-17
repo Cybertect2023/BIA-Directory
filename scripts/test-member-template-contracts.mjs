@@ -5,7 +5,7 @@ import { readFileSync } from "node:fs";
 const read = name => readFileSync(name,"utf8");
 const templates = {
   "member-governance.html":["data-member-documents","data-member-document-filters","data-member-document-type","data-member-document-year"],
-  "member-business-resources.html":["data-member-resources","data-member-resource-search","data-member-resource-category","data-member-workshops"],
+  "member-business-resources.html":["data-member-resources","data-member-resource-search","data-member-resource-category","data-member-workshops","data-member-seminar-filters","data-member-seminar-search","data-member-seminar-topic","data-member-seminar-format"],
   "member-benefits.html":["data-member-benefits","awaiting governance approval","proposed"],
   "member-news.html":["data-member-news","data-member-news-filters","data-member-news-category"]
 };
