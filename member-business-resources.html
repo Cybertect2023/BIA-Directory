@@ -10,6 +10,12 @@
     <div class="bia-member__wrap">
       <div class="bia-member__section-heading"><div><p class="bia-member__eyebrow">Learn, connect &amp; grow</p><h2 id="bia-member-workshop-title">Upcoming business seminars</h2></div><p>Find upcoming business workshops and webinars from Ontario support organizations, with event artwork, confirmed dates, and a direct route to registration details.</p></div>
       <p class="bia-member__seminar-notice"><strong>For Stirling-Rawdon businesses:</strong> Online sessions can be attended from anywhere. In-person locations are indicated on each card. Dates and available places are managed by organizers.</p>
+      <div class="bia-member__toolbar bia-member__seminar-toolbar" data-member-seminar-filters hidden>
+        <label class="bia-member__field"><span>Search seminars</span><input type="search" data-member-seminar-search placeholder="Search titles, organizers, and topics"></label>
+        <label class="bia-member__field"><span>Topic</span><select data-member-seminar-topic><option value="">All topics</option></select></label>
+        <label class="bia-member__field"><span>Delivery format</span><select data-member-seminar-format><option value="">All formats</option></select></label>
+      </div>
+      <p class="bia-member__result-count" data-member-seminar-count aria-live="polite"></p>
       <div class="bia-member__workshop-list" data-member-workshops aria-live="polite"></div>
       <p class="bia-member__small-note">Seminar dates and details were checked against organizer listings. Confirm availability, fees, and location directly with the organizer before registering.</p>
     </div>
