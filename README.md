@@ -62,18 +62,35 @@ The standalone GitHub Pages preview is `/plan-your-visit/`. Activation instructi
 
 ## Member Resource Centre
 
-The protected Squarespace Member Site uses one short Code Block. The full layout, styling, and editable content are maintained here:
+The protected Squarespace Member Site uses a short Code Block on the hub and each of its four section pages. The layout, styling, and editable content are maintained here:
 
-- `pages/member-resource-centre.html`: the responsive Resource Centre layout.
+- `member-resource-centre.html`: the Member Resource Centre hub.
+- `member-governance.html`, `member-business-resources.html`, `member-benefits.html`, and `member-news.html`: the section templates.
 - `assets/member-resource-centre.css`: scoped Member Resource Centre styling.
 - `assets/member-resource-centre.js`: loader and safe rendering for structured data.
 - `member-resource-data.json`: announcements, approved document links, support-provider listings, verified workshops, voluntary benefits, and BIA news.
 
-Add this to the protected **Members Home** Code Block:
+### Members Home
 
 ```html
 <div id="bia-member-resource-centre">Loading the Member Resource Centre…</div>
 <script defer src="https://cybertect2023.github.io/BIA-Directory/assets/member-resource-centre.js"></script>
 ```
+
+### Section pages
+
+Create each page as restricted member content in Squarespace, then use the matching template name:
+
+```html
+<div id="bia-member-resource-centre" data-bia-member-template="member-governance.html">Loading…</div>
+<script defer src="https://cybertect2023.github.io/BIA-Directory/assets/member-resource-centre.js"></script>
+```
+
+Use `member-business-resources.html`, `member-benefits.html`, or `member-news.html` for the other three pages. The hub links expect these Squarespace paths:
+
+- `/bia-governance-documents`
+- `/business-resources-development`
+- `/member-to-member-benefits`
+- `/bia-news-communications`
 
 The loader adds its own scoped stylesheet. Do not put confidential board records, individual business promotions, membership-roster data, payment information, or access codes in `member-resource-data.json`. Add only approved member-facing information and direct document links that are appropriate for all verified members.
