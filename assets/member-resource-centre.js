@@ -7,7 +7,9 @@
   host.dataset.loaded = "true";
 
   const root = "https://cybertect2023.github.io/BIA-Directory/";
-  const template = host.dataset.biaMemberTemplate || "member-resource-centre.html";
+  const allowedTemplates = new Set(["member-resource-centre.html","member-governance.html","member-business-resources.html","member-benefits.html","member-news.html"]);
+  const requestedTemplate = host.dataset.biaMemberTemplate || "member-resource-centre.html";
+  const template = allowedTemplates.has(requestedTemplate) ? requestedTemplate : "member-resource-centre.html";
   const safeUrl = value => {
     if (typeof value !== "string" || !value.trim()) return null;
     try {
@@ -40,7 +42,7 @@
     if (document.querySelector('link[data-bia-member-centre-style]')) return;
     const style = document.createElement("link");
     style.rel = "stylesheet";
-    style.href = root + "assets/member-resource-centre.css?v=member-portal-polish-20261017";
+    style.href = root + "assets/member-resource-centre.css?v=member-functional-20261018";
     style.dataset.biaMemberCentreStyle = "true";
     document.head.append(style);
   };
@@ -50,7 +52,7 @@
     if (!item || typeof item !== "object") return false;
     if (type === "resources") return !item.status || item.status === "published";
     return item.status === "published" && item.audience === "public" &&
-      (type !== "documents" || item.approvedForMemberDistribution === true);
+      (type !== "documents" || (item.approvedForMemberDistribution === true && item.publicReleaseApproved === true));
   });
   const upcoming = raw => approved(raw, "workshops").filter(item => {
     const date = Date.parse(item.startsAt || "");
@@ -151,7 +153,7 @@
     const announcementLink = host.querySelector("[data-member-announcement-link]");
     if (title) title.textContent = announcement.title || "Member Resource Centre in development";
     if (copy) copy.textContent = announcement.copy || "This private member resource is being prepared.";
-    const announcementUrl = safeUrl(announcement.url);
+    const announcementUrl = announcement.status === "published" && announcement.audience === "public" ? safeUrl(announcement.url) : null;
     if (announcementLink && announcementUrl && announcement.linkLabel) {
       announcementLink.href = announcementUrl.href;
       announcementLink.textContent = announcement.linkLabel;
@@ -297,6 +299,8 @@
       const filterBar = host.querySelector("[data-member-document-filters]");
       const select = host.querySelector("[data-member-document-type]");
       if (filterBar?.hidden || !select || select.options.length < 2) {
+        const notice = host.querySelector("[data-member-documents] .bia-member__empty");
+        if (notice) notice.textContent = "The selected document category is awaiting approved records. Google Drive permissions will independently control access once linked.";
         host.querySelector("#document-library")?.scrollIntoView({behavior:"smooth",block:"start"});
         return;
       }
@@ -341,7 +345,7 @@
       links.append(a);
     });
     const mark = el("span","bia-member__portal-members");
-    mark.append(el("span","bia-member__portal-lock","🔒"),el("span","", "Members Only"));
+    mark.append(el("span","bia-member__portal-lock","🔒"),el("span","", "Member Resource Centre"));
     shell.append(brand,links,mark);top.append(shell);page.prepend(top);
     const heroWrap = hero.querySelector(".bia-member__wrap");
     if (!heroWrap) return;
@@ -352,7 +356,7 @@
     heroNodes.forEach(child => {
       if (!child.classList.contains("bia-member__access-note")) heroText.append(child);
     });
-    const badge = el("p","bia-member__portal-access","For verified Stirling-Rawdon BIA members only.");
+    const badge = el("p","bia-member__portal-access","For Stirling-Rawdon BIA members. Access is managed by the website.");
     const heroNote = el("aside","bia-member__portal-welcome");
     heroNote.append(
       el("span","bia-member__portal-overline","WELCOME TO YOUR"),
@@ -399,6 +403,12 @@
     .then(hydrate)
     .catch(error => {
       console.error("Unable to load the Member Resource Centre:", error);
-      host.replaceChildren(el("p", "bia-member__error", "The Member Resource Centre is temporarily unavailable. Please try again shortly."));
+      const message = el("div","bia-member__error");
+      message.append(el("p","","The Member Resource Centre could not load. Please check the connection and try again."));
+      const retry = el("button","","Reload member resources");
+      retry.type = "button";
+      retry.addEventListener("click", () => window.location.reload());
+      message.append(retry);
+      host.replaceChildren(message);
     });
 })();
