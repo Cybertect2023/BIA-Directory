@@ -663,3 +663,18 @@
 .bia-member--portal .bia-member__empty{border-left:4px solid #b79054}
 @media(max-width:1000px){.bia-member--portal .bia-member__portal-categories{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){.bia-member--portal .bia-member__portal-heading{align-items:flex-start;flex-direction:column;gap:.5rem}.bia-member--portal .bia-member__portal-heading>p{margin:0!important;text-align:left}.bia-member--portal .bia-member__portal-categories{grid-template-columns:1fr 1fr;gap:9px}.bia-member--portal .bia-member__portal-categories button{padding:1rem}.bia-member--portal .bia-member__portal-categories strong{font-size:.97rem}.bia-member--portal .bia-member__portal-categories small{font-size:.78rem}.bia-member--portal .bia-member__portal-category-symbol{width:36px;height:36px;font-size:1.2rem}}
+
+/* Member navigation clarity; inherit Squarespace global font families. */
+#bia-member-resource-centre .bia-member,
+#bia-member-resource-centre .bia-member__portal-brand strong,
+#bia-member-resource-centre .bia-member__eyebrow,
+#bia-member-resource-centre .bia-member__label,
+#bia-member-resource-centre .bia-member__resource-type,
+#bia-member-resource-centre .bia-member__document-type,
+#bia-member-resource-centre .bia-member__news-date,
+#bia-member-resource-centre .bia-member__workshop-date,
+#bia-member-resource-centre .bia-member__guide-label,
+#bia-member-resource-centre .bia-member__seminar-topic,
+#bia-member-resource-centre .bia-member__seminar-format,
+#bia-member-resource-centre .bia-member__portal-heading>span {font-family:inherit!important}
+.bia-member--portal .bia-member__member-guidance{margin:1.4rem 0 0!important;padding:.85rem 1rem;background:#f0f5f3;border-left:3px solid #b89355;color:#46616a!important;font-size:.88rem;line-height:1.5}
