@@ -726,3 +726,25 @@
     grid-template-columns:1fr;gap:14px;
   }
 }
+
+/* Keep seminar search, topic and delivery-format fields aligned */
+#bia-member-resource-centre .bia-member--resources .bia-member__seminar-toolbar{
+ display:grid;grid-template-columns:minmax(0,1.65fr) minmax(0,1fr) minmax(0,1fr);
+ align-items:end;gap:16px;
+}
+#bia-member-resource-centre .bia-member--resources .bia-member__seminar-toolbar .bia-member__field{
+ display:flex;flex-direction:column;justify-content:flex-end;gap:8px;
+ width:100%;min-width:0;margin:0;
+}
+#bia-member-resource-centre .bia-member--resources .bia-member__seminar-toolbar .bia-member__field span{
+ display:block;margin:0;line-height:1.4;
+}
+#bia-member-resource-centre .bia-member--resources .bia-member__seminar-toolbar input,
+#bia-member-resource-centre .bia-member--resources .bia-member__seminar-toolbar select{
+ display:block;width:100%;height:48px;min-height:48px;margin:0;box-sizing:border-box;
+}
+@media(max-width:740px){
+ #bia-member-resource-centre .bia-member--resources .bia-member__seminar-toolbar{
+  grid-template-columns:1fr;gap:14px;
+ }
+}
