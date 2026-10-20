@@ -42,7 +42,7 @@
     if (document.querySelector('link[data-bia-member-centre-style]')) return;
     const style = document.createElement("link");
     style.rel = "stylesheet";
-    style.href = root + "assets/member-resource-centre.css?v=member-guidance-20261020";
+    style.href = root + "assets/member-resource-centre.css?v=member-alignment-20261020";
     style.dataset.biaMemberCentreStyle = "true";
     document.head.append(style);
   };
