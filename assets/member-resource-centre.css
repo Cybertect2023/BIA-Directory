@@ -678,3 +678,26 @@
 #bia-member-resource-centre .bia-member__seminar-format,
 #bia-member-resource-centre .bia-member__portal-heading>span {font-family:inherit!important}
 .bia-member--portal .bia-member__member-guidance{margin:1.4rem 0 0!important;padding:.85rem 1rem;background:#f0f5f3;border-left:3px solid #b89355;color:#46616a!important;font-size:.88rem;line-height:1.5}
+
+/* Readable, prominent Member Home navigation notice. Squarespace fonts inherited. */
+#bia-member-resource-centre .bia-member--hub.bia-member--portal .bia-member__member-guidance{
+  display:flex;align-items:center;gap:1rem;
+  margin:1.5rem 0 .35rem!important;
+  padding:1.15rem 1.4rem;
+  border:1px solid #d9c49f;border-left:6px solid #b38b43;
+  border-radius:7px;background:#fff8e9;
+  color:#173d49!important;font-family:inherit!important;
+  font-size:clamp(1rem,1.25vw,1.13rem)!important;
+  font-weight:650!important;line-height:1.55!important;
+  box-shadow:0 4px 12px rgba(27,68,80,.09);
+}
+#bia-member-resource-centre .bia-member--hub.bia-member--portal .bia-member__member-guidance:before{
+  content:"ⓘ";display:grid;place-items:center;flex:0 0 38px;
+  width:38px;height:38px;border-radius:50%;
+  background:#b38b43;color:white;font-size:1.35rem;font-weight:700;
+}
+@media(max-width:620px){
+  #bia-member-resource-centre .bia-member--hub.bia-member--portal .bia-member__member-guidance{
+    padding:1rem;gap:.8rem;font-size:1rem!important;
+  }
+}
