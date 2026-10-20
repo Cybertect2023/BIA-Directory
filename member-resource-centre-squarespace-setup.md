@@ -14,7 +14,7 @@ Its Code Block, when updating the existing hub **without changing its page or ac
 
 ```html
 <div id="bia-member-resource-centre">Loading the Member Resource Centre…</div>
-<script defer src="https://cybertect2023.github.io/BIA-Directory/assets/member-resource-centre.js?v=member-seminar-alignment-20261020"></script>
+<script defer src="https://cybertect2023.github.io/BIA-Directory/assets/member-resource-centre.js?v=member-notice-20261020"></script>
 ```
 
 ## Individual page Code Blocks
@@ -32,7 +32,7 @@ Use one Code Block per target Squarespace page. Set the block type to HTML. The 
 <div id="bia-member-resource-centre" data-bia-member-template="member-governance.html">
   Loading member resources…
 </div>
-<script defer src="https://cybertect2023.github.io/BIA-Directory/assets/member-resource-centre.js?v=member-seminar-alignment-20261020"></script>
+<script defer src="https://cybertect2023.github.io/BIA-Directory/assets/member-resource-centre.js?v=member-notice-20261020"></script>
 ```
 
 ### Business Resources & Development
@@ -46,7 +46,7 @@ Use one Code Block per target Squarespace page. Set the block type to HTML. The 
 <div id="bia-member-resource-centre" data-bia-member-template="member-business-resources.html">
   Loading member resources…
 </div>
-<script defer src="https://cybertect2023.github.io/BIA-Directory/assets/member-resource-centre.js?v=member-seminar-alignment-20261020"></script>
+<script defer src="https://cybertect2023.github.io/BIA-Directory/assets/member-resource-centre.js?v=member-notice-20261020"></script>
 ```
 
 ### Member-to-Member Benefits
@@ -60,7 +60,7 @@ Use one Code Block per target Squarespace page. Set the block type to HTML. The 
 <div id="bia-member-resource-centre" data-bia-member-template="member-benefits.html">
   Loading member resources…
 </div>
-<script defer src="https://cybertect2023.github.io/BIA-Directory/assets/member-resource-centre.js?v=member-seminar-alignment-20261020"></script>
+<script defer src="https://cybertect2023.github.io/BIA-Directory/assets/member-resource-centre.js?v=member-notice-20261020"></script>
 ```
 
 ### BIA News & Communications
@@ -74,7 +74,7 @@ Use one Code Block per target Squarespace page. Set the block type to HTML. The 
 <div id="bia-member-resource-centre" data-bia-member-template="member-news.html">
   Loading member resources…
 </div>
-<script defer src="https://cybertect2023.github.io/BIA-Directory/assets/member-resource-centre.js?v=member-seminar-alignment-20261020"></script>
+<script defer src="https://cybertect2023.github.io/BIA-Directory/assets/member-resource-centre.js?v=member-notice-20261020"></script>
 ```
 
 ## Publishing and access safeguards
@@ -108,6 +108,6 @@ The hub and all four detail templates now share a publishing-aware JSON loader. 
 
 **Automated checks:** `scripts/validate-member-resource-data.mjs`, `scripts/test-member-resource-data.mjs`, and `scripts/test-member-template-contracts.mjs`. Checks detect common publication and template mistakes, but do not authorize any confidential release.
 
-**Important for the live hub:** The GitHub source now uses `member-seminar-alignment-20261020` as the cache tag. The Squarespace `/members-home` Code Block may still have an older script URL. Its snippet needs to be refreshed separately in Squarespace; changing GitHub files does not rewrite the Squarespace Code Block.
+**Important for the live hub:** The GitHub source now uses `member-notice-20261020` as the cache tag. The Squarespace `/members-home` Code Block may still have an older script URL. Its snippet needs to be refreshed separately in Squarespace; changing GitHub files does not rewrite the Squarespace Code Block.
 
 **Not completed here:** Creating the four actual Squarespace pages, establishing their protection, auditing current accounts/access plans/payment configuration, and implementing private record storage. Those changes remain deliberately untouched.
