@@ -748,3 +748,8 @@
   grid-template-columns:1fr;gap:14px;
  }
 }
+
+/* Prominent Member Home notice; inline layout ensures old cached CSS remains readable. */
+#bia-member-resource-centre .bia-member--hub .bia-member__guidance-wrap .bia-member__member-guidance:before{content:none!important;display:none!important}
+#bia-member-resource-centre .bia-member--hub .bia-member__guidance-wrap .bia-member__member-guidance{max-width:none!important;box-sizing:border-box;font-family:inherit!important}
+@media(max-width:620px){#bia-member-resource-centre .bia-member--hub .bia-member__guidance-wrap .bia-member__member-guidance{padding:16px!important;gap:12px!important}#bia-member-resource-centre .bia-member--hub .bia-member__guidance-wrap .bia-member__member-guidance>span{flex-basis:35px!important;width:35px!important;height:35px!important;font-size:21px!important}}
