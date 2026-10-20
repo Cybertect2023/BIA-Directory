@@ -1527,12 +1527,12 @@
       "id": "skinkles-pet-supplies-and-more",
       "name": "Skinkle’s Pet Supplies & More",
       "category": "Shops & Retail",
-      "description": "One-stop pet supply shop with food, accessories, grooming, and a self-serve dog wash.",
+      "description": "Grooming and care for pets and horses, with a selection of pet supplies.",
       "address": "400 West Front Street, Building 10, Stirling, ON K0K 3E0",
       "phone": "613-395-0899",
       "email": "",
       "website": "",
-      "facebook": "",
+      "facebook": "https://www.facebook.com/skinklespetsupplies/",
       "instagram": "",
       "image": "",
       "featured": false,
@@ -1546,15 +1546,15 @@
         "sunday": "Closed"
       },
       "services": [
-        "Pet Food",
+        "Pet Grooming",
         "Pet Supplies",
-        "Specialized Grooming",
-        "Self-Serve Dog Wash"
+        "Pet Food",
+        "Equine Feed & Supplements"
       ],
       "profileUrl": "/skinkles-pet-supplies-and-more",
       "verificationStatus": "verified",
-      "sourceUrl": "https://www.ruralroutes.com/orr_city_page.cfm?city=stirling",
-      "about": "Skinkle’s Pet Supplies & More provides pet food, supplies, grooming, and a self-serve dog wash for local pet owners.",
+      "sourceUrl": "https://www.facebook.com/skinklespetsupplies/",
+      "about": "Skinkle’s Pet Supplies & More offers grooming for pets of all sizes and carries pet food and supplies, along with equine feed and supplements.",
       "collections": [
         "shop-local"
       ]
