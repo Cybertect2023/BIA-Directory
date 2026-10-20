@@ -42,7 +42,7 @@
     if (document.querySelector('link[data-bia-member-centre-style]')) return;
     const style = document.createElement("link");
     style.rel = "stylesheet";
-    style.href = root + "assets/member-resource-centre.css?v=member-functional-20261018";
+    style.href = root + "assets/member-resource-centre.css?v=member-navigation-20261020";
     style.dataset.biaMemberCentreStyle = "true";
     document.head.append(style);
   };
@@ -286,7 +286,7 @@
 
   // Shared member portal shell. Navigation is real; access enforcement remains with Squarespace.
   const portalPages = [
-    {name:"Home",href:"/members-home",preview:"member-resource-centre.html"},
+    {name:"Member Home",href:"/members-home",preview:"member-resource-centre.html"},
     {name:"Documents",href:"/bia-governance-documents",preview:"member-governance.html"},
     {name:"Resources",href:"/business-resources-development",preview:"member-business-resources.html"},
     {name:"Member Benefits",href:"/member-to-member-benefits",preview:"member-benefits.html"},
