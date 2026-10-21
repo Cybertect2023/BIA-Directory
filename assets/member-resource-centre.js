@@ -266,7 +266,21 @@
         if (benefit.instructions) card.append(el("p", "", benefit.instructions));
         return card;
       }));
-    } else showEmpty("[data-member-benefits]", "There are no active member-to-member benefits. Governance approval and genuinely protected member storage are required before the directory can be activated.");
+    } else {
+      // Fictional design sample only. Never put actual private member offers in public GitHub.
+      const sample = el("article", "bia-member__benefit bia-member__benefit--sample");
+      sample.append(el("span", "bia-member__sample-label", "EXAMPLE ONLY · NOT AN ACTIVE OFFER"));
+      sample.append(el("p", "bia-member__benefit-business", "Example: Local Print & Design Studio"));
+      sample.append(el("h3", "", "15% off business printing for fellow BIA members"));
+      sample.append(el("p", "", "Save on business cards, flyers and in-store signage when ordering for your business."));
+      const details = el("div", "bia-member__sample-details");
+      details.append(el("p", "", "Eligibility: Verified Stirling-Rawdon BIA members"));
+      details.append(el("p", "", "Sample terms: Mention your membership when requesting a quote. Excludes outsourced printing and cannot be combined with other discounts."));
+      details.append(el("p", "", "How to redeem: Contact the participating business directly."));
+      sample.append(details);
+      sample.append(el("p", "bia-member__sample-disclaimer", "Fictional demonstration only. No business is offering this discount. Program participation awaits BIA approval."));
+      replace("[data-member-benefits]", [sample]);
+    }
 
     const news = approved(data.news, "news").sort((a,b) => String(b.date || "").localeCompare(String(a.date || "")));
     if (news.length) {
