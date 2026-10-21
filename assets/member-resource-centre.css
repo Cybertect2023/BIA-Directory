@@ -807,3 +807,27 @@
 @media(max-width:720px){
   #bia-member-resource-centre .bia-member--benefits .bia-member__benefit-list{grid-template-columns:1fr}
 }
+
+/* Seminar artwork: full image, never crop a poster into a banner. */
+#bia-member-resource-centre .bia-member--resources .bia-member__seminar-cover,
+#bia-member-resource-centre .bia-member--resources .bia-member__seminar-image-link{
+  width:100%;min-width:0;overflow:hidden;
+}
+#bia-member-resource-centre .bia-member--resources .bia-member__seminar-visual{
+  width:100%;height:170px!important;min-height:0;overflow:hidden;
+  display:flex;align-items:center;justify-content:center;
+  background:#f2f5f3;
+}
+#bia-member-resource-centre .bia-member--resources .bia-member__seminar-image{
+  display:block!important;width:100%!important;height:100%!important;
+  max-width:100%!important;max-height:100%!important;
+  object-fit:contain!important;object-position:center center!important;
+  background:#f2f5f3;
+}
+#bia-member-resource-centre .bia-member--resources .bia-member__seminar-fallback{height:100%}
+@media(max-width:780px){
+  #bia-member-resource-centre .bia-member--resources .bia-member__workshop-list{
+    grid-template-columns:1fr!important;
+  }
+  #bia-member-resource-centre .bia-member--resources .bia-member__seminar-visual{height:180px!important}
+}
