@@ -753,3 +753,30 @@
 #bia-member-resource-centre .bia-member--hub .bia-member__guidance-wrap .bia-member__member-guidance:before{content:none!important;display:none!important}
 #bia-member-resource-centre .bia-member--hub .bia-member__guidance-wrap .bia-member__member-guidance{max-width:none!important;box-sizing:border-box;font-family:inherit!important}
 @media(max-width:620px){#bia-member-resource-centre .bia-member--hub .bia-member__guidance-wrap .bia-member__member-guidance{padding:16px!important;gap:12px!important}#bia-member-resource-centre .bia-member--hub .bia-member__guidance-wrap .bia-member__member-guidance>span{flex-basis:35px!important;width:35px!important;height:35px!important;font-size:21px!important}}
+
+/* Member benefits: clearly identified fictional offer design sample. */
+#bia-member-resource-centre .bia-member--benefits .bia-member__benefit--sample {
+  position:relative;max-width:830px;padding:30px 34px;border:1px solid #d9e2dc;
+  border-left:6px solid #b48c45;border-radius:12px;background:#fff;
+  box-shadow:0 8px 24px rgba(20,60,66,.08);
+}
+#bia-member-resource-centre .bia-member__sample-label{
+  display:inline-block;margin:0 0 20px;padding:7px 12px;background:#fff2d5;
+  border:1px solid #e0c388;border-radius:30px;color:#66501e;
+  font:700 11px/1.4 Arial,sans-serif;letter-spacing:.07em;
+}
+#bia-member-resource-centre .bia-member--benefits .bia-member__benefit--sample h3 {
+  margin:0 0 12px;font-size:clamp(1.45rem,2.2vw,1.85rem);
+}
+#bia-member-resource-centre .bia-member__sample-details{
+  margin:18px 0;padding:17px 20px;background:#f3f8f6;border-radius:7px;
+}
+#bia-member-resource-centre .bia-member__sample-details p{margin:0 0 9px}
+#bia-member-resource-centre .bia-member__sample-details p:last-child{margin-bottom:0}
+#bia-member-resource-centre .bia-member__sample-disclaimer{
+  margin:20px 0 0!important;padding-top:14px;border-top:1px solid #e0e8e4;
+  color:#6c5d44!important;font-weight:650;
+}
+@media(max-width:620px){
+  #bia-member-resource-centre .bia-member--benefits .bia-member__benefit--sample{padding:22px 20px}
+}
