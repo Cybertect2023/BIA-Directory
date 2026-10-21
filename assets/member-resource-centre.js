@@ -152,7 +152,7 @@
     const copy = host.querySelector("[data-member-announcement-copy]");
     const announcementLink = host.querySelector("[data-member-announcement-link]");
     if (title) title.textContent = announcement.title || "Member Resource Centre in development";
-    if (copy) copy.textContent = announcement.copy || "This private member resource is being prepared.";
+    if (copy) copy.textContent = announcement.copy || "Visit the Member Resource Centre for BIA information and business support.";
     const announcementUrl = announcement.status === "published" && announcement.audience === "public" ? safeUrl(announcement.url) : null;
     if (announcementLink && announcementUrl && announcement.linkLabel) {
       announcementLink.href = announcementUrl.href;
@@ -240,7 +240,7 @@
         card.append(cover, body);
         return card;
       }));
-    } else showEmpty("[data-member-workshops]", "There are no currently confirmed upcoming seminars. New opportunities will be added after dates and registration pages are verified.");
+    } else showEmpty("[data-member-workshops]", "There are no currently confirmed upcoming seminars. Please check back for upcoming learning opportunities.");
 
     const documents = approved(data.documents, "documents").sort((a,b) => String(b.date || "").localeCompare(String(a.date || "")));
     if (documents.length) {
@@ -253,7 +253,7 @@
         if (destination) card.append(destination);
         return card;
       }));
-    } else showEmpty("[data-member-documents]", "The document library is being organized for member access. Approved agendas, minutes, reports, policies, and AGM information will be added here.");
+    } else showEmpty("[data-member-documents]", "There are no documents available in this library yet.");
 
     const benefits = []; // Always withheld: private offers require a protected source, not GitHub Pages.
     if (benefits.length) {
@@ -278,7 +278,7 @@
       details.append(el("p", "", "Sample terms: Mention your membership when requesting a quote. Excludes outsourced printing and cannot be combined with other discounts."));
       details.append(el("p", "", "How to redeem: Contact the participating business directly."));
       sample.append(details);
-      sample.append(el("p", "bia-member__sample-disclaimer", "Fictional demonstration only. No business is offering this discount. Program participation awaits BIA approval."));
+      sample.append(el("p", "bia-member__sample-disclaimer", "Sample listing only. This is not a real offer."));
       replace("[data-member-benefits]", [sample]);
     }
 
@@ -293,7 +293,7 @@
         if (destination) card.append(destination);
         return card;
       }));
-    } else showEmpty("[data-member-news]", "BIA news and member notices will appear here after verification and approval.");
+    } else showEmpty("[data-member-news]", "There are no BIA announcements to display at this time.");
     setupFilters(data);
     enhancePortalSections(data);
   };
@@ -314,7 +314,7 @@
       const select = host.querySelector("[data-member-document-type]");
       if (filterBar?.hidden || !select || select.options.length < 2) {
         const notice = host.querySelector("[data-member-documents] .bia-member__empty");
-        if (notice) notice.textContent = "The selected document category is awaiting approved records. Google Drive permissions will independently control access once linked.";
+        if (notice) notice.textContent = "No documents are currently available in this category.";
         host.querySelector("#document-library")?.scrollIntoView({behavior:"smooth",block:"start"});
         return;
       }
@@ -379,7 +379,7 @@
         "member-resource-centre.html":"Supporting a stronger local business community through shared resources, connections and opportunities.",
         "member-governance.html":"Find approved records and governance information in one organized space.",
         "member-business-resources.html":"Explore seminars, trusted support organizations and tools for business development.",
-        "member-benefits.html":"A dedicated space for the proposed private exchange of voluntary member offers.",
+        "member-benefits.html":"Discover offers and services from participating BIA businesses.",
         "member-news.html":"Find BIA project updates, meeting information and member notices in one place."
       })[template])
     );
