@@ -151,7 +151,7 @@
     const title = host.querySelector("[data-member-announcement-title]");
     const copy = host.querySelector("[data-member-announcement-copy]");
     const announcementLink = host.querySelector("[data-member-announcement-link]");
-    if (title) title.textContent = announcement.title || "Member Resource Centre in development";
+    if (title) title.textContent = announcement.title || "Welcome to your Member Resource Centre";
     if (copy) copy.textContent = announcement.copy || "Visit the Member Resource Centre for BIA information and business support.";
     const announcementUrl = announcement.status === "published" && announcement.audience === "public" ? safeUrl(announcement.url) : null;
     if (announcementLink && announcementUrl && announcement.linkLabel) {
@@ -177,7 +177,7 @@
         if (destination) card.append(destination);
         return card;
       }));
-    } else showEmpty("[data-member-resources]", "The business support directory is being prepared.");
+    } else showEmpty("[data-member-resources]", "Business support listings will appear here.");
 
     const workshops = upcoming(data.workshops);
     const workshopCount = host.querySelector("[data-member-workshop-count]");
