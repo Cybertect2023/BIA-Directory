@@ -780,3 +780,30 @@
 @media(max-width:620px){
   #bia-member-resource-centre .bia-member--benefits .bia-member__benefit--sample{padding:22px 20px}
 }
+
+/* Compact member-to-member offer directory: comfortably accommodates 10+ listings. */
+#bia-member-resource-centre .bia-member--benefits .bia-member__benefit-list{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:stretch;
+}
+#bia-member-resource-centre .bia-member--benefits .bia-member__benefit-list .bia-member__benefit{
+  max-width:none;min-width:0;padding:20px 22px;border-radius:9px;
+}
+#bia-member-resource-centre .bia-member--benefits .bia-member__benefit-list .bia-member__benefit h3{
+  font-size:clamp(1.15rem,1.6vw,1.35rem);line-height:1.3;margin-bottom:8px;
+}
+#bia-member-resource-centre .bia-member--benefits .bia-member__sample-label{
+  margin-bottom:12px;padding:5px 9px;font-size:10px;
+}
+#bia-member-resource-centre .bia-member--benefits .bia-member__benefit-business{margin-bottom:7px}
+#bia-member-resource-centre .bia-member--benefits .bia-member__sample-details{
+  margin:12px 0;padding:11px 13px;
+}
+#bia-member-resource-centre .bia-member--benefits .bia-member__sample-details p{
+  font-size:.85rem;line-height:1.48;margin-bottom:6px;
+}
+#bia-member-resource-centre .bia-member--benefits .bia-member__sample-disclaimer{
+  margin-top:12px!important;padding-top:10px;font-size:.8rem;line-height:1.45;
+}
+@media(max-width:720px){
+  #bia-member-resource-centre .bia-member--benefits .bia-member__benefit-list{grid-template-columns:1fr}
+}
