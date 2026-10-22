@@ -1527,7 +1527,7 @@
       "id": "skinkles-pet-supplies-and-more",
       "name": "Skinkle’s Pet Supplies & More",
       "category": "Shops & Retail",
-      "description": "Grooming and care for pets and horses, with a selection of pet supplies.",
+      "description": "Pet grooming and care for pets and horses, pet supplies, and online booking.",
       "address": "400 West Front Street, Building 10, Stirling, ON K0K 3E0",
       "phone": "613-395-0899",
       "email": "",
@@ -1549,7 +1549,8 @@
         "Pet Grooming",
         "Pet Supplies",
         "Pet Food",
-        "Equine Feed & Supplements"
+        "Equine Feed & Supplements",
+        "Online Booking"
       ],
       "profileUrl": "/skinkles-pet-supplies-and-more",
       "verificationStatus": "verified",
