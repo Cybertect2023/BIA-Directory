@@ -1565,7 +1565,7 @@
       "id": "stirling-carpet-and-flooring",
       "name": "Stirling Carpet & Flooring",
       "category": "Home & Garden",
-      "description": "Family-owned flooring store offering flooring materials, installation, and related services.",
+      "description": "Sales and installation of flooring, backsplashes, and shower conversions for residential and small commercial projects.",
       "address": "400 West Front Street, Stirling, ON K0K 3E0",
       "phone": "613-395-1400",
       "email": "stirlingflooring@hotmail.com",
@@ -1580,20 +1580,27 @@
         "wednesday": "9am - 4pm",
         "thursday": "9am - 4pm",
         "friday": "9am - 4pm",
-        "saturday": "10am - 4pm",
+        "saturday": "10am - 2pm",
         "sunday": "Closed"
       },
       "services": [
-        "Flooring Sales",
-        "Carpet Installation",
-        "Hardwood",
-        "Vinyl",
-        "Tile & Laminate"
+        "Sales & Installation",
+        "Engineered Hardwood",
+        "Laminate",
+        "Luxury Vinyl Tile",
+        "Sheet Vinyl",
+        "PVC-Free Flooring",
+        "Carpet",
+        "Wool Carpet",
+        "Tile",
+        "Backsplashes",
+        "Shower Conversions",
+        "Walk-In Showers"
       ],
       "profileUrl": "/stirling-carpet-and-flooring",
       "verificationStatus": "verified",
       "sourceUrl": "https://www.stirlingflooring.com/",
-      "about": "Stirling Carpet & Flooring is a family-owned local flooring business, operating since 1991."
+      "about": "Stirling Carpet & Flooring is a second-generation, family-owned business, with the third generation already part of the team. Proudly serving our community and surrounding areas for over 35 years, we specialize in residential flooring and also welcome small commercial projects. What we offer is knowledgeable advice, professional installation, and personal service every step of the way. We’re here to help you find the right flooring for your space, lifestyle, and budget."
     },
     {
       "id": "stirling-store-and-lock",
